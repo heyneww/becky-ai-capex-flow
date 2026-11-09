@@ -1,0 +1,63 @@
+# 2026-11-09 口径对齐 + 清理时补来源：转载聚合站不再算独立媒体后，这几笔真实交易掉成候选，补原发媒体 / SEC 来源救回。
+deals:
+  - kind: debt
+    from: GLXY
+    to: BONDHOLDERS
+    amount_usd: 3507000000
+    amount_text: $3.507 billion 9.875% senior secured notes due 2031 (Galaxy Helios Data Centers II LLC), 144A/Reg S, closed 2026-07-28
+    instrument: senior_secured_notes
+    announced: "2026-07-23"
+    maturity_date: "2031-08-01"
+    status: completed
+    title_zh: Galaxy Digital 子公司定价 35.07 亿美元 9.875% 高级担保票据，建设 Helios 一期二阶段（CoreWeave 承租）
+    title_en: Galaxy Helios Data Centers II prices $3.507B 9.875% senior secured notes due 2031 for Helios I Phase II
+    summary_zh: Galaxy Digital 间接全资子公司 Galaxy Helios Data Centers II LLC 于 2026 年 7 月 23 日定价 35.07 亿美元 9.875% 高级担保票据（2031 年到期，每年摊还 4%），7 月 28 日完成，用于得州 Helios 园区一期二阶段 260 MW 关键 IT 容量建设，GDH LP 提供无上限完工担保；一期已交付 CoreWeave（15 年租约）。
+    sources:
+      - {url: "https://www.sec.gov/Archives/edgar/data/0001859392/000185939226000074/exhibit991-pressreleasepri.htm", title: "Galaxy 8-K Exhibit 99.1 — pricing of $3.507 billion senior secured notes", publisher: "SEC / Galaxy Digital 8-K", date: "2026-07-23", tier: 1}
+      - {url: "https://www.sec.gov/Archives/edgar/data/0001859392/000185939226000091/glxy-20260630.htm", title: "Galaxy Digital 10-Q Q2 2026 — Helios notes closed July 28, 2026", publisher: "SEC / Galaxy Digital 10-Q", date: "2026-08-06", tier: 1}
+      - {url: "https://theenergymag.com/news/market-news/galaxy-digital-senior-note-helios-ai-data-center", title: "Galaxy Targets $3.5B Notes Sale to Fund Texas AI Data Center Expansion", publisher: "TheEnergyMag", date: "2026-07-22", tier: 3}
+  - kind: debt
+    from: SOFTBANK
+    to: BONDHOLDERS
+    amount_usd: 11100000000
+    amount_text: ~$11.1 billion high-yield bonds — $10B USD in three tranches (8.625% 3.5y $1B, 9.25% 5.5y $4.5B, 9.75% 7.5y $4.5B) + €1B (7.125% 2030, 8.0% 2032); BB+; largest high-yield corporate bond on record
+    instrument: bond
+    announced: "2026-09-24"
+    status: completed
+    title_zh: 软银发行约 111 亿美元高收益债券，为 OpenAI 最后一笔 100 亿美元注资融资
+    title_en: SoftBank issues ~$11.1B high-yield bonds to fund final $10B OpenAI payment
+    summary_zh: 软银集团 2026 年 9 月 24 日定价约 111 亿美元高收益债（100 亿美元三档 + 10 亿欧元两档，票息 7.125%–9.75%，评级 BB+），9 月 29 日交割，用于支付对 OpenAI 300 亿美元追加投资的最后 100 亿（10 月 1 日交割），并注销 400 亿过桥贷款中剩余 100 亿未提款额度；路透称其为有记录以来最大的高收益公司债。
+    sources:
+      - {url: "https://www.dealstreetasia.com/?p=496053", title: "SoftBank issues $11.1b in bonds to fund OpenAI bet", publisher: "DealStreetAsia", date: "2026-09-24", tier: 3}
+      - {url: "https://hedgeco.net/news/09/2026/softbank-issued-about-11-1-billion-of-high-yield-bonds-to-fund-openai.html", title: "SoftBank Issued About $11.1 Billion of High-Yield Bonds to Fund OpenAI", publisher: "HedgeCo", date: "2026-09-24", tier: 3}
+      - {url: "https://www.zawya.com/en/capital-markets/softbank-takes-orders-for-10bln-in-bonds-to-fund-openai-investment-term-sheet-shows-1136200", title: "SoftBank takes orders for $10bln in bonds to fund OpenAI investment, term sheet shows", publisher: "Zawya (Reuters)", date: "2026-09-21", tier: 3}
+  - kind: order
+    from: SKHYNIX
+    to: ASML
+    amount_usd: 8000000000
+    amount_text: KRW 11.95 trillion (~$8.0 billion) EUV lithography equipment, delivery by end-2027 (Yongin, M15X Cheongju); earlier media figure $8.8B
+    instrument: equipment
+    announced: "2026-03-25"
+    status: signed
+    title_zh: SK 海力士向阿斯麦下单约 80 亿美元 EUV 光刻设备，阿斯麦史上最大单笔公开订单
+    title_en: SK hynix places ~$8B (KRW 11.95T) EUV equipment order with ASML, largest single order in ASML history
+    summary_zh: SK 海力士 2026 年 3 月 25 日公告向阿斯麦采购约 11.95 万亿韩元（约 80 亿美元）EUV 光刻设备，2027 年底前交付龙仁与清州 M15X 工厂，用于 HBM 等先进存储扩产，为阿斯麦有史以来最大的公开单笔订单。
+    sources:
+      - {url: "https://www.techzine.eu/news/infrastructure/139897/asml-receives-8-billion-mega-order-from-sk-hynix", title: "ASML receives $8 billion mega order from SK hynix", publisher: "Techzine", date: "2026-03-25", tier: 3}
+      - {url: "https://www.mobileworldlive.com/ai-cloud/sk-hynix-lines-up-8b-euv-order-with-asml/", title: "SK hynix lines up $8B EUV order with ASML", publisher: "Mobile World Live", date: "2026-03-25", tier: 3}
+      - {url: "https://www.techinsights.com/ja/node/61312", title: "SK Hynix's $8 Billion Bet: Pole Position in the EUV Era", publisher: "TechInsights", date: "2026-03-27", tier: 3}
+  - kind: investment
+    from: AMD
+    to: WORLD_LABS
+    amount_usd: 8200000000
+    amount_text: ~$8.2 billion all-stock acquisition; closing expected by end-2026 subject to regulatory approval
+    instrument: acquisition
+    announced: "2026-09-28"
+    status: signed
+    title_zh: AMD 以约 82 亿美元全股票收购李飞飞的 World Labs
+    title_en: AMD to acquire World Labs (Fei-Fei Li) for ~$8.2B in all-stock deal
+    summary_zh: AMD 2026 年 9 月 28 日宣布以约 82 亿美元全股票方式收购空间智能初创公司 World Labs，李飞飞将出任 AMD 执行副总裁兼首席科学家，预计 2026 年底前完成，为 AMD 继 Xilinx 之后第二大收购；AMD 此前已参与 World Labs 约 10 亿美元融资。
+    sources:
+      - {url: "https://www.crnasia.com/news/2026/components-and-peripherals/amd-to-acquire-world-labs-for-us-8", title: "AMD to acquire World Labs for US$8.2 billion in all-stock deal", publisher: "CRN Asia", date: "2026-09-29", tier: 3}
+      - {url: "https://www.benzinga.com/markets/tech/26/09/62048689", title: "AMD to buy World Labs in $8.2 billion stock deal", publisher: "Benzinga", date: "2026-09-28", tier: 3}
+      - {url: "https://www.xtb.com/en/market-analysis/amd-goes-shopping-is-its-8-2-billion-investment-a-good-move", title: "AMD goes shopping: is its $8.2 billion investment a good move?", publisher: "XTB", date: "2026-09-29", tier: 3}

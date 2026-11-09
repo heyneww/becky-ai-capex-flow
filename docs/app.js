@@ -2,16 +2,17 @@
 (function () {
   'use strict';
   const KINDS = ['order', 'investment', 'debt', 'lease', 'guarantee', 'vendor_financing'];
-  const KIND_ZH = { order: '订单', investment: '投资', debt: '债务', lease: '租赁融资', guarantee: '担保兜底', vendor_financing: '供应商融资' };
+  const KIND_ZH = { order: '订单', investment: '投资', debt: '债务', lease: '租赁', guarantee: '担保兜底', vendor_financing: '供应商融资' };
+  const CONTINGENT = new Set(['guarantee']);   // 或有承诺：分项单列，不进总额、不计入圆大小
   const KIND_DIR = { order: ['下单（采购）', '收到订单'], investment: ['对外投资', '获投'], debt: ['借入（欠谁）', '贷出（谁欠它）'],
-    lease: ['租入 / 融资租赁', '出租 / 出资'], guarantee: ['提供担保', '获担保'], vendor_financing: ['提供供应商融资', '获供应商融资'] };
+    lease: ['租入（场地 / 设备）', '出租 / 出资'], guarantee: ['提供担保', '获担保'], vendor_financing: ['提供供应商融资', '获供应商融资'] };
   const STATUS_ZH = { rumored: '传闻', announced: '已宣布', signed: '已签约', completed: '已完成', amended: '已修订', cancelled: '已取消' };
   const TIER_ZH = { confirmed: '一手来源', reported: '媒体核实', candidate: '候选' };
   const SRC_TIER = { 1: 'SEC 文件', 2: '公司公告', 3: '媒体' };
   const INSTR_ZH = { compute_contract: '算力合同', colocation: '托管租赁', chip_purchase: '芯片采购', power: '电力协议', equipment: '设备采购',
     primary: '一级股权', secondary: '二级股权', acquisition: '收购', warrant: '认股权证', convertible: '可转债', jv_equity: '合资股权',
     bond: '债券', term_loan: '定期贷款', ddtl: '延迟提款贷款', revolver: '循环信贷', abs: '资产证券化', gpu_backed_loan: 'GPU 抵押贷款', bridge: '过桥贷款',
-    gpu_lease: 'GPU 租赁', site_lease: '场地租赁', lease_guarantee: '租赁担保', credit_support: '信用支持', offtake_guarantee: '承购担保', chip_financing: '芯片融资', other: '' };
+    gpu_lease: 'GPU 租赁', site_lease: '场地租赁', datacenter_lease: '数据中心租约', datacenter_build: '数据中心建设', hosting: '托管协议', finance_lease: '融资租赁', convertible_notes: '可转债', mezzanine_loan: '夹层贷款', revolving_credit_facility: '循环信贷', atm_program: 'ATM 增发计划', capacity_prepayment: '产能预付', lease_guarantee: '租赁担保', credit_support: '信用支持', offtake_guarantee: '承购担保', chip_financing: '芯片融资', other: '' };
   const GROUP_ORDER = ['model_lab', 'hyperscaler', 'neocloud', 'datacenter', 'energy', 'chip', 'equipment', 'financier', 'spv', 'other'];
   const KIND_COLOR = k => getComputedStyle(document.documentElement).getPropertyValue('--k-' + k).trim() || '#999';
 
@@ -90,7 +91,7 @@
   }
   function nodeTotals(edges) {
     const tot = new Map();
-    edges.forEach(e => { const v = e.amount_usd || 0; tot.set(e.from_entity, (tot.get(e.from_entity) || 0) + v); tot.set(e.to_entity, (tot.get(e.to_entity) || 0) + v); });
+    edges.forEach(e => { const v = CONTINGENT.has(e.kind) ? 0 : (e.amount_usd || 0); tot.set(e.from_entity, (tot.get(e.from_entity) || 0) + v); tot.set(e.to_entity, (tot.get(e.to_entity) || 0) + v); });
     return tot;
   }
   function graphData() {
@@ -129,7 +130,7 @@
     document.addEventListener('keydown', ev => { if (ev.key === 'Escape') { $('#livePop').hidden = true; if (state.sel) select(null); } });
     $('#legend').innerHTML = KINDS.map(k => `<span><i class="ln" style="--c:${KIND_COLOR(k)}"></i>${KIND_ZH[k]}</span>`).join('') +
       GROUP_ORDER.filter(k => d.groups[k]).map(k => `<span><i class="ring" style="--c:${groupColor(k)}"></i>${groupZh(k)}</span>`).join('') +
-      `<span>圆大小 = 往来总额 · 线粗 = 金额 · 虚线 = 金额未披露 · 箭头指向收钱方</span>`;
+      `<span>圆大小 = 往来总额（不含担保） · 线粗 = 金额 · 虚线 = 金额未披露 · 箭头指向收钱方</span>`;
   }
   function setView(v) { state.view = v; $('#tabGraph').setAttribute('aria-selected', v === 'graph'); $('#tabTable').setAttribute('aria-selected', v === 'table'); $('#stage').hidden = v !== 'graph'; $('#tableWrap').hidden = v !== 'table'; if (v === 'table') renderTable(); }
 
@@ -139,8 +140,9 @@
     const other = ['lease', 'guarantee', 'vendor_financing'];
     const tiles = [['order', '订单'], ['investment', '投资'], ['debt', '债务']].map(([k, zh]) => `<div class="kpi" style="--k:${KIND_COLOR(k)}"><div class="k">${zh}</div><div class="v">${fmtUSD(bk[k].usd, true) || '—'}</div><div class="n">${bk[k].count} 笔${bk[k].facility_usd ? ` · 含额度 ${fmtUSD(bk[k].facility_usd, true)}` : ''}${bk[k].undisclosed ? ` · 另 ${bk[k].undisclosed} 笔未披露金额` : ''}</div></div>`);
     const total = d.stats.total_usd || 1;
-    const segs = KINDS.map(k => ({ k, v: bk[k].usd })).filter(s => s.v > 0);
-    tiles.push(`<div class="kpi mix" style="--k:var(--line-2)"><div class="k">交易类型占比</div><div class="bar">${segs.map(s => `<i style="width:${(s.v / total * 100).toFixed(1)}%;background:${KIND_COLOR(s.k)}" title="${KIND_ZH[s.k]} ${fmtUSD(s.v)}"></i>`).join('')}</div><div class="lg">${segs.map(s => `<span><i class="sw" style="background:${KIND_COLOR(s.k)}"></i>${KIND_ZH[s.k]} <b>${(s.v / total * 100).toFixed(0)}%</b></span>`).join('')}</div><div class="n">${d.stats.edges} 笔交易 · ${d.stats.entities} 家公司${d.stats.candidates ? ` · ${d.stats.candidates} 条候选待核实` : ''}</div></div>`);
+    const segs = KINDS.filter(k => !CONTINGENT.has(k)).map(k => ({ k, v: bk[k].usd })).filter(s => s.v > 0);
+    const cont = bk.guarantee && bk.guarantee.usd ? ` · 担保 ${fmtUSD(bk.guarantee.usd, true)}（${bk.guarantee.count} 笔）另列，不计入` : '';
+    tiles.push(`<div class="kpi mix" style="--k:var(--line-2)"><div class="k">交易类型占比</div><div class="bar">${segs.map(s => `<i style="width:${(s.v / total * 100).toFixed(1)}%;background:${KIND_COLOR(s.k)}" title="${KIND_ZH[s.k]} ${fmtUSD(s.v)}"></i>`).join('')}</div><div class="lg">${segs.map(s => `<span><i class="sw" style="background:${KIND_COLOR(s.k)}"></i>${KIND_ZH[s.k]} <b>${(s.v / total * 100).toFixed(0)}%</b></span>`).join('')}</div><div class="n">${d.stats.edges} 笔交易 · ${d.stats.entities} 家公司${cont}${d.stats.candidates ? ` · ${d.stats.candidates} 条候选待核实` : ''}</div></div>`);
     $('#kpis').innerHTML = tiles.join('');
     const gen = d.generated_at; const stale = (Date.now() - new Date(gen).getTime()) > 8 * 3600000;
     $('#liveAgo').textContent = state.snapshot ? `存档 ${state.snapshot}` : `更新于 ${ago(gen)}`;

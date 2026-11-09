@@ -1,0 +1,73 @@
+# 媒体来源归一化。recompute_tier 用它数「几家独立媒体」。
+# 规则：publisher 名或域名小写、去 www / 顶级域 / 标点后，含 aggregators 里任一关键字的，算转载 / 聚合站，
+#       只能作为正文来源，不计入「两家独立媒体互相印证」的门槛；aliases 把同一媒体的不同写法并成一家。
+aggregators:
+  - yahoo              # Yahoo Finance 各国版（转载 Reuters / Bloomberg / Motley Fool / 通稿）
+  - aol
+  - msn
+  - biggo
+  - ad-hoc-news
+  - tradingview
+  - tradingkey
+  - briefs finance
+  - startup fortune
+  - shattered
+  - tech-insider
+  - tokenpost
+  - simply wall st
+  - simplywall
+  - finimize
+  - kucoin
+  - mlq
+  - fourweekmba
+  - marketbeat
+  - morningstar
+  - marketscreener
+  - investing.com
+  - investinglive
+  - stocktitan
+  - seeking alpha
+  - seekingalpha
+  - nasdaq.com
+  - 富途
+  - futu
+  - ticker news
+  - grafa
+  - scanx
+  - tikr
+  - stocktwits
+  - quiver
+  - gurufocus
+  - zacks
+  - flipboard
+  - newsbreak
+  - bloomingbit
+  - coinmarketcap
+  - cryptonews.net
+  - pluang
+  - daijiworld
+  - hoodline
+  - srn news
+  - the globe and mail   # 多为 Reuters / Bloomberg 转载
+  - globeandmail
+  - headtopics
+  - newsnow
+  - ground.news
+  - the star (reuters)   # 转载 Reuters，归 Reuters（见 aliases）
+
+aliases:               # canonical: [写法…]，匹配为「归一化后包含」
+  reuters: [reuters]
+  bloomberg: [bloomberg, bgov]
+  techcrunch: [techcrunch]
+  the register: [theregister]
+  dcd: [datacenterdynamics, data center dynamics]
+  cnbc: [cnbc]
+  wsj: [wsj, wall street journal]
+  ft: [ft.com, financial times]
+  the information: [theinformation, the information]
+  business wire: [businesswire]
+  pr newswire: [prnewswire]
+  globenewswire: [globenewswire]
+  the elec: [thelec]
+  tokenpost: [tokenpost]
+  simply wall st: [simply wall]

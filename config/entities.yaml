@@ -179,3 +179,4 @@ entities:
   - {id: HUGGING_FACE, name: Hugging Face, name_zh: Hugging Face, group: model_lab, country: US, aliases: ["Hugging Face", "HuggingFace"]}
   - {id: GENERAC, name: Generac, name_zh: Generac, group: equipment, ticker: GNRC, country: US, aliases: [Generac, "Generac Holdings", "Generac Holdings Inc."]}
   - {id: NEXUS, name: Nexus Data Centers, name_zh: Nexus Data Centers, group: datacenter, country: US, aliases: ["Nexus Data Centers", "Nexus Data Center"]}
+  - {id: WORLD_LABS, name: World Labs, name_zh: World Labs, group: model_lab, country: US, aliases: ["World Labs", "World Labs Technologies"]}

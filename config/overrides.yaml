@@ -144,3 +144,25 @@ overrides:
 
   # ===== 2026-11-09：对账 v3 缺口 =====
   - {match: {id: 329}, action: supersede, by: 578, note: "循环授信 2025-11 从 $1.5B 增至 $2.5B，旧额度被新额度取代，历史保留"}
+
+  # ===== 第十二批 2026-11-09：口径对齐 + 清理（与 GL-AI-live 对比后） =====
+  # 规则改动（代码）：担保移出总额单列；colocation / site_lease / datacenter_lease 的订单改记租赁；传闻不升级；转载聚合站不算独立媒体（config/publishers.yaml）。
+  - {match: {id: 427}, action: merge, into: 227, note: "Amazon $17.5B DDTL：6-30 提款与 6-08 签约是同一笔（相隔 22 天，刚超出 21 天债务合并窗口）"}
+  - {match: {id: 227}, action: set, fields: {status: completed}, note: "2026-06-30 已全额提款"}
+  - {match: {id: 434}, action: merge, into: 199, note: "Anthropic $15B 循环授信：10-26 报道的修订与 S-1 披露的是同一授信"}
+  - {match: {id: 512}, action: merge, into: 80, note: "Riot Rockdale 191 MW $9.1B：同一租约的租赁记法（#80 已按口径改记租赁）"}
+  - {match: {id: 498}, action: merge, into: 204, note: "Hut 8 $1.07B 循环授信：11-04 完成 = 9-28 签约同一笔"}
+  - {match: {id: 393}, action: merge, into: 179, note: "IREN $363M Wingspire 设备融资：同一笔，Wingspire 归私募信贷"}
+  - {match: {id: 457}, action: merge, into: 179, note: "同上（候选记法）"}
+  - {match: {id: 391}, action: merge, into: 395, note: "Nexus Hubbard ~$15B 银团 = #395 Morgan Stanley $15.6B 同一笔（实体收编前的隔离记法）"}
+  - {match: {id: 159}, action: set, fields: {status: rumored}, note: "Anthropic IPO「据报募资至多 $100B」是传闻，不计入；上市定价后按 424B 另记"}
+  - {match: {id: 452}, action: delete, note: "Alphabet「Q3 发债 $28.7B」是 10-Q 季度汇总，8 月 $25B（#337）等已逐笔记录"}
+  - {match: {id: 422}, action: delete, note: "Meta $97.5B 融资计划是汇总记法（同 #373/#40），逐笔另记"}
+  - {match: {id: 414}, action: delete, note: "Oracle 2027 年 $40B 融资计划是计划汇总，发行时逐笔记"}
+  - {match: {id: 475}, action: delete, note: "Oracle $20B 股债融资 = #412 $10B 债 + #465 $10B 股的汇总"}
+  - {match: {id: 438}, action: delete, note: "范围外：政府 / 伙伴对公用事业电力枢纽的出资"}
+  - {match: {id: 462}, action: delete, note: "范围外：公用事业并购（Vistra 收购 Cogentrix）"}
+  - {match: {id: 108}, action: set, fields: {kind: order, instrument: datacenter_build}, note: "Anthropic–Fluidstack $50B 是定制数据中心建设投入，不是容量租约，留在订单（GL 同样记订单）"}
+  - {match: {id: 432}, action: delete, note: "Microsoft 10-29 债券最终定价 $25B（#405），$33B 是早期误报"}
+  - {match: {id: 405}, action: set, fields: {title_en: "Microsoft prices $25B 10-tranche senior notes (first USD bond since 2017)", title_zh: "微软定价 250 亿美元十档债券，2017 年以来首次发美元债", amount_text: "$25 billion, 10 tranches (8 fixed 2028–2066, 2 floating), ~$115B orders"}, note: "按定价结果补齐标题；金额 $25B 已正确"}
+  - {match: {id: 370}, action: merge, into: 338, note: "Galaxy Helios II $3.5B 票据：10-28 的媒体回顾与 7-23 定价（#338，8-K）是同一笔"}

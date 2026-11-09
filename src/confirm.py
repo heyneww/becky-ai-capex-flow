@@ -8,6 +8,37 @@ from common import SETTINGS, KINDS, load_yaml, log, now_iso
 
 STATUS_RANK = {"rumored": 0, "announced": 1, "signed": 2, "completed": 3, "amended": 3, "cancelled": 4}
 
+_PUBCFG = None
+
+
+def _norm_pub(s):
+    return re.sub(r"^(www|m|amp)\.", "", re.sub(r"^https?://", "", (s or "").lower().strip())).rstrip("/")
+
+
+def _pubcfg():
+    global _PUBCFG
+    if _PUBCFG is None:
+        cfg = load_yaml("publishers.yaml") or {}
+        _PUBCFG = ([_norm_pub(a) for a in cfg.get("aggregators") or []],
+                   {k: [_norm_pub(a) for a in v] for k, v in (cfg.get("aliases") or {}).items()})
+    return _PUBCFG
+
+
+def canon_publisher(p):
+    """媒体名归一化（config/publishers.yaml）：同一媒体的不同写法并成一家；
+       Yahoo / BigGo / TradingView 这类转载聚合站归为 '_aggregator'，不算独立媒体。"""
+    s = _norm_pub(p)
+    if not s:
+        return None
+    aggs, alias = _pubcfg()
+    for k, pats in alias.items():
+        if any(a in s for a in pats):
+            return k
+    if any(a in s for a in aggs):
+        return "_aggregator"
+    s = re.sub(r"\.(com|de|io|net|org|co|ai|trade|pro|kr|uk|sg|in|au|ca)(\.[a-z]{2})?$", "", s)
+    return re.sub(r"[^a-z0-9\u4e00-\u9fff\uac00-\ud7af]+", "", s) or s
+
 
 def _amount_ok(a, b, tol):
     if a and b:
@@ -71,13 +102,15 @@ def recompute_tier(con, edge_id):
                 body_srcs += 1
         else:
             body_srcs += 1                      # 种子来源视为有正文（人工核实）
-    pubs = {(s["publisher"] or s["url"].split("/")[2]) for s in srcs}
+    pubs = {canon_publisher(s["publisher"] or s["url"].split("/")[2]) for s in srcs} - {None, "_aggregator"}
     if any(t <= 2 for t in tiers):
         tier = "confirmed"
     elif body_srcs >= 1 and len(pubs) >= 2 and e["confidence"] >= SETTINGS["reported_min_confidence"]:
-        tier = "reported"          # 媒体报道要两家独立来源的正文互相印证才计入
+        tier = "reported"          # 媒体报道要两家独立原发媒体的正文互相印证才计入；转载聚合站不计数
     else:
         tier = "candidate"
+    if e["status"] == "rumored" and e["review"] != "confirmed":
+        tier = "candidate"         # 传闻 / 磋商中的交易不论几家媒体转载都不计入；状态升级或人工 confirm 后再计
     if e["review"] == "confirmed":
         tier = "confirmed"
     con.execute("UPDATE edges SET tier=? WHERE id=?", (tier, edge_id))

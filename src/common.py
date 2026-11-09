@@ -22,7 +22,7 @@ def load_yaml(name):
 
 SETTINGS = load_yaml("settings.yaml")
 KINDS = ["order", "investment", "debt", "lease", "guarantee", "vendor_financing"]
-KIND_ZH = {"order": "订单", "investment": "投资", "debt": "债务", "lease": "租赁融资", "guarantee": "担保兜底",
+KIND_ZH = {"order": "订单", "investment": "投资", "debt": "债务", "lease": "租赁", "guarantee": "担保兜底",
            "vendor_financing": "供应商融资"}
 
 

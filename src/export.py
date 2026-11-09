@@ -17,11 +17,26 @@ def is_facility(e):
     return (e["instrument"] or "") in FACILITY_INSTRUMENTS
 
 
+# 数据中心容量租约（托管 / 场地 / 数据中心租赁）统一记「租赁」，与 S-1 里对博通的设备租赁、GL 站的口径一致；
+# GPU 云算力合同（compute_contract）仍是「订单」。担保是或有承诺，分项单列、不进总额。
+DC_LEASE_INSTRUMENTS = {"colocation", "site_lease", "datacenter_lease", "hosting", "hosting_agreement", "capacity_lease"}
+CONTINGENT_KINDS = {"guarantee"}
+
+
+def normalize_kinds(con):
+    cur = con.execute(f"""UPDATE edges SET kind='lease' WHERE kind='order' AND review!='deleted'
+                           AND instrument IN ({",".join("?" * len(DC_LEASE_INSTRUMENTS))})""", tuple(DC_LEASE_INSTRUMENTS))
+    if cur.rowcount:
+        log.info("口径：%d 条数据中心容量租约由订单改记租赁", cur.rowcount)
+    con.commit()
+
+
 def counted(e):
     return e["tier"] in ("confirmed", "reported") and e["status"] != "cancelled" and not e["superseded_by"] and e["review"] not in ("deleted", "duplicate")
 
 
 def export(con):
+    normalize_kinds(con)
     dedupe(con)
     cluster_duplicates(con)
     apply_overrides(con)
@@ -74,7 +89,9 @@ def export(con):
             "pooled": bool(en["pooled"]),
             "stats": {"inflow_usd": {k: stats_in[eid][k] for k in KINDS}, "outflow_usd": {k: stats_out[eid][k] for k in KINDS},
                       "inflow_count": {k: cnt_in[eid][k] for k in KINDS}, "outflow_count": {k: cnt_out[eid][k] for k in KINDS},
-                      "inflow_total_usd": sum(stats_in[eid].values()), "outflow_total_usd": sum(stats_out[eid].values()),
+                      "inflow_total_usd": sum(v for k, v in stats_in[eid].items() if k not in CONTINGENT_KINDS),
+                      "outflow_total_usd": sum(v for k, v in stats_out[eid].items() if k not in CONTINGENT_KINDS),
+                      "contingent_usd": sum(v for k, v in list(stats_in[eid].items()) + list(stats_out[eid].items()) if k in CONTINGENT_KINDS),
                       "degree": deg, "candidates": cand_cnt[eid]}})
     snaps = [dict(r) for r in con.execute("SELECT entity_id, metric, period, value_usd, value_text, summary_zh, article_id, created_at FROM snapshots ORDER BY created_at DESC")]
 
@@ -109,9 +126,11 @@ def export(con):
         "news": news,
         "filings": filings,
         "stats": {"entities": len(out_ents), "edges": len([e for e in out_edges if not e.get("cancelled")]), "candidates": len(out_cands),
-                  "by_kind": by_kind, "total_usd": sum(v["usd"] for v in by_kind.values()),
+                  "by_kind": by_kind,
+                  "total_usd": sum(v["usd"] for k, v in by_kind.items() if k not in CONTINGENT_KINDS),      # 不含担保
+                  "contingent_usd": sum(v["usd"] for k, v in by_kind.items() if k in CONTINGENT_KINDS),    # 担保另列
                   "latest_announced": max((e["announced"] or "" for e in out_edges), default=None)},
-        "notes": {"zh": "总额只统计有一手来源（SEC 文件 / 公司公告）或媒体正文核实的交易，已取消或被取代的不计；机器从标题抽出的候选单独列出。每笔只计一次，供应链不抵消。仅作描述，不构成投资建议。"},
+        "notes": {"zh": "分项汇总，不相加称 AI 资本支出总额。只统计有一手来源（SEC 文件 / 公司公告）或两家独立原发媒体正文核实的交易（转载聚合站不计数，传闻不计入），已取消或被取代的不计；担保是或有承诺，单列不进总额；数据中心容量租约记租赁，GPU 云算力合同记订单；ATM 计划与循环授信按额度标注。机器从标题抽出的候选单独列出。每笔只计一次，供应链不抵消。仅作描述，不构成投资建议。"},
     }
     (SITE / "data" / "archive").mkdir(parents=True, exist_ok=True)
     blob = json.dumps(doc, ensure_ascii=False, separators=(",", ":"))
