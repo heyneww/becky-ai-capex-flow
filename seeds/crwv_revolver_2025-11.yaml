@@ -1,0 +1,17 @@
+# CoreWeave 循环授信 2025-11-12 增至 25 亿美元（替代 2025-05 增至 15 亿的 #329）。对账 v3 发现的缺口。
+deals:
+  - kind: debt
+    from: CRWV
+    to: LENDER_SYNDICATE
+    amount_usd: 2500000000
+    amount_text: revolving credit facility increased from $1.5 billion to $2.5 billion; maturity extended from May 2028 to November 2029
+    instrument: revolver
+    term: led by JPMorgan Chase Bank, Goldman Sachs, Morgan Stanley and MUFG; Citibank, Credit Agricole, Deutsche Bank, SMBC and Wells Fargo participating; undrawn facility
+    announced: "2025-11-12"
+    status: signed
+    title_zh: CoreWeave 循环信贷额度增至 25 亿美元，到期延至 2029 年 11 月
+    title_en: CoreWeave expands revolving credit facility to $2.5B, maturity extended to November 2029
+    summary_zh: CoreWeave 2025 年 11 月 12 日公告：循环信贷额度从 15 亿增至 25 亿美元，到期日由 2028 年 5 月延至 2029 年 11 月，由摩根大通、高盛、摩根士丹利、MUFG 牵头，花旗、法农、德银、三井住友、富国参与。替代 2025 年 5 月增至 15 亿那次（#329）。
+    sources:
+      - {url: "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Expands-Revolving-Credit-Facility-to-2-5-Billion-to-Support-Growth/default.aspx", title: "CoreWeave Expands Revolving Credit Facility to $2.5 Billion to Support Growth", publisher: "CoreWeave (press release)", date: "2025-11-12", tier: 2, quote: "increase its revolving credit facility from $1.5 billion to $2.5 billion ... extend the maturity date from May 2028 to November 2029"}
+      - {url: "https://www.businesswire.com/news/home/20251112647111/en/CoreWeave-Expands-Revolving-Credit-Facility-to-2.5-Billion-to-Support-Growth", title: "CoreWeave Expands Revolving Credit Facility to $2.5 Billion to Support Growth", publisher: "Business Wire", date: "2025-11-12", tier: 2}
