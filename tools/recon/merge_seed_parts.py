@@ -1,5 +1,5 @@
 """把 seeds/_part_*.yaml（子代理逐笔核实的分片）合并成一个正式种子文件，然后删除分片。
-用法：python3 tools/recon/merge_seed_parts.py seeds/backfill_orders_investments_2023-2025.yaml
+用法：python3 tools/recon/merge_seed_parts.py seeds/<目标>.yaml ["新文件的文件头说明"]
 已存在的目标文件会被保留并追加（按 kind|from|to|announced 去重）。分片里的 new_entities 需先手工加进 config/entities.yaml。"""
 import sys, glob, pathlib, yaml
 ROOT = pathlib.Path(__file__).resolve().parents[2]
@@ -25,6 +25,10 @@ for fp in parts:
         if key(d) in seen:
             print("dup, skip:", key(d)); continue
         seen.add(key(d)); deals.append(d)
+if out.exists():  # 保留目标文件自己的文件头注释
+    HEADER = "".join(l for l in out.read_text(encoding="utf-8").splitlines(True) if l.startswith("#")) or HEADER
+elif len(sys.argv) > 2:  # 新文件：第二个参数作文件头（可含 \n）
+    HEADER = "".join(f"# {l}\n" for l in sys.argv[2].split("\\n"))
 out.write_text(HEADER + yaml.safe_dump({"deals": deals}, allow_unicode=True, sort_keys=False, width=1000), encoding="utf-8")
 for fp in parts:
     pathlib.Path(fp).unlink()

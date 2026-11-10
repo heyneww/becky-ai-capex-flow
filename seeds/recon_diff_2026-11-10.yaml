@@ -1,0 +1,227 @@
+# 金额差异行核对（2026-11-10）：与 GL-AI-live 交叉比对后金额不一致或我方缺记的 2026 年交易，逐笔按本站来源标准重新核实。
+# 每笔至少一个一手来源（SEC 文件 tier 1、公司新闻稿 tier 2），否则两家独立原发媒体（tier 3）。verify_note 记录核实时的保留意见。
+deals:
+- kind: order
+  from: OPENAI
+  to: CEREBRAS
+  amount_usd: 20000000000
+  amount_text: 'more than $20 billion for 750 MW committed capacity (Cerebras'' own valuation in its S-1; includes pass-through data-center costs for the first 250 MW). Company-wide remaining performance obligations were $24.6B at 2025-12-31, ''a significant amount'' from the OpenAI agreement. Not included: OpenAI''s option on a further 1.25 GW (2 GW total) by end-2030'
+  instrument: compute_contract
+  term: Master Relationship Agreement dated 2025-12-24; committed capacity deployed in tranches 2026–2028 (250 MW per year per CNBC), each tranche for three or four years, extendable by OpenAI to five years; option capacity deployable through end-2030
+  capacity: 750 MW committed + option for 1.25 GW more (2 GW total)
+  announced: '2026-01-14'
+  status: signed
+  title_zh: OpenAI 向 Cerebras 采购 750 MW 推理算力：合同价值超 200 亿美元（Cerebras S-1；附权证与 10 亿美元贷款）
+  title_en: Cerebras S-1 values its 750 MW OpenAI compute agreement at more than $20B, with warrant and $1B working-capital loan
+  summary_zh: 2026 年 4 月 17 日 Cerebras 公开递交 S-1，首次由公司自己给出与 OpenAI 合同的金额：2026 年 1 月宣布的多年期协议价值超过 200 亿美元，OpenAI 承诺购买 750MW 推理算力，2026–2028 年分批交付，每批期限 3–4 年、可延至 5 年；OpenAI 另有再买 1.25GW（合计 2GW，2030 年底前部署）的选择权。配套条款：OpenAI 于 2026 年 1 月提供约 10 亿美元营运资金贷款（最迟 2032 年底到期，可用算力抵还），并在 2025 年 12 月获得可认购 33,445,026 股 Class N 股票的权证（行权价 0.00001 美元），只有买满 2GW 才全部归属。1 月 14 日宣布时媒体口径为「100 亿美元以上」，本条按 S-1 更正金额；合同本身并未在 4 月修订或扩容。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/2021728/000162828026025762/cerebras-sx1april2026.htm
+    title: Cerebras Systems Inc. – Form S-1 (filed 2026-04-17)
+    publisher: SEC EDGAR (Cerebras Systems Inc.)
+    date: '2026-04-17'
+    tier: 1
+    quote: In January 2026, we announced a multi-year deal with OpenAI valued at more than $20 billion dollars. OpenAI has agreed to deploy 750 megawatts
+  - url: https://www.sec.gov/Archives/edgar/data/2021728/000162828026035214/cerebras-424b4.htm
+    title: Cerebras Systems Inc. – Prospectus, Rule 424(b)(4) (IPO at $185.00 per share)
+    publisher: SEC EDGAR (Cerebras Systems Inc.)
+    date: '2026-05-14'
+    tier: 1
+    quote: was $24.6 billion as of December 31, 2025. A significant amount of the balance was attributable to the Company’s obligations pursuant to a master relationship agreement with OpenAI
+  - url: https://www.cnbc.com/2026/04/17/cerebras-new-ipo-ai-chips.html
+    title: AI chipmaker Cerebras files to go public after scrapping IPO plans last year
+    publisher: CNBC
+    date: '2026-04-17'
+    tier: 3
+    quote: The deal is valued at over $20 billion, Cerebras said.
+  verify_note: 'Status is ''signed'', not ''amended'': the S-1, both S-1/As and the 424B4 describe a single MRA dated 2025-12-24 with 750 MW committed, and a full-text search of the prospectus finds no amendment to it; the exhibit list carries only the original agreement and the January 2026 promissory note. The warrant (Dec 2025) and $1.0B loan (Jan 2026) were part of the original deal, not an April add-on. So the other tracker''s ''doubled in April'' is a re-valuation against January press figures (''over $10 billion'', sourced to people close to the company), not a contract change. ''announced'' is the S-1 public filing date, the first official statement of the >$20B value; The Information''s report (2026-04-16/17, paywalled, not opened) is not used as a source. amount_usd is the floor of ''more than $20 billion''; the exact OpenAI share of the $24.6B RPO is not disclosed. The 6% loan rate comes from CNBC only.'
+- kind: investment
+  from: PRIVATE_ROUND
+  to: CRUSOE
+  amount_usd: 3900000000
+  amount_text: anticipated $3.9 billion Series F (initial closing announced) at a $30.9 billion post-money valuation
+  instrument: primary
+  term: Series F primary equity; initial closing announced 2026-09-17, amount funded at the initial closing not disclosed
+  capacity: null
+  announced: '2026-09-17'
+  status: signed
+  title_zh: Crusoe 宣布 39 亿美元 F 轮首次交割，投后估值 309 亿美元
+  title_en: Crusoe announces initial closing of anticipated $3.9B Series F at $30.9B post-money valuation
+  summary_zh: 2026 年 9 月 17 日 Crusoe 发布新闻稿，宣布预计规模 39 亿美元的 F 轮完成首次交割，投后估值 309 亿美元；本轮超额认购，由 Atreides Management、Mubadala Capital、Valor Equity Partners 联合领投，Founders Fund、GIC、英伟达、卡塔尔投资局（QIA）、Radical Ventures、TPG 等参投。公司称平台合同总价值（TCV）超过 1400 亿美元、已签约容量 6GW 以上，资金用于自建 AI 工厂和扩张 Crusoe Cloud。本笔取代 9 月 3 日按彭博报道记录的「30 多亿美元、估值约 300 亿」。
+  sources:
+  - url: https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding
+    title: Crusoe Raises $3.9B Series F at a $30.9B Valuation for AI Infrastructure
+    publisher: Crusoe
+    date: '2026-09-17'
+    tier: 2
+    quote: today announced the initial closing of its anticipated $3.9 billion Series F funding round, at a $30.9 billion post-money valuation. The oversubscribed round was co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners
+  verify_note: 'Status ''signed'' rather than ''completed'': the release announces only the ''initial closing'' of an ''anticipated'' $3.9B round and does not say how much was funded at that closing or when the final closing occurs; no later release confirming a final close was found. $3.9B is the anticipated round total, not confirmed cash received. The GlobeNewswire copy of the release returned 403 and was not used. The supersedes key assumes the existing Bloomberg-based record is dated 2026-09-03 as described in the brief.'
+- kind: investment
+  from: FLUIDSTACK
+  to: WULF
+  amount_usd: 530000000
+  amount_text: 'approximately $530 million cash for TeraWulf''s 50.1% interest, in three installments: $250M within 14 days of signing (received July 2026), $150M on or before 2026-12-31, approximately $130M (subject to adjustments) on or before 2027-04-30'
+  instrument: acquisition
+  term: Membership Interest Purchase Agreement; sale effective at signing (5 or 6 July 2026); deferred consideration payable through 2027-04-30
+  capacity: 168 MW critical IT load (Abernathy, Texas campus)
+  announced: '2026-07-06'
+  status: completed
+  title_zh: Fluidstack 牵头以约 5.3 亿美元买下 TeraWulf 在 Abernathy 合资公司的全部 50.1% 股权
+  title_en: Fluidstack-led group buys TeraWulf's entire 50.1% stake in the Abernathy joint venture for about $530M
+  summary_zh: 2026 年 7 月 6 日 TeraWulf 在 8-K 中宣布，子公司 Big Country Wulf LLC 与 Fluidstack CS I Inc. 及其他买方签署股权购买协议，出售其在 FS CS I LLC（德州 Abernathy 168MW AI 数据中心合资公司）的全部 50.1% 权益，总对价约 5.3 亿美元现金，分三期支付：签约后 14 天内 2.5 亿（已于 7 月收到）、2026 年底前 1.5 亿、2027 年 4 月 30 日前约 1.3 亿（可调整）。TeraWulf 此前累计投入约 4.5 亿美元，三季度确认出售收益 9500 万美元；交易后项目由 Fluidstack 主导，TeraWulf 把资金转投自有园区（同日宣布与 Anthropic 的 Justified 园区 20 年租约）。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm
+    title: TeraWulf Inc. – Form 8-K, Item 8.01 (Abernathy Transaction)
+    publisher: SEC EDGAR (TeraWulf Inc.)
+    date: '2026-07-06'
+    tier: 1
+    quote: 'The aggregate consideration payable to the TeraWulf Member in the Transaction is approximately $530 million, payable in three installments: (i) $250 million within 14 days following execution of the Purchase Agreement, (ii) $150 million on or before December 31, 2026, and (iii) approximately $130 million, subject to certain adjustments, on or before April 30, 2027.'
+  - url: https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_ex99-1.htm
+    title: TeraWulf Announces Anthropic Lease at Justified Data Campus and Sale of Majority Interest in Abernathy Joint Venture to Fluidstack (8-K Exhibit 99.1)
+    publisher: TeraWulf (via SEC EDGAR)
+    date: '2026-07-06'
+    tier: 2
+    quote: TeraWulf will sell its entire 50.1% ownership interest in the Abernathy Joint Venture to an investor group led by Fluidstack, its joint venture partner
+  - url: https://www.sec.gov/Archives/edgar/data/1083301/000162828026071671/wulf-20260930.htm
+    title: TeraWulf Inc. – Form 10-Q for the quarter ended 2026-09-30
+    publisher: SEC EDGAR (TeraWulf Inc.)
+    date: '2026-11-06'
+    tier: 1
+    quote: 'for aggregate cash consideration of approximately $530.0 million. The sale was effective as of July 5, 2026. The consideration is payable in three installments: $250.0 million within 14 days following the effective date which was received in July 2026'
+  verify_note: 'Date: no TeraWulf filing supports 2026-07-01. The 8-K gives July 6, 2026 as both the announcement and the ''Closing Date''; the Q2 10-Q (filed 2026-08-05) says the agreement was entered into and effective July 6, 2026, while the Q3 10-Q (filed 2026-11-06) says July 5, 2026. ''announced'' is therefore set to 2026-07-06, with supersedes pointing at the existing amount-less 2026-07-01 record; drop that line and restore 07-01 if the ledger key must stay unchanged. Buyers are Fluidstack CS I Inc. ''and certain other purchasers'', and the split between them is not disclosed, so the full $530M is attributed to FLUIDSTACK. Status ''completed'' because ownership transferred at signing; $280M of consideration was still deferred at 2026-09-30 (carrying amount $272.8M). The Q3 10-Q words the third installment as due on the earlier of the campus commencing operations and a date in April 2027.'
+- kind: investment
+  from: SOFTBANK
+  to: OPENAI
+  amount_usd: 30000000000
+  amount_text: USD 30.0 billion (JPY 4,674.3 billion at 155.81) via SoftBank Vision Fund 2, three tranches of USD 10 billion; preferred shares at a $730B pre-money valuation
+  instrument: primary
+  term: Definitive agreement 2026-02-27 (U.S. time); tranches of $10B each executed 2026-04-01, 2026-07-01 and 2026-10-01 (Japan time); preferred shares auto-convert to common on IPO
+  capacity: null
+  announced: '2026-02-27'
+  status: completed
+  distinct: true
+  title_zh: 软银向 OpenAI 追加投资 300 亿美元（1100 亿美元轮锚定方，分三期，10 月付清）
+  title_en: SoftBank makes $30B follow-on investment in OpenAI's $110B round via Vision Fund 2 (three $10B tranches, completed 1 Oct 2026)
+  summary_zh: 2026 年 2 月 27 日软银集团公告与 OpenAI Group PBC 签署最终协议，通过愿景基金 2 期参与 OpenAI 本轮融资（投前估值 7300 亿美元），追加投资 300 亿美元，取得优先股（IPO 时自动转普通股）。款项分三期各 100 亿美元，已于 4 月 1 日、7 月 1 日、10 月 1 日（日本时间）逐期执行，10 月 1 日公告全部完成；完成后软银对 OpenAI 累计投资 646 亿美元、持股约 13%。前两期用 3 月 27 日签的 400 亿美元过桥贷款提款支付，第三期用外币优先票据发行所得支付，过桥贷款已全部还清并注销。本笔与 2025 年 3 月软银领投的 400 亿美元轮是两笔独立投资；与同轮亚马逊 500 亿、英伟达 300 亿并列为 1100 亿美元首次交割的三家锚定方。
+  sources:
+  - url: https://group.softbank/en/news/press/20260227
+    title: Follow-on Investments in OpenAI
+    publisher: SoftBank Group
+    date: '2026-02-27'
+    tier: 2
+    quote: to participate in OpenAI’s fundraising round, and to make follow-on investments of USD 30.0 billion
+  - url: https://group.softbank/en/news/press/20260401_0
+    title: Execution of Follow-on Investment (First Tranche) in OpenAI
+    publisher: SoftBank Group
+    date: '2026-04-01'
+    tier: 2
+    quote: it executed the follow-on investment (first tranche) of USD 10.0 billion
+  - url: https://group.softbank/en/news/press/20260701
+    title: Execution of Follow-on Investment (Second Tranche) in OpenAI
+    publisher: SoftBank Group
+    date: '2026-07-01'
+    tier: 2
+    quote: it executed the follow-on investment (second tranche) of USD 10.0 billion
+  - url: https://group.softbank/en/news/press/20261001
+    title: Execution of Follow-on Investment (Third Tranche) in OpenAI
+    publisher: SoftBank Group
+    date: '2026-10-01'
+    tier: 2
+    quote: SBG has now completed the USD 30.0 billion follow-on investments in OpenAI previously announced. As a result, SBG’s cumulative investment in OpenAI totals USD 64.6 billion, and its ownership interest is approximately 13%.
+  verify_note: SoftBank's releases are also its TSE timely disclosures (tagged IR) but were read on the company site, so tier 2 rather than tier 1. OpenAI's own 27 Feb post was not opened; OpenAI's 31 Mar post and CNBC both name SoftBank as an anchor investor ($30B per CNBC).
+- kind: investment
+  from: PRIVATE_ROUND
+  to: OPENAI
+  amount_usd: 12000000000
+  amount_text: 'about $12B incremental: round closed at $122B committed capital vs the $110B announced 27 Feb 2026 (Amazon up to $50B + Nvidia $30B + SoftBank $30B); includes over $3B from individual investors via bank channels; $852B post-money'
+  instrument: primary
+  term: Final close 2026-03-31; same round as the $110B first close at $730B pre-money
+  capacity: null
+  announced: '2026-03-31'
+  status: completed
+  distinct: true
+  title_zh: OpenAI 融资轮扩至 1220 亿美元收官，锚定方之外新增约 120 亿美元（投后 8520 亿）
+  title_en: OpenAI closes round at $122B committed capital and $852B post-money, about $12B beyond the $110B anchor commitments
+  summary_zh: 2026 年 3 月 31 日 OpenAI 宣布本轮融资收官，承诺资本共 1220 亿美元、投后估值 8520 亿美元，比 2 月 27 日公布的 1100 亿美元（亚马逊最高 500 亿、英伟达 300 亿、软银 300 亿）多出约 120 亿美元。CNBC 称新增的 120 亿来自更广泛的投资人：软银与 a16z、D. E. Shaw Ventures、MGX、TPG、T. Rowe Price 顾问账户共同领投，微软继续参与（金额未披露），另有 Altimeter、贝莱德、黑石、Coatue、富达、红杉、淡马锡、Thrive 等机构；首次通过银行渠道向个人投资者募集逾 30 亿美元。同时循环信贷额度扩至约 47 亿美元（未提款）。本笔只记新增部分，不与亚马逊、英伟达、软银三笔重复。
+  sources:
+  - url: https://openai.com/index/accelerating-the-next-phase-ai/
+    title: OpenAI raises $122 billion to accelerate the next phase of AI
+    publisher: OpenAI
+    date: '2026-03-31'
+    tier: 2
+    quote: Today, we closed our latest funding round with $122 billion in committed capital at a post money valuation of $852 billion.
+  - url: https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html
+    title: OpenAI closes record-breaking $122 billion funding round as anticipation builds for IPO
+    publisher: CNBC
+    date: '2026-03-31'
+    tier: 3
+    quote: The additional $12 billion of capital that OpenAI raised came from a broader pool of investors.
+  verify_note: 'The $12B is derived ($122B minus $110B) and confirmed in those words by CNBC; OpenAI''s post gives only the $122B total and ''over $3 billion from individual investors'' (CNBC: $3 billion), which sits inside the $12B. The figure is ''committed capital'', so not all of it was necessarily paid in at close; Microsoft''s share is undisclosed. No per-investor breakdown exists, hence the PRIVATE_ROUND bucket.'
+- kind: investment
+  from: PRIVATE_ROUND
+  to: MISTRAL
+  amount_usd: 3484000000
+  amount_text: EUR 3 billion Series D (about $3.48B at the 8 Sep 2026 ECB rate of 1.1614) at a post-money valuation of more than EUR 21 billion (about $24.4B); whole round, Samsung's own cheque undisclosed
+  instrument: primary
+  term: Series D; led by Samsung Electronics, co-led by Scaleup Europe Fund (managed by EQT) and PSG Equity
+  capacity: null
+  announced: '2026-09-08'
+  status: completed
+  distinct: true
+  title_zh: Mistral 完成 30 亿欧元 D 轮融资，三星电子领投（投后估值超 210 亿欧元）
+  title_en: Mistral raises EUR 3B Series D at more than EUR 21B post-money, led by Samsung Electronics with EQT's Scaleup Europe Fund and PSG Equity as co-leads
+  summary_zh: 2026 年 9 月 8 日 Mistral 宣布完成 30 亿欧元（按当日汇率约 34.8 亿美元）D 轮融资，投后估值超过 210 亿欧元，称是欧洲科技公司史上最大的一笔股权融资。三星电子领投，EQT 管理的 Scaleup Europe Fund 和老股东 PSG Equity 联合领投；新进投资人有 Advent、贝莱德旗下基金和卢森堡大公国，老股东 a16z、ASML、英伟达、Bpifrance、DST、General Catalyst、Lightspeed、Salesforce Ventures 等跟投。三星同日（韩法峰会期间）宣布与 Mistral 建立半导体战略合作，把 Mistral Large 等模型本地化部署到芯片设计与制造环节，并称取得战略股权，但未披露出资额，故整轮记为一笔。上一轮为 2025 年 9 月 ASML 领投的 17 亿欧元 C 轮（估值 117 亿欧元）。
+  sources:
+  - url: https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier
+    title: Mistral raises €3B to make sovereign, open-weight AI the technology frontier
+    publisher: Mistral AI
+    date: '2026-09-08'
+    tier: 2
+    quote: Mistral today announced that it has raised €3 billion in a Series D funding round at a post-money valuation of more than €21 billion
+  - url: https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure
+    title: Samsung and Mistral AI Announce Strategic Partnership for Intelligence-Driven Semiconductor Infrastructure
+    publisher: Samsung Electronics
+    date: '2026-09-09'
+    tier: 2
+    quote: Samsung has also led Mistral AI’s Series D funding round, securing a strategic equity stake to support long-term technology collaboration.
+  - url: https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/
+    title: Mistral raises €3B as sovereign AI becomes big business
+    publisher: TechCrunch
+    date: '2026-09-08'
+    tier: 3
+    quote: was led by Samsung Electronics, with EQT-managed Scaleup Europe Fund and existing investor PSG Equity joining as co-leads
+  verify_note: Neither Mistral's nor Samsung's release discloses Samsung's amount, so no separate SAMSUNG edge; pre-announcement press talk of roughly EUR 1B from Samsung (FT, July 2026) was seen only in search snippets and not opened. TechCrunch converts EUR 3B to 'about $3.58 billion', which is inconsistent with its own EUR 21B = $24.39B (rate 1.161); the ECB rate gives $3.484B. Samsung's newsroom post is dated 9 Sep (KST) for the 8 Sep Paris announcement.
+- kind: investment
+  from: PRIVATE_ROUND
+  to: MOONSHOT
+  amount_usd: 3500000000
+  amount_text: '$3.5B (Chinese reports: ''over $3.5B'', Series F) at a $35B post-money valuation ($31.5B pre-money); original target was $1B-$2B'
+  instrument: primary
+  term: Series F per Chinese media; closed early in late July 2026 after exceeding its target; followed by a pre-IPO (Series G) round at $50B pre-money
+  capacity: null
+  announced: '2026-07-29'
+  status: completed
+  confidence: 0.75
+  distinct: true
+  title_zh: 月之暗面完成约 35 亿美元融资，投后估值约 350 亿美元（彭博、财新报道，公司未确认）
+  title_en: Moonshot AI closes a roughly $3.5B round at about a $35B valuation (Bloomberg, Caixin; not confirmed by the company)
+  summary_zh: 彭博社 2026 年 7 月 29 日独家报道，月之暗面（Kimi）在刚关闭的一轮融资中募得 35 亿美元，估值达 350 亿美元，远超最初 10–20 亿美元的目标；国家人工智能产业投资基金（也是 DeepSeek 的股东）是领投方之一。《科创板日报》同日报道称 F 轮融资超 35 亿美元、投后估值 350 亿美元，因超募三倍多提前关闭，原定 8 月的 G 轮（Pre-IPO）已提前启动、投前估值 500 亿美元；财新 9 月的深度报道亦称 7 月底关闭了 35 亿美元一轮。公司未公开确认金额与估值，本轮其余投资人未披露；阿里、腾讯为老股东，但未见其参与本轮的报道。
+  sources:
+  - url: https://www.bloomberg.com/news/articles/2026-07-29/china-s-moonshot-ai-passes-funding-goal-to-hit-35-billion-value
+    title: Moonshot AI Surpasses Funding Goal to Hit $35 Billion Value
+    publisher: Bloomberg
+    date: '2026-07-29'
+    tier: 3
+    quote: Moonshot AI secured a $35 billion valuation after raising a larger-than-anticipated $3.5 billion in a just-closed round of financing
+  - url: https://www.caixinglobal.com/2026-09-11/in-depth-inside-the-50-billion-rise-of-moonshot-ai-102484028.html
+    title: 'In Depth: Inside the $50 Billion Rise of Moonshot AI'
+    publisher: Caixin Global
+    date: '2026-09-11'
+    tier: 3
+    quote: Following a $3.5 billion funding round that closed in late July, the developer of the Kimi large language model added $15 billion to its value in a single month.
+  - url: https://news.pedaily.cn/202607/566986.shtml
+    title: 月之暗面完成超35亿美元F轮融资
+    publisher: 投资界（转述《科创板日报》）
+    date: '2026-07-30'
+    tier: 3
+    quote: 据科创板日报，月之暗面Kimi已完成F轮融资，融资金额超35亿美元，投后估值涨至350亿美元。因超目标金额3倍多，本轮融资系提前关闭
+  verify_note: 'Media-sourced only: Bloomberg cites people familiar, Caixin states the late-July close as fact (paywalled beyond the lead; it gives $3.5B but not the $35B figure, only a +$15B step to $50B), and STAR Market Daily''s original could not be opened, only relays naming it (PEdaily, Jiemian, HK01). Moonshot has not confirmed the round; its only statement found was a denial of an IFR report about an August Hong Kong IPO filing. Marked completed because closing is reported by two original publishers; downgrade to rumored if the ledger requires company confirmation. The lead''s claim that Alibaba participated is NOT confirmed by any source opened (Alibaba appears only as an existing shareholder); the $31.5B pre-money figure comes from a 36Kr/IPO早知道 relay of Bloomberg. National AI fund as co-lead rests on Bloomberg alone.'
