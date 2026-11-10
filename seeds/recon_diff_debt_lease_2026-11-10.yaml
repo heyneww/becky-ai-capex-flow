@@ -1,0 +1,475 @@
+# 金额差异行核对·债务 / 租赁 / 担保（2026-11-10）：与 GL-AI-live 交叉比对后金额不一致或我方缺记的交易，逐笔按本站来源标准重新核实。
+# 每笔至少一个一手来源（SEC 文件 tier 1、公司新闻稿 tier 2）。verify_note 记录核实时的保留意见。
+deals:
+- kind: debt
+  from: AMZN
+  to: LENDER_SYNDICATE
+  amount_usd: 80000000000
+  amount_text: up to approximately $80.0 billion secured loan facility (a supplier financing arrangement for purchases of technology infrastructure assets); maximum is subject to variability based on the extent and timing of purchase orders and pricing terms; nothing borrowed yet (borrowing window opens Q1 2027)
+  instrument: credit_facility
+  term: borrowings at Amazon's discretion from Q1 2027 through Q3 2028; variable interest rates; each borrowing matures five years from its borrowing date; secured by a security interest in certain purchased assets
+  capacity: null
+  announced: '2026-10-30'
+  status: signed
+  title_zh: 亚马逊 10-Q 披露约 800 亿美元有担保贷款额度：2027Q1–2028Q3 可提款，用于采购技术基础设施资产
+  title_en: Amazon 10-Q discloses secured loan facility of up to approximately $80.0B for technology infrastructure purchases, drawable Q1 2027–Q3 2028
+  summary_zh: 亚马逊 2026 年三季度 10-Q（2026 年 10 月 30 日报备）在债务附注中披露，公司签有为采购技术基础设施资产提供融资的供应商融资安排，其中包括一项有担保贷款额度（Loan Facility）：公司可自行决定在 2027 年一季度至 2028 年三季度期间提款，上限约 800 亿美元（随采购订单的规模、时点和定价条款浮动），利率浮动，每笔借款自提款日起五年到期，并以部分所购资产作担保。提款窗口尚未开始，目前没有余额；文件未披露贷款方或供应商名称。提款后将计入长期债务。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm
+    title: Amazon.com, Inc. – Form 10-Q for the quarter ended September 30, 2026 (Note on Debt)
+    publisher: SEC EDGAR (Amazon.com, Inc.)
+    date: '2026-10-30'
+    tier: 1
+    quote: including a secured loan facility (the “Loan Facility”) providing for borrowings at our discretion, from Q1 2027 through Q3 2028 and subject to variability based on the extent and timing of purchase orders and pricing terms, of up to approximately $80.0 billion
+  - url: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm
+    title: Amazon.com, Inc. – Form 10-Q for the quarter ended September 30, 2026 (Note on Debt, continued)
+    publisher: SEC EDGAR (Amazon.com, Inc.)
+    date: '2026-10-30'
+    tier: 1
+    quote: which accrue interest at variable rates and mature five years from the date of each borrowing. We will grant a security interest in certain purchased assets in connection with the Loan Facility.
+  verify_note: Confirmed verbatim in the 10-Q debt note. EDGAR filing date is 2026-10-30 (accepted 2026-10-29 18:20 ET, signed October 29, 2026); 'announced' uses the EDGAR filing date. The 10-Q names no lender, arranger or supplier, and gives no signing date for the facility, so the counterparty is a placeholder and the facility may have been signed earlier in Q3/October. The Q2 2026 10-Q (filed 2026-07-31) was also searched and contains no mention of a Loan Facility or supplier financing arrangement, so the Q3 10-Q is the first SEC disclosure. 'Loan Facility' appears only in this one paragraph (three mentions); no drawn balance is stated and the borrowing window does not open until Q1 2027, so outstanding is zero by construction. The company frames it as a 'supplier financing arrangement' (vendor-linked financing for technology infrastructure purchases), not a bank syndicate – LENDER_SYNDICATE is an approximation. $80.0B is a ceiling that floats with purchase orders and pricing, not a
+    fixed commitment.
+- kind: lease
+  from: AMD
+  to: RIOT
+  amount_usd: 636000000
+  amount_text: '$636 million total contract revenue over the initial 10-year terms for 50 MW at Rockdale: approximately $311.0 million for the initial 25 MW (signed January 2026) plus $325 million for the 25 MW expansion AMD exercised in April 2026. Excludes the three five-year extension options (which would take the initial 25 MW alone to approximately $1.0 billion) and AMD''s remaining options on a further 150 MW'
+  instrument: datacenter_lease
+  term: Data Center Lease and Services Agreement; initial term 10 years with three five-year extension options, for both the initial 25 MW (full delivery May 2026) and the 25 MW expansion (10 MW November 2026, 15 MW May 2027)
+  capacity: 50 MW critical IT load contracted (25 MW initial + 25 MW expansion); options for a further 150 MW (50 MW remaining on the initial expansion option + an additional 100 MW option that replaced the prior ROFR), up to 200 MW total
+  announced: '2026-01-16'
+  status: signed
+  title_zh: AMD 租用 Riot 得州 Rockdale 数据中心 50MW：首期 25MW 约 3.11 亿美元，4 月行权扩容 25MW 再加 3.25 亿美元，合计 6.36 亿美元
+  title_en: AMD leases 50 MW at Riot's Rockdale site – $311M initial 25 MW lease (Jan 2026) plus $325M 25 MW expansion (Apr 2026), $636M total contract revenue
+  summary_zh: 2026 年 1 月 16 日 Riot Platforms 宣布与 AMD 签署 Rockdale 园区数据中心租赁及服务协议：首期 25MW 关键 IT 负载，初始租期 10 年，预计合同收入约 3.11 亿美元；另有三个五年续租选择权，全部行使后首期合同收入约 10 亿美元。2026 年 4 月 AMD 行使 25MW 扩容选择权，合同容量增至 50MW；Riot 一季度业绩材料（4 月 30 日）列出扩容部分初始 10 年合同收入 3.25 亿美元，两部分合计 6.36 亿美元。AMD 仍保有再扩 150MW 的选择权（上限 200MW）。金额均为初始 10 年租期口径，不含续租。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1167419/000110465926004551/riot-20260116xex99d1.htm
+    title: Riot Announces Fee Simple Acquisition of Land and First Data Center Lease with AMD at the Rockdale Site (Exhibit 99.1 to Form 8-K)
+    publisher: SEC EDGAR (Riot Platforms, Inc.)
+    date: '2026-01-16'
+    tier: 1
+    quote: The Data Center Lease carries an initial term of 10 years and is expected to generate approximately $311.0 million in contract revenue. Also included are three five-year extension options which, if fully exercised, would bring the total expected contract revenue to approximately $1.0 billion.
+  - url: https://www.sec.gov/Archives/edgar/data/1167419/000110465926052943/riot-20260430xex99d2.htm
+    title: Riot Platforms Q1 2026 Earnings presentation, April 30, 2026 (Exhibit 99.2 to Form 8-K)
+    publisher: SEC EDGAR (Riot Platforms, Inc.)
+    date: '2026-04-30'
+    tier: 1
+    quote: Total Contract Revenue 2 $311 million $325 million $636 million Total Estimated NOI 3 $250 million $260 million $510 million
+  - url: https://www.sec.gov/Archives/edgar/data/1167419/000110465926052943/riot-20260430xex99d2.htm
+    title: Riot Platforms Q1 2026 Earnings presentation, April 30, 2026 (Exhibit 99.2 to Form 8-K) – expansion option slide
+    publisher: SEC EDGAR (Riot Platforms, Inc.)
+    date: '2026-04-30'
+    tier: 1
+    quote: 25 MW expansion option exercised, bringing total contracted critical IT capacity to 50 MW with 50 MW of additional capacity remaining on the initial option • Additional 100 MW option (replaces prior AMD ROFR), with total potential capacity of 200 MW for AMD
+  verify_note: Both figures confirmed in Riot's own SEC exhibits. $636M is the sum Riot itself prints in the "TOTAL LEASE" column of the Q1 2026 deck (25 MW initial + 25 MW expansion); footnote 2 of that slide defines it as "Contract value for deployment over the initial 10-year term", so it excludes extension options. The deal is one lease dated 2026-01-16 with an option exercise in April 2026 (the deck says "April 2026 AMD exercised expansion" without a day); status is set to 'amended' for that reason – change to 'signed' if the ledger prefers to keep the original event status. If the ledger wants the January event alone, the amount is $311.0M / 25 MW. The April deck's table text was read from the HTML text layer of a slide exhibit, so column alignment (initial / expansion / total) is inferred from the order 311 / 325 / 636 and the "25 MW INITIAL LEASE 25 MW EXPANSION TOTAL LEASE" labels. The January press release said the option was 75 MW expansion + 100 MW ROFR; the April deck restates
+    the ROFR as an option.
+- kind: lease
+  from: AMD
+  to: CORZ
+  amount_usd: 14000000000
+  amount_text: more than $14 billion of potential base contracted revenue for approximately 530 MW across five sites under 15-year leases; the figure covers both the 377 MW leased directly by AMD and the 152 MW leased by an unnamed neocloud with AMD credit support. Excludes the three five-year extension options and AMD's non-binding reservation right on a further 1,925 MW
+  instrument: datacenter_lease
+  term: leases executed 2026-07-27; each lease is for a fifteen-year term with three five-year options; commencement in phases beginning in 2027; AMD reservation right on additional capacity runs through December 28, 2028
+  capacity: approximately 530 MW critical IT capacity across five sites – 377 MW leased by AMD (Pecos TX, Muskogee OK, Hunt County TX) + 152 MW leased by an unnamed neocloud (Auburn AL, Dalton Phase 3 GA) with AMD Credit Support Agreements; reservation right for a further 1,925 MW (about 2.5 GW total)
+  announced: '2026-07-28'
+  status: signed
+  title_zh: AMD 与 Core Scientific 签约 530MW 数据中心租约：15 年期，基础合同收入潜在超 140 亿美元（其中 152MW 由某 neocloud 承租、AMD 提供信用支持）
+  title_en: AMD and Core Scientific sign 15-year leases for ~530 MW (377 MW AMD + 152 MW neocloud with AMD credit support), more than $14B potential base contracted revenue
+  summary_zh: 2026 年 7 月 28 日 Core Scientific 与 AMD 宣布合作：7 月 27 日签署的租约合计约 530MW 关键 IT 容量、分布在五个园区，其中 AMD 直接承租 377MW（得州 Pecos、俄克拉何马州 Muskogee、得州 Hunt County），一家未具名的 neocloud 承租 152MW（阿拉巴马州 Auburn、佐治亚州 Dalton 三期），AMD 就后者逐份签署信用支持协议。每份租约期限 15 年、附三个五年续租选择权，2027 年起分批起租。Core Scientific 同日二季度业绩稿称，这约 530MW 对应「超过 140 亿美元的潜在基础合同收入」，该口径同时覆盖 AMD 直租与 neocloud 两部分。AMD 另有在 2028 年 12 月 28 日前再租 1,925MW 的容量预留权（不具约束力），并获得最多 3000 万股、行权价 23.47 美元的认股权证（按每 MW 12,222 股归属，签约时已归属约 650 万股）。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm
+    title: Core Scientific, Inc. – Form 8-K (Items 3.02, 7.01; AMD Leases, Neocloud Leases, Credit Support Agreements and AMD Warrant)
+    publisher: SEC EDGAR (Core Scientific, Inc.)
+    date: '2026-07-28'
+    tier: 1
+    quote: for an aggregate of 377 MW of critical IT capacity at the Company’s Pecos, TX; Muskogee, OK; and Hunt County, TX sites; and Lease Agreements (the “Neocloud Leases,” and collectively with the AMD Leases, the “Leases”) with a Neocloud (“Neocloud”), for 152 MW of critical IT capacity
+  - url: https://www.sec.gov/Archives/edgar/data/1839341/000183934126000013/q22026corescientificinc-ea.htm
+    title: Core Scientific Announces Second Quarter 2026 Results (Exhibit 99.1 to Form 8-K)
+    publisher: SEC EDGAR (Core Scientific, Inc.)
+    date: '2026-07-28'
+    tier: 1
+    quote: Announced a partnership with AMD with the potential to support up to 2.5 GW of leasable capacity, anchored by 15-year agreements for approximately 530 MW across five sites and more than $14 billion of potential base contracted revenue.
+  - url: https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/amdpr.htm
+    title: Core Scientific and AMD Announce Infrastructure Partnership (joint press release, Exhibit 99.1 to Form 8-K)
+    publisher: SEC EDGAR (Core Scientific, Inc.)
+    date: '2026-07-28'
+    tier: 1
+    quote: AMD secures more than 500 megawatts of U.S. capacity to support end customer deployments beginning in 2027, with the ability to expand up to 2.5 gigawatts
+  - url: https://www.sec.gov/Archives/edgar/data/1839341/000183934126000030/core-20260930.htm
+    title: Core Scientific, Inc. – Form 10-Q for the quarter ended September 30, 2026 (Note 6 – Leases)
+    publisher: SEC EDGAR (Core Scientific, Inc.)
+    date: '2026-11-05'
+    tier: 1
+    quote: Each AMD Lease is for a fifteen-year term with three five-year options. As of September 30, 2026, none of the AMD Leases had commenced, no related lease revenue had been recognized
+  verify_note: 'Real announcement date is 2026-07-28 (leases executed 2026-07-27; 8-K accepted 2026-07-28 07:00 ET), not 2026-11-05 – edge #451 should be re-dated. The $14B wording is "more than $14 billion of potential base contracted revenue" and appears in the Q2 2026 earnings release of the same day, not in the joint AMD press release (which gives no dollar figure) and not in the Q3 10-Q (full-text search of the 10-Q finds no $14 billion figure). The sentence ties the $14B to "approximately 530 MW across five sites", i.e. both the 377 MW AMD leases and the 152 MW neocloud leases; no split by tenant is disclosed, so AMD''s direct share is roughly 377/529 of the total if rates are similar (not stated). Recording the whole amount as AMD -> CORZ therefore overstates AMD''s direct lease obligation: for the 152 MW AMD is credit support provider with "the right, but not the obligation, to cure certain defaults", not the tenant, and the neocloud is unnamed. "Potential" and "base" are the company''s
+    qualifiers (base rent over the initial 15-year term presumably; definition not given in the documents opened). The 10-Q filing date 2026-11-05 is taken from the EDGAR 8-K list for the same-day earnings 8-K; the 10-Q''s own index page was not opened. The investor deck (Exhibit 99.2) is image-only and was not readable.'
+- kind: debt
+  from: GOOGL
+  to: BONDHOLDERS
+  amount_usd: 3890000000
+  amount_text: 'A$5.5 billion (about US$3.89 billion at Reuters'' pricing-day rate of $1 = A$1.4136; the ECB cross rate for 2026-08-19, EUR/USD 1.1605 and EUR/AUD 1.6401, gives US$3.892 billion) in six tranches: A$500M 5.20% due 2029, A$750M floating due 2029, A$750M 5.50% due 2031, A$1.5B floating due 2031, A$1B 6.25% due 2036, A$1B 6.90% due 2046'
+  instrument: bond
+  term: Australian dollar-denominated senior unsecured notes (Kangaroo bond), unregistered offering; 3-, 5-, 10- and 20-year maturities (2029–2046), fixed coupons 5.20%–6.90% plus two floating-rate tranches; priced 2026-08-19, closed 2026-08-27
+  capacity: null
+  announced: '2026-08-19'
+  status: completed
+  distinct: true
+  title_zh: Alphabet 首发澳元袋鼠债 55 亿澳元（约 38.9 亿美元）：六档、3–20 年期，澳大利亚史上最大公司债
+  title_en: Alphabet prices inaugural A$5.5B (≈US$3.89B) Kangaroo bond in six tranches, Australia's largest corporate bond deal
+  summary_zh: 2026 年 8 月 19 日 Alphabet 首次在澳大利亚发行澳元计价优先无担保票据（袋鼠债），规模 55 亿澳元，按路透当日汇率约合 38.9 亿美元，8 月 27 日完成交割。发行分六档、3/5/10/20 年四个期限：2029 年到期 5 亿澳元固息 5.20% 与 7.5 亿澳元浮息，2031 年到期 7.5 亿澳元固息 5.50% 与 15 亿澳元浮息，2036 年到期 10 亿澳元 6.25%，2046 年到期 10 亿澳元 6.90%；认购订单超过 180 亿澳元。Alphabet 三季度 10-Q 确认当季发行了 33 亿澳元固息和 23 亿澳元浮息票据，募集资金用于一般公司用途。这是与同月 250 亿美元美元债相互独立的一笔发行。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm
+    title: Alphabet Inc. – Form 10-Q for the quarter ended September 30, 2026 (Note on Debt)
+    publisher: SEC EDGAR (Alphabet Inc.)
+    date: '2026-10-29'
+    tier: 1
+    quote: A$3.3 billion Australian dollar-denominated fixed-rate notes and A$2.3 billion Australian dollar-denominated floating-rate notes with a weighted-average coupon rate of 5.82% and a weighted-average maturity of eight years.
+  - url: https://srnnews.com/alphabet-raises-3-9-billion-in-inaugural-australian-dollar-bond/
+    title: Alphabet raises $3.9 billion in inaugural Australian dollar bond
+    publisher: Reuters (via SRN News)
+    date: '2026-08-19'
+    tier: 3
+    quote: Alphabet has raised A$5.5 billion ($3.89 billion) via its inaugural Australian dollar debt issuance, according to a term sheet seen by Reuters, adding to the hectic pace of fundraising by global technology companies.
+  - url: https://www.clearygottlieb.com/news-and-insights/news-listing/alphabet-in-inaugural-a-5-5-billion-aud-denominated-bonds-offering
+    title: Alphabet in Inaugural A$5.5 Billion AUD-Denominated Bonds Offering
+    publisher: Cleary Gottlieb (issuer's counsel)
+    date: '2026-08-27'
+    tier: 3
+    quote: A$500 million in 5.20% senior notes due 2029, A$750 million in floating rate senior notes due 2029, A$750 million in 5.50% senior notes due 2031, A$1.5 billion in floating rate senior notes due 2031, A$1 billion in 6.25% senior notes due 2036, and A$1 billion in 6.90% senior notes due 2046.
+  - url: https://www.bloomberg.com/news/articles/2026-08-21/what-are-kangaroo-bonds-why-alphabet-is-borrowing-billions-in-australia
+    title: How Kangaroo Bonds Are a New Front in AI Debt Boom
+    publisher: Bloomberg
+    date: '2026-08-21'
+    tier: 3
+    quote: The technology giant raised A$5.5 billion ($3.9 billion) by selling so-called Kangaroo bonds.
+  verify_note: 'Confirmed. No SEC offering document exists for this deal: Alphabet''s EDGAR list shows no 424B/FWP between 2026-08-07 and mid-September, and Cleary Gottlieb calls it an "unregistered offering" – the tier-1 confirmation is the Q3 10-Q debt note instead, which gives A$3.3B fixed + A$2.3B floating (rounded; the tranche list sums to A$3.25B fixed + A$2.25B floating = A$5.5B) and a 9/30 carrying value of $3,861 million for "2026 Australian dollar notes" maturing 2029–2046 with coupons 5.20%–6.90%. The 10-Q does not state the pricing date; 2026-08-19 comes from the Reuters dateline (term sheet seen by Reuters) and the closing date 2026-08-27 from Cleary Gottlieb. The wtvbam.com relay in the lead returned HTTP 403; the identical Reuters text was read on srnnews.com. Cleary Gottlieb and Mallesons (also opened, same A$5.5B / six tranches / >A$18B demand) are law-firm deal notes, tiered 3 here rather than 2 because they are not issuer press releases. Only the lead paragraphs of the
+    Bloomberg explainer were visible. USD amount uses Reuters'' rate; it is a conversion, not a figure Alphabet reported.'
+- kind: debt
+  from: AMZN
+  to: BONDHOLDERS
+  amount_usd: 3609000000
+  amount_text: 'CHF 2.82 billion (about US$3.61 billion at the ECB cross rate for 2026-05-12: EUR/USD 1.1738 and EUR/CHF 0.9172, i.e. US$1.2798 per franc; Bloomberg rounded to $3.6 billion) in six tranches: CHF 900M 0.8350% due 2029, CHF 585M 1.200% due 2032, CHF 475M 1.4475% due 2035, CHF 390M 1.6750% due 2038, CHF 245M 1.9389% due 2044, CHF 225M 2.0825% due 2051'
+  instrument: bond
+  term: Swiss franc-denominated senior unsecured notes issued in Switzerland; six tranches of 3, 6, 9, 12, 18 and 25 years (2029–2051), coupons 0.8350%–2.0825%, interest payable annually; priced 2026-05-12, issued 2026-05-28
+  capacity: null
+  announced: '2026-05-12'
+  status: completed
+  distinct: true
+  title_zh: 亚马逊首发瑞郎债 28.2 亿瑞郎（约 36 亿美元）：六档、3–25 年期，创瑞郎公司债档数纪录
+  title_en: Amazon sells debut CHF 2.82B (≈US$3.6B) Swiss franc bond in a record six tranches
+  summary_zh: 2026 年 5 月 12 日亚马逊首次发行瑞士法郎债券，规模 28.2 亿瑞郎，按当日欧洲央行交叉汇率约合 36.1 亿美元，5 月 28 日完成发行。债券分六档，期限 3、6、9、12、18、25 年（2029–2051 年到期），票面利率 0.8350%–2.0825%，为瑞郎公司债档数最多的一笔；主承销为法巴、德银和摩根大通，簿记期间多次上调规模。亚马逊二季度 10-Q 的长期债务表列示「2026 年 5 月瑞郎计价票据 28 亿瑞郎」，6 月 30 日账面 34.87 亿美元。与 3 月的美元债、欧元债以及 6 月的加元债均为各自独立的发行。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm
+    title: Amazon.com, Inc. – Form 10-Q for the quarter ended June 30, 2026 (long-term debt table)
+    publisher: SEC EDGAR (Amazon.com, Inc.)
+    date: '2026-07-31'
+    tier: 1
+    quote: May 2026 Swiss franc-denominated Notes issuance of CHF2.8 billion
+  - url: https://www.swissinfo.ch/eng/amazon-sells-swiss-franc-bond-offering-in-record-six-parts/91400508
+    title: Amazon Sells Swiss Franc Bond Offering in Record Six Parts
+    publisher: Bloomberg (via SWI swissinfo.ch)
+    date: '2026-05-12'
+    tier: 3
+    quote: The company raised 2.82 billion Swiss francs ($3.6 billion) from debt due in three, six, nine, 12, 18 and 25-years, according to a person familiar with the matter who asked not to be identified.
+  - url: https://www.finews.ch/news/finanzplatz/72217-amazon-anleihendebuet-frankenanleihen-kapitalmarkt-frankenobligationen-ecommerce-alphabet-bnp-paribas-damien-aellen-mag7-hyperscaler
+    title: 'Amazon: Paket der Extraklasse für den Schweizer Anleihenmarkt'
+    publisher: finews.ch
+    date: '2026-05-13'
+    tier: 3
+    quote: Die Transaktion umfasst sechs Anleihentranchen (3, 6, 9, 12, 18 und 25 Jahre Laufzeit) mit einem Gesamtbetrag von 2,82 Milliarden Franken. Als Federführer fungierten BNP Paribas, Deutsche Bank und J.P. Morgan.
+  - url: https://www.homburger.ch/en/news/homburger-advises-amazon-on-its-issuance-of-chf-2-82-bn-in-inaugural-six-tranche-chf-offering
+    title: Homburger advises Amazon on its issuance of CHF 2.82 bn in inaugural six-tranche CHF offering
+    publisher: Homburger (issuer's Swiss counsel)
+    date: '2026-05-28'
+    tier: 3
+    quote: On May 28, 2026, Amazon.com, Inc. issued bonds in Switzerland in the aggregate amount of CHF 2.82 bn. The CHF offering was comprised of CHF 900 m aggregate principal amount of 0.8350% notes due 2029, CHF 585 m aggregate principal amount of 1.200% notes due 2032
+  verify_note: Confirmed with a tier-1 source plus two independent original reports (Bloomberg and finews.ch, which interviewed BNP Paribas' franc syndicate head), so no confidence haircut is applied. The bloomberg.com lead URL itself could not be opened (bot check, HTTP 403); the Bloomberg text was read in full on swissinfo.ch, whose version is the updated "Sells ... (final pricing)" story, not the earlier "Kicks Off" headline. No SEC offering document exists (no 424B5/FWP on Amazon's EDGAR list between March and June 2026); the 10-Q table rounds to "CHF2.8 billion", maturities 2029–2051, coupons 0.84%–2.08%, carrying value $3,487 million at 2026-06-30 and $3,375 million at 2026-09-30 – the exact CHF 2.82 bn and the tranche list come from Homburger and the press. Pricing date 2026-05-12 rests on the Bloomberg publication date and finews ("Am Dienstag", article dated Wednesday 13 May 2026); issue/settlement date 2026-05-28 is from Homburger. The Homburger page shows no publication date –
+    the date field is the issue date it states. USD amount is a conversion at the ECB cross rate (2,820M x 1.2798 = US$3,609M), not a figure Amazon reported.
+- kind: lease
+  from: FLUIDSTACK
+  to: WULF
+  amount_usd: 6700000000
+  amount_text: $6.7 billion in contracted revenue over the initial 10-year terms for CB-3, CB-4 and CB-5 (about $3.7B for the two initial leases announced 2025-08-14 plus the CB-5 lease announced 2025-08-18, on the same economic terms); up to ~$16 billion if both five-year extension options are exercised
+  instrument: datacenter_lease
+  term: Three 10-year HPC colocation leases (modified gross, annual escalators), each with two five-year extension options. CB-3/CB-4 signed 2025-08-14 (>200 MW, ~$3.7B; phase one ~40 MW in 1H 2026, full 200+ MW by year-end 2026); Fluidstack exercised its option on CB-5 on 2025-08-18 (160 MW, operations from 2H 2026). Google backstops ~$3.2B of Fluidstack lease obligations ($1.8B + $1.4B) in support of project debt and received warrants for approximately 41 million plus 32.5 million WULF shares (~14% pro forma in total)
+  capacity: ~360 MW critical IT load (200+ MW in CB-3/CB-4, ~250 MW gross; plus 160 MW in CB-5)
+  announced: '2025-08-14'
+  status: signed
+  title_zh: Fluidstack 租用 TeraWulf Lake Mariner 园区约 360 MW：10 年合同收入 67 亿美元（含 CB-5 扩容，谷歌兜底约 32 亿美元）
+  title_en: 'Fluidstack leases ~360 MW at TeraWulf Lake Mariner: $6.7B contracted revenue over 10 years after CB-5 expansion, Google backstop ~$3.2B'
+  summary_zh: 2025 年 8 月 14 日 TeraWulf 宣布与 Fluidstack 签两份 10 年期 HPC 托管协议，在纽约州 Lake Mariner 园区交付 200 MW 以上关键 IT 负载，初始期合同收入约 37 亿美元。8 月 18 日 Fluidstack 行使选择权加租 CB-5（160 MW，经济条款相同），总签约负载升至约 360 MW，合同收入升至 67 亿美元；两次五年续期全部行使可达约 160 亿美元。谷歌对 Fluidstack 租约义务的兜底由 18 亿美元增加 14 亿美元至约 32 亿美元，并获认股权证，对 TeraWulf 的备考持股升至约 14%。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1083301/000110465925078084/tm2523008d2_ex99-1.htm
+    title: TeraWulf Signs 200+ MW, 10-Year AI Hosting Agreements with Fluidstack (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (TeraWulf Inc.)
+    date: '2025-08-14'
+    tier: 1
+    quote: The agreements represent approximately $3.7 billion in contracted revenue over the initial 10-year terms and include two five-year extension options which, if exercised, would bring the total contract revenue to approximately $8.7 billion.
+  - url: https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm
+    title: TeraWulf Announces Fluidstack Expansion with 160 MW CB-5 Lease at Lake Mariner (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (TeraWulf Inc.)
+    date: '2025-08-18'
+    tier: 1
+    quote: Represents $6.7 Billion in Contracted Revenue, with Potential to Reach $16 Billion with Lease Extensions Google Increases Backstop to $3.2 Billion and Stake in TeraWulf to 14%
+  - url: https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm
+    title: TeraWulf Announces Fluidstack Expansion with 160 MW CB-5 Lease at Lake Mariner (8-K Exhibit 99.1) – backstop wording
+    publisher: SEC EDGAR (TeraWulf Inc.)
+    date: '2025-08-18'
+    tier: 1
+    quote: Google will provide an incremental backstop of $1.4 billion in support of project-related debt financing and will receive warrants to acquire 32.5 million shares of TeraWulf common stock. With this incremental commitment, Google’s total backstop increases to approximately $3.2 billion
+  verify_note: 'Both releases opened on EDGAR. The $6.7B total appears only in the 2025-08-18 headline ("Represents $6.7 Billion in Contracted Revenue"); the body does not state the CB-5 increment as a dollar figure, so ~$3.0B for CB-5 is derived ($6.7B minus ~$3.7B), not quoted. The August 18 body says "approximately 360 MW"; the headline says "Over 360 MW". The $1.8B backstop on 2025-08-14 and the $1.4B increment on 2025-08-18 are quoted; the release rounds the sum to "approximately $3.2 billion". Not a new edge: this supersedes the amount on existing edge #137 (which carried only the initial ~$3.7B). Later Lake Mariner changes (if any) were not researched.'
+- kind: lease
+  from: FLUIDSTACK
+  to: WULF
+  amount_usd: 9500000000
+  amount_text: approximately $9.5 billion in contracted revenue to the TeraWulf–Fluidstack joint venture over a 25-year hosting commitment (100% of JV revenue, not TeraWulf's 51% share; term may be shortened to 20 or 15 years under contractual options)
+  instrument: datacenter_lease
+  term: 25-year lease (modified gross, annual escalators) with the Abernathy, Texas joint venture; lease term may be shortened to 20 years or 15 years pursuant to certain contractual options; delivery expected 2H 2026. TeraWulf held 51% of the JV at announcement; JV is project-financed, with Google backing ~$1.3B of Fluidstack's lease obligations
+  capacity: 168 MW critical IT load (240 MW gross)
+  announced: '2025-10-28'
+  status: signed
+  distinct: true
+  title_zh: Fluidstack 租用得州 Abernathy 合资园区 168 MW：25 年合同收入约 95 亿美元（收入归合资公司；TeraWulf 已于 2026 年 7 月出售所持股权）
+  title_en: Fluidstack signs 25-year, ~$9.5B lease with TeraWulf-majority joint venture for 168 MW at Abernathy, Texas
+  summary_zh: 2025 年 10 月 28 日 TeraWulf 宣布与 Fluidstack 成立合资公司，在得克萨斯州 Abernathy 园区开发 168 MW 关键 IT 负载（毛容量 240 MW），预计 2026 年下半年交付。25 年托管承诺对应合资公司约 95 亿美元合同收入，TeraWulf 持股 51%；租期可按合同选择权缩短为 20 年或 15 年。合资公司采用项目融资，谷歌为 Fluidstack 约 13 亿美元的长期租约义务提供支持。这 95 亿美元是合资公司层面的全部收入，不是 TeraWulf 的权益份额。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm
+    title: TeraWulf Expands Strategic Partnership with Fluidstack Through New 168 MW AI Compute Joint Venture (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (TeraWulf Inc.)
+    date: '2025-10-28'
+    tier: 1
+    quote: The 25-year hosting commitment represents approximately $9.5 billion in contracted revenue to the joint venture.1 TeraWulf will hold a majority stake of 51% in the joint venture.
+  - url: https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm
+    title: TeraWulf Expands Strategic Partnership with Fluidstack Through New 168 MW AI Compute Joint Venture (8-K Exhibit 99.1) – footnote and structure
+    publisher: SEC EDGAR (TeraWulf Inc.)
+    date: '2025-10-28'
+    tier: 1
+    quote: 1 Lease term may be shortened to 20 years or 15 years pursuant to certain contractual options.
+  verify_note: The $9.5B is explicitly "contracted revenue to the joint venture" (100% basis); TeraWulf's economic share at announcement was 51%, so its attributable share was roughly $4.8B (derived, not stated). The figure assumes the full 25-year term; footnote 1 allows the term to be shortened to 20 or 15 years, so the firm minimum is lower and not disclosed. The release says "majority stake of 51%"; the ledger's later entry for TeraWulf's sale of its JV stake (July 2026) uses 50.1% – that sale is already in the ledger and was not re-researched here, so the 51% vs 50.1% difference is unreconciled. The end customer is described only as "a global hyperscale AI platform developing frontier-scale foundation models"; it is not named in this release. The lessor is the JV, recorded under WULF as majority owner at signing.
+- kind: guarantee
+  from: GOOGL
+  to: WULF
+  amount_usd: 1300000000
+  amount_text: approximately $1.3 billion of Fluidstack's long-term lease obligations at the Abernathy, Texas joint venture, backed by Google in support of project-related debt financing
+  instrument: lease_guarantee
+  term: Google backs ~$1.3B of Fluidstack's long-term lease obligations under the 25-year, 168 MW Abernathy JV lease, to support project-level debt; no TeraWulf equity securities or warrants were issued to Google in connection with this transaction (unlike Lake Mariner)
+  capacity: 168 MW critical IT load (240 MW gross)
+  announced: '2025-10-28'
+  status: signed
+  distinct: true
+  title_zh: 谷歌为 Fluidstack 在 TeraWulf Abernathy 合资园区的租约义务兜底约 13 亿美元
+  title_en: Google backstops ~$1.3B of Fluidstack lease obligations at the TeraWulf Abernathy joint venture
+  summary_zh: 2025 年 10 月 28 日 TeraWulf 披露，得州 Abernathy 合资项目采用项目融资，谷歌为 Fluidstack 约 13 亿美元的长期租约义务提供支持，用于增强项目债务的信用质量。与 Lake Mariner 不同，此次交易没有向谷歌发行 TeraWulf 股权或认股权证。兜底金额只覆盖约 95 亿美元合同收入中的一部分。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm
+    title: TeraWulf Expands Strategic Partnership with Fluidstack Through New 168 MW AI Compute Joint Venture (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (TeraWulf Inc.)
+    date: '2025-10-28'
+    tier: 1
+    quote: The joint venture will be project-financed, with Google backing approximately $1.3 billion of Fluidstack’s long-term lease obligations to support project-related debt financing, materially enhancing credit quality for project debt.
+  - url: https://www.sec.gov/Archives/edgar/data/1083301/000110465925102858/tm2529509d1_ex99-1.htm
+    title: TeraWulf Expands Strategic Partnership with Fluidstack Through New 168 MW AI Compute Joint Venture (8-K Exhibit 99.1) – headline and warrants
+    publisher: SEC EDGAR (TeraWulf Inc.)
+    date: '2025-10-28'
+    tier: 1
+    quote: No TeraWulf equity securities or warrants were issued in connection with this transaction.
+  verify_note: The headline says "Google backstops $1.3 billion"; the body says "backing approximately $1.3 billion" and the bullet says "$1.3 billion long-term lease backing". The beneficiary is the JV (and its project lenders), recorded under WULF as majority owner at signing. The release does not describe the mechanics (lease assumption, termination payment) or the period the backstop covers. This is a contingent credit support, not cash paid.
+- kind: lease
+  from: AMZN
+  to: CIFR
+  amount_usd: 2000000000
+  amount_text: ~$2.0 billion of contracted revenue over the 15-year base term (the illustrative schedule in the same presentation totals $2,023 million of rent revenue); ~$5.7 billion maximum contracted lease payments if all three 5-year extension options are exercised at the ceiling rental rate
+  instrument: datacenter_lease
+  term: Lease signed March 2026 (per Cipher's Q2 2026 10-Q; first mentioned without tenant or value in the 2026-05-05 Q1 update as the "third AI data center campus lease"); tenant (Amazon Data Services, Inc.) and the ~$2.0B value first disclosed 2026-06-08 in the Stingray Compute investor presentation furnished with the $810M notes offering. 15-year initial term plus three 5-year tenant extension options; triple net; 3.0% annual rent escalator; targeted initial rent commencement 2027-04-01 (10 IT MW network hall) and 2027-05-01 (60 IT MW data hall); Amazon.com, Inc. guarantees all base rent and operating expenses and covers construction cost overruns above $10.5MM per IT MW
+  capacity: 70 MW critical IT load (100 MW gross), Stingray site, Andrews, Texas
+  announced: '2026-06-08'
+  status: signed
+  distinct: true
+  title_zh: AWS 租用 Cipher 得州 Stingray 数据中心 70 MW：15 年基础租期合同收入约 20 亿美元
+  title_en: 'AWS leases 70 MW at Cipher''s Stingray site in Andrews, Texas: ~$2.0B contracted revenue over a 15-year base term'
+  summary_zh: Cipher Digital 于 2026 年 3 月与一家投资级超大规模云厂商签下第三份数据中心租约，当时未披露租户和金额。2026 年 6 月 8 日，Cipher 为 Stingray Compute 发行 8.1 亿美元优先担保票据而向投资者提供的材料首次披露：租户是 Amazon Data Services（AWS），租用得州 Andrews 的 Stingray 园区 70 MW 关键 IT 负载（毛容量 100 MW），15 年基础租期合同收入约 20 亿美元，另有三次 5 年续租权，全部按上限租金行使时最高约 57 亿美元。租约为三净租约，年租金递增 3%，目标 2027 年 4 月起租，母公司 Amazon.com 为全部基础租金和运营费用提供担保。这是 AWS 在 Cipher 的第二份租约，第一份是 Black Pearl 园区 300 MW（毛容量）。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm
+    title: Cipher Digital – Stingray Compute investor presentation, June 2026 (8-K Exhibit 99.1, furnished 2026-06-08)
+    publisher: SEC EDGAR (Cipher Digital Inc.)
+    date: '2026-06-08'
+    tier: 1
+    quote: 'Transaction Overview: ~$2.0Bn of Contracted Revenue with Long - Term AWS Lease 70 MW Critical IT Load Under Contract 15 + Three 5 - Year Tenant Extension Options ~ $ 2.0 - $ 5.7 Bn Contracted Lease Payments'
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm
+    title: Cipher Digital – Stingray Compute investor presentation, June 2026 (8-K Exhibit 99.1) – tenant and site
+    publisher: SEC EDGAR (Cipher Digital Inc.)
+    date: '2026-06-08'
+    tier: 1
+    quote: Cipher Digital has executed a second data center lease with Amazon Data Services, Inc. (“AWS”) for 100 Gross MW / 70 IT MW at it s Stingray site
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm
+    title: Cipher Digital Inc. – Form 10-Q for the quarter ended June 30, 2026
+    publisher: SEC EDGAR (Cipher Digital Inc.)
+    date: '2026-08-04'
+    tier: 1
+    quote: In March 2026, the Company, through a wholly owned subsidiary, entered into a data center lease agreement with an investment grade hyperscaler tenant for the development, construction, and lease of an additional HPC data center facility at one of the Company’s existing sites in Texas.
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh991q1fy26_earningsxprvf.htm
+    title: Cipher Digital Provides First Quarter 2026 Business Update (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (Cipher Digital Inc.)
+    date: '2026-05-05'
+    tier: 1
+    quote: Signed Third AI Data Center Campus Lease with Investment-Grade Hyperscale Tenant
+  verify_note: The ~$2.0B figure and the AWS name come from an investor presentation furnished under Reg FD (8-K Item 7.01) for the Stingray notes offering, not from a lease press release; the presentation text has PDF-conversion spacing artifacts ("it s", "15 + Three 5 - Year"), kept verbatim in the quotes. The Q2 10-Q confirms a March 2026 signing and a 15-year initial term but names neither the tenant nor the site nor a value, so the link between the March lease and Stingray/AWS rests on the June presentation ("second data center lease with Amazon Data Services") plus the May 5 update ("third AI data center campus lease"). No 8-K was filed for the lease signing itself; the exact March signing day is not disclosed. 10-Q filing date 2026-08-04 is inferred from the same-day earnings 8-K in the EDGAR filing list, not read off the 10-Q cover. "announced" is 2026-06-08, the first disclosure with a value and tenant; the 2026-05-05 update gave only an aggregate (~$11.4Bn contracted revenue across
+    three leases). Rent revenue in the illustrative table ($2,023MM, 2027–2042) is a company projection.
+- kind: lease
+  from: FLUIDSTACK
+  to: CIFR
+  amount_usd: 3800000000
+  amount_text: '~$3.8 billion in contracted revenue over the initial 10-year term across the Barber Lake partnership: ~$3.0 billion for the original 168 MW critical IT load (2025-09-25) plus ~$830 million for an additional 39 MW critical IT load / 56 MW gross (2025-11-20); ~$9.0 billion if all extension options had been exercised'
+  instrument: datacenter_lease
+  term: 10-year HPC colocation lease (modified gross, annual escalators) signed 2025-09-24, announced 2025-09-25; amended and restated 2025-11-20 to add Phase II (39 MW critical IT / 56 MW gross, delivery by January 2027), so Fluidstack leases the entire 300 MW gross at Barber Lake. Originally with two five-year extension options; a September 2026 amendment removed those options and re-phased delivery (4Q 2026–1Q 2027), alongside a follow-on 10-year commitment from an unnamed AI lab (see notes)
+  capacity: 207 MW critical IT load (168 MW + 39 MW); 300 MW gross (244 MW + 56 MW), Barber Lake, Colorado City, Texas
+  announced: '2025-09-25'
+  status: signed
+  title_zh: Fluidstack 租用 Cipher Barber Lake 园区全部 300 MW（毛容量）：10 年合同收入约 38 亿美元（含 2025 年 11 月扩容）
+  title_en: 'Fluidstack leases all 300 MW gross at Cipher''s Barber Lake: ~$3.8B contracted revenue over 10 years after November 2025 expansion'
+  summary_zh: 2025 年 9 月 25 日 Cipher Mining 宣布与 Fluidstack 签 10 年期 HPC 托管协议，在得州 Barber Lake 交付 168 MW 关键 IT 负载（毛容量上限 244 MW），初始期合同收入约 30 亿美元。11 月 20 日双方修订并重述租约，新增 39 MW 关键 IT 负载（毛容量 56 MW），初始期合同收入增加约 8.3 亿美元，合作总额升至约 38 亿美元，Fluidstack 由此租下该园区全部 300 MW 毛容量。谷歌的兜底相应由 14 亿美元增至 17.3 亿美元。GL 所说的「56 MW」是毛容量口径，对应关键 IT 负载为 39 MW。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_ex9901.htm
+    title: Cipher Mining Signs 168 MW, 10-Year AI Hosting Agreement with Fluidstack (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (Cipher Mining Inc.)
+    date: '2025-09-25'
+    tier: 1
+    quote: The agreement represents approximately $3 billion in contracted revenue over the initial 10-year term and includes two five-year extension options. If exercised, these extension options would bring the total contract revenue to approximately $7 billion.
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm
+    title: Cipher Mining Signs Additional 56 MW, 10-Year AI Hosting Agreement with Fluidstack (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (Cipher Mining Inc.)
+    date: '2025-11-20'
+    tier: 1
+    quote: Transaction Secures ~$830 Million in Contracted Revenue Over Initial 10-Year Term Expected Delivery of Additional 39 MW of Critical IT Load at Barber Lake by January 2027 Total Contracted Revenue Across the Partnership Reaches ~$3.8 Billion Over Initial 10-Year Term
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_8k.htm
+    title: Cipher Mining Inc. – Form 8-K (Amended and Restated Fluidstack Lease and Recognition Agreement)
+    publisher: SEC EDGAR (Cipher Mining Inc.)
+    date: '2025-11-20'
+    tier: 1
+    quote: Under the Original Fluidstack Lease, Fluidstack was entitled to 168 megawatts (MW) of critical IT load for high-performance computing data center operations. The A&R Fluidstack Lease entitles Fluidstack to an additional 39 MW of critical IT load in a second phase of development (“Phase II”).
+  - url: https://investors.cipherdigital.com/news-releases/news-release-details/cipher-mining-signs-additional-56-mw-10-year-ai-hosting
+    title: Cipher Mining Signs Additional 56 MW, 10-Year AI Hosting Agreement with Fluidstack
+    publisher: Cipher Digital (investor relations)
+    date: '2025-11-20'
+    tier: 2
+    quote: Under the agreement, Cipher will deliver an additional 39 MW of critical IT load, supported by a maximum of 56 MW of additional gross capacity, at its Barber Lake site in Colorado City, Texas.
+  - url: https://investors.cipherdigital.com/news-releases/news-release-details/cipher-mining-signs-168-mw-10-year-ai-hosting-agreement/
+    title: Cipher Mining Signs 168 MW, 10-Year AI Hosting Agreement with Fluidstack
+    publisher: Cipher Digital (investor relations)
+    date: '2025-09-25'
+    tier: 2
+    quote: Under the agreement, Cipher will deliver 168 MW of critical IT load, supported by a maximum of 244 MW of gross capacity, at its Barber Lake site in Colorado City, Texas.
+  verify_note: 'Not a new edge: supersedes the amount on existing edge #139 (~$3.0B for 168 MW). GL''s numbers are confirmed, with one unit caveat: the November add-on is 56 MW gross but only 39 MW of critical IT load, so the combined figures are 207 MW IT / 300 MW gross; do not add 56 to 168. $3.0B + $0.83B = $3.83B; the company states the total as "~$3.8 Billion". Both figures are for the initial 10-year term. The September 2026 amendment (see notes) removed the two five-year extension options, so the ~$7B / ~$9B extension-case figures in the 2025 releases are obsolete; the September 2026 release still describes the facility''s contracted revenue as $3.8 billion before the new follow-on lease, so the Fluidstack figure itself appears unchanged.'
+- kind: guarantee
+  from: GOOGL
+  to: CIFR
+  amount_usd: 1730000000
+  amount_text: '$1.73 billion total backstop of Fluidstack''s Barber Lake lease obligations: $1.4 billion (2025-09-25) plus an additional $333 million with the Phase II expansion (2025-11-20), in support of project-related debt'
+  instrument: lease_guarantee
+  term: Recognition Agreement among Cipher Barber Lake LLC, Fluidstack and Google LLC dated 2025-09-24; amended and restated 2025-11-20 with the lease expansion. The backstop becomes effective at the lease commencement date. Google received warrants for ~24 million Cipher shares (~5.4% pro forma) as consideration. Per the November 2025 notes-offering deck, the backstop amount is the maximum termination fee and amortizes from the Phase I commencement date
+  capacity: 207 MW critical IT load / 300 MW gross, Barber Lake, Colorado City, Texas
+  announced: '2025-09-25'
+  status: signed
+  distinct: true
+  title_zh: 谷歌为 Fluidstack 在 Cipher Barber Lake 的租约义务兜底 17.3 亿美元（14 亿 + 3.33 亿）
+  title_en: Google backstops $1.73B of Fluidstack's lease obligations at Cipher's Barber Lake ($1.4B plus $333M)
+  summary_zh: 2025 年 9 月 25 日 Cipher Mining 披露，谷歌为 Fluidstack 在 Barber Lake 租约下的 14 亿美元义务提供兜底，用于支持项目债务融资，并获得约 2400 万股 Cipher 认股权证（备考持股约 5.4%）。11 月 20 日租约扩容时，谷歌追加 3.33 亿美元兜底，总额升至 17.3 亿美元。兜底自租约起租日生效；据 Cipher 发债材料，该金额是终止费的上限，并随时间摊销。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_ex9901.htm
+    title: Cipher Mining Signs 168 MW, 10-Year AI Hosting Agreement with Fluidstack (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (Cipher Mining Inc.)
+    date: '2025-09-25'
+    tier: 1
+    quote: In addition, Google will backstop $1.4 billion of Fluidstack’s lease obligations to support project-related debt financing and will receive warrants to acquire approximately 24 million shares of Cipher common stock, equating to an approximately 5.4% pro forma equity ownership stake
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm
+    title: Cipher Mining Signs Additional 56 MW, 10-Year AI Hosting Agreement with Fluidstack (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (Cipher Mining Inc.)
+    date: '2025-11-20'
+    tier: 1
+    quote: Google Expands Backstop of Fluidstack’s Obligations by Additional $333 Million, Increasing Total Backstop to $1.73 Billion
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_8k.htm
+    title: Cipher Mining Inc. – Form 8-K (Fluidstack Lease, Recognition Agreement, Google warrant)
+    publisher: SEC EDGAR (Cipher Mining Inc.)
+    date: '2025-09-25'
+    tier: 1
+    quote: pursuant to which Google has agreed to backstop (the “Google BackStop”) certain obligations of Fluidstack under the Fluidstack Lease, on the terms and subject to the conditions contained therein.
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9902.htm
+    title: Cipher Compute investor presentation, November 2025 (8-K Exhibit 99.2)
+    publisher: SEC EDGAR (Cipher Mining Inc.)
+    date: '2025-11-20'
+    tier: 1
+    quote: Backstop Outstanding represents the maximum amount of the Termination Fee available, though the proceeds that would be received are the lesser of the amount of outstanding debt or the scheduled termination fee
+  - url: https://investors.cipherdigital.com/news-releases/news-release-details/cipher-mining-signs-additional-56-mw-10-year-ai-hosting
+    title: Cipher Mining Signs Additional 56 MW, 10-Year AI Hosting Agreement with Fluidstack
+    publisher: Cipher Digital (investor relations)
+    date: '2025-11-20'
+    tier: 2
+    quote: Google Expands Backstop of Fluidstack’s Obligations by Additional $333 Million, Increasing Total Backstop to $1.73 Billion
+  verify_note: 'GL''s $1.4B → $1.73B is confirmed ($1.4B + $333M = $1.733B; the company rounds to $1.73 Billion). The 8-K body describes the backstop only as "certain obligations of Fluidstack"; the dollar amounts come from the press releases. The backstop is a contingent, amortizing cap (maximum termination fee), not cash paid, and what would actually be received is the lesser of outstanding debt and the scheduled termination fee. Whether the September 2026 lease amendment (see notes) changed the backstop was not checked: neither the 2026-09-25 8-K nor its press release mentions Google. The Q3 2026 10-Q carries a $544.5 million asset for the value of the Google backstop, which is the warrant fair value at issuance, not the backstop amount.'
+- kind: lease
+  from: CRWV
+  to: APLD
+  amount_usd: 4000000000
+  amount_text: approximately $4.0 billion total contract value over the initial ~15-year term of the Building 4 Lease (third CoreWeave lease at Polaris Forge 1); brings Applied Digital's total anticipated contracted lease revenue with CoreWeave to approximately $11B, including $7B from the two May 2025 leases
+  instrument: datacenter_lease
+  term: Third datacenter lease ("Building 4 Lease") signed 2025-08-28 between APLD ELN-02 C LLC and CoreWeave, announced 2025-08-29; initial term of approximately 15 years, substantially the same terms as the two May 2025 leases; Building 4 expected service-ready in mid 2027; Applied Digital guarantees its subsidiary's obligations and issued CoreWeave a warrant for up to 8,393,611 shares at $10.75
+  capacity: 150 MW (Building 4, Polaris Forge 1, Ellendale, North Dakota); 400 MW total leased by CoreWeave on the campus
+  announced: '2025-08-29'
+  status: signed
+  distinct: true
+  title_zh: CoreWeave 在 Applied Digital 北达科他 Polaris Forge 1 园区再租 150 MW：约 15 年合同价值约 40 亿美元
+  title_en: 'CoreWeave signs third Polaris Forge 1 lease with Applied Digital: 150 MW, ~$4.0B over ~15 years (campus total 400 MW, ~$11B)'
+  summary_zh: 2025 年 8 月 28 日 Applied Digital 子公司与 CoreWeave 签署 Polaris Forge 1 园区（北达科他州 Ellendale）的第三份数据中心租约，租下 Building 4 全部 150 MW 容量，8 月 29 日对外公布。8-K 披露该租约初始约 15 年租期的合同总价值预计约 40 亿美元，条款与 2025 年 5 月的两份租约基本相同，预计 2027 年年中可投入使用。至此 CoreWeave 在该园区共租用 400 MW，Applied Digital 预计的合同租赁收入合计约 110 亿美元（其中 5 月两份租约约 70 亿美元）。Applied Digital 同时向 CoreWeave 发行了可认购最多 8,393,611 股、行权价 10.75 美元的认股权证。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1144879/000149315225012458/form8-k.htm
+    title: Applied Digital Corporation – Form 8-K (Building 4 Lease with CoreWeave)
+    publisher: SEC EDGAR (Applied Digital Corporation)
+    date: '2025-08-29'
+    tier: 1
+    quote: The total contract value for the initial approximately fifteen (15)-year term of the Building 4 Lease is expected to be approximately $4.0 billion.
+  - url: https://www.sec.gov/Archives/edgar/data/1144879/000149315225012458/form8-k.htm
+    title: Applied Digital Corporation – Form 8-K (Building 4 Lease with CoreWeave) – capacity
+    publisher: SEC EDGAR (Applied Digital Corporation)
+    date: '2025-08-29'
+    tier: 1
+    quote: The Building 4 Lease brings the total capacity leased by CoreWeave at Polaris Forge 1 to 400MW. Building 4 is currently in the design phase and is expected to be service-ready in mid 2027.
+  - url: https://www.sec.gov/Archives/edgar/data/1144879/000149315225012458/ex99-1.htm
+    title: Applied Digital Finalizes Additional 150MW Lease with CoreWeave in North Dakota (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (Applied Digital Corporation)
+    date: '2025-08-29'
+    tier: 1
+    quote: This new lease agreement with CoreWeave brings Applied Digital’s total anticipated contracted lease revenue to approximately $11B, which includes $7B in revenue from the initial two approximately 15-year leases executed in May of this year.
+  verify_note: The ~$4.0B figure is stated only in the 8-K body ("expected to be approximately $4.0 billion"); the press release gives the campus total (~$11B) and the prior $7B, from which ~$4B follows. The lease was signed 2025-08-28 and announced 2025-08-29; "announced" uses the release date. The 8-K calls the facility "Building 4" while the press release says the "third building" for CoreWeave – same 150 MW building. CoreWeave had exercised its option for this 150 MW earlier (the 8-K says "in the first fiscal quarter of 2025", which looks like a fiscal-year wording slip); the definitive lease dates from August 2025. Check that the ledger's existing CRWV → APLD edge for the two May 2025 leases carries ~$7B only, so this $4B is not double counted. The Seeking Alpha lead and ir.applieddigital.com were not opened; the SEC exhibit is the same release.
+- kind: lease
+  from: UNDISCLOSED
+  to: CIFR
+  amount_usd: 5200000000
+  amount_text: approximately $5.2 billion of incremental contracted revenue from a new ten-year lease that starts after the Fluidstack term ends; lifts Barber Lake total contracted revenue from $3.8 billion to over $9 billion
+  instrument: datacenter_lease
+  term: Ten-year follow-on lease commencing after the 10-year Fluidstack lease (20 contracted years in total); binding commitment signed with the September 2026 amendment that removed Fluidstack's two five-year extension options
+  capacity: Barber Lake facility (207 MW critical IT / 300 MW gross)
+  announced: '2026-09-25'
+  status: signed
+  title_zh: 一家未具名 AI 实验室承诺在 Fluidstack 租期后续租 Cipher Barber Lake 10 年，新增合同收入约 52 亿美元
+  title_en: Unnamed leading AI lab commits to a follow-on 10-year Barber Lake lease with Cipher (~$5.2B incremental contracted revenue)
+  summary_zh: 2026 年 9 月 Cipher 修订与 Fluidstack 的 Barber Lake 租约（取消两个五年续租权、调整交付进度），同时与一家未具名的「领先 AI 实验室」签下有约束力的承诺：在 Fluidstack 的 10 年租期结束后续租该园区 10 年，经济条款与原租约基本一致，预计新增合同收入约 52 亿美元，园区合同收入由 38 亿增至 90 亿美元以上。Cipher 的 8-K、新闻稿和三季度 10-Q 均未披露租户名称，本条按未披露对手方单记，不并入 Fluidstack 那一笔。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/cifr-20260924.htm
+    title: Cipher Digital Inc. – Form 8-K (Barber Lake lease amendment and new lease commitment)
+    publisher: SEC EDGAR (Cipher Digital Inc.)
+    date: '2026-09-25'
+    tier: 1
+    quote: The New Barber Lake Lease will contain economic terms that are substantially consistent with the Barber Lake Lease and is expected to result in incremental aggregate contracted revenue of approximately $5.2 billion.
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm
+    title: 'Cipher Digital press release (8-K Exhibit 99.1): Barber Lake lease term extended to 20 years'
+    publisher: SEC EDGAR (Cipher Digital Inc.)
+    date: '2026-09-25'
+    tier: 1
+    quote: extend the contracted lease duration of its Barber Lake data center in Colorado City, Texas from 10 years to 20 years and increase total contracted revenue at the facility from $3.8 billion to over $9 billion.
+  - url: https://www.sec.gov/Archives/edgar/data/1819989/000181998926000050/cifr-20260930.htm
+    title: Cipher Digital Inc. – Form 10-Q for the quarter ended 2026-09-30
+    publisher: SEC EDGAR (Cipher Digital Inc.)
+    date: '2026-11-02'
+    tier: 1
+    quote: Concurrently with the execution of the amendment to the Fluidstack Lease, the Company entered into a binding agreement with a leading AI lab to lease the facility for 10 years to commence following the term of the Fluidstack Lease.
+  verify_note: Tenant is not named in any filing. It is a binding commitment to enter into a lease whose term begins roughly a decade out; the press-release dateline was not read (date taken from the EDGAR filing list).
