@@ -1,0 +1,1267 @@
+# 订单 / 投资历史回填种子（2023–2025，2026-11-10）：线索取自 GL-AI-live 独有条目，按本站来源标准逐笔重新核实。
+# 每笔至少一个一手来源（SEC / 交易所文件 tier 1、公司新闻稿 tier 2），否则两家独立原发媒体（tier 3）；
+# 仅媒体报道、当事方未确认的记 rumored（留候选区）。verify_note 记录核实时的保留意见。
+deals:
+- kind: order
+  from: TSLA
+  to: SAMSUNG
+  amount_usd: 16540000000
+  amount_text: KRW 22.76 trillion (about $16.54 billion at the 28 Jul 2025 rate per Korea Times); Musk called the figure 'just the bare minimum'
+  instrument: chip_purchase
+  term: 2025-07-24 to 2033-12-31 (8 years 5 months); AI6 chips on 2nm at Samsung's Taylor, Texas fab, mass production targeted from late 2026 / AI6 expected 2027
+  capacity: null
+  announced: '2025-07-28'
+  status: signed
+  title_zh: 特斯拉与三星签 165 亿美元 AI6 芯片代工合同（泰勒厂）
+  title_en: Tesla signs $16.5B (KRW 22.76T) foundry contract with Samsung for AI6 chips at Taylor, Texas
+  summary_zh: 2025 年 7 月 28 日三星电子公告一份 22.76 万亿韩元（约 165 亿美元）的晶圆代工供货合同，期限 2025-07-24 至 2033-12-31，客户按保密要求仅称'全球大型企业'；马斯克当日在 X 上确认客户为特斯拉，三星泰勒（德州）新厂将专门生产特斯拉下一代 AI6 芯片，并称 165 亿只是下限。三星已为特斯拉代工 AI4，AI5 由台积电生产。
+  sources:
+  - url: https://www.koreatimes.co.kr/business/tech-science/20250728/samsung-foundry-wins-165-bil-chip-order-from-tesla
+    title: Samsung foundry wins $16.5 bil. chip order from Tesla
+    publisher: The Korea Times
+    date: '2025-07-28'
+    tier: 3
+    quote: Samsung Electronics clinched a semiconductor foundry contract worth $16.54 billion (22.76 trillion won) from Tesla
+  - url: https://www.engadget.com/big-tech/samsung-wins-165-billion-deal-to-make-teslas-a16-chips-130015982.html
+    title: Samsung wins $16.5 billion deal to make Tesla's AI6 chips
+    publisher: Engadget
+    date: '2025-07-28'
+    tier: 3
+    quote: a deal worth 22.8 trillion won ($16.5 billion) ... Samsung's giant new Texas fab will be dedicated to making Tesla's next-generation AI6 chip
+  - url: https://www.koreajoongangdaily.com/business/samsung-electronics-wins-2276-trillion-won-foundry-order-from-large-global-company/11983127
+    title: Samsung Electronics wins 22.76 trillion won foundry order from 'large global company'
+    publisher: Korea JoongAng Daily
+    date: '2025-07-28'
+    tier: 3
+    quote: 22.76 trillion won ... until Dec. 31, 2033
+  verify_note: Samsung's DART/KRX filing (and the LSE RNS mirror for its GDRs) exists but could not be opened (403); the filing itself names the client only as 'a global tech company' — Tesla is confirmed via Musk's X post, reported by all three outlets.
+- kind: order
+  from: META
+  to: NBIS
+  amount_usd: 3000000000
+  amount_text: approximately $3 billion over 5 years
+  instrument: compute_contract
+  term: 5 years; Nebius said capacity would be deployed within about three months and that contract size was capped by available capacity
+  capacity: null
+  announced: '2025-11-11'
+  status: signed
+  title_zh: Meta 与 Nebius 签约 30 亿美元 AI 算力（5 年）
+  title_en: Nebius signs ~$3B, 5-year AI infrastructure agreement with Meta
+  summary_zh: 2025 年 11 月 11 日 Nebius 随三季报宣布与 Meta 达成约 30 亿美元、为期 5 年的 AI 基础设施供应协议，并通过 6-K 报送 SEC；CEO 沃洛兹在股东信中称需求远超供给、合同规模受限于现有可用产能，将在约三个月内完成部署。这是 Nebius 继 9 月与微软 174 亿美元合同后的第二份超大规模客户合同。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-1.htm
+    title: Nebius reports third quarter financial results (Form 6-K, Exhibit 99.1)
+    publisher: SEC EDGAR (Nebius Group N.V.)
+    date: '2025-11-12'
+    tier: 1
+    quote: a new agreement to deliver AI infrastructure to Meta valued at approximately $3 billion over 5 years
+- kind: order
+  from: MSFT
+  to: LAMBDA
+  amount_usd: null
+  amount_text: multibillion-dollar (exact value undisclosed)
+  instrument: compute_contract
+  term: multi-year; tens of thousands of NVIDIA GPUs including GB300 NVL72 systems
+  capacity: null
+  announced: '2025-11-03'
+  status: signed
+  title_zh: 微软与 Lambda 签数十亿美元 GB300 算力多年协议
+  title_en: Lambda announces multibillion-dollar, multi-year agreement with Microsoft for NVIDIA GB300 NVL72 infrastructure
+  summary_zh: 2025 年 11 月 3 日 Lambda 宣布与微软达成数十亿美元的多年期协议，部署数万颗英伟达 GPU（含 GB300 NVL72 系统）的 AI 基础设施，具体金额和 GPU 数量未披露；Lambda CEO 称双方合作已逾八年。与微软同期对 IREN（97 亿美元）、Nebius 等的租算力合同同属一轮外购 Azure 容量。
+  sources:
+  - url: https://lambda.com/blog/lambda-announces-multibillion-dollar-agreement-with-microsoft-to-deploy-ai-infrastructure-powered-by-tens-of-thousands-of-nvidia-gpus
+    title: Lambda Announces Multibillion Dollar Agreement With Microsoft to Deploy AI Infrastructure Powered by Tens of Thousands of NVIDIA GPUs
+    publisher: Lambda (press release)
+    date: '2025-11-03'
+    tier: 2
+    quote: multibillion-dollar agreement with Microsoft ... under a multi-year contract ... NVIDIA GB300 NVL72 systems
+- kind: order
+  from: ORCL
+  to: AMD
+  amount_usd: null
+  amount_text: null
+  instrument: chip_purchase
+  term: initial deployment of 50,000 MI450 GPUs starting calendar Q3 2026, expanding in 2027 and beyond; AMD Helios rack design
+  capacity: 50,000 AMD Instinct MI450 GPUs
+  announced: '2025-10-14'
+  status: announced
+  title_zh: 甲骨文 OCI 将部署 5 万颗 AMD MI450 GPU（2026 Q3 起）
+  title_en: Oracle Cloud Infrastructure to deploy 50,000 AMD Instinct MI450 GPUs from Q3 2026
+  summary_zh: 2025 年 10 月 14 日甲骨文 AI World 大会上，Oracle 与 AMD 宣布 OCI 将成为首个公开可用的 AMD Instinct MI450 超级集群的发布合作伙伴，首批 5 万颗 GPU 自 2026 年第三季度起部署、2027 年起扩容，采用 AMD Helios 机架方案；金额未披露。是 AMD 在 OpenAI 6 GW 协议之后拿下的又一大型云厂商订单。
+  sources:
+  - url: https://newsroom.amd.com/news/oracle-and-amd-expand-partnership-to-help-customers-ach/
+    title: Oracle and AMD Expand Partnership to Help Customers Achieve Next-Generation AI Scale
+    publisher: AMD (press release)
+    date: '2025-10-14'
+    tier: 2
+    quote: an initial deployment of 50,000 GPUs ... starting in calendar Q3 2026 ... expanding in 2027 and beyond
+- kind: order
+  from: OPENAI
+  to: SAMSUNG
+  amount_usd: null
+  amount_text: null
+  instrument: chip_purchase
+  term: letter of intent (non-binding); Samsung Electronics as strategic memory partner for Stargate; OpenAI memory demand projected up to 900,000 DRAM wafers per month
+  capacity: up to 900,000 DRAM wafers/month (OpenAI projected demand, shared with SK hynix)
+  announced: '2025-10-01'
+  status: announced
+  title_zh: OpenAI 与三星电子签 Stargate 存储供应意向书
+  title_en: OpenAI and Samsung Electronics sign letter of intent for Stargate memory supply
+  summary_zh: 2025 年 10 月 1 日三星集团（三星电子、三星 SDS、三星物产、三星重工）与 OpenAI 在首尔签署战略合作意向书，三星电子作为 Stargate 的战略存储合作方供应先进 DRAM/HBM，OpenAI 的存储需求预计最高达每月 90 万片 DRAM 晶圆；同日 SK 海力士签署平行意向书，90 万片为两家共同面对的需求总量而非各自订单。意向书不具约束力，金额未披露。
+  sources:
+  - url: https://news.samsung.com/uk/samsung-and-openai-announce-strategic-partnership-to-accelerate-advancements-in-global-ai-infrastruct
+    title: Samsung and OpenAI Announce Strategic Partnership to Accelerate Advancements in Global AI Infrastructure
+    publisher: Samsung Newsroom (UK mirror of 1 Oct 2025 global release)
+    date: '2025-10-06'
+    tier: 2
+    quote: will work with OpenAI as a strategic memory partner ... projected to reach up to 900,000 DRAM wafers per month
+  - url: https://www.koreatimes.co.kr/business/tech-science/20251001/samsung-sk-form-ai-infrastructure-partnership-with-openai
+    title: Samsung, SK form AI infrastructure partnership with OpenAI
+    publisher: The Korea Times
+    date: '2025-10-01'
+    tier: 3
+    quote: signed a letter of intent (LOI) for a partnership on AI infrastructure
+- kind: order
+  from: OPENAI
+  to: SKHYNIX
+  amount_usd: null
+  amount_text: null
+  instrument: chip_purchase
+  term: letter of intent (non-binding) to supply HBM for Stargate; SK hynix to build capacity to meet OpenAI demand of up to 900,000 DRAM wafers per month
+  capacity: up to 900,000 DRAM wafers/month (OpenAI projected demand, shared with Samsung)
+  announced: '2025-10-01'
+  status: announced
+  title_zh: OpenAI 与 SK 海力士签 Stargate HBM 供应意向书
+  title_en: OpenAI and SK hynix sign letter of intent for Stargate HBM supply
+  summary_zh: 2025 年 10 月 1 日 SK 集团会长崔泰源与奥特曼在首尔签约，SK 海力士与 OpenAI 签署为 Stargate 供应 HBM 的意向书，将建立可满足 OpenAI 每月最高 90 万片 DRAM 晶圆需求的产能体系（SK 称该需求超过当前全球 HBM 产能两倍）；SK 电讯同时签署在韩国西南部共建 OpenAI 专用数据中心的谅解备忘录。与三星意向书为同日平行协议。
+  sources:
+  - url: https://eng.sk.com/news/sk-group-partners-with-openai-to-advance-global-ai-infrastructure
+    title: SK Group Partners with OpenAI to Advance Global AI Infrastructure
+    publisher: SK Group (newsroom)
+    date: '2025-10-01'
+    tier: 2
+    quote: SK hynix signed a Letter of Intent (LOI) with OpenAI to supply High Bandwidth Memory (HBM) ... up to 900,000 DRAM wafers per month
+  - url: https://www.koreatimes.co.kr/business/tech-science/20251001/samsung-sk-form-ai-infrastructure-partnership-with-openai
+    title: Samsung, SK form AI infrastructure partnership with OpenAI
+    publisher: The Korea Times
+    date: '2025-10-01'
+    tier: 3
+    quote: a partner supplying HBM for the Stargate project
+- kind: order
+  from: SAMSUNG
+  to: NVDA
+  amount_usd: null
+  amount_text: null
+  instrument: chip_purchase
+  term: AI Megafactory for semiconductor manufacturing (design, process, equipment, operations, QC) with more than 50,000 NVIDIA GPUs; Omniverse digital twins, cuLitho; timing not disclosed
+  capacity: 50,000+ NVIDIA GPUs
+  announced: '2025-10-31'
+  status: announced
+  title_zh: 三星与英伟达共建 5 万颗 GPU 的 AI Megafactory
+  title_en: Samsung to build AI Megafactory with 50,000+ NVIDIA GPUs
+  summary_zh: 2025 年 10 月 31 日 APEC 庆州峰会期间，黄仁勋宣布韩国将部署逾 26 万颗英伟达 GPU，其中三星电子建设 AI Megafactory，部署超过 5 万颗 GPU 把 AI 嵌入半导体设计、工艺、设备、运营和质检全流程，并用 Omniverse 构建晶圆厂数字孪生；SK、现代各 5 万颗，Naver 6 万颗。金额和交付时间未披露。
+  sources:
+  - url: https://blogs.nvidia.com/?p=86913
+    title: 'Korea Joins AI Industrial Revolution: NVIDIA CEO Jensen Huang Unveils Historic Partnership at APEC Summit'
+    publisher: NVIDIA (blog)
+    date: '2025-10-31'
+    tier: 2
+    quote: up to 50,000 NVIDIA GPUs apiece
+  - url: https://www.koreatimes.co.kr/business/tech-science/20251031/nvidia-to-supply-260000-chips-to-korea-for-ai-factories-with-samsung-sk-hyundai
+    title: Nvidia to supply 260,000 chips to Korea for AI factories with Samsung, SK, Hyundai
+    publisher: The Korea Times
+    date: '2025-10-31'
+    tier: 3
+    quote: Nvidia will deploy 50,000 GPUs to Samsung to build a new AI megafactory
+  verify_note: Samsung Newsroom's own release (news.samsung.com/sg, dated 4 Nov 2025) timed out on fetch; the NVIDIA blog and Korea Times confirm the 50,000-GPU figure.
+- kind: order
+  from: OPENAI
+  to: CRWV
+  distinct: true
+  amount_usd: 4000000000
+  amount_text: up to $4.0 billion through April 2029
+  instrument: compute_contract
+  term: reserved capacity orders through April 2029 under agreement entered May 2025 (Master Services Agreement dated 8 May 2025)
+  capacity: null
+  announced: '2025-05-14'
+  status: signed
+  title_zh: OpenAI 与 CoreWeave 追加 40 亿美元算力合同（2025 年 5 月）
+  title_en: OpenAI expands CoreWeave agreement by up to $4.0B through April 2029
+  summary_zh: CoreWeave 2025 年 5 月 14 日一季报电话会提到一笔 40 亿美元新合同，次日提交的 10-Q 披露客户为 OpenAI：2025 年 5 月双方签订新协议，OpenAI 通过预留容量订单承诺至 2029 年 4 月最多支付 40 亿美元。这是 2025 年 3 月 119 亿美元原始合同之后的第一次扩容，9 月再追加 65 亿美元后累计约 224 亿美元。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1769628/000176962825000014/crwv-20250331.htm
+    title: CoreWeave, Inc. Form 10-Q for the quarter ended March 31, 2025 (Note 16, Subsequent Events)
+    publisher: SEC EDGAR (CoreWeave)
+    date: '2025-05-15'
+    tier: 1
+    quote: In May 2025, the Company entered into an additional agreement with OpenAI ... OpenAI has committed to pay the Company up to $4.0 billion through April 2029 related to this agreement.
+  - url: https://www.coreweave.com/news/coreweave-expands-agreement-with-openai-by-up-to-6-5b
+    title: CoreWeave Expands Agreement with OpenAI by up to $6.5B
+    publisher: CoreWeave (press release)
+    date: '2025-09-25'
+    tier: 2
+    quote: an expanded agreement worth up to $4 billion in May 2025
+- kind: order
+  from: OPENAI
+  to: CRWV
+  distinct: true
+  amount_usd: 6500000000
+  amount_text: up to approximately $6.5 billion through May 31, 2031; brings total OpenAI contract value to ~$22.4 billion
+  instrument: compute_contract
+  term: Order Form dated 23 Sep 2025 under the 8 May 2025 Master Services Agreement; payments through 31 May 2031
+  capacity: null
+  announced: '2025-09-25'
+  status: signed
+  title_zh: OpenAI 与 CoreWeave 再追加 65 亿美元，累计约 224 亿
+  title_en: CoreWeave expands OpenAI agreement by up to $6.5B, total ~$22.4B
+  summary_zh: 2025 年 9 月 23 日 CoreWeave 与 OpenAI OpCo 在 5 月主服务协议下签署新订单，OpenAI 承诺至 2031 年 5 月 31 日最多支付约 65 亿美元；CoreWeave 9 月 25 日公告并提交 8-K，称加上 3 月 119 亿和 5 月 40 亿，与 OpenAI 的合同总额达约 224 亿美元。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1769628/000119312525216497/d17274d8k.htm
+    title: CoreWeave, Inc. Form 8-K (Item 1.01) — Order Form with OpenAI OpCo, LLC
+    publisher: SEC EDGAR (CoreWeave)
+    date: '2025-09-25'
+    tier: 1
+    quote: OpenAI has committed to pay the Company up to approximately $6.5 billion through May 31, 2031 under the Order Form.
+  - url: https://www.coreweave.com/news/coreweave-expands-agreement-with-openai-by-up-to-6-5b
+    title: CoreWeave Expands Agreement with OpenAI by up to $6.5B
+    publisher: CoreWeave (press release)
+    date: '2025-09-25'
+    tier: 2
+    quote: brings the total contract value with OpenAI up to approximately $22.4 billion
+- kind: order
+  from: MSFT
+  to: CRWV
+  amount_usd: null
+  amount_text: undisclosed; CNBC (Jun 2023) said 'potentially billions of dollars over multiple years'; Microsoft = 35% of CoreWeave 2023 revenue and 62% of 2024 revenue per S-1
+  instrument: compute_contract
+  term: multi-year GPU cloud capacity agreement signed earlier in 2023 to secure compute for OpenAI; largest customer through 2024
+  capacity: null
+  announced: '2023-06-01'
+  status: signed
+  title_zh: 微软成为 CoreWeave 最大客户：多年期 GPU 算力协议
+  title_en: Microsoft multi-year GPU cloud capacity agreement with CoreWeave (62% of CoreWeave 2024 revenue)
+  summary_zh: CNBC 2023 年 6 月 1 日援引知情人报道，微软已于 2023 年早些时候与 CoreWeave 签署多年期协议采购 GPU 云算力以保障 OpenAI 的算力供应，金额未披露、可能达数十亿美元，双方当时拒绝置评。CoreWeave 2025 年 3 月 3 日 S-1 招股书确认微软为其最大客户，分别占 2023、2024 年收入的 35% 和 62%，并列示对微软需求变化的依赖风险。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1769628/000119312525044231/d899798ds1.htm
+    title: CoreWeave, Inc. Form S-1 Registration Statement
+    publisher: SEC EDGAR (CoreWeave)
+    date: '2025-03-03'
+    tier: 1
+    quote: our largest customer was Microsoft, which accounted for 35% and 62% of our revenue, respectively.
+  - url: https://www.cnbc.com/2023/06/01/microsoft-inks-deal-with-coreweave-to-meet-openai-cloud-demand.html
+    title: Microsoft signs deal for A.I. computing power with Nvidia-backed CoreWeave that could be worth billions
+    publisher: CNBC
+    date: '2023-06-01'
+    tier: 3
+    quote: potentially billions of dollars over multiple years
+  verify_note: No contract value is stated in the S-1; the 2023 signing date rests on CNBC's unnamed sources (both companies declined to comment).
+- kind: order
+  from: ORCL
+  to: NVDA
+  amount_usd: 40000000000
+  amount_text: about $40 billion (FT report; ~400,000 GB200 chips)
+  instrument: chip_purchase
+  term: GB200 Grace Blackwell chips for the Abilene, Texas Stargate site; compute to be leased to OpenAI; site on a 15-year lease, targeted fully operational mid-2026
+  capacity: ~400,000 NVIDIA GB200 GPUs
+  announced: '2025-05-23'
+  status: rumored
+  confidence: 0.5
+  title_zh: 传甲骨文为 OpenAI 阿比林站点采购 400 亿美元英伟达 GB200
+  title_en: Oracle reportedly buying ~$40B of NVIDIA GB200 chips for OpenAI's Abilene Stargate site (FT)
+  summary_zh: 英国《金融时报》2025 年 5 月 23 日报道，甲骨文将购买约 400 亿美元、约 40 万颗英伟达 GB200 芯片，用于得州阿比林首个 Stargate 数据中心并把算力租给 OpenAI；该站点由 Crusoe 和 Blue Owl 持有、甲骨文签 15 年租约，摩根大通提供 96 亿美元贷款。甲骨文、OpenAI 未置评，英伟达拒绝置评，公司从未正式确认，故记为传闻。
+  sources:
+  - url: https://siliconangle.com/2025/05/23/oracle-reportedly-buying-400000-nvidia-chips-first-stargate-data-center/
+    title: Oracle reportedly buying 400,000 Nvidia chips for first Stargate data center
+    publisher: SiliconANGLE (citing Financial Times)
+    date: '2025-05-23'
+    tier: 3
+    quote: Oracle Corp. is buying $40 billion worth of Nvidia Corp. chips ... about 400,000 GB200 Grace Blackwell processors
+  - url: https://www.pymnts.com/artificial-intelligence-2/2025/oracle-to-buy-40-billion-worth-of-nvidia-chips-for-first-stargate-data-center/
+    title: Oracle to Buy $40 Billion Worth of Nvidia Chips for First Stargate Data Center
+    publisher: PYMNTS (citing Financial Times)
+    date: '2025-05-23'
+    tier: 3
+    quote: the Financial Times (FT) reported Friday (May 23) ... the GB200 chips, and lease the computing power they provide to OpenAI
+  verify_note: Only one original source (Financial Times, paywalled, not fetchable); Reuters pick-up also not fetchable. SiliconANGLE and PYMNTS both relay the FT report rather than report independently. No company confirmation.
+- kind: order
+  from: META
+  to: ORCL
+  amount_usd: 20000000000
+  amount_text: about $20 billion (Bloomberg and Reuters, citing sources; amount could still change)
+  instrument: compute_contract
+  term: multi-year; Oracle to supply computing power for training and deploying Meta's AI models; terms not final as of report
+  capacity: null
+  announced: '2025-09-19'
+  status: rumored
+  confidence: 0.6
+  title_zh: 传 Meta 与甲骨文洽谈约 200 亿美元多年期云算力合同
+  title_en: Oracle in talks with Meta on ~$20B multi-year AI cloud computing deal (Bloomberg, Reuters)
+  summary_zh: 2025 年 9 月 19 日 Bloomberg 援引知情人报道甲骨文正与 Meta 洽谈一份约 200 亿美元的多年期云算力合同，为 Meta 训练和部署 AI 模型提供算力，总额可能上调、条款仍可能变动；Reuters 同日从独立消息源证实谈判，Meta 拒绝置评、甲骨文未回应。此前一周 OpenAI 与甲骨文 3000 亿美元合同曝光，市场关注甲骨文对单一客户的依赖。
+  sources:
+  - url: https://news.bloomberglaw.com/artificial-intelligence/oracle-in-talks-with-meta-on-20-billion-ai-cloud-computing-deal
+    title: Oracle in Talks With Meta on $20 Billion AI Cloud Deal
+    publisher: Bloomberg News (via Bloomberg Law)
+    date: '2025-09-19'
+    tier: 3
+    quote: a cloud computing deal worth about $20 billion ... Under the multiyear deal, Oracle would provide the social media giant with computing power
+  - url: https://www.thestar.com.my/tech/tech-news/2025/09/20/oracle-in-talks-with-meta-on-20-billion-ai-cloud-computing-deal-bloomberg-reports
+    title: Oracle eyes $20 billion AI cloud computing deal with Meta, source says
+    publisher: Reuters (via The Star Malaysia)
+    date: '2025-09-20'
+    tier: 3
+    quote: a multi-year cloud computing deal worth about $20 billion ... Meta declined to comment
+  verify_note: Two independent original publishers (Bloomberg, Reuters) but the Reuters text was only reachable via The Star's syndicated copy (reuters.com not fetchable). Neither company confirmed; no later announcement of signing found.
+- kind: order
+  from: XAI
+  to: NVDA
+  amount_usd: null
+  amount_text: null
+  instrument: chip_purchase
+  term: 'Colossus, Memphis, Tennessee: 100,000 NVIDIA Hopper GPUs with Spectrum-X Ethernet, built in 122 days; xAI plans to double to 200,000 Hopper GPUs'
+  capacity: 100,000 NVIDIA H100/Hopper GPUs (to 200,000)
+  announced: '2024-10-28'
+  status: completed
+  title_zh: xAI 孟菲斯 Colossus：10 万颗英伟达 H100，计划翻倍至 20 万
+  title_en: xAI Colossus supercomputer in Memphis built on 100,000 NVIDIA Hopper GPUs, to double to 200,000
+  summary_zh: 英伟达 2024 年 10 月 28 日新闻稿确认 xAI 位于孟菲斯的 Colossus 超算由 10 万颗 Hopper GPU 组成、采用 Spectrum-X 以太网，是当时全球最大 AI 训练集群，用于训练 Grok；xAI 计划扩至 20 万颗。金额未官方披露。
+  sources:
+  - url: https://nvidianews.nvidia.com/news/spectrum-x-ethernet-networking-xai-colossus
+    title: NVIDIA Ethernet Networking Accelerates World's Largest AI Supercomputer, Built by xAI
+    publisher: NVIDIA (press release)
+    date: '2024-10-28'
+    tier: 2
+    quote: 100,000 NVIDIA Hopper GPUs ... doubling the size of Colossus to a combined total of 200,000
+- kind: investment
+  from: BX
+  to: AIRTRUNK
+  amount_usd: 16100000000
+  amount_text: implied enterprise value over A$24 billion (incl. capex for committed projects); ~US$16.1B at the 2024-09-04 AUD/USD rate of ~0.67
+  instrument: acquisition
+  term: Blackstone Real Estate / Infrastructure / Tactical Opportunities / private wealth PE funds with CPP Investments as minority co-investor; sellers Macquarie Asset Management and PSP Investments; subject to Australian FIRB approval
+  capacity: '>800 MW committed capacity across APJ (Sydney, Melbourne, Singapore, Hong Kong, Tokyo, Johor)'
+  announced: '2024-09-04'
+  status: completed
+  title_zh: 黑石联手 CPP 以逾 240 亿澳元企业价值收购 AirTrunk
+  title_en: Blackstone and CPP Investments acquire AirTrunk at >A$24B implied enterprise value
+  summary_zh: 2024 年 9 月 4 日黑石宣布由旗下地产、基建、机会型及私人财富基金联合加拿大养老金 CPP Investments，从麦格理资产管理和 PSP Investments 手中收购亚太最大超大规模数据中心运营商 AirTrunk，隐含企业价值逾 240 亿澳元（约 161 亿美元，含在建项目资本开支），为黑石亚太史上最大投资。交易经澳大利亚 FIRB 批准后于 2024 年 12 月 23 日完成交割。
+  sources:
+  - url: https://airtrunk.com/?p=14233
+    title: Blackstone announces agreement to acquire AirTrunk in a A$24B transaction
+    publisher: AirTrunk (joint press release)
+    date: '2024-09-04'
+    tier: 2
+    quote: for an implied enterprise value of over A$24 billion
+  - url: https://airtrunk.com/?p=14902
+    title: Completion Of AirTrunk Acquisition By Blackstone – Marking New Era Of Growth
+    publisher: AirTrunk (press release)
+    date: '2024-12-23'
+    tier: 2
+    quote: has successfully closed its A$24 billion acquisition
+  - url: https://www.forbes.com.au/news/investing/blackstone-closes-airtrunk-acquisition-in-biggest-deal-of-2024/
+    title: Blackstone closes AirTrunk acquisition in biggest deal of 2024
+    publisher: Forbes Australia
+    date: '2024-12-23'
+    tier: 3
+    quote: Blackstone announced it closed the acquisition of Australian data centre provider AirTrunk.
+- kind: investment
+  from: APO
+  to: INTC
+  amount_usd: 11000000000
+  amount_text: $11 billion for a 49% equity interest in the Fab 34 joint venture (Grange Newco LLC); Intel retains 51%
+  instrument: jv_equity
+  term: Intel's second Semiconductor Co-Investment Program (SCIP) deal; Intel keeps full ownership and operational control of Fab 34 and buys wafers from the JV with minimum volume commitments; closed 2024-06-12 (Intel Ireland sold 49% of Grange Newco to AP Grange Holdings)
+  capacity: Fab 34, Leixlip, Ireland (Intel 4 / Intel 3 high-volume fab; Intel invested $18.4B to date)
+  announced: '2024-06-04'
+  status: completed
+  title_zh: Apollo 110 亿美元入股英特尔爱尔兰 Fab 34 合资公司 49%
+  title_en: Apollo-led funds invest $11B for 49% of Intel's Fab 34 (Ireland) joint venture
+  summary_zh: 2024 年 6 月 4 日英特尔与 Apollo 宣布最终协议：Apollo 管理的基金出资 110 亿美元，购入与爱尔兰 Leixlip Fab 34 相关的合资实体 49% 股权，英特尔保留 51% 控股及工厂全部运营权，并承诺最低晶圆采购量。这是英特尔 Smart Capital 战略下第二笔 SCIP 共同投资；根据 6 月 14 日 8-K，交易已于 2024 年 6 月 12 日完成交割（合资主体 Grange Newco LLC）。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/50863/000005086324000103/a06042024form8-kex991.htm
+    title: Intel and Apollo Agree to Joint Venture Related to Intel's Fab 34 in Ireland (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (Intel 8-K)
+    date: '2024-06-04'
+    tier: 1
+    quote: will lead an investment of $11 billion to acquire from Intel a 49% equity interest
+  - url: https://www.sec.gov/Archives/edgar/data/50863/000005086324000110/intc-20240612.htm
+    title: Intel Corp Form 8-K (Item 1.01) – closing of Fab 34 joint venture sale to AP Grange Holdings
+    publisher: SEC EDGAR (Intel 8-K)
+    date: '2024-06-14'
+    tier: 1
+    quote: On June 12, 2024, following satisfaction of the closing conditions of the Purchase and Sale Agreement
+  - url: https://www.intel.com/content/www/us/en/newsroom/news/co-invest-program-news-2024.html
+    title: Intel and Apollo Agree to Joint Venture Related to Intel's Fab 34 in Ireland
+    publisher: Intel Newsroom
+    date: '2024-06-04'
+    tier: 2
+    quote: an investment of $11 billion to acquire from Intel a 49% equity interest in a joint venture entity
+- kind: investment
+  from: US_GOV
+  to: INTC
+  amount_usd: 8900000000
+  amount_text: $8.9 billion for 433.3 million primary shares at $20.47 (9.9% stake), funded by $5.7B of unpaid CHIPS Act grants plus $3.2B Secure Enclave awards; $5.7B received in Q3 2025
+  instrument: primary
+  term: passive stake with no board or governance/information rights; plus a 5-year warrant at $20 for an additional 5% exercisable only if Intel's ownership of its foundry business falls below 51%; together with $2.2B of CHIPS grants already received, total government funding $11.1B
+  capacity: null
+  announced: '2025-08-22'
+  status: completed
+  title_zh: 美国政府以 89 亿美元 CHIPS 资金换英特尔 9.9% 股权
+  title_en: US government converts $8.9B of CHIPS / Secure Enclave funding into a 9.9% Intel stake
+  summary_zh: 2025 年 8 月 22 日英特尔宣布与特朗普政府达成协议：美国政府以 20.47 美元/股购入 4.333 亿股新发普通股（9.9%），总额 89 亿美元，资金来源为尚未拨付的 57 亿美元 CHIPS 法案补贴和 32 亿美元 Secure Enclave 项目款；政府持股为被动投资、无董事席位，另获 5 年期、行权价 20 美元、覆盖额外 5% 股份的认股权证（仅在英特尔对代工业务持股低于 51% 时可行权）。英特尔三季报披露当季已收到政府 57 亿美元。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/50863/000005086325000129/a08222025form8-kex991.htm
+    title: Intel Announces Agreement with U.S. Government (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (Intel 8-K)
+    date: '2025-08-22'
+    tier: 1
+    quote: the government agrees to purchase 433.3 million primary shares of Intel common stock at a price of $20.47 per share
+  - url: https://www.sec.gov/Archives/edgar/data/50863/000005086325000169/q325earningsrelease.htm
+    title: Intel Reports Third-Quarter 2025 Financial Results (8-K exhibit)
+    publisher: SEC EDGAR (Intel 8-K)
+    date: '2025-10-23'
+    tier: 1
+    quote: During the quarter, Intel received $5.7 billion from the U.S. Government.
+- kind: investment
+  from: SOFTBANK
+  to: INTC
+  amount_usd: 2000000000
+  amount_text: $2 billion of Intel common stock at $23 per share (~2% stake)
+  instrument: primary
+  term: subject to customary closing conditions incl. HSR; no board seat; Intel Q3 2025 results confirm SoftBank made the $2.0B investment in the quarter
+  capacity: null
+  announced: '2025-08-18'
+  status: completed
+  title_zh: 软银 20 亿美元认购英特尔普通股
+  title_en: SoftBank Group invests $2B in Intel common stock at $23/share
+  summary_zh: 2025 年 8 月 18 日软银集团与英特尔宣布签署投资协议，软银以 23 美元/股认购 20 亿美元英特尔普通股（约 2% 股权），不寻求董事席位，用以表达对美国 AI 基础设施与半导体制造的支持。英特尔 2025 年三季报确认软银已完成 20 亿美元普通股投资，与同季美国政府 57 亿美元到账、英伟达 50 亿美元认购协议并列。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/0000050863/000005086325000126/a08182025form8-kex991.htm
+    title: SoftBank Group and Intel Corporation Sign $2B Investment Agreement (8-K Exhibit 99.1)
+    publisher: SEC EDGAR (Intel 8-K)
+    date: '2025-08-18'
+    tier: 1
+    quote: Under the terms of the agreement, SoftBank will pay $23 per share of Intel common stock.
+  - url: https://www.intel.com/content/www/us/en/newsroom/news/corporate/softbank-group-and-intel-corporation-sign-2b-investment-agreement.html
+    title: SoftBank Group and Intel Corporation Sign $2B Investment Agreement
+    publisher: Intel Newsroom
+    date: '2025-08-18'
+    tier: 2
+    quote: under which SoftBank will make a $2 billion investment in Intel common stock.
+  - url: https://group.softbank/en/news/press/20250819
+    title: SoftBank Group and Intel Corporation Sign $2 Billion Investment Agreement
+    publisher: SoftBank Group (press release)
+    date: '2025-08-19'
+    tier: 2
+    quote: SoftBank will make a $2 billion investment in Intel common stock.
+  - url: https://www.sec.gov/Archives/edgar/data/50863/000005086325000169/q325earningsrelease.htm
+    title: Intel Reports Third-Quarter 2025 Financial Results (8-K exhibit)
+    publisher: SEC EDGAR (Intel 8-K)
+    date: '2025-10-23'
+    tier: 1
+    quote: SoftBank Group made a $2.0 billion investment in Intel common stock,
+- kind: investment
+  from: OWL
+  to: CHIRISA
+  amount_usd: 4000000000
+  amount_text: $4 billion joint venture (funds managed by Blue Owl with affiliates of Chirisa Technology Parks and Machine Investment Group) for the CoreWeave campus in Lancaster, Pennsylvania
+  instrument: jv_equity
+  term: closed Aug 2025; CoreWeave is tenant and has invested in the campus (CoreWeave separately committed up to $6B of equipment for the site, 100 MW scalable to 300 MW); parties to fund ~$200M of PPL grid upgrades; Blue Owl intends to fund up to $20B of CTP developments (>1 GW across PA and VA); Newmark advised
+  capacity: 100 MW initial, expandable to 300 MW (Lancaster, PA)
+  announced: '2025-08-25'
+  status: completed
+  confidence: 0.9
+  verify_note: Lead said counterparty = PowerHouse Data Centers, but the press release and all coverage name only Chirisa Technology Parks and Machine Investment Group (PowerHouse is not a party to the 2025 Lancaster JV). Modeled to new entity CHIRISA; PowerHouse appears only in the Aug-2024 $5B JV below. Press release dated 2025-08-25 (lead said 08-26).
+  title_zh: Blue Owl 与 Chirisa 完成 40 亿美元合资，为 CoreWeave 宾州 Lancaster 园区融资
+  title_en: Blue Owl, Chirisa Technology Parks and MIG close $4B JV for CoreWeave's Lancaster, PA campus
+  summary_zh: 2025 年 8 月 25 日 Blue Owl 旗下基金与 Chirisa Technology Parks、Machine Investment Group 宣布完成一项包含 40 亿美元资金的合资，用于开发此前公布的宾夕法尼亚州 Lancaster 数据中心园区（初期 100 MW、可扩至 300 MW），CoreWeave 为唯一租户并已自行出资、另承诺最多 60 亿美元设备投入；三方还将出资约 2 亿美元升级当地电网。此笔使 Blue Owl 对 Chirisa 项目的意向出资总额达 200 亿美元、覆盖逾 1 GW 容量。 本笔承接 2024 年 8 月 Blue Owl / Chirisa / PowerHouse「最高 50 亿美元」合资框架（同一 Lancaster 园区），框架额度不再重复计入。
+  sources:
+  - url: https://www.prnewswire.com/news-releases/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus-302537279.html
+    title: Blue Owl and Chirisa Technology Parks Close $4 Billion Joint Venture Partnership Including Machine Investment Group for Lancaster Campus
+    publisher: Chirisa Technology Parks via PR Newswire (press release)
+    date: '2025-08-25'
+    tier: 2
+    quote: to include $4 billion of funding for the previously announced CoreWeave developments in Lancaster, Pennsylvania.
+  - url: https://www.commercialsearch.com/news/blue-owl-chirisa-technology-close-4b-jv-for-coreweave-campus
+    title: Blue Owl, Chirisa Technology Close $4B JV for Data Center Campus
+    publisher: Commercial Property Executive
+    date: '2025-08-26'
+    tier: 3
+    quote: Blue Owl Capital has formed a $4 billion joint venture with Chirisa Technology Parks and Machine Investment Group
+  - url: https://www.bisnow.com/national/news/data-center/coreweave-raises-4b-in-public-and-private-capital-for-pennsylvania-data-center-130694
+    title: CoreWeave Raises $4B For Pennsylvania Data Center
+    publisher: Bisnow
+    date: '2025-08-25'
+    tier: 3
+    quote: CoreWeave is planning a $6B data center with 100 megawatts of capacity and the potential to scale up to 300 MW.
+  - url: https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx
+    title: CoreWeave Announces Multi-Billion Dollar Commitment to AI Infrastructure in Pennsylvania
+    publisher: CoreWeave (investor relations)
+    date: '2025-07-15'
+    tier: 2
+    quote: CoreWeave will be the tenant of the site, co-developed by Chirisa Technology Parks and Machine Investment Group.
+  supersedes: investment|OWL|POWERHOUSE|2024-08-29
+- kind: investment
+  from: OWL
+  to: POWERHOUSE
+  amount_usd: 5000000000
+  amount_text: joint venture development partnership with capacity to deploy up to $5 billion of capital (Blue Owl funds, Chirisa Technology Parks, PowerHouse Data Centers)
+  instrument: jv_equity
+  term: build-to-suit AI/HPC data centers for CoreWeave and others; first phase 120 MW at CTP's 350-acre Chesterfield (Richmond), Virginia campus for delivery 2025–2026; second tranche of $750M closed May 2025; pipeline in NJ, PA, TX, KY, NV; Newmark advised
+  capacity: 120 MW first phase (Chesterfield, VA); up to $5B programme
+  announced: '2024-08-29'
+  status: signed
+  confidence: 0.85
+  verify_note: Three-party JV (Blue Owl + Chirisa Technology Parks + PowerHouse). Modeled to POWERHOUSE per lead; note config/entities.yaml labels POWERHOUSE as 'Poolside / Powerhouse', which looks like a mislabel – PowerHouse Data Centers is the data-center arm of American Real Estate Partners. Amount is a programme ceiling ('up to $5B'), not committed capital.
+  title_zh: Blue Owl 联手 Chirisa 与 PowerHouse 设立最高 50 亿美元合资，为 CoreWeave 建数据中心
+  title_en: Blue Owl, Chirisa and PowerHouse launch up-to-$5B JV to build AI/HPC data centers for CoreWeave
+  summary_zh: 2024 年 8 月 29 日 Blue Owl 旗下基金、Chirisa Technology Parks 与 PowerHouse Data Centers 签署合资开发协议，计划最多投入 50 亿美元，以定制代建模式为 CoreWeave 等客户开发大型 AI/HPC 数据中心；首期在弗吉尼亚 Chesterfield 园区建设 120 MW，2025–2026 年交付。2025 年 5 月三方宣布完成合资第二笔 7.5 亿美元交易；2025 年 8 月的 Lancaster 40 亿美元合资为同一 Blue Owl–Chirisa 伙伴关系的延伸（但 PowerHouse 未参与）。
+  sources:
+  - url: https://prnewswire.com/news-releases/blue-owl-chirisa-technology-parks-and-powerhouse-data-centers-announce-first-phase-of-5-billion-joint-venture-development-partnership-302233967.html
+    title: Blue Owl, Chirisa Technology Parks and PowerHouse Data Centers announce first phase of $5 Billion Joint Venture Development Partnership
+    publisher: Blue Owl / Chirisa / PowerHouse via PR Newswire (press release)
+    date: '2024-08-29'
+    tier: 2
+    quote: capacity to deploy up to $5 Billion of capital
+  - url: https://www.prnewswire.com/news-releases/blue-owl-chirisa-technology-parks-and-powerhouse-data-centers-announce-next-phase-of-5-billion-joint-venture-development-partnership-302466950.html
+    title: Blue Owl, Chirisa Technology Parks and PowerHouse Data Centers Announce Next Phase of $5 Billion Joint Venture Development Partnership
+    publisher: Blue Owl / Chirisa / PowerHouse via PR Newswire (press release)
+    date: '2025-05-27'
+    tier: 2
+    quote: CTP and PowerHouse are committed to delivering high-performance infrastructure that aligns with sustainability goals.
+- kind: investment
+  from: ARAMCO
+  to: HUMAIN
+  amount_usd: 2600000000
+  amount_text: 'cash component only: approximately SAR 9.9 billion (US$2.6 billion at the 3.75 peg) contributed by Aramco to HUMAIN during 2026, plus transfer of Aramco AI, compute and digital assets (value undisclosed) for a 49% stake; PIF retains 51%'
+  instrument: primary
+  term: non-binding term sheet signed 2025-10-28 (Aramco to take a 'significant minority stake', PIF majority); definitive agreements and regulatory approvals (incl. EU merger clearance) followed; closed 2026-11-01 with Aramco holding 49% via a wholly owned subsidiary
+  capacity: HUMAIN targets 3 GW of AI data-center capacity by 2030
+  announced: '2025-10-28'
+  status: completed
+  confidence: 0.85
+  verify_note: Oct-2025 announcement disclosed no % or amount (only 'significant minority stake'); 49% and SAR 9.9B cash come from the 2026-11-01 closing releases. amount_usd reflects cash only; total consideration incl. contributed assets is undisclosed. Note PIF entity in config carries alias 'Humain' – HUMAIN is a separate entity id.
+  title_zh: 沙特阿美以约 26 亿美元现金加 AI 资产入股 HUMAIN 49%
+  title_en: Saudi Aramco takes 49% of PIF's HUMAIN for ~SAR 9.9B (US$2.6B) cash plus AI assets
+  summary_zh: 2025 年 10 月 28 日 PIF 与沙特阿美签署非约束性条款书，拟由阿美收购 PIF 旗下 AI 公司 HUMAIN 的「重要少数股权」、PIF 保持控股，双方将 AI 资产、能力和人才注入 HUMAIN。交易于 2026 年 11 月 1 日完成：阿美通过全资子公司持股 49%、PIF 持 51%，阿美在 2026 年向 HUMAIN 注入约 99 亿里亚尔（26 亿美元）现金并转入 AI、算力及数字资产，用于支持 HUMAIN 到 2030 年建成 3 GW AI 数据中心的目标。
+  sources:
+  - url: https://www.aramco.com/en/news-media/news/2025/pif-and-aramco-agree-for-aramco-to-acquire-a-significant-minority-stake-in-humain
+    title: PIF and Aramco agree for Aramco to acquire a significant minority stake in HUMAIN
+    publisher: Saudi Aramco (press release)
+    date: '2025-10-28'
+    tier: 2
+    quote: PIF would continue to own the majority of HUMAIN.
+  - url: https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth
+    title: PIF and Aramco close HUMAIN transaction to accelerate HUMAIN's global growth
+    publisher: Saudi Aramco (press release)
+    date: '2026-11-01'
+    tier: 2
+    quote: approximately SAR 9.9 billion ($2.6 billion) in cash contributions in 2026 from Aramco to HUMAIN
+  - url: https://www.aramco.com/en/news-media/news/2026/aramco-announces-third-quarter-2026-results
+    title: Aramco announces third quarter 2026 results
+    publisher: Saudi Aramco (press release)
+    date: '2026-11-03'
+    tier: 2
+    quote: Acquisition of 49% stake in HUMAIN, involving a transfer of assets and approximately $2.6 billion in cash contributions
+  - url: https://www.thenationalnews.com/future/technology/2025/10/28/aramco-to-take-minority-stake-in-saudi-ai-startup-humain
+    title: Aramco to take minority stake in Saudi AI start-up Humain
+    publisher: The National
+    date: '2025-10-28'
+    tier: 3
+    quote: PIF will continue to own the majority of the company.
+  - url: https://www.connaissancedesenergies.org/afp/le-geant-petrolier-aramco-acquiert-une-part-dans-une-societe-saoudienne-dia-261101
+    title: Le géant pétrolier Aramco acquiert une part dans une société saoudienne d'IA
+    publisher: AFP (via Connaissance des Énergies)
+    date: '2026-11-01'
+    tier: 3
+    quote: L'opération prévoit environ 2,6 milliards de dollars en numéraire apportés par Aramco en 2026
+  - url: https://w.media/?p=45021
+    title: Aramco acquires 49 percent stake in HUMAIN
+    publisher: W.Media
+    date: '2026-11-02'
+    tier: 3
+    quote: approximately SAR 9.9 billion (US$ 2.6 billion) in cash contributions from Aramco to HUMAIN in 2026
+- kind: investment
+  from: BABA
+  to: MOONSHOT
+  amount_usd: 800000000
+  amount_text: 'Alibaba''s own contribution: approximately US$0.8 billion (RMB 5.9 billion) for ~36% (preferred stock), per Alibaba''s FY2024 20-F; the full round was >US$1 billion at ~US$2.5 billion post-money with HongShan, Xiaohongshu, Meituan, Monolith and existing holders'
+  instrument: primary
+  term: round first reported by 36Kr on 2024-02-19; Bloomberg (2024-02-27) named Alibaba as lead with Monolith Management; largest single financing by a Chinese LLM startup at the time
+  capacity: null
+  announced: '2024-02-19'
+  status: completed
+  confidence: 0.9
+  verify_note: Edge amount is Alibaba's disclosed share (US$0.8B, tier-1 20-F), not the ~US$1B round total; the remaining ~US$0.2B+ from other investors is not modeled separately because no source splits it. Lead date 2024-02-27 is Bloomberg's report; 36Kr's exclusive on 2024-02-19 is used as announced date. Reported valuations differ (36Kr/Bloomberg ~US$2.5B; The Information via LatePost >US$2.3B).
+  title_zh: 阿里领投月之暗面超 10 亿美元融资，自身出资约 8 亿美元获 36% 股权
+  title_en: Alibaba leads Moonshot AI's >$1B round at ~$2.5B valuation, investing ~$0.8B for ~36%
+  summary_zh: 2024 年 2 月 19 日 36 氪独家报道 Kimi 母公司月之暗面完成新一轮超 10 亿美元融资，投资方包括阿里、红杉中国、小红书、美团及砺思资本等老股东，投后估值约 25 亿美元，为当时国内大模型公司最大单轮融资；彭博 2 月 27 日称阿里为领投方、Monolith 跟投。阿里巴巴 2024 财年 20-F 披露，财年内共向月之暗面投资约 8 亿美元（约 59 亿元人民币）获约 36% 股权（优先股），成为其单一最大机构股东。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000095017024063767/baba-20240331.htm
+    title: Alibaba Group Holding Ltd – Form 20-F for fiscal year ended March 31, 2024 (Note 4(b) Investment in Moonshot AI Ltd)
+    publisher: SEC EDGAR (Alibaba 20-F)
+    date: '2024-05-23'
+    tier: 1
+    quote: the Company invested a total of approximately US$ 0.8 billion (approximately RMB 5.9 billion) for an approximately 36 % equity interest
+  - url: https://static.alibabagroup.com/reports/fy2024/ar/ebook/EN/87/index.html
+    title: Alibaba Group Fiscal Year 2024 Annual Report – Significant strategic investments (Moonshot)
+    publisher: Alibaba Group (annual report)
+    date: '2024-05-24'
+    tier: 2
+    quote: we invested a total of approximately US$0.8 billion for an approximately 36% equity interest
+  - url: https://www.36kr.com/p/2655063979180294
+    title: 融资超10亿美金，AI公司「月之暗面」获阿里、红杉、小红书、美团新一轮投资
+    publisher: 36氪
+    date: '2024-02-19'
+    tier: 3
+    quote: 月之暗面」近期已完成新一轮超10亿美金融资，投资方包括阿里、红杉中国、小红书、美团，砺思资本等老股东跟投
+  - url: https://news.bloomberglaw.com/private-equity/alibaba-leads-record-deal-to-create-2-5-billion-china-ai-firm
+    title: Alibaba Leads Record Deal to Mint $2.5 Billion China AI Firm
+    publisher: Bloomberg (via Bloomberg Law)
+    date: '2024-02-27'
+    tier: 3
+    quote: It led a $1 billion funding round in Moonshot AI with existing backer Monolith Management
+  - url: https://www.yicaiglobal.com/news/chinese-ai-startup-moonshot-ai-banks-usd1-billion-in-latest-fundraiser
+    title: Chinese AI Startup Moonshot AI Banks USD1 Billion in Latest Fundraiser
+    publisher: Yicai Global
+    date: '2024-02-20'
+    tier: 3
+    quote: The new funding round has boosted Moonshot AI's value to USD2.5 billion.
+  - url: https://technode.com/2024/02/20/alibaba-and-meituan-back-new-chinese-ai-startup-valued-at-2-5-billion-valuation/
+    title: Alibaba and Meituan back new Chinese AI startup valued at $2.5 billion valuation
+    publisher: TechNode
+    date: '2024-02-20'
+    tier: 3
+    quote: is valued at $2.5 billion after a $1 billion round of fundraising recently
+- kind: investment
+  from: TCEHY
+  to: MOONSHOT
+  amount_usd: 300000000
+  amount_text: US$300-plus million round (Series B) closed Aug 2024 with Tencent, Gaorong Capital and existing backer Alibaba; Tencent's individual share undisclosed
+  instrument: primary
+  term: post-money valuation US$3.3 billion (The Information had earlier reported a US$3 billion pre-money target in May 2024)
+  capacity: null
+  announced: '2024-08-05'
+  status: completed
+  confidence: 0.7
+  verify_note: 'Edge amount is the whole round (US$300M+), attributed to Tencent as the headline new investor because no source gives Tencent''s own cheque; Gaorong and Alibaba also participated. Independent originals: Bloomberg (2024-08-05) and WSJ (as cited by IT之家, Nov 2025: 逾3亿美元 B轮 from Tencent and Gaorong in Aug 2024). Moonshot, Tencent and Gaorong did not comment.'
+  title_zh: 腾讯、高榕参与月之暗面逾 3 亿美元 B 轮，估值 33 亿美元
+  title_en: Tencent and Gaorong join Moonshot AI's $300M+ Series B at $3.3B valuation
+  summary_zh: 彭博 2024 年 8 月 5 日援引知情人称，月之暗面刚完成逾 3 亿美元新一轮融资，腾讯与高榕资本入局、老股东阿里跟投，投后估值 33 亿美元；此前 The Information 5 月曾报道其以 30 亿美元投前估值融资、腾讯为新投资方。腾讯具体出资额未披露，本条按整轮金额记在腾讯名下。《华尔街日报》2025 年 11 月回顾亦称其 2024 年 8 月从腾讯、高榕等获逾 3 亿美元 B 轮。
+  sources:
+  - url: https://news.bloomberglaw.com/artificial-intelligence/tencent-joins-300-million-financing-for-chinas-ai-unicorn
+    title: Tencent Joins $300 Million Financing for China's AI Unicorn
+    publisher: Bloomberg (via Bloomberg Law)
+    date: '2024-08-05'
+    tier: 3
+    quote: Tencent Holdings Ltd. has contributed to a $300-plus million round Chinese generative AI startup Moonshot just closed
+  - url: https://technode.com/2024/08/06/tencent-joins-moonshot-ai-300-million-funding-round-report-says/
+    title: Tencent joins Moonshot AI's $300 million funding round, report says
+    publisher: TechNode (citing Bloomberg)
+    date: '2024-08-06'
+    tier: 3
+    quote: The over $300 million funding values the Beijing-based startup at $3.3 billion.
+  - url: https://www.ithome.com/0/899/306.htm
+    title: 消息称月之暗面新一轮融资进入收尾阶段，估值有望提升至约 40 亿美元
+    publisher: IT之家 (citing The Wall Street Journal)
+    date: '2025-11-21'
+    tier: 3
+    quote: 月之暗面在去年 8 月从腾讯和高榕资本等投资方获得了逾 3 亿美元的 B 轮融资。
+  - url: https://www.ifanr.com/1586151
+    title: 曝月之暗面新一轮估值达 30 亿美元，腾讯入局
+    publisher: 爱范儿 (citing The Information)
+    date: '2024-05-21'
+    tier: 3
+    quote: 估值达到 30 亿美元，新的投资者包括腾讯
+- kind: investment
+  from: PRIVATE_ROUND
+  to: MOONSHOT
+  amount_usd: 500000000
+  amount_text: US$500 million Series C led by IDG Capital (US$150 million) with existing holders Alibaba, Tencent and Wang Huiwen oversubscribing; post-money valuation US$4.3 billion
+  instrument: primary
+  term: confirmed by founder Yang Zhilin's internal letter of 2025-12-31 (cash on hand >RMB 10 billion); proceeds for aggressive AI-chip expansion and training of next-generation K3 model
+  capacity: null
+  announced: '2025-12-31'
+  status: completed
+  confidence: 0.85
+  verify_note: IDG lead and US$150M figure come from LatePost (exclusive) as relayed by TechNode / IT之家; LatePost's own page could not be opened (TLS error). Caixin independently confirmed the US$500M Series C and the 2025-12-31 internal letter; SCMP (via The Star / SiliconANGLE) confirmed US$4.3B valuation.
+  title_zh: 月之暗面完成 5 亿美元 C 轮融资，IDG 领投，投后估值 43 亿美元
+  title_en: Moonshot AI closes $500M Series C led by IDG Capital at $4.3B valuation
+  summary_zh: 2025 年 12 月 31 日《晚点 LatePost》独家报道、财新同日确认，月之暗面完成 5 亿美元 C 轮融资，IDG 资本领投 1.5 亿美元，阿里、腾讯、美团联合创始人王慧文等老股东超额认购，投后估值 43 亿美元；创始人杨植麟同日内部信称账上现金超 100 亿元人民币、短期不着急上市，资金将用于更激进地扩充 AI 芯片及训练下一代 K3 模型。
+  sources:
+  - url: https://m.caixin.com/m/2025-12-31/102399324.html
+    title: 月之暗面杨植麟：近期融资后持有现金超100亿元 不着急上市
+    publisher: 财新 Caixin
+    date: '2025-12-31'
+    tier: 3
+    quote: 事实上我们B/C轮融资额就超过绝大部分IPO募资及上市公司的定向增发
+  - url: https://technode.com/2025/12/31/idg-leads-500m-series-c-for-moonshot-ai-oversubscribed-by-alibaba-tencent/
+    title: IDG Leads $500M Series C for Moonshot AI, Oversubscribed by Alibaba & Tencent
+    publisher: TechNode (citing LatePost)
+    date: '2025-12-31'
+    tier: 3
+    quote: valuing the company at $4.3 billion
+  - url: https://www.ithome.com/0/914/583.htm
+    title: 消息称月之暗面寻求新一轮融资
+    publisher: IT之家 (citing 晚点 LatePost)
+    date: '2026-01-05'
+    tier: 3
+    quote: 月之暗面新完成 5 亿美元 C 轮融资，IDG 领投 1.5 亿美元，阿里、腾讯、美团联合创始人王慧文等老股东超额认购，投后估值 43 亿美元
+  - url: https://www.thestar.com.my/aseanplus/aseanplus-news/2026/01/05/chinas-moonshot-ai-raises-us500-million-in-latest-funding-round-report
+    title: 'China''s Moonshot AI raises US$500 million in latest funding round: report'
+    publisher: The Star (SCMP)
+    date: '2026-01-05'
+    tier: 3
+    quote: The fresh injection of capital pushed Moonshot AI's valuation to US$4.3 billion, according to the report.
+  - url: https://siliconangle.com/?p=726493
+    title: Moonshot AI raises $500M Series C led by IDG Capital
+    publisher: SiliconANGLE (citing SCMP)
+    date: '2026-01-01'
+    tier: 3
+    quote: The new round brings Moonshot AI's valuation to $4.3 billion, the SCMP reported.
+- kind: investment
+  from: BABA
+  to: MINIMAX
+  amount_usd: 654000000
+  amount_text: 'Series Pre-B round: total consideration US$654.0 million at US$1,900M pre / US$2,554M post-money (MiniMax HK prospectus); Bloomberg reported Alibaba leading a round of at least US$600M at >US$2.5B valuation; Alibaba''s own cheque undisclosed'
+  instrument: primary
+  term: last share purchase agreement 2024-03-15, last payment of consideration 2025-02-19, US$10.46 per share (prospectus); HongShan (ex-Sequoia China) also committed; Alibaba (via Alisoft China) held ~15.66% of MiniMax 12 months before the Dec 2025 IPO
+  capacity: null
+  announced: '2024-03-05'
+  status: completed
+  confidence: 0.85
+  verify_note: Edge amount is the whole Series Pre-B round (US$654.0M per the HKEX prospectus 'History, Reorganization and Corporate Structure' section, application-proof version), attributed to Alibaba as lead; the prospectus does not break out Alibaba's share of this round. Bloomberg's 'at least US$600M' and '>US$2.5B valuation' match the prospectus (US$2,554M post-money). Bloomberg.com itself returned 403; the Bloomberg text was read via Bloomberg Law and Fortune.
+  title_zh: 阿里领投 MiniMax 约 6.5 亿美元融资，投后估值约 25.5 亿美元
+  title_en: Alibaba leads MiniMax's ~$654M Series Pre-B at ~$2.55B post-money valuation
+  summary_zh: 彭博 2024 年 3 月 5 日报道阿里巴巴领投上海大模型公司 MiniMax 至少 6 亿美元新一轮融资、估值超 25 亿美元，红杉中国（HongShan）已承诺参投，为阿里当年继月之暗面后第二笔大模型重注。MiniMax 2025 年 12 月港股招股书披露该轮（Series Pre-B）最后一份购股协议签于 2024 年 3 月 15 日，总对价 6.54 亿美元、投前 19 亿美元、投后 25.54 亿美元，每股 10.46 美元；阿里通过 Alisoft China 在上市前 12 个月持股约 15.66%，为最大外部股东。
+  sources:
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0109/11985589/sehk25122100318.pdf
+    title: MiniMax Group Inc. – Prospectus section 'History, Reorganization and Corporate Structure' (Pre-IPO Investments table)
+    publisher: HKEXnews (MiniMax listing document)
+    date: '2025-12-31'
+    tier: 1
+    quote: Series Pre-B ... Date of the last share purchase agreement ... Mar 15, 2024 ... Total consideration received by our Company (US$ million) ... 654.0 ... Implied post-money valuation (US$ million) ... 2,554.0
+  - url: https://news.bloomberglaw.com/private-equity/alibaba-backs-2-5-billion-ai-startup-in-second-major-2024-deal
+    title: Alibaba Backs $2.5 Billion AI Firm in Second Big 2024 Deal
+    publisher: Bloomberg (via Bloomberg Law)
+    date: '2024-03-05'
+    tier: 3
+    quote: Alibaba Group Holding Ltd. is leading a financing round of at least $600 million for Chinese AI startup MiniMax
+  - url: https://fortune.com/asia/2024/03/05/alibaba-leads-financing-round-chinese-ai-startup-minimax/
+    title: Alibaba leads financing round for Chinese AI startup MiniMax
+    publisher: Bloomberg (via Fortune)
+    date: '2024-03-05'
+    tier: 3
+    quote: The fundraise remains in progress but Alibaba and HongShan, formerly Sequoia China, have committed to the financing
+  - url: https://www.thestandard.com.hk/finance/article/60922/Alibaba-leads-US600m-AI-financing-round
+    title: Alibaba leads US$600m AI financing round
+    publisher: The Standard (Hong Kong)
+    date: '2024-03-06'
+    tier: 3
+    quote: Alibaba (9988) is leading a financing round of at least US$600 million
+  - url: https://technode.com/2024/03/06/alibaba-adds-fresh-ai-startup-to-its-investing-portfolio-amid-increasing-bets-in-the-sector/
+    title: Alibaba adds fresh AI startup to its investing portfolio amid increasing bets in the sector
+    publisher: TechNode (citing China Star Market, Bloomberg)
+    date: '2024-03-06'
+    tier: 3
+    quote: Alibaba is reportedly joining as a lead investor in the latest funding round for Chinese AI startup MiniMax
+  - url: https://www.36kr.com/p/2678677346318082
+    title: 阿里领投Minimax 6亿美元融资，5家大模型独角兽集齐了
+    publisher: 量子位 via 36氪 (citing Bloomberg)
+    date: '2024-03-07'
+    tier: 3
+    quote: 目前阿里和红杉已承诺将参与本轮融资，其余跟投者还在洽谈中，相关条款可能会有所调整。
+- kind: investment
+  from: MSFT
+  to: OPENAI
+  amount_usd: 13000000000
+  amount_text: $13B cumulative funding commitment per Microsoft's 10-K (2019 $1B + 2021 ~$2B + January 2023 reported ~$10B); the January 2023 tranche was never officially quantified
+  instrument: primary
+  term: 'Third phase of the Microsoft–OpenAI partnership, following investments in 2019 and 2021; Azure remains OpenAI''s exclusive cloud provider; funded over multiple years (reportedly largely as Azure compute); Semafor-reported terms: Microsoft gets 75% of OpenAI profits until it recoups its investment, then a 49% stake'
+  capacity: null
+  announced: '2023-01-23'
+  status: completed
+  title_zh: 微软对 OpenAI 累计出资承诺 130 亿美元（2023 年 1 月追加约 100 亿）
+  title_en: Microsoft's cumulative $13B funding commitment to OpenAI (incl. ~$10B extension of January 2023)
+  summary_zh: 2023 年 1 月 23 日微软宣布与 OpenAI 合作进入第三阶段，追加“多年期、数十亿美元”投资，官方未披露金额；彭博援引知情人士称总额为多年合计 100 亿美元，Semafor 此前报道该轮对 OpenAI 估值约 290 亿美元（含新资金）。微软为唯一投资方，Azure 继续作为 OpenAI 独家云服务商；微软 10-K 披露其对 OpenAI 的累计出资承诺为 130 亿美元（含 2019 年 10 亿美元及 2021 年投资）。 金额按微软 10-K 披露的累计出资承诺 130 亿美元记，其中 2023 年 1 月这一笔媒体报道约 100 亿美元，微软未单独披露。
+  sources:
+  - url: https://blogs.microsoft.com/blog/2023/01/23/microsoftandopenaiextendpartnership/
+    title: Microsoft and OpenAI extend partnership
+    publisher: Microsoft (Official Microsoft Blog)
+    date: '2023-01-23'
+    tier: 2
+    quote: a multiyear, multibillion dollar investment to accelerate AI breakthroughs
+  - url: https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm
+    title: Microsoft Corporation Form 10-K for fiscal year ended June 30, 2025
+    publisher: SEC EDGAR (Microsoft 10-K)
+    date: '2025-07-30'
+    tier: 1
+    quote: have made total funding commitments of $13 billion
+  - url: https://fortune.com/2023/01/23/microsoft-investing-10-billion-open-ai-chatgpt/
+    title: Microsoft is investing $10 billion in ChatGPT company OpenAI as the bot takes the internet by storm
+    publisher: Bloomberg (Dina Bass; syndicated on Fortune)
+    date: '2023-01-23'
+    tier: 3
+    quote: Microsoft Corp. is investing $10 billion in OpenAI
+  - url: https://www.semafor.com/article/01/09/2023/microsoft-eyes-10-billion-bet-on-chatgpt
+    title: Microsoft eyes $10 billion bet on ChatGPT
+    publisher: Semafor
+    date: '2023-01-09'
+    tier: 3
+    quote: Microsoft has been in talks to invest $10 billion into the owner of ChatGPT
+  - url: https://www.cnbc.com/2023/01/23/microsoft-announces-multibillion-dollar-investment-in-chatgpt-maker-openai.html
+    title: Microsoft announces new multibillion-dollar investment in ChatGPT-maker OpenAI
+    publisher: CNBC
+    date: '2023-01-23'
+    tier: 3
+    quote: Microsoft declined to provide a specific dollar amount, but Semafor reported earlier this month that Microsoft was in talks to invest as much as $10 billion.
+- kind: investment
+  from: PRIVATE_ROUND
+  to: OPENAI
+  amount_usd: 6600000000
+  amount_text: $6.6B in new funding at a $157B post-money valuation
+  instrument: primary
+  term: Led by Thrive Capital (reportedly ~$1.3B); participants Microsoft, Nvidia, SoftBank, Khosla Ventures, Altimeter Capital, Fidelity, MGX, Tiger Global
+  capacity: null
+  announced: '2024-10-02'
+  status: completed
+  title_zh: OpenAI 完成 66 亿美元融资，投后估值 1570 亿美元
+  title_en: OpenAI raises $6.6B at $157B post-money valuation
+  summary_zh: 2024 年 10 月 2 日 OpenAI 官方宣布完成 66 亿美元新融资，投后估值 1570 亿美元。本轮由 Thrive Capital 领投（据报道约 13 亿美元），微软、英伟达、软银、Khosla Ventures、Altimeter、富达、阿布扎比 MGX 及 Tiger Global 参投。资金用于前沿 AI 研究与扩充算力。
+  sources:
+  - url: https://openai.com/index/scale-the-benefits-of-ai/
+    title: New funding to scale the benefits of AI
+    publisher: OpenAI
+    date: '2024-10-02'
+    tier: 2
+    quote: raised $6.6B in new funding at a $157B post-money valuation
+  - url: https://www.cnbc.com/2024/10/02/openai-raises-at-157-billion-valuation-microsoft-nvidia-join-round.html
+    title: OpenAI closes funding at $157 billion valuation, as Microsoft, Nvidia, SoftBank join round
+    publisher: CNBC
+    date: '2024-10-02'
+    tier: 3
+    quote: Led by Thrive Capital, the round also had participation from Microsoft and Nvidia, CNBC confirmed.
+  - url: https://techcrunch.com/2024/10/02/openai-raises-6-6b-and-is-now-valued-at-157b/
+    title: OpenAI raises $6.6B and is now valued at $157B
+    publisher: TechCrunch
+    date: '2024-10-02'
+    tier: 3
+    quote: Microsoft, Nvidia, SoftBank, Khosla Ventures, Altimeter Capital, Fidelity, and MGX also participated in the fundraising.
+- kind: investment
+  from: PRIVATE_ROUND
+  to: XAI
+  amount_usd: 6000000000
+  amount_text: $6B Series B; $18B pre-money (Musk post) / $24B post-money (reported)
+  instrument: primary
+  term: Series B; investors incl. Valor Equity Partners, Vy Capital, Andreessen Horowitz, Sequoia Capital, Fidelity Management & Research, Prince Alwaleed Bin Talal and Kingdom Holding
+  capacity: null
+  announced: '2024-05-26'
+  status: completed
+  distinct: true
+  title_zh: xAI 完成 60 亿美元 B 轮融资，投后估值 240 亿美元
+  title_en: xAI raises $6B Series B at $24B post-money valuation
+  summary_zh: 2024 年 5 月 26 日 xAI 官方宣布完成 60 亿美元 B 轮融资。马斯克在 X 上称投前估值 180 亿美元，对应投后估值 240 亿美元（媒体报道）；公司公告本身未披露估值。主要投资方包括 Valor Equity Partners、Vy Capital、a16z、红杉资本、富达、阿尔瓦利德王子及 Kingdom Holding。
+  sources:
+  - url: https://x.ai/news/series-b
+    title: Series B funding round
+    publisher: xAI
+    date: '2024-05-26'
+    tier: 2
+    quote: xAI is pleased to announce our series B funding round of $6 billion
+  - url: https://siliconangle.com/2024/05/27/elon-musks-xai-raises-6b-build-new-ai-services/
+    title: Elon Musk's xAI raises $6B at $24B valuation to build new AI services
+    publisher: SiliconANGLE
+    date: '2024-05-27'
+    tier: 3
+    quote: The investment values xAI at $24 billion, up from $18 billion before.
+  - url: https://techcrunch.com/2024/05/26/elon-musks-xai-raises-6b-from-valor-a16z-and-sequoia/
+    title: Elon Musk's xAI raises $6B from Valor, a16z and Sequoia
+    publisher: TechCrunch
+    date: '2024-05-26'
+    tier: 3
+    quote: Pre-money valuation was $18B
+- kind: investment
+  from: PRIVATE_ROUND
+  to: XAI
+  amount_usd: 6000000000
+  amount_text: $6B Series C; valuation not disclosed by xAI, reported ~$45B (Kingdom Holding filing, per TechCrunch) to $50B (CNBC, during fundraising)
+  instrument: primary
+  term: Series C; investors incl. a16z, BlackRock, Fidelity Management & Research, Kingdom Holding, Lightspeed, MGX, Morgan Stanley, OIA, QIA, Sequoia Capital, Valor Equity Partners, Vy Capital; strategic investors NVIDIA and AMD; Kingdom Holding reportedly invested ~$400M
+  capacity: null
+  announced: '2024-12-23'
+  status: completed
+  distinct: true
+  title_zh: xAI 完成 60 亿美元 C 轮融资，英伟达、AMD 战略参投
+  title_en: xAI closes $6B Series C with NVIDIA and AMD as strategic investors
+  summary_zh: 2024 年 12 月 23 日 xAI 官方宣布完成 60 亿美元 C 轮融资，与同年 5 月的 B 轮为两笔独立融资。投资方包括 a16z、贝莱德、富达、Kingdom Holding、Lightspeed、MGX、摩根士丹利、阿曼投资局（OIA）、卡塔尔投资局（QIA）、红杉、Valor、Vy Capital，英伟达与 AMD 以战略投资者身份参投。公司未披露估值；TechCrunch 援引 Kingdom Holding 公告称估值约 450 亿美元，CNBC 在募资阶段报道的估值为 500 亿美元。
+  sources:
+  - url: https://x.ai/news/series-c
+    title: xAI raises $6B Series C
+    publisher: xAI
+    date: '2024-12-23'
+    tier: 2
+    quote: Strategic investors NVIDIA and AMD also participated
+  - url: https://techcrunch.com/2024/12/25/elon-musks-xai-lands-billions-in-new-cash-to-fuel-ai-ambitions/
+    title: Elon Musk's xAI lands $6B in new cash to fuel AI ambitions
+    publisher: TechCrunch
+    date: '2024-12-25'
+    tier: 3
+    quote: The filing also revealed that xAI is now valued at $45 billion, close to double its previous valuation.
+  - url: https://www.cnbc.com/2024/11/15/elon-musks-xai-raising-up-to-6-billion-to-purchase-100000-nvidia-chips-for-memphis-data-center.html
+    title: Elon Musk's xAI raising up to $6 billion to purchase 100,000 Nvidia chips for Memphis data center
+    publisher: CNBC
+    date: '2024-11-15'
+    tier: 3
+    quote: xAI is raising up to $6 billion at a $50 billion valuation
+- kind: investment
+  from: GOOGL
+  to: ANTHROPIC
+  amount_usd: 2000000000
+  amount_text: 'up to $2.0B of convertible promissory notes in three tranches: $500M (Sep 2023), $750M (Sep 2024), $750M (Sep 2025)'
+  instrument: convertible
+  term: Google 2023 Note Purchase Agreement with Google LLC, signed September 2023 (publicly reported 2023-10-27); notes bore 10.0% annual interest, maturing 48 months after issuance; tranches 1–2 converted in 2025 (Series E-1 financing) into 12.7M Series E-3 and 15.3M Series E-4 non-voting preferred shares at $44.8692 / $50.4779; tranche 3 converted January 2026 into 3.3M Series G-4 shares at $233.2228; nothing outstanding as of 2026-06-30
+  capacity: null
+  announced: '2023-10-27'
+  status: completed
+  title_zh: 谷歌承诺向 Anthropic 投资最多 20 亿美元（可转债，分三期）
+  title_en: Google commits up to $2B to Anthropic via convertible notes in three tranches
+  summary_zh: 2023 年 10 月 27 日媒体报道谷歌同意向 Anthropic 投资最多 20 亿美元（先期 5 亿美元、其后 15 亿美元），Anthropic 发言人向 CNBC 确认。Anthropic S-1 披露该笔为 2023 年 9 月签署的 Google 2023 票据购买协议：可转换本票本金合计最多 20 亿美元，分三期发行（2023 年 9 月 5 亿、2024 年 9 月 7.5 亿、2025 年 9 月 7.5 亿美元），年息 10%，签约时不设估值。前两期已于 2025 年 E 轮时按 E-1 发行价折扣转为无投票权优先股，第三期于 2026 年 1 月转股，谷歌为唯一出资方。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm
+    title: Anthropic, PBC Form S-1 Registration Statement (Notes to Consolidated Financial Statements – Convertible Notes)
+    publisher: SEC EDGAR (Anthropic S-1)
+    date: '2026-10-26'
+    tier: 1
+    quote: for the issuance of convertible promissory notes in an aggregate principal amount of up to $2.0 billion, issuable in three tranches
+  - url: https://www.cnbc.com/2023/10/27/google-commits-to-invest-2-billion-in-openai-competitor-anthropic.html
+    title: Google commits to invest $2 billion in OpenAI competitor Anthropic
+    publisher: CNBC
+    date: '2023-10-27'
+    tier: 3
+    quote: a $500 million upfront cash infusion and an additional $1.5 billion to be invested over time
+- kind: investment
+  from: GOOGL
+  to: ANTHROPIC
+  amount_usd: 1300000000
+  amount_text: approximately $1.3B convertible promissory note (Anthropic S-1, Google 2024 NPA); reported by media on 2025-01-22 as a new investment of 'more than $1 billion'
+  instrument: convertible
+  term: Google 2024 Note Purchase Agreement signed August 2024 (not public at the time); note bore 8.5% annual interest, maturing August 2030; converted in full in January 2025, in connection with the Series E-1 financing, into 24.2M Series E-5 non-voting preferred shares at $53.2822 (discount to the $56.0865 Series E-1 price); nothing outstanding as of 2025-12-31
+  capacity: null
+  announced: '2025-01-22'
+  status: completed
+  confidence: 0.8
+  verify_note: 'The S-1 does not mention the January 2025 press reports. Matching the FT/CNBC-reported ''more than $1 billion'' new Google investment (2025-01-22) to the Google 2024 NPA (~$1.3B note, signed Aug 2024, converted to Series E-5 in Jan 2025) is an inference from size and timing. The S-1 cash-flow statement shows the note cash was received in 2024 (convertible notes issued for cash: $6,050M in 2024), and no other Google note issuance in early 2025, so the economic date is August 2024 while the public-report date is 2025-01-22. FT original (paywalled) was not opened. Amount uses the S-1 figure, not the media''s ~$1B.'
+  title_zh: 谷歌向 Anthropic 追加约 13 亿美元可转债投资（媒体报道逾 10 亿美元）
+  title_en: Google invests additional ~$1.3B in Anthropic via convertible note (reported as $1B+)
+  summary_zh: 2025 年 1 月 22 日《金融时报》及 CNBC 报道谷歌在此前 20 亿美元之外再向 Anthropic 投资逾 10 亿美元，CNBC 经知情人士确认。Anthropic S-1 披露对应的 Google 2024 票据购买协议：2024 年 8 月签署，可转换本票本金约 13 亿美元、年息 8.5%，谷歌为唯一出资方；该票据于 2025 年 1 月随 E 轮融资按每股 53.2822 美元（E-1 发行价 56.0865 美元的折扣价）全部转为 2420 万股 E-5 无投票权优先股。与 2023 年最多 20 亿美元的协议为两笔独立交易。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm
+    title: Anthropic, PBC Form S-1 Registration Statement (Notes to Consolidated Financial Statements – Google 2024 Note Purchase Agreement)
+    publisher: SEC EDGAR (Anthropic S-1)
+    date: '2026-10-26'
+    tier: 1
+    quote: for the issuance of a convertible promissory note in an aggregate principal amount of approximately $1.3 billion
+  - url: https://www.cnbc.com/2025/01/22/google-agrees-to-new-1-billion-investment-in-anthropic.html
+    title: Google agrees to new $1 billion investment in Anthropic
+    publisher: CNBC
+    date: '2025-01-22'
+    tier: 3
+    quote: a new investment of more than $1 billion
+- kind: investment
+  from: PRIVATE_ROUND
+  to: SSI
+  amount_usd: 2000000000
+  amount_text: reported $2B at a $32B valuation (not confirmed by the company)
+  instrument: primary
+  term: Reportedly led by Greenoaks (~$500M); other reported investors Andreessen Horowitz, Lightspeed, DST Global, Alphabet and Nvidia; prior round was $1B at $5B valuation (September 2024)
+  capacity: null
+  announced: '2025-04-12'
+  status: completed
+  confidence: 0.7
+  verify_note: SSI issued no press release. The original reports (Financial Times, ~2025-04-11/12, for the $2B / $32B round; Reuters 2025-04-12 for Alphabet and Nvidia participation) are paywalled / blocked (Reuters returned HTTP 401) and were NOT opened. The three sources cited are staff-written articles from independent newsrooms that relay FT / Reuters, so they are not fully independent of each other. One relay (PYMNTS, 2025-04-13) gives the round size as $6 billion, conflicting with the $2B in TechCrunch, Times of Israel and CTech; treated as a PYMNTS error. A later CNBC piece (2025-06-19) repeats the $32B April valuation, again attributing it to the FT.
+  title_zh: Ilya Sutskever 的 SSI 据报道融资 20 亿美元，估值 320 亿美元
+  title_en: Safe Superintelligence reportedly raises $2B at $32B valuation
+  summary_zh: 2025 年 4 月 12 日媒体援引《金融时报》报道，Ilya Sutskever 创办的 Safe Superintelligence（SSI）新融资 20 亿美元，估值 320 亿美元，较 2024 年 9 月 10 亿美元融资时的 50 亿美元估值增长逾六倍。本轮据报道由 Greenoaks 领投（约 5 亿美元），a16z、Lightspeed、DST Global 参投，路透另报道谷歌母公司 Alphabet 与英伟达也参与投资。公司未发布公告，金额与估值均为媒体报道口径。
+  sources:
+  - url: https://techcrunch.com/2025/04/12/openai-co-founder-ilya-sutskevers-safe-superintelligence-reportedly-valued-at-32b/
+    title: OpenAI co-founder Ilya Sutskever's Safe Superintelligence reportedly valued at $32B
+    publisher: TechCrunch
+    date: '2025-04-12'
+    tier: 3
+    quote: has raised an additional $2 billion in funding at a $32 billion valuation
+  - url: https://www.timesofisrael.com/google-and-nvidia-said-to-back-openai-co-founder-sutskevers-safety-startup/
+    title: Google and Nvidia said to back OpenAI co-founder Sutskever's safety startup
+    publisher: The Times of Israel
+    date: '2025-04-14'
+    tier: 3
+    quote: The most recent financing round was led by venture capital firm Greenoaks, with a $500 million capital injection.
+  - url: https://www.calcalistech.com/ctechnews/article/syvvvlhryx
+    title: Safe Superintelligence is valued at $32B and doesn't want you to know it exists
+    publisher: CTech (Calcalist)
+    date: '2025-04-15'
+    tier: 3
+    quote: Andreessen Horowitz, Lightspeed, DST Global, Alphabet, and Nvidia all piled in.
+- kind: investment
+  from: PRIVATE_ROUND
+  to: MISTRAL
+  amount_usd: 503000000
+  amount_text: ~€468M equity (≈$503M at 1.075) of a €600M Series B that included ~€132M debt (FT via TechCrunch)
+  instrument: primary
+  term: Series B led by General Catalyst; Lightspeed, Andreessen Horowitz, Nvidia, Samsung Venture Investment, Salesforce Ventures, BNP Paribas, Bpifrance, Cisco, IBM, Eurazeo and others; valuation €5.8B (~$6B)
+  capacity: null
+  announced: '2024-06-11'
+  status: completed
+  title_zh: Mistral AI 完成 6 亿欧元 B 轮融资，估值约 58 亿欧元
+  title_en: Mistral AI raises €600M Series B at ~€5.8B valuation, led by General Catalyst
+  summary_zh: 2024 年 6 月 11 日法国大模型公司 Mistral AI 宣布完成 6 亿欧元（约 6.45 亿美元）B 轮融资，由老股东 General Catalyst 领投，Lightspeed、a16z、英伟达、三星、Salesforce Ventures、法国巴黎银行、Bpifrance、思科、IBM 等参投。本轮估值约 58 亿欧元（约 60 亿美元）；据 FT 报道，其中 4.68 亿欧元为股权、1.32 亿欧元为债务。 6 亿欧元口径中约 1.32 亿欧元为债务，本条只记股权部分约 4.68 亿欧元。
+  sources:
+  - url: https://techcrunch.com/2024/06/11/paris-based-ai-startup-mistral-ai-raises-640-million/
+    title: Paris-based AI startup Mistral AI raises $640M
+    publisher: TechCrunch
+    date: '2024-06-11'
+    tier: 3
+    quote: raising €600 million (around $640 million at today's exchange rate) in a mix of equity and debt
+  - url: https://www.cnbc.com/2024/06/12/mistral-ai-raises-645-million-at-a-6-billion-valuation.html
+    title: Microsoft-backed Mistral AI raises $645 million at a $6 billion valuation
+    publisher: CNBC
+    date: '2024-06-12'
+    tier: 3
+    quote: values Mistral AI at 5.8 billion euros
+  verify_note: 无一手来源（Mistral 未就 B 轮发可打开的新闻稿），以 TechCrunch + CNBC 两家独立原始媒体核实。6 亿欧元含约 1.32 亿欧元债务（FT 口径），纯股权约 4.68 亿欧元。
+- kind: investment
+  from: ASML
+  to: MISTRAL
+  amount_usd: 1521000000
+  amount_text: €1.3 billion as lead investor in Mistral AI's €1.7B Series C, for ~11% on a fully diluted basis; ~US$1.52B at the 2025-09-09 EUR/USD rate of ~1.17
+  instrument: primary
+  term: Series C at €11.7B post-money; ASML gets a seat on Mistral AI's Strategic Committee (CFO Roger Dassen); paired with a long-term collaboration agreement to use Mistral models across ASML's products, R&D and operations
+  capacity: null
+  announced: '2025-09-09'
+  status: completed
+  title_zh: ASML 出资 13 亿欧元领投 Mistral AI C 轮，持股约 11%
+  title_en: ASML invests €1.3B to lead Mistral AI's Series C, taking ~11% stake
+  summary_zh: 2025 年 9 月 9 日 ASML 与 Mistral AI 宣布战略合作：ASML 出资 13 亿欧元（约 15.2 亿美元）领投 Mistral 17 亿欧元 C 轮，完全摊薄后持股约 11%，并获得 Mistral 战略委员会一席（由 CFO Roger Dassen 出任）。本轮投后估值 117 亿欧元，较 2024 年 B 轮的 58 亿欧元翻倍；双方同时签订长期合作协议，在 ASML 产品、研发和运营中使用 Mistral 模型。ASML 2026 年中报仍将该股权投资按公允价值计量在账。
+  sources:
+  - url: https://ml-eu.globenewswire.com/Resource/Download/b3102823-96cd-4426-a642-d32f8cce14f1
+    title: ASML, Mistral AI enter strategic partnership (press release PDF)
+    publisher: ASML (press release, GlobeNewswire-hosted PDF)
+    date: '2025-09-09'
+    tier: 2
+    quote: ASML is investing 1.3 billion EUR in Mistral AI’s Series C funding round as lead investor
+  - url: https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai
+    title: Mistral AI raises 1.7B€ to accelerate technological progress with AI
+    publisher: Mistral AI
+    date: '2025-09-09'
+    tier: 2
+    quote: We are announcing a Series C funding round of 1.7B€ at a 11.7B€ post-money valuation.
+  - url: https://www.cnbc.com/2025/09/09/ai-firm-mistral-valued-at-14-billion-as-asml-takes-major-stake.html
+    title: AI firm Mistral valued at $14 billion as chip giant ASML takes major stake
+    publisher: CNBC
+    date: '2025-09-09'
+    tier: 3
+    quote: ASML pumped 1.3 billion euros
+  - url: https://www.sec.gov/Archives/edgar/data/937966/000162828026048235/statutoryinterimreport20.htm
+    title: ASML Statutory Interim Report 2026 (Form 6-K), Note 9 Fair value measurements
+    publisher: SEC EDGAR (ASML 6-K)
+    date: '2026-07-15'
+    tier: 1
+    quote: The fair value of the equity investment in Mistral AI was determined using a venture capital valuation method.
+  verify_note: 金额与持股比例来自 ASML 新闻稿 PDF（GlobeNewswire 托管；asml.com 页面 301 到 investor.asml.com 后对抓取返回 403）。SEC 6-K 只确认该股权投资在账，未单列金额。
+- kind: investment
+  from: PRIVATE_ROUND
+  to: MISTRAL
+  amount_usd: 468000000
+  amount_text: '~€0.4 billion: remainder of the €1.7B Series C after ASML''s €1.3B (derived, not separately disclosed); ~US$468M at ~1.17 USD/EUR'
+  instrument: primary
+  term: Series C at €11.7B post-money; existing investors DST Global, Andreessen Horowitz, Bpifrance, General Catalyst, Index Ventures, Lightspeed and NVIDIA
+  capacity: null
+  announced: '2025-09-09'
+  status: completed
+  distinct: true
+  title_zh: Mistral AI C 轮其余约 4 亿欧元由 DST、a16z、英伟达等老股东认购
+  title_en: 'Mistral AI Series C: remaining ~€0.4B from DST, a16z, Bpifrance, General Catalyst, Index, Lightspeed, Nvidia'
+  summary_zh: Mistral AI 2025 年 9 月 9 日宣布的 17 亿欧元 C 轮（投后估值 117 亿欧元）中，除 ASML 领投的 13 亿欧元外，其余约 4 亿欧元（约 4.68 亿美元）由老股东 DST Global、a16z、Bpifrance、General Catalyst、Index Ventures、Lightspeed 和英伟达认购。4 亿欧元为轮次总额减去 ASML 出资的差额推算，各家具体金额未披露；与 ASML→MISTRAL 那条边互不重叠。
+  sources:
+  - url: https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai
+    title: Mistral AI raises 1.7B€ to accelerate technological progress with AI
+    publisher: Mistral AI
+    date: '2025-09-09'
+    tier: 2
+    quote: 'It includes participation from existing investors: DST Global, Andreessen Horowitz, Bpifrance,'
+  - url: https://www.cnbc.com/2025/09/09/ai-firm-mistral-valued-at-14-billion-as-asml-takes-major-stake.html
+    title: AI firm Mistral valued at $14 billion as chip giant ASML takes major stake
+    publisher: CNBC
+    date: '2025-09-09'
+    tier: 3
+    quote: 1.7 billion-euro funding round
+  verify_note: 金额为推算值（17 亿 − 13 亿欧元），并非任何来源单独披露的数字。
+- kind: investment
+  from: PRIVATE_ROUND
+  to: GROQ
+  amount_usd: 750000000
+  amount_text: $750 million in new financing at a $6.9 billion post-money valuation
+  instrument: primary
+  term: Led by Disruptive; significant investment from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners and a large US West Coast mutual fund manager; continued support from Samsung, Cisco, D1, Altimeter, 1789 Capital and Infinitum
+  capacity: null
+  announced: '2025-09-17'
+  status: completed
+  title_zh: Groq 融资 7.5 亿美元，投后估值 69 亿美元
+  title_en: Groq raises $750M at $6.9B post-money valuation, led by Disruptive
+  summary_zh: 2025 年 9 月 17 日 AI 推理芯片公司 Groq 宣布完成 7.5 亿美元新融资，投后估值 69 亿美元，较 2024 年 8 月的 28 亿美元翻倍有余。本轮由 Disruptive 领投，贝莱德、Neuberger Berman、德国电信资本（DTCP）及一家美国西海岸大型共同基金管理人重仓参投，三星、思科、D1、Altimeter、1789 Capital、Infinitum 等老股东跟投。三个月后英伟达即与 Groq 达成技术许可及团队收编交易。
+  sources:
+  - url: https://www.prnewswire.com/news-releases/groq-raises-750-million-as-inference-demand-surges-302559008.html
+    title: Groq Raises $750 Million as Inference Demand Surges
+    publisher: Groq (press release via PR Newswire)
+    date: '2025-09-17'
+    tier: 2
+    quote: $750 million in new financing at a post-money valuation of $6.9 billion
+  - url: https://techcrunch.com/2025/09/17/nvidia-ai-chip-challenger-groq-raises-even-more-than-expected-hits-6-9b-valuation/
+    title: Nvidia AI chip challenger Groq raises even more than expected, hits $6.9B valuation
+    publisher: TechCrunch
+    date: '2025-09-17'
+    tier: 3
+    quote: raised a fresh $750 million in funding at a post-money valuation of $6.9 billion
+  verify_note: groq.com/newsroom 上这篇融资稿已不存在（404，newsroom 列表里也没有），故引用 Groq 通过 PR Newswire 发布的原稿。
+- kind: investment
+  from: DIS
+  to: OPENAI
+  amount_usd: 1000000000
+  amount_text: $1 billion equity investment plus warrants to purchase additional equity (announced; never closed)
+  instrument: primary
+  term: 'Announced alongside a three-year Sora licensing agreement covering 200+ Disney, Marvel, Pixar and Star Wars characters; subject to negotiation of definitive agreements, corporate/board approvals and customary closing conditions. Never closed: OpenAI shut down the Sora app on 2026-03-24 and Disney walked away without investing.'
+  capacity: null
+  announced: '2025-12-11'
+  status: cancelled
+  title_zh: 迪士尼拟 10 亿美元入股 OpenAI 并授权 Sora 使用角色（未交割，2026 年 3 月告吹）
+  title_en: Disney's planned $1B equity investment in OpenAI with Sora character licensing (never closed; dead as of March 2026)
+  summary_zh: 2025 年 12 月 11 日迪士尼宣布将向 OpenAI 做 10 亿美元股权投资并获认股权证，同时签三年期协议，授权 Sora 使用迪士尼、漫威、皮克斯、星球大战 200 多个角色；交易当时仍待签署最终协议、董事会批准等交割条件。2026 年 3 月 24 日 OpenAI 宣布关停 Sora 应用，CNBC 报道该交易从未交割，TheWrap 援引知情人士称迪士尼未出资即退出，10 亿美元实际未发生资金流动。
+  sources:
+  - url: https://thewaltdisneycompany.com/disney-openai-sora-agreement/
+    title: The Walt Disney Company and OpenAI Reach Landmark Agreement to Bring Beloved Characters from Across Disney's Brands to Sora
+    publisher: The Walt Disney Company
+    date: '2025-12-11'
+    tier: 2
+    quote: Disney will make a $1 billion equity investment in OpenAI
+  - url: https://www.cnbc.com/2026/03/24/openai-shutters-short-form-video-app-sora-as-company-reels-in-costs.html
+    title: OpenAI shutters short-form video app Sora as company reels in costs
+    publisher: CNBC
+    date: '2026-03-24'
+    tier: 3
+    quote: However, the transaction never closed.
+  - url: https://www.thewrap.com/industry-news/business/sora-disney-openai-dead-why/
+    title: 'RIP Sora: An AI Stepchild Neither Disney Nor OpenAI Really Wanted'
+    publisher: TheWrap
+    date: '2026-03-25'
+    tier: 3
+    quote: walking away without making a $1 billion investment into OpenAI, according to a person familiar with the deal
+  verify_note: 公告本身由迪士尼新闻稿确认；“未交割 / 告吹”由 CNBC 与 TheWrap 两家原始媒体确认，双方均未发正式终止公告（迪士尼发言人仅表示尊重 OpenAI 退出视频生成业务的决定）。Deadline / Variety / THR 的同题报道因付费墙未能打开，未引用。
+- kind: investment
+  from: NVDA
+  to: GROQ
+  amount_usd: 13000000000
+  amount_text: $13.0B cash outflow labelled "Groq, Inc." in Nvidia's FY2026 cash-flow statement (8-K); CNBC reported ~$20B total, not confirmed by Nvidia
+  instrument: other
+  term: 'Non-exclusive license to Groq''s inference technology; founder Jonathan Ross, president Sunny Madra and other team members join Nvidia; Groq stays an independent company under new CEO Simon Edwards and GroqCloud is excluded. Nvidia: licensing IP and hiring staff, not acquiring Groq as a company.'
+  capacity: null
+  announced: '2025-12-24'
+  status: completed
+  title_zh: 英伟达获 Groq 推理技术授权并吸收其团队，现金流量表列支 130 亿美元（报道总价约 200 亿）
+  title_en: Nvidia licenses Groq inference technology and hires founder Jonathan Ross's team, reportedly ~$20B in cash
+  summary_zh: 2025 年 12 月 24 日 Groq 宣布与英伟达签订推理技术非独家许可协议，创始人 Jonathan Ross、总裁 Sunny Madra 等团队成员加入英伟达；Groq 继续独立运营，由 Simon Edwards 接任 CEO，GroqCloud 不在交易内。CNBC 援引 Groq 领投方 Disruptive 的 CEO Alex Davis 报道对价约 200 亿美元现金，英伟达未确认价格，黄仁勋内部信称“不是收购 Groq 公司”。英伟达 2026 财年现金流量表单列 Groq, Inc. 投资性现金流出 130 亿美元，为该交易已付现金的一手佐证。 金额按英伟达 FY2026 现金流量表披露的 130 亿美元记；CNBC 报道的约 200 亿美元总价未获英伟达确认。
+  sources:
+  - url: https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale
+    title: Groq and Nvidia Enter Non-Exclusive Inference Technology Licensing Agreement to Accelerate AI Inference at Global Scale
+    publisher: Groq
+    date: '2025-12-24'
+    tier: 2
+    quote: Groq will continue to operate as an independent company.
+  - url: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm
+    title: NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026 (8-K Exhibit 99.1; cash-flow line 'Groq, Inc.' (13,000) $M)
+    publisher: SEC EDGAR (NVIDIA 8-K)
+    date: '2026-02-25'
+    tier: 1
+    quote: Entered into a non-exclusive licensing agreement with Groq to accelerate AI inference at global scale.
+  - url: https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html
+    title: Nvidia buying AI chip startup Groq's assets for about $20 billion in its largest deal on record
+    publisher: CNBC
+    date: '2025-12-24'
+    tier: 3
+    quote: While we are adding talented employees to our ranks and licensing Groq's IP, we are not acquiring Groq as a company.
+  verify_note: 200 亿美元仅 CNBC 一家原始报道（消息源为 Disruptive 的 Alex Davis），Groq 与英伟达均未披露总价；一手可核实的数字是英伟达 FY2026 现金流量表中 Groq, Inc. 一行的 130 亿美元流出（截至 2026-01-25），差额是否为后续分期支付未见披露。英伟达 10-K 风险因素称该许可“required significant, nonrefundable payments”。
+- kind: investment
+  from: OPENAI
+  to: IO_PRODUCTS
+  amount_usd: 6500000000
+  amount_text: 'all-equity deal valued at ~$6.5 billion including OpenAI''s existing 23% stake (CNBC: about $6.4B); ~$5 billion of new consideration; reported, price not disclosed in OpenAI''s own post'
+  instrument: acquisition
+  term: All-stock; OpenAI already owned ~23% of io from a late-2024 agreement; io team (co-founders Scott Cannon, Evans Hankey, Tang Tan plus about 50 other engineers, designers and researchers) merges into OpenAI while Jony Ive and LoveFrom stay independent and take over design across OpenAI; closed 2025-07-09
+  capacity: null
+  announced: '2025-05-21'
+  status: completed
+  title_zh: OpenAI 以约 65 亿美元全股票收购 Jony Ive 的硬件公司 io
+  title_en: OpenAI acquires Jony Ive's hardware startup io in ~$6.5B all-stock deal
+  summary_zh: 2025 年 5 月 21 日 OpenAI 宣布与 Jony Ive 创办的 AI 硬件公司 io Products 合并，媒体报道交易为全股票、整体估值约 65 亿美元（CNBC 口径约 64 亿美元）；OpenAI 此前已持有 io 约 23%，新增对价约 50 亿美元。io 团队并入 OpenAI，Jony Ive 及其 LoveFrom 保持独立并接管 OpenAI 的整体设计。OpenAI 于 2025 年 7 月 9 日更新公告称 io 团队已正式并入，交易完成。
+  sources:
+  - url: https://openai.com/sam-and-jony/
+    title: A letter from Sam & Jony
+    publisher: OpenAI
+    date: '2025-05-21'
+    tier: 2
+    quote: We’re thrilled to share that the io Products, Inc. team has officially merged with OpenAI.
+  - url: https://www.cnbc.com/2025/05/21/openai-buys-iphone-designer-jony-ive-device-startup-for-6point4-billion.html
+    title: OpenAI buys iPhone designer Jony Ive's device startup for $6.4 billion
+    publisher: CNBC
+    date: '2025-05-21'
+    tier: 3
+    quote: already owns 23% of the company
+  - url: https://www.engadget.com/ai/openai-buys-jony-ives-design-startup-for-65-billion-173356962.html
+    title: OpenAI buys Jony Ive's design startup for $6.5 billion
+    publisher: Engadget
+    date: '2025-05-21'
+    tier: 3
+    quote: OpenAI is now paying approximately $5 billion to take full control of the startup.
+  - url: https://www.macrumors.com/2025/07/09/openai-jony-ive-io-acquisition-complete/
+    title: OpenAI Finalizes Deal for Jony Ive's 'io' AI Hardware Company
+    publisher: MacRumors
+    date: '2025-07-09'
+    tier: 3
+    quote: OpenAI has completed its acquisition of Jony Ive's AI startup io Products.
+  verify_note: OpenAI 官方公告只确认合并与 7 月 9 日完成，未披露价格；65 亿 / 64 亿 / 50 亿美元均为媒体口径。openai.com 对 WebFetch 返回 403，该页是用浏览器实际打开读取的。若账本只想记实际新增对价，应取约 50 亿美元。
+- kind: investment
+  from: META
+  to: SCALE_AI
+  amount_usd: 14300000000
+  amount_text: '$14.3 billion for a 49% non-voting stake (amount per CNBC; Scale: ''values Scale at over $29 billion''). Meta 10-Q: $13.79 billion of the total consideration booked as non-marketable equity investment'
+  instrument: primary
+  term: 49% non-voting minority stake; Scale distributes the proceeds to shareholders and vested equity holders; founder/CEO Alexandr Wang joins Meta to work on superintelligence and stays on Scale's board, Jason Droege becomes interim CEO; expanded commercial relationship; completed June 2025
+  capacity: null
+  announced: '2025-06-12'
+  status: completed
+  title_zh: Meta 斥资 143 亿美元入股 Scale AI 49%，估值逾 290 亿美元
+  title_en: Meta invests $14.3B for 49% non-voting stake in Scale AI at >$29B valuation
+  summary_zh: 2025 年 6 月 12 日 Scale AI 宣布获 Meta 重大投资，估值逾 290 亿美元；CNBC 等报道 Meta 出资 143 亿美元换取 49% 无表决权股份，创始人 Alexandr Wang 加入 Meta 负责超级智能团队并留任 Scale 董事，Jason Droege 出任临时 CEO。Scale 将投资所得分配给现有股东和已归属权益持有人。Meta 2025 年二季度 10-Q 确认该投资已于 6 月完成，总对价中 137.9 亿美元按计量替代法计入非上市股权投资。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1326801/000162828025036791/meta-20250630.htm
+    title: Meta Platforms Form 10-Q for the quarter ended June 30, 2025 (Note 5, Non-Marketable Equity Investments)
+    publisher: SEC EDGAR (Meta 10-Q)
+    date: '2025-07-31'
+    tier: 1
+    quote: In June 2025, we completed an investment in Scale AI by acquiring a non-voting minority of its outstanding equity.
+  - url: https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution
+    title: Scale AI Announces Next Phase of Company's Evolution
+    publisher: Scale AI
+    date: '2025-06-12'
+    tier: 2
+    quote: values Scale at over $29 billion
+  - url: https://www.cnbc.com/2025/06/12/scale-ai-founder-wang-announces-exit-for-meta-part-of-14-billion-deal.html
+    title: Scale AI's Alexandr Wang confirms departure for Meta as part of $14.3 billion deal
+    publisher: CNBC
+    date: '2025-06-12'
+    tier: 3
+    quote: Meta is pumping $14.3 billion into Scale AI
+  - url: https://techcrunch.com/2025/06/13/new-details-emerge-on-metas-14-3b-deal-for-scale/
+    title: New details emerge on Meta's $14.3B deal for Scale
+    publisher: TechCrunch
+    date: '2025-06-13'
+    tier: 3
+    quote: values the company at over $29 billion
+  verify_note: 143 亿美元与 49% 为媒体口径（Scale 与 Meta 官方均未公布金额 / 比例）；10-Q 只给出总对价中计入股权投资的 137.9 亿美元，未写总对价和持股比例。资金实际分配给了 Scale 老股东，经济实质接近老股转让，instrument 按线索记为 primary。

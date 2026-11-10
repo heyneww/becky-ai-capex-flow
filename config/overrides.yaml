@@ -166,3 +166,4 @@ overrides:
   - {match: {id: 432}, action: delete, note: "Microsoft 10-29 债券最终定价 $25B（#405），$33B 是早期误报"}
   - {match: {id: 405}, action: set, fields: {title_en: "Microsoft prices $25B 10-tranche senior notes (first USD bond since 2017)", title_zh: "微软定价 250 亿美元十档债券，2017 年以来首次发美元债", amount_text: "$25 billion, 10 tranches (8 fixed 2028–2066, 2 floating), ~$115B orders"}, note: "按定价结果补齐标题；金额 $25B 已正确"}
   - {match: {id: 370}, action: merge, into: 338, note: "Galaxy Helios II $3.5B 票据：10-28 的媒体回顾与 7-23 定价（#338，8-K）是同一笔"}
+  - {match: {id: 533}, action: delete, note: "范围外：公用事业并购（Vistra 完成收购 Cogentrix 的记法，同 #462）"}

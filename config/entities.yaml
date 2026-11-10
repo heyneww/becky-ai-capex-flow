@@ -104,7 +104,7 @@ entities:
   - {id: DLR,     name: Digital Realty,       name_zh: Digital Realty, group: datacenter, ticker: DLR, country: US, aliases: ["Digital Realty"]}
   - {id: COMPASS, name: Compass Datacenters,  name_zh: Compass, group: datacenter, country: US, aliases: ["Compass Datacenters"]}
   - {id: RELATED, name: Related Digital,      name_zh: Related Digital, group: datacenter, country: US, aliases: ["Related Digital", "Related Companies"]}
-  - {id: POWERHOUSE, name: Poolside / Powerhouse, name_zh: Powerhouse, group: datacenter, country: US, aliases: [Powerhouse]}
+  - {id: POWERHOUSE, name: PowerHouse Data Centers, name_zh: PowerHouse Data Centers, group: datacenter, country: US, aliases: ["PowerHouse Data Centers", PowerHouse, Powerhouse]}
   - {id: EDGECONNEX, name: EdgeConneX,        name_zh: EdgeConneX, group: datacenter, country: US, aliases: [EdgeConneX]}
   - {id: AIRTRUNK, name: AirTrunk,            name_zh: AirTrunk, group: datacenter, country: AU, aliases: [AirTrunk]}
   - {id: SBENERGY, name: SB Energy,           name_zh: SB Energy, group: datacenter, country: US, aliases: ["SB Energy"]}
@@ -139,7 +139,7 @@ entities:
   - {id: SOFTBANK, name: SoftBank Group, name_zh: 软银, group: financier, country: JP, aliases: [SoftBank, "SoftBank Group", 软银, "SoftBank Vision Fund"]}
   - {id: MGX,  name: MGX,          name_zh: MGX,      group: financier, country: AE, aliases: [MGX]}
   - {id: MUBADALA, name: Mubadala, name_zh: 穆巴达拉, group: financier, country: AE, aliases: [Mubadala]}
-  - {id: PIF,  name: Saudi PIF / Humain, name_zh: 沙特 PIF, group: financier, country: SA, aliases: [PIF, "Public Investment Fund", Humain, HUMAIN]}
+  - {id: PIF,  name: Saudi PIF, name_zh: 沙特 PIF, group: financier, country: SA, aliases: [PIF, "Public Investment Fund", "Saudi Public Investment Fund"]}
   - {id: TEMASEK, name: Temasek,   name_zh: 淡马锡,   group: financier, country: SG, aliases: [Temasek, 淡马锡]}
   - {id: THRIVE, name: Thrive Capital, name_zh: Thrive, group: financier, country: US, aliases: ["Thrive Capital"]}
   - {id: A16Z, name: Andreessen Horowitz, name_zh: a16z, group: financier, country: US, aliases: ["Andreessen Horowitz", a16z]}
@@ -180,3 +180,13 @@ entities:
   - {id: GENERAC, name: Generac, name_zh: Generac, group: equipment, ticker: GNRC, country: US, aliases: [Generac, "Generac Holdings", "Generac Holdings Inc."]}
   - {id: NEXUS, name: Nexus Data Centers, name_zh: Nexus Data Centers, group: datacenter, country: US, aliases: ["Nexus Data Centers", "Nexus Data Center"]}
   - {id: WORLD_LABS, name: World Labs, name_zh: World Labs, group: model_lab, country: US, aliases: ["World Labs", "World Labs Technologies"]}
+  # ---- 2026-11-10 历史回填新增 ----
+  - {id: TSLA, name: Tesla, name_zh: 特斯拉, group: other, ticker: TSLA, country: US, aliases: [Tesla, "Tesla Inc.", "Tesla, Inc."]}
+  - {id: DIS, name: The Walt Disney Company, name_zh: 迪士尼, group: other, ticker: DIS, country: US, aliases: [Disney, "The Walt Disney Company", "Walt Disney"]}
+  - {id: IO_PRODUCTS, name: io Products, name_zh: io（Jony Ive 硬件公司）, group: other, country: US, aliases: ["io Products", "io Products Inc.", "io (Jony Ive)"]}
+  - {id: SCALE_AI, name: Scale AI, name_zh: Scale AI, group: other, country: US, aliases: ["Scale AI", "Scale AI Inc."]}
+  - {id: US_GOV, name: US government (Dept. of Commerce), name_zh: 美国政府（商务部）, group: financier, country: US, aliases: ["US government", "U.S. government", "U.S. Department of Commerce", "Department of Commerce", "CHIPS Program Office"]}
+  - {id: ARAMCO, name: Saudi Aramco, name_zh: 沙特阿美, group: energy, ticker: 2222.SR, country: SA, aliases: [Aramco, "Saudi Aramco", "Saudi Arabian Oil Company"]}
+  - {id: HUMAIN, name: HUMAIN, name_zh: HUMAIN, group: neocloud, country: SA, aliases: [HUMAIN, Humain]}
+  - {id: MINIMAX, name: MiniMax, name_zh: MiniMax（稀宇科技）, group: model_lab, country: CN, aliases: [MiniMax, 稀宇科技, "MiniMax AI"]}
+  - {id: CHIRISA, name: Chirisa Technology Parks, name_zh: Chirisa Technology Parks, group: datacenter, country: US, aliases: ["Chirisa Technology Parks", Chirisa, "Chirisa Piscataway"]}
