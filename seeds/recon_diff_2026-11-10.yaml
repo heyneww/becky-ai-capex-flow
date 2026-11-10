@@ -225,3 +225,60 @@ deals:
     tier: 3
     quote: 据科创板日报，月之暗面Kimi已完成F轮融资，融资金额超35亿美元，投后估值涨至350亿美元。因超目标金额3倍多，本轮融资系提前关闭
   verify_note: 'Media-sourced only: Bloomberg cites people familiar, Caixin states the late-July close as fact (paywalled beyond the lead; it gives $3.5B but not the $35B figure, only a +$15B step to $50B), and STAR Market Daily''s original could not be opened, only relays naming it (PEdaily, Jiemian, HK01). Moonshot has not confirmed the round; its only statement found was a denial of an IFR report about an August Hong Kong IPO filing. Marked completed because closing is reported by two original publishers; downgrade to rumored if the ledger requires company confirmation. The lead''s claim that Alibaba participated is NOT confirmed by any source opened (Alibaba appears only as an existing shareholder); the $31.5B pre-money figure comes from a 36Kr/IPO早知道 relay of Bloomberg. National AI fund as co-lead rests on Bloomberg alone.'
+- kind: investment
+  from: PRIVATE_ROUND
+  to: MOONSHOT
+  amount_usd: 2000000000
+  amount_text: about $2B at a valuation above $20B, led by Meituan's Long-Z Investments; Tsinghua Capital, China Mobile and CPE Yuanfeng also took part (per HF/Huafeng Capital, adviser to some investors)
+  instrument: primary
+  term: Round disclosed 2026-05-07 by financial adviser Huafeng (HF) Capital; the adviser says Moonshot raised $3.9B over the prior six months
+  capacity: null
+  announced: '2026-05-07'
+  status: completed
+  confidence: 0.8
+  distinct: true
+  title_zh: 月之暗面完成约 20 亿美元融资，估值超 200 亿美元（美团龙珠领投）
+  title_en: Moonshot AI raises about $2B at a $20B+ valuation in a round led by Meituan's Long-Z Investments
+  summary_zh: 2026 年 5 月 7 日，为部分投资人担任财务顾问的华峰资本发文披露：月之暗面（Kimi）完成约 20 亿美元融资，估值超过 200 亿美元，美团旗下龙珠资本领投，清华资本、中国移动、CPE 源峰参投；公司发言人向 TechCrunch 确认了领投方。华峰资本称公司过去六个月累计融资 39 亿美元，4 月年化经常性收入超过 2 亿美元。这是 2025 年底 5 亿美元 C 轮（估值 43 亿）与 2026 年 7 月 35 亿美元一轮（估值 350 亿）之间的一轮，三轮各自单记。
+  sources:
+  - url: https://techcrunch.com/2026/05/07/chinas-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets/
+    title: China's Moonshot AI raises $2B at $20B valuation as demand for open source AI skyrockets
+    publisher: TechCrunch
+    date: '2026-05-07'
+    tier: 3
+    quote: has raised about $2 billion at a valuation of $20 billion, according to a post by Huafeng Capital, which advised some investors who participated in the round
+  - url: https://www.bloomberg.com/news/articles/2026-05-07/kimi-chatbot-maker-moonshot-ai-valued-at-20-billion-in-meituan-led-round
+    title: Kimi Chatbot Maker Moonshot AI Valued at $20 Billion in Meituan-Led Round
+    publisher: Bloomberg
+    date: '2026-05-07'
+    tier: 3
+    quote: Food delivery leader Meituan's venture arm led the round that boosts Moonshot's valuation to more than $20 billion, according to a statement from financial advisor HF Capital
+  verify_note: Both reports rest on the same statement from the investors' financial adviser (HF/Huafeng Capital); TechCrunch adds a spokesperson's confirmation of the lead. Moonshot issued no release of its own. Bloomberg body is paywalled beyond the lead paragraphs.
+- kind: investment
+  from: PRIVATE_ROUND
+  to: OPENAI
+  amount_usd: 11000000000
+  amount_text: $11.0B from third-party co-investors (oversubscribed and upsized from the planned $10B syndication), funded alongside SoftBank's $30B; aggregate round $41.0B
+  instrument: primary
+  term: Syndicated part of the March 2025 round at a $260B pre-money valuation; fully funded by the second closing on 2025-12-26
+  capacity: null
+  announced: '2025-03-31'
+  status: completed
+  distinct: true
+  title_zh: OpenAI 2025 年 410 亿美元融资：软银之外的共同投资人出资 110 亿美元
+  title_en: 'OpenAI''s $41B 2025 round: $11B from co-investors syndicated alongside SoftBank'
+  summary_zh: 软银 2025 年 3 月 31 日承诺向 OpenAI 追加最多 400 亿美元，其中计划向共同投资人分销 100 亿美元、软银自身实际出资最多 300 亿美元。12 月 31 日软银公告：自身 300 亿美元（4 月 75 亿 + 12 月 225 亿，均经愿景基金二期）已全部到位，第三方共同投资人超额认购并上调至 110 亿美元，整轮最终 410 亿美元全部到账。共同投资人名单软银未披露，本条按汇总对手方记录；软银自身的 300 亿美元另记。
+  sources:
+  - url: https://group.softbank/en/news/press/20251231
+    title: Completion of Additional $22.5 Billion Investment in OpenAI
+    publisher: SoftBank Group
+    date: '2025-12-31'
+    tier: 2
+    quote: Together with an oversubscribed and upsized participation of $11.0 billion from other third-party co-investors the final aggregate commitment of $41.0 billion has now been fully funded.
+  - url: https://group.softbank/en/news/press/20250401
+    title: Announcement Regarding Follow-on Investments in OpenAI
+    publisher: SoftBank Group
+    date: '2025-04-01'
+    tier: 2
+    quote: SBG is planning to syndicate out USD 10.0 billion of the up to USD 40.0 billion investment to co-investors. Accordingly, SBG's effective investment amount is expected to be up to USD 30.0 billion
+  verify_note: Co-investors are not named in either SoftBank release.
