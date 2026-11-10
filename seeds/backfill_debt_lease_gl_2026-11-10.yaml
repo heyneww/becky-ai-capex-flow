@@ -1,0 +1,1753 @@
+# GL 独有债务 / 租赁回填（2026-11-10）：线索取自 GL-AI-live 独有条目，按本站来源标准逐笔重新核实。
+# 每笔至少一个一手来源（SEC / 交易所文件 tier 1、公司新闻稿 tier 2），否则两家独立原发媒体（tier 3）；单一信源记 rumored（留候选区）。
+# 债券按发行人入账，资金用途（再融资 / 回购 / 资本开支）写在 summary_zh；verify_note 记录核实时的保留意见。
+deals:
+- kind: debt
+  from: TCEHY
+  to: BONDHOLDERS
+  amount_usd: 5684000000
+  amount_text: 'US$1.8 billion + CNY26 billion (about US$3.88 billion at the ECB reference rates for 2026-10-13: EUR/USD 1.1188, EUR/CNY 7.4890, i.e. USD/CNY 6.6938), about US$5.68 billion in total. Four tranches: US$1.30B 6.10% due 21 Oct 2036 (offer price 99.859%), US$0.50B 6.75% due 21 Oct 2046 (99.880%), CNY20.0B 2.40% due 21 Oct 2036 (100%), CNY6.0B 3.00% due 21 Oct 2056 (100%). Estimated net proceeds about US$1.79B and CNY25.89B. Reuters put the total at about $5.7bn with combined orders of more than $23bn.'
+  instrument: senior_notes
+  term: unsecured senior notes under Tencent's Global Medium Term Note Programme; 10-, 20- and 30-year maturities (2036-2056); USD notes offered under Rule 144A / Regulation S, CNY (offshore yuan) notes under Regulation S only; subscription agreements signed 2026-10-13 (New York time), issue completed 2026-10-21 (New York time); listed on the Hong Kong Stock Exchange
+  capacity: null
+  announced: '2026-10-13'
+  status: completed
+  title_zh: 腾讯发行 18 亿美元 + 260 亿元人民币双币种优先票据，合计约 56.8 亿美元
+  title_en: Tencent prices US$1.8B + CNY26B dual-currency senior notes (about US$5.68B) under its GMTN programme
+  summary_zh: 腾讯于 2026 年 10 月 13 日（纽约时间）在全球中期票据计划下定价 18 亿美元和 260 亿元离岸人民币优先无担保票据，按当日欧洲央行参考汇率合计约 56.8 亿美元，10 月 21 日完成发行并在港交所上市。分四档：2036 年到期 13 亿美元（6.10%）、2046 年到期 5 亿美元（6.75%）、2036 年到期 200 亿元人民币（2.40%）、2056 年到期 60 亿元人民币（3.00%）。港交所公告写明募集资金用于「一般公司用途」，没有专门指向 AI 资本开支；同期公告披露腾讯 2026 年上半年资本开支 963 亿元人民币（上年同期 459 亿元），路透称认购订单超过 230 亿美元。这是继 2026 年 6 月之后四个月内的第二次双币种发债。
+  sources:
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101400063.pdf
+    title: Pricing of US$1.8 Billion and CNY26 Billion Notes under the Global Medium Term Note Programme
+    publisher: HKEXnews (Tencent Holdings Limited)
+    date: '2026-10-14'
+    tier: 1
+    quote: on 13 October 2026 (New York time), the Company entered into (i) a Subscription Agreement with the USD Notes Managers with respect to the issue of the USD Notes under the Programme in an aggregate principal amount of US$1.8 billion; and (ii) a Subscription Agreement with the CNY Notes Managers with respect to the issue of the CNY Notes under the Programme in an aggregate principal amount of CNY26 billion
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1014/2026101400063.pdf
+    title: Pricing of US$1.8 Billion and CNY26 Billion Notes under the Global Medium Term Note Programme (principal terms table)
+    publisher: HKEXnews (Tencent Holdings Limited)
+    date: '2026-10-14'
+    tier: 1
+    quote: October 2036 USD Notes US$1.30 billion 6.10% 21 October 2036 99.859% October 2046 USD Notes US$0.50 billion 6.75% 21 October 2046 99.880% October 2036 CNY Notes CNY20.0 billion 2.40% 21 October 2036 100.0% October 2056 CNY Notes CNY6.0 billion 3.00% 21 October 2056 100.0%
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1022/2026102200033.pdf
+    title: Completion of US$1.8 Billion and CNY26 Billion Issue of Notes under the Global Medium Term Note Programme
+    publisher: HKEXnews (Tencent Holdings Limited)
+    date: '2026-10-22'
+    tier: 1
+    quote: on 21 October 2026 (New York time), the issue of the Notes under the Programme was completed.
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1012/2026101200045.pdf
+    title: Proposed Issue of Notes under the Global Medium Term Note Programme and Extract of Financial Information
+    publisher: HKEXnews (Tencent Holdings Limited)
+    date: '2026-10-12'
+    tier: 1
+    quote: which amounted to RMB22.7 billion, RMB72.1 billion and RMB88.3 billion and RMB45.9 billion and RMB96.3 billion (US$14.2 billion) for the years ended 31 December 2023, 2024 and 2025 and the six months ended 30 June 2025 and 2026, respectively
+  - url: https://www.businessday.co.za/world/international-companies/2026-10-13-tencent-raises-57bn-in-bonds-as-ai-investment-soars/
+    title: Tencent raises $5.7bn in bonds as AI investment soars
+    publisher: Reuters (via BusinessDay)
+    date: '2026-10-13'
+    tier: 3
+    quote: Tencent Holdings raised about $5.7bn through dollar and offshore yuan debt offerings on Tuesday, drawing combined investor orders of more than $23bn even as AI spending jitters hit global markets.
+  verify_note: Amounts, all four tranches, coupons, maturities, offer prices, net proceeds and completion confirmed in Tencent's HKEX announcements (pricing announcement of 14 Oct 2026, completion announcement of 22 Oct 2026). The lead dated the deal 2026-10-12, which is the date of the 'proposed issue' announcement; the subscription agreements were signed on 13 October 2026 (New York time) and the pricing announcement was published on 14 October (Hong Kong), so 'announced' is set to the pricing date 2026-10-13. Stated use of proceeds is only 'general corporate purposes' (the June deal added 'including refinancing'; this one does not). The AI framing comes from Reuters, not from the filing; the H1 2026 capex figure (RMB96.3B vs RMB45.9B) is from the financial extract in the 12 Oct announcement. The USD total is my conversion at ECB rates (onshore CNY reference rate applied to offshore-yuan notes); Reuters' own conversion (CNY20B = $2.99bn) implies about 6.69 and the same ~$5.7bn. The Reuters
+    story was read on BusinessDay (a reprint); the U.S. News copy in the lead did not load. The order-book figure (>$23bn) is Reuters only.
+- kind: debt
+  from: TCEHY
+  to: BONDHOLDERS
+  amount_usd: 4665000000
+  amount_text: 'US$2.45 billion + CNY15 billion (about US$2.22 billion at the ECB reference rates for 2026-06-09: EUR/USD 1.1573, EUR/CNY 7.8367, i.e. USD/CNY 6.7715), about US$4.67 billion in total. Four tranches: US$1.75B 5.00% due 16 Jun 2036 (offer price 99.689%), US$0.70B 5.60% due 16 Jun 2046 (99.571%), CNY11.0B 2.50% due 16 Jun 2036 (100%), CNY4.0B 3.10% due 16 Jun 2056 (100%). Estimated net proceeds about US$2.43B and CNY14.94B.'
+  instrument: senior_notes
+  term: unsecured senior notes under Tencent's Global Medium Term Note Programme (maximum limit US$30 billion); 10-, 20- and 30-year maturities (2036-2056); subscription agreements signed 2026-06-09 (New York time), issue completed 2026-06-16 (New York time); listed on the Hong Kong Stock Exchange
+  capacity: null
+  announced: '2026-06-09'
+  status: completed
+  title_zh: 腾讯发行 24.5 亿美元 + 150 亿元人民币双币种优先票据，合计约 46.7 亿美元
+  title_en: Tencent prices US$2.45B + CNY15B dual-currency senior notes (about US$4.67B) under its GMTN programme
+  summary_zh: 腾讯于 2026 年 6 月 9 日（纽约时间）在上限 300 亿美元的全球中期票据计划下定价 24.5 亿美元和 150 亿元离岸人民币优先无担保票据，按当日欧洲央行参考汇率合计约 46.7 亿美元，6 月 16 日完成发行。分四档：2036 年到期 17.5 亿美元（5.00%）、2046 年到期 7 亿美元（5.60%）、2036 年到期 110 亿元人民币（2.50%）、2056 年到期 40 亿元人民币（3.10%）。公告写明募集资金用于「一般公司用途（包括再融资）」，并非专项 AI 资本开支。发行后该计划下未偿票据约 221.8 亿美元。
+  sources:
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0610/2026061000041.pdf
+    title: Pricing of US$2.45 Billion and CNY15 Billion Notes under the Global Medium Term Note Programme
+    publisher: HKEXnews (Tencent Holdings Limited)
+    date: '2026-06-10'
+    tier: 1
+    quote: on 9 June 2026 (New York time), the Company entered into (i) a Subscription Agreement with the USD Notes Managers with respect to the issue of the USD Notes under the Programme in an aggregate principal amount of US$2.45 billion; and (ii) a Subscription Agreement with the CNY Notes Managers with respect to the issue of the CNY Notes under the Programme in an aggregate principal amount of CNY15 billion
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0610/2026061000041.pdf
+    title: Pricing of US$2.45 Billion and CNY15 Billion Notes under the Global Medium Term Note Programme (principal terms table)
+    publisher: HKEXnews (Tencent Holdings Limited)
+    date: '2026-06-10'
+    tier: 1
+    quote: 2036 USD Notes US$1.75 billion 5.00% 16 June 2036 99.689% 2046 USD Notes US$0.70 billion 5.60% 16 June 2046 99.571% 2036 CNY Notes CNY11.0 billion 2.50% 16 June 2036 100.0% 2056 CNY Notes CNY4.0 billion 3.10% 16 June 2056 100.0%
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0610/2026061000041.pdf
+    title: Pricing of US$2.45 Billion and CNY15 Billion Notes under the Global Medium Term Note Programme (use of proceeds)
+    publisher: HKEXnews (Tencent Holdings Limited)
+    date: '2026-06-10'
+    tier: 1
+    quote: The Company intends to use the net proceeds for general corporate purposes (including refinancing).
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0617/2026061700293.pdf
+    title: Completion of US$2.45 Billion and CNY15 Billion Issue of Notes under the Global Medium Term Note Programme
+    publisher: HKEXnews (Tencent Holdings Limited)
+    date: '2026-06-17'
+    tier: 1
+    quote: on 16 June 2026 (New York time), the issue of the Notes under the Programme was completed.
+  - url: https://static.www.tencent.com/uploads/2026/06/10/cf0d756a74c7a3de33bf29592da39fc5.pdf
+    title: Tencent Prices its US$2.45 Billion and CNY15 Billion Notes under Global Medium Term Note Programme
+    publisher: Tencent (press release)
+    date: '2026-06-10'
+    tier: 2
+    quote: Following the issuance of the Notes on June 16, 2026, the Company will have an aggregate principal amount of approximately US$22.18 billion outstanding notes under the Programme.
+  verify_note: All figures confirmed in Tencent's HKEX pricing and completion announcements and its own press release. Lead matches on size and tranches; its $4.66B total is Reuters' conversion (CNY15B = about $2.21B), mine at the ECB rate for the pricing date is $4.665B. The lead's 'first dollar bonds since 2021' claim was not checked against a source I opened (the announcement's list of earlier programme announcements jumps from 13 April 2021 to 15 September 2025, which is consistent with it). The lead's order-book figure (>$17B) was not verified - the Stockopedia/Reuters and FilingReader links in the lead were not used. Use of proceeds is general corporate purposes including refinancing.
+- kind: debt
+  from: TCEHY
+  to: BONDHOLDERS
+  amount_usd: 1265000000
+  amount_text: 'CNY9 billion (about US$1.265 billion at the ECB reference rates for 2025-09-16: EUR/USD 1.1807, EUR/CNY 8.4010, i.e. USD/CNY 7.1153) in three tranches: CNY2.0B 2.10% due 23 Sep 2030, CNY6.0B 2.50% due 23 Sep 2035, CNY1.0B 3.10% due 23 Sep 2055, all at 100%. Estimated net proceeds about CNY8.97B.'
+  instrument: senior_notes
+  term: unsecured senior notes (offshore yuan / dim sum) under Tencent's US$30 billion Global Medium Term Note Programme; 5-, 10- and 30-year maturities; Regulation S only; subscription agreement signed 2025-09-16, issue completed 2025-09-23; listed on the Hong Kong Stock Exchange
+  capacity: null
+  announced: '2025-09-16'
+  status: completed
+  title_zh: 腾讯首发离岸人民币（点心）债 90 亿元，约 12.65 亿美元
+  title_en: Tencent prices its first CNY9B (about US$1.27B) offshore yuan notes under its GMTN programme
+  summary_zh: 腾讯于 2025 年 9 月 16 日签署认购协议，在 300 亿美元全球中期票据计划下发行 90 亿元离岸人民币优先无担保票据（约 12.65 亿美元），9 月 23 日完成发行。分三档：5 年期 20 亿元（2.10%）、10 年期 60 亿元（2.50%）、30 年期 10 亿元（3.10%）。公司新闻稿称这是其首笔人民币票据；募集资金用途为「一般公司用途」，公告未提及 AI 或资本开支。
+  sources:
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0917/2025091700023.pdf
+    title: Pricing of CNY9 Billion Notes under Global Medium Term Note Programme
+    publisher: HKEXnews (Tencent Holdings Limited)
+    date: '2025-09-17'
+    tier: 1
+    quote: on 16 September 2025, the Company entered into a Subscription Agreement with the Managers with respect to the issue of the Notes under the Programme in an aggregate principal amount of CNY9 billion. The estimated net proceeds from the issue of the Notes, after deducting underwriting fees, discounts and commissions, will amount to approximately CNY8.97 billion. The Company intends to use the net proceeds for general corporate purposes.
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0917/2025091700023.pdf
+    title: Pricing of CNY9 Billion Notes under Global Medium Term Note Programme (principal terms table)
+    publisher: HKEXnews (Tencent Holdings Limited)
+    date: '2025-09-17'
+    tier: 1
+    quote: September 2030 Notes 2.0 2.10% 23 September 2030 100.0% September 2035 Notes 6.0 2.50% 23 September 2035 100.0% 2055 Notes 1.0 3.10% 23 September 2055 100.0%
+  - url: https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0923/2025092301225.pdf
+    title: Completion of CNY9 Billion Issue of Notes under Global Medium Term Note Programme
+    publisher: HKEXnews (Tencent Holdings Limited)
+    date: '2025-09-23'
+    tier: 1
+    quote: on 23 September 2025, the issue of the Notes under the Programme was completed.
+  - url: https://static.www.tencent.com/uploads/2025/09/17/847af845e225c71e5467f4cb7b313bbf.pdf
+    title: Tencent Prices its First CNY9 Billion Notes under Global Medium Term Note Programme
+    publisher: Tencent (press release)
+    date: '2025-09-17'
+    tier: 2
+    quote: has priced an aggregate principal amount of CNY 9 billion unsecured senior notes (the “Notes”) under its US$30 billion Global Medium Term Note Programme
+  verify_note: Size, tranches, coupons, maturities, net proceeds and completion confirmed in the HKEX pricing (17 Sep 2025) and completion (23 Sep 2025) announcements and Tencent's press release. Lead matches. 'Announced' is the subscription-agreement date (16 Sep); the HKEX pricing announcement was published the next morning. The lead's Bloomberg (paywalled) and TechNode sources were not used; 'first bond sale in four years' is not stated in the filings I read (the press-release title says 'First CNY9 Billion Notes'). Use of proceeds is general corporate purposes only - nothing ties it to AI capex.
+- kind: debt
+  from: BABA
+  to: BONDHOLDERS
+  amount_usd: 3168000000
+  amount_text: US$3.168 billion aggregate principal amount (headlined by Alibaba as 'approximately US$3.2 billion') of Zero Coupon Convertible Senior Notes due 2032; estimated net proceeds about US$3.13 billion
+  instrument: convertible_notes
+  term: zero coupon convertible senior notes due 15 September 2032, Regulation S only; initial conversion rate 5.1773 ADSs per US$1,000 (US$193.15 per ADS, a 31.25% premium over the US$147.16 reference share price); capped calls raise the effective conversion price to US$235.46 per ADS (60% premium); priced 2025-09-11, closed 2025-09-16
+  capacity: null
+  announced: '2025-09-11'
+  status: completed
+  title_zh: 阿里巴巴发行约 32 亿美元零息可转换优先票据（2032 年到期），约八成用于云基础设施
+  title_en: Alibaba prices about US$3.2B (US$3.168B) zero-coupon convertible senior notes due 2032, about 80% earmarked for cloud infrastructure
+  summary_zh: 阿里巴巴于 2025 年 9 月 11 日定价、9 月 16 日完成发行本金 31.68 亿美元（公司口径「约 32 亿美元」）的零息可转换优先票据，2032 年 9 月 15 日到期，仅向非美国投资者发售。初始转换价每 ADS 193.15 美元（溢价 31.25%），公司同时买入封顶看涨期权，把有效转换价提高到 235.46 美元（溢价 60%）。公司明确募集资金用于一般公司用途：约 80% 投向云基础设施（扩建数据中心、技术升级、改善服务），约 20% 用于国际电商业务扩张。预计净额约 31.3 亿美元。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000110465925089282/tm2525845d1_99-3.htm
+    title: Alibaba Group Prices Approximately US$3.2 Billion Offering of Zero Coupon Convertible Senior Notes (Exhibit 99.3 to Form 6-K)
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2025-09-11'
+    tier: 1
+    quote: Specifically, the allocation will include approximately 80% directed towards enhancing its cloud infrastructure, which encompasses scaling up data centers, upgrading technology, and improving services to meet growing demand. The remaining 20% will be invested in expanding international commerce operations
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000110465925089282/tm2525845d1_99-4.htm
+    title: Alibaba Group HKEX announcement on the notes offering (Exhibit 99.4 to Form 6-K)
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2025-09-11'
+    tier: 1
+    quote: the Notes with an aggregate principal amount of US$3.168 billion at a purchase price of 100% of the principal amount of the Notes
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000110465925089282/tm2525845d1_99-4.htm
+    title: Alibaba Group HKEX announcement on the notes offering (Exhibit 99.4 to Form 6-K) - maturity
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2025-09-11'
+    tier: 1
+    quote: The Notes will mature on September 15, 2032, unless earlier redeemed, repurchased or converted in accordance with their terms prior to such date.
+  - url: https://home.alibabagroup.com/document-1904804083030556672
+    title: Alibaba Group Announces Completion of Offering of Approximately US$3.2 Billion of Zero Coupon Convertible Senior Notes
+    publisher: Alibaba Group
+    date: '2025-09-17'
+    tier: 2
+    quote: today announced the completion of its offering (the “Notes Offering”) of approximately US$3.2 billion aggregate principal amount of Zero Coupon Convertible Senior Notes due 2032
+  verify_note: Confirmed in Alibaba's 6-K of 2025-09-11 (proposed-offering release, pricing release and the HKEX announcement, all dated 11 September 2025) and the completion release of 17 September 2025 on alibabagroup.com (the matching 6-K exhibit says completion 'took place on September 16, 2025'). The exact principal, US$3.168 billion, appears only in the HKEX announcement (purchase agreement section); all press releases say 'approximately US$3.2 billion', which is what the lead carries. amount_usd uses the exact figure. Use of proceeds is the company's own stated allocation (about 80% cloud infrastructure, 20% international commerce) - one of the few deals in this batch explicitly tied to data-centre build-out, though 'cloud infrastructure' is not AI-only. The cost of the capped calls is not stated in the passages I read.
+- kind: debt
+  from: BABA
+  to: BONDHOLDERS
+  amount_usd: 1532000000
+  amount_text: 'HK$12.023 billion (about US$1.532 billion at the ECB reference rates for 2025-07-03: EUR/USD 1.1782, EUR/HKD 9.2488, i.e. USD/HKD 7.8499 - the same rate Alibaba uses in its announcement) of Zero Coupon Exchangeable Bonds due 2032, exchangeable into Alibaba Health shares; estimated net proceeds about HK$11.9 billion'
+  instrument: exchangeable_bonds
+  term: 'zero coupon exchangeable bonds due 9 July 2032, unsecured and unsubordinated, Regulation S only; exchangeable into ordinary shares of Alibaba Health (HKEX: 0241) at an initial exchange price of HK$6.23 per share (48% premium over the HK$4.21 delta placement price; up to about 12% of Alibaba Health''s issued shares); Alibaba may settle in shares, cash or a mix; issuer call from 9 July 2030 subject to a 130% share-price trigger; priced 3-4 July 2025, closed 2025-07-09'
+  capacity: null
+  announced: '2025-07-03'
+  status: completed
+  title_zh: 阿里巴巴发行 120.23 亿港元零息可交换债（可换阿里健康股份），约 15.3 亿美元
+  title_en: Alibaba prices HK$12.023B (about US$1.53B) zero-coupon bonds due 2032 exchangeable into Alibaba Health shares
+  summary_zh: 阿里巴巴于 2025 年 7 月 3 日宣布、7 月 4 日（香港时间）定价、7 月 9 日完成发行 120.23 亿港元零息可交换债券（约 15.3 亿美元），2032 年 7 月 9 日到期，可交换为阿里健康（0241.HK）股份，初始交换价每股 6.23 港元，较同步配售价 4.21 港元溢价 48%，全部交换约占阿里健康已发行股本的 12%。预计净额约 119 亿港元，用途为一般公司用途，包括支持云基础设施和国际电商业务发展的投资；未披露两者的分配比例。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000110465925065774/tm2519873d1_ex99-1.htm
+    title: Alibaba Group Prices Offering of HK$12.023 Billion of Zero Coupon Exchangeable Bonds (Exhibit 99.1 to Form 6-K)
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2025-07-03'
+    tier: 1
+    quote: today announced the pricing of its private offering (the “Bond Offering”) of HK$12.023 billion aggregate principal amount of Zero Coupon Exchangeable Bonds due 2032 (the “Bonds”) by reference to the ordinary shares of Alibaba Health Information Technology Limited
+  - url: https://home.alibabagroup.com/document-1877798736688578560
+    title: Alibaba Announces Pricing of Offering of HK$12.023 Billion of Zero Coupon Exchangeable Bonds (HKEX announcement text)
+    publisher: Alibaba Group
+    date: '2025-07-04'
+    tier: 2
+    quote: Alibaba Group intends to use the net proceeds from the Bond Offering for general corporate purposes, including investments to support the development of our Cloud infrastructure and international commerce businesses.
+  - url: https://home.alibabagroup.com/document-1877798736688578560
+    title: Alibaba Announces Pricing of Offering of HK$12.023 Billion of Zero Coupon Exchangeable Bonds (HKEX announcement text) - exchange terms
+    publisher: Alibaba Group
+    date: '2025-07-04'
+    tier: 2
+    quote: which is equivalent to an initial exchange price of HK$6.23 per AH Share. The initial exchange price represents a premium of 48% over the per-share price in the Delta Placement described below, which was HK$4.21 per AH Share.
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000110465925066586/tm2520167d1_ex99-1.htm
+    title: Alibaba Group Announces Completion of Offering of HK$12.023 Billion of Zero Coupon Exchangeable Bonds (Exhibit 99.1 to Form 6-K)
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2025-07-09'
+    tier: 1
+    quote: today announced the completion of its private offering (the “Bond Offering”) of HK$12.023 billion aggregate principal amount of Zero Coupon Exchangeable Bonds due 2032
+  verify_note: Confirmed in Alibaba's 6-K exhibits (proposed offering dated July 3, pricing release dated July 4 Hong Kong time but filed on EDGAR 2025-07-03, completion release dated July 9, 2025) and the pricing announcement on alibabagroup.com. 'Announced' keeps 2025-07-03 (launch date and EDGAR filing date of the pricing 6-K); the pricing release itself is dated July 4, 2025 in Hong Kong. Lead matches on amount and terms. Use of proceeds is 'general corporate purposes, including investments to support' cloud infrastructure and international commerce - no percentage split, unlike the September 2025 convertible. Economically this monetises part of Alibaba's Alibaba Health stake; if exchanged, bondholders receive Alibaba Health shares rather than cash.
+- kind: debt
+  from: BABA
+  to: BONDHOLDERS
+  amount_usd: 4998000000
+  amount_text: 'US$2.65 billion + RMB17 billion (about US$2.35 billion at the ECB reference rates for 2024-11-19: EUR/USD 1.0578, EUR/CNY 7.6578, i.e. USD/CNY 7.2394), about US$5.0 billion in total. USD notes: US$1.0B 4.875% due 2030 (99.838%), US$1.15B 5.250% due 2035 (99.649%), US$0.5B 5.625% due 2054 (99.712%). RMB notes: RMB8.4B 2.65% due 2028, RMB5.0B 2.80% due 2029, RMB2.5B 3.10% due 2034, RMB1.1B 3.50% due 2044, all at 100%.'
+  instrument: senior_notes
+  term: senior unsecured notes in seven tranches maturing 2028-2054; USD notes under Rule 144A / Regulation S with registration rights, RMB (offshore yuan) notes under Regulation S only; priced 2024-11-19; USD notes closed 2024-11-26, RMB notes closed 2024-11-28
+  capacity: null
+  announced: '2024-11-19'
+  status: completed
+  title_zh: 阿里巴巴发行 26.5 亿美元 + 170 亿元人民币优先无担保票据，合计约 50 亿美元，用于偿还离岸债务和回购股份
+  title_en: Alibaba prices US$2.65B + RMB17B senior unsecured notes (about US$5.0B) to repay offshore debt and buy back shares
+  summary_zh: 阿里巴巴于 2024 年 11 月 19 日定价 26.5 亿美元和 170 亿元离岸人民币优先无担保票据，按当日欧洲央行参考汇率合计约 50 亿美元；美元票据 11 月 26 日、人民币票据 11 月 28 日完成发行。美元部分三档（2030 年 4.875%、2035 年 5.250%、2054 年 5.625%），人民币部分四档（2028–2044 年，票息 2.65%–3.50%）。公司写明募集资金用于一般公司用途，包括偿还离岸债务和股份回购——这是一笔再融资加回购性质的发债，并非 AI 资本开支融资。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000110465924120794/tm2428979d1_ex99-1.htm
+    title: Alibaba Group Prices US$2.65 Billion Offering of U.S. Dollar-denominated Senior Unsecured Notes and RMB17 Billion Offering of RMB-denominated Senior Unsecured Notes (Exhibit 99.1 to Form 6-K)
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2024-11-20'
+    tier: 1
+    quote: US$1,000,000,000 4.875% notes due 2030 at an issue price per note of 99.838%; US$1,150,000,000 5.250% notes due 2035 at an issue price per note of 99.649%; and US$500,000,000 5.625% notes due 2054 at an issue price per note of 99.712%
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000110465924120794/tm2428979d1_ex99-1.htm
+    title: Alibaba Group Prices US$2.65 Billion Offering ... and RMB17 Billion Offering ... (Exhibit 99.1 to Form 6-K) - RMB tranches
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2024-11-20'
+    tier: 1
+    quote: RMB8,400,000,000 2.65% notes due 2028 at an issue price per note of 100%; RMB5,000,000,000 2.80% notes due 2029 at an issue price per note of 100%; RMB2,500,000,000 3.10% notes due 2034 at an issue price per note of 100%; and RMB1,100,000,000 3.50% notes due 2044 at an issue price per note of 100%
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000110465924120794/tm2428979d1_ex99-1.htm
+    title: Alibaba Group Prices US$2.65 Billion Offering ... and RMB17 Billion Offering ... (Exhibit 99.1 to Form 6-K) - use of proceeds
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2024-11-20'
+    tier: 1
+    quote: Alibaba intends to use the net proceeds from the offering of the Notes for general corporate purposes, including repayment of offshore debt and share repurchases.
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000110465924123849/tm2429790d1_ex99-1.htm
+    title: Alibaba Group Announces Completion of US$2.65 Billion Offering of U.S. Dollar-denominated Senior Unsecured Notes and RMB17 Billion Offering of RMB-denominated Senior Unsecured Notes (Exhibit 99.1 to Form 6-K)
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2024-11-29'
+    tier: 1
+    quote: today announced (i) the completion of an offering, on November 26, 2024, of US$2.65 billion aggregate principal amount of U.S. dollar-denominated senior unsecured notes
+  verify_note: 'All seven tranches, pricing date, closing dates and use of proceeds confirmed in Alibaba''s 6-K exhibits (pricing release dated November 19, 2024; completion release dated November 28, 2024). Lead matches; the Business Wire links in the lead returned 403, so the same releases were read on EDGAR instead. The US$5.0B total is my conversion of the RMB leg at the ECB rate for the pricing date (onshore CNY reference rate applied to offshore-yuan notes). Not an AI financing by the company''s own description: proceeds go to offshore debt repayment and buybacks.'
+- kind: debt
+  from: BABA
+  to: BONDHOLDERS
+  amount_usd: 5000000000
+  amount_text: 'US$5 billion of 0.50% Convertible Senior Notes due 2031: US$4,500 million priced on 2024-05-23 plus the initial purchasers'' US$500 million option, exercised in full by completion on 2024-05-30; estimated net proceeds about US$4,930 million with the option exercised'
+  instrument: convertible_notes
+  term: 0.50% convertible senior notes due 1 June 2031, Rule 144A / Regulation S; initial conversion rate 9.5202 ADSs per US$1,000 (about US$105.04 per ADS, roughly 30% premium over the US$80.80 close on 2024-05-23); capped calls raise the effective conversion premium to 100% at a cost of US$573.75 million plus US$63.75 million for the option notes; priced 2024-05-23, completion announced 2024-05-30
+  capacity: null
+  announced: '2024-05-23'
+  status: completed
+  title_zh: 阿里巴巴发行 50 亿美元 0.50% 可转换优先票据（2031 年到期），资金用于回购股份和封顶看涨期权
+  title_en: Alibaba sells US$5B of 0.50% convertible senior notes due 2031 to fund share repurchases and capped calls
+  summary_zh: 阿里巴巴于 2024 年 5 月 23 日定价 45 亿美元 0.50% 可转换优先票据（2031 年 6 月 1 日到期），5 月 30 日宣布完成发行，承销商全额行使 5 亿美元超额配售权后总额 50 亿美元。初始转换价约每 ADS 105.04 美元（溢价约 30%），封顶看涨期权把有效转换溢价提高到 100%，成本 5.7375 亿美元（另加超额部分 6375 万美元）。募集资金用于在定价同时以每 ADS 80.80 美元回购约 1480 万份 ADS、此后继续回购，以及支付封顶看涨期权成本——属于回购融资，与 AI 资本开支无关。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000119312524146219/d843385dex991.htm
+    title: Alibaba Group Prices US$4,500 Million Offering of Convertible Senior Notes (Exhibit 99.1 to Form 6-K)
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2024-05-24'
+    tier: 1
+    quote: today announced the pricing of its private offering of US$4,500 million aggregate principal amount of 0.50% Convertible Senior Notes due 2031
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000119312524146219/d843385dex991.htm
+    title: Alibaba Group Prices US$4,500 Million Offering of Convertible Senior Notes (Exhibit 99.1 to Form 6-K) - use of proceeds
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2024-05-24'
+    tier: 1
+    quote: (ii) fund further share repurchases, from time to time, under the Company’s existing share repurchase program; and (iii) fund the US$573.75 million cost of entering into the capped call transactions described below
+  - url: https://www.sec.gov/Archives/edgar/data/1577552/000119312524149515/d779816dex991.htm
+    title: Alibaba Group Announces Completion of US$5 Billion Offering of Convertible Senior Notes (Exhibit 99.1 to Form 6-K)
+    publisher: SEC EDGAR (Alibaba Group Holding Limited)
+    date: '2024-05-30'
+    tier: 1
+    quote: today announced the completion of its private offering of US$5 billion aggregate principal amount of 0.50% Convertible Senior Notes due 2031 (the “Notes”), which amount includes the exercise in full by the initial purchasers of their option to purchase an additional US$500 million aggregate principal amount of the Notes
+  verify_note: 'Confirmed in Alibaba''s 6-K exhibits: pricing release dated May 23, 2024 (filed 2024-05-24) and completion release dated May 30, 2024. Lead matches on amount (US$4.5B base + US$0.5B option = US$5B), coupon and maturity. Use of proceeds per the pricing release: (i) concurrent repurchase of about 14.8 million ADSs at US$80.80, (ii) further repurchases, (iii) the capped-call cost. This is a buyback financing, not AI capex; the editor should decide whether it belongs on the ledger.'
+- kind: debt
+  from: BIDU
+  to: BONDHOLDERS
+  amount_usd: 617000000
+  amount_text: 'CNY4.4 billion (about US$617 million at the ECB reference rates for 2025-09-08: EUR/USD 1.1728, EUR/CNY 8.3619, i.e. USD/CNY 7.1299) of 1.90% senior unsecured notes due 2029'
+  instrument: senior_notes
+  term: 1.90% CNY-denominated (offshore yuan) senior unsecured notes due 2029, Regulation S only; priced 2025-09-08, completed 2025-09-15; listed on the Hong Kong Stock Exchange
+  capacity: null
+  announced: '2025-09-08'
+  status: completed
+  title_zh: 百度发行 44 亿元离岸人民币优先票据（1.90%，2029 年到期），约 6.17 亿美元
+  title_en: Baidu prices CNY4.4B (about US$617M) of 1.90% offshore yuan senior notes due 2029
+  summary_zh: 百度于 2025 年 9 月 8 日定价 44 亿元离岸人民币优先无担保票据（约 6.17 亿美元），票息 1.90%，2029 年到期，9 月 15 日完成发行并在港交所上市。公司写明募集资金用于一般公司用途，包括偿还部分现有债务和支付利息——以再融资为主，公告没有提到 AI 投资。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1329099/000119312525198744/d80072dex991.htm
+    title: Baidu Announces Pricing of CNY4.4 Billion CNY-denominated Senior Notes (Exhibit 99.1 to Form 6-K)
+    publisher: SEC EDGAR (Baidu, Inc.)
+    date: '2025-09-09'
+    tier: 1
+    quote: today announced the pricing of its offering of CNY4.4 billion aggregate principal amount of 1.90% senior unsecured notes due 2029
+  - url: https://www.sec.gov/Archives/edgar/data/1329099/000119312525198744/d80072dex991.htm
+    title: Baidu Announces Pricing of CNY4.4 Billion CNY-denominated Senior Notes (Exhibit 99.1 to Form 6-K) - use of proceeds
+    publisher: SEC EDGAR (Baidu, Inc.)
+    date: '2025-09-09'
+    tier: 1
+    quote: The Company intends to use the net proceeds from the Notes Offering for general corporate purposes, including repayment of certain existing indebtedness, payment of interest and general corporate purposes.
+  - url: https://www.sec.gov/Archives/edgar/data/1329099/000119312525202905/d945084dex991.htm
+    title: Baidu Announces Completion of CNY4.4 Billion Offering of CNY-denominated Senior Notes (Exhibit 99.1 to Form 6-K)
+    publisher: SEC EDGAR (Baidu, Inc.)
+    date: '2025-09-15'
+    tier: 1
+    quote: today announced the completion of its offering of CNY4.4 billion aggregate principal amount of 1.90% senior unsecured notes due 2029
+  verify_note: 'Confirmed in Baidu''s 6-K exhibits (pricing release dated September 8, 2025; completion release dated September 15, 2025). Lead matches; its US$618M is a slightly different FX rate (about 7.12), mine is US$617M at the ECB rate for the pricing date. The exact 2029 maturity day is not given in the releases. The lead''s AI framing (''as it funds AI'', from CNBC) is not in the filings: stated use is debt repayment, interest and general corporate purposes. The lead''s FilingReader and CNBC links were not used.'
+- kind: debt
+  from: BIDU
+  to: BONDHOLDERS
+  amount_usd: 2000000000
+  amount_text: 'US$2 billion aggregate principal amount of zero coupon exchangeable bonds due 2032, referencing Trip.com Group shares listed in Hong Kong (HKEX: 9961)'
+  instrument: exchangeable_bonds
+  term: zero coupon exchangeable bonds due 12 March 2032, Regulation S only; investor put at par on 12 March 2029; initial exchange ratio 1,107.0457 Trip.com shares per US$100,000 (about HK$702.13 per share, roughly 43% premium over the HK$491.00 delta placement price); exchange is into cash, with Baidu able to elect to deliver its Trip.com shares instead; priced 2025-03-07, completed 2025-03-12
+  capacity: null
+  announced: '2025-03-07'
+  status: completed
+  title_zh: 百度发行 20 亿美元零息可交换债（挂钩携程港股，2032 年到期），用于偿债
+  title_en: Baidu prices US$2B zero-coupon bonds due 2032 exchangeable by reference to Trip.com shares, to repay debt
+  summary_zh: 百度于 2025 年 3 月 7 日定价、3 月 12 日完成发行 20 亿美元零息可交换债券，2032 年 3 月 12 日到期，挂钩携程集团港股（9961.HK），初始交换价约每股 702.13 港元，较同步配售价 491.00 港元溢价约 43%；持有人可在 2029 年 3 月 12 日按面值回售。交换默认以现金结算，百度可选择交付所持携程股份。募集资金用于偿还部分现有债务、支付利息和一般公司用途——是以所持携程股权为标的的低成本再融资，公告未提及 AI。与同周发行的 100 亿元人民币票据是两笔独立交易。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1329099/000119312525049110/d890771dex991.htm
+    title: Baidu Announces Pricing of US$2 Billion Offering of Zero Coupon Exchangeable Bonds (Exhibit 99.1 to Form 6-K)
+    publisher: SEC EDGAR (Baidu, Inc.)
+    date: '2025-03-07'
+    tier: 1
+    quote: today announced the pricing of its US$2 billion in aggregate principal amount of exchangeable bonds due 2032
+  - url: https://www.sec.gov/Archives/edgar/data/1329099/000119312525049110/d890771dex991.htm
+    title: Baidu Announces Pricing of US$2 Billion Offering of Zero Coupon Exchangeable Bonds (Exhibit 99.1 to Form 6-K) - exchange terms
+    publisher: SEC EDGAR (Baidu, Inc.)
+    date: '2025-03-07'
+    tier: 1
+    quote: The initial exchange ratio of the Bonds will be 1,107.0457 Trip.com Shares per US$100,000 principal amount of Bonds (which is equivalent to an initial exchange price of approximately HK$702.13 per Trip.com Share
+  - url: https://www.sec.gov/Archives/edgar/data/1329099/000119312525049110/d890771dex991.htm
+    title: Baidu Announces Pricing of US$2 Billion Offering of Zero Coupon Exchangeable Bonds (Exhibit 99.1 to Form 6-K) - use of proceeds
+    publisher: SEC EDGAR (Baidu, Inc.)
+    date: '2025-03-07'
+    tier: 1
+    quote: The Company intends to use the net proceeds from the Bonds Offering for repayment of certain existing indebtedness, payment of interest and general corporate purposes.
+  - url: https://www.sec.gov/Archives/edgar/data/1329099/000119312525052591/d914591dex991.htm
+    title: Baidu Announces Completion of US$2 Billion Offering of Zero Coupon Exchangeable Bonds (Exhibit 99.1 to Form 6-K)
+    publisher: SEC EDGAR (Baidu, Inc.)
+    date: '2025-03-12'
+    tier: 1
+    quote: today announced the completion of its US$2 billion in aggregate principal amount of exchangeable bonds due 2032
+  verify_note: Confirmed in Baidu's 6-K exhibits (pricing release dated March 7, 2025; completion release dated March 12, 2025). Lead matches on amount, maturity, dates and use of proceeds. The lead's sdxcentral copies of the PR Newswire releases were not used; the same releases were read on EDGAR. Refinancing, not AI capex, by the company's own description.
+- kind: debt
+  from: BIDU
+  to: BONDHOLDERS
+  amount_usd: 1377000000
+  amount_text: 'CNY10 billion (about US$1.377 billion at the ECB reference rates for 2025-03-05: EUR/USD 1.0694, EUR/CNY 7.7675, i.e. USD/CNY 7.2634) in two tranches: CNY7.5B 2.70% notes due 2030 and CNY2.5B 3.00% notes due 2035'
+  instrument: senior_notes
+  term: CNY-denominated (offshore yuan) senior unsecured notes, 5-year (2030) and 10-year (2035) tranches, Regulation S only; priced 2025-03-05, completed 2025-03-12; listed on the Hong Kong Stock Exchange
+  capacity: null
+  announced: '2025-03-05'
+  status: completed
+  title_zh: 百度发行 100 亿元离岸人民币优先票据（5 年 2.70% + 10 年 3.00%），约 13.8 亿美元
+  title_en: 'Baidu prices CNY10B (about US$1.38B) offshore yuan senior notes: CNY7.5B 2.70% due 2030 and CNY2.5B 3.00% due 2035'
+  summary_zh: 百度于 2025 年 3 月 5 日定价 100 亿元离岸人民币优先无担保票据（约 13.8 亿美元），3 月 12 日完成发行：75 亿元 2030 年到期、票息 2.70%，25 亿元 2035 年到期、票息 3.00%。公司写明募集资金用于一般公司用途，包括偿还部分现有债务和支付利息——再融资性质，公告未提及 AI。与两天后定价的 20 亿美元可交换债是两笔独立交易。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1329099/000119312525047734/d889946dex991.htm
+    title: Baidu Announces Pricing of CNY10 Billion CNY-denominated Senior Notes (Exhibit 99.1 to Form 6-K)
+    publisher: SEC EDGAR (Baidu, Inc.)
+    date: '2025-03-06'
+    tier: 1
+    quote: today announced the pricing of its offering of CNY10 billion aggregate principal amount of CNY-denominated senior unsecured notes
+  - url: https://www.sec.gov/Archives/edgar/data/1329099/000119312525047734/d889946dex991.htm
+    title: Baidu Announces Pricing of CNY10 Billion CNY-denominated Senior Notes (Exhibit 99.1 to Form 6-K) - tranches
+    publisher: SEC EDGAR (Baidu, Inc.)
+    date: '2025-03-06'
+    tier: 1
+    quote: The Notes Offering consists of CNY7.5 billion of 2.70% notes due 2030 and CNY2.5 billion of 3.00% notes due 2035.
+  - url: https://www.sec.gov/Archives/edgar/data/1329099/000119312525047734/d889946dex991.htm
+    title: Baidu Announces Pricing of CNY10 Billion CNY-denominated Senior Notes (Exhibit 99.1 to Form 6-K) - use of proceeds
+    publisher: SEC EDGAR (Baidu, Inc.)
+    date: '2025-03-06'
+    tier: 1
+    quote: The Company intends to use the net proceeds from the Notes Offering for general corporate purposes, including repayment of certain existing indebtedness, payment of interest and general corporate purposes.
+  - url: https://www.sec.gov/Archives/edgar/data/1329099/000119312525052591/d914591dex992.htm
+    title: Baidu Announces Completion of CNY10 Billion Offering of CNY-denominated Senior Notes (Exhibit 99.2 to Form 6-K)
+    publisher: SEC EDGAR (Baidu, Inc.)
+    date: '2025-03-12'
+    tier: 1
+    quote: today announced the completion of its offering of CNY10 billion aggregate principal amount of CNY-denominated senior unsecured notes
+  verify_note: The lead had a single Bloomberg (paywalled) source; this deal is confirmed instead in Baidu's own 6-K exhibits (pricing release dated March 5, 2025, filed 2025-03-06; completion release dated March 12, 2025). Amount and tranches match the lead. The lead's statements that this was Baidu's first bond sale since 2021 and came ahead of a $600M maturity in April are Bloomberg's and were not verified. Refinancing by the company's own description.
+- kind: debt
+  from: SKHYNIX
+  to: BONDHOLDERS
+  amount_usd: 1500000000
+  amount_text: 'US$1.5 billion in two tranches: US$500 million three-year notes at Treasuries + 145 bps and US$1 billion five-year notes at Treasuries + 167 bps (initial guidance T+180 / T+200); orders of US$2.8 billion and US$3.7 billion respectively (US$6.5 billion in total)'
+  instrument: senior_notes
+  term: US dollar bonds, three-year and five-year tranches; marketed 2024-01-08, priced by 2024-01-09 (Asia time)
+  capacity: null
+  announced: '2024-01-09'
+  status: completed
+  title_zh: SK 海力士发行 15 亿美元美元债（3 年期 5 亿 + 5 年期 10 亿），用于偿还到期债务
+  title_en: SK hynix raises US$1.5B in dollar bonds (US$500M three-year + US$1B five-year) to refinance maturing debt
+  summary_zh: SK 海力士于 2024 年 1 月 9 日前后定价 15 亿美元美元债：3 年期 5 亿美元（美债 + 145 个基点）和 5 年期 10 亿美元（美债 + 167 个基点），认购约 65 亿美元，定价较初始指引收窄 33–35 个基点。公司向路透表示募集资金用于为到期债务再融资，并非 AI 或 HBM 产能投资。本笔仅有路透和韩国经济新闻（KED Global）两家媒体来源，未找到公司公告或交易所文件；票息未在所读来源中披露。
+  sources:
+  - url: https://www.marketscreener.com/quote/stock/SK-HYNIX-INC-6494929/news/South-Korea-s-SK-Hynix-raises-1-5-bln-in-dollar-bonds-term-sheet-45696332/
+    title: South Korea's SK Hynix raises $1.5 bln in dollar bonds - term sheet
+    publisher: Reuters (via MarketScreener)
+    date: '2024-01-09'
+    tier: 3
+    quote: raised $500 million in a three-year bond and $1 billion in a five-year bond, the term sheet that was seen by Reuters showed.
+  - url: https://www.marketscreener.com/quote/stock/SK-HYNIX-INC-6494929/news/South-Korea-s-SK-Hynix-raises-1-5-bln-in-dollar-bonds-term-sheet-45696332/
+    title: South Korea's SK Hynix raises $1.5 bln in dollar bonds - term sheet (company comment)
+    publisher: Reuters (via MarketScreener)
+    date: '2024-01-09'
+    tier: 3
+    quote: We plan to use the proceedings from the bond issues to refinance the existing debt coming due
+  - url: https://www.kedglobal.com/newsView/ked202401100006
+    title: SK Hynix raises $1.5 bn in foreign bonds amid high demand
+    publisher: KED Global (The Korea Economic Daily)
+    date: '2024-01-10'
+    tier: 3
+    quote: The three-year notes of $500 million were sold with a coupon rate 1.45 percentage points higher than the corresponding US Treasury yield. The five-year bonds of $1 billion were issued at 1.67 percentage points above the five-year US Treasury yield.
+  verify_note: 'No tier 1/2 source found (no SK hynix press release or DART/KRX filing was located), so this rests on two independent original publishers: Reuters (term sheet seen by Reuters, plus an emailed company comment) and KED Global (investment banking sources). They agree on size, tranche split and spreads. The lead dated it 2024-01-10 (the KED article date); Reuters'' story is datelined Jan 9 and says the deal ''kicked off on Monday'' (Jan 8), and KED says ''on Tuesday'' (Jan 9), so ''announced'' is 2024-01-09. Status ''completed'' reflects that the bonds were priced and reported as raised; the settlement date and coupons were not in the sources read (a search snippet from a bond-data site suggested 5.5% coupons due January 2027 and 2029, but I did not open it). Use of proceeds per the company: refinancing maturing debt - not AI capex.'
+- kind: debt
+  from: MEDIATEK
+  to: NVDA
+  amount_usd: 3500000000
+  amount_text: NVIDIA subscribed for 17,500 certificates, US$3.5 billion, of MediaTek's US$3.9 billion first unsecured overseas convertible bonds (0% coupon, issued at 100% of par); the remaining US$0.4 billion went to other investors
+  instrument: convertible_notes
+  term: 0% coupon unsecured overseas convertible bonds, five years (tentative issue date 2026-09-08, tentative maturity 2031-09-08), denomination US$200,000; convertible into newly issued MediaTek common shares at NT$4,513.75 per share (115% of the NT$3,925 close on the 2026-08-31 pricing date), from three months after issue; redeemed at par at maturity if not converted; listed on Singapore Exchange; NVIDIA subscription is a placement to a 'specific person' for 'long-term strategic collaboration'
+  capacity: null
+  announced: '2026-08-31'
+  status: signed
+  title_zh: 英伟达认购联发科 35 亿美元海外零息可转债（总发行 39 亿美元），并深化 NVLink Fusion 等合作
+  title_en: NVIDIA subscribes for US$3.5B of MediaTek's US$3.9B zero-coupon overseas convertible bonds alongside an expanded partnership
+  summary_zh: 2026 年 8 月 31 日联发科公告其海外第一次无担保转换公司债完成定价：总额 39 亿美元、票面利率 0%、五年期（预定 2026 年 9 月 8 日发行、2031 年 9 月 8 日到期），转换价每股新台币 4,513.75 元（定价日收盘价 3,925 元的 115%），在新加坡交易所挂牌；其中英伟达以「长期策略合作」为目的认购 17,500 张、35 亿美元。同日两家公司联合新闻稿确认英伟达投资 35 亿美元可转债，联发科将采用 NVLink Fusion 平台，并在 AI 基础设施、本地 AI 计算（RTX Spark / DGX Spark）和车用三方面合作。联发科公告的资金用途是「支应外币购料之资金需求」，全部转换的最大稀释约 1.67%。形式上是债务（不转股则到期按面值偿还），但零息加转股权，经济实质更接近带下行保护的战略入股。
+  sources:
+  - url: https://emops.twse.com.tw/server-java/t05st01_e?step=1&co_id=2454&spoke_date=20260831&spoke_time=202552&seq_no=3
+    title: Announcement of the completion of pricing for the Company's First Issuance of Unsecured Overseas Convertible Bonds (material information)
+    publisher: TWSE MOPS (MediaTek Inc.)
+    date: '2026-08-31'
+    tier: 1
+    quote: NVIDIA Corporation has subscribed for 17,500 certificates, for a total amount of US$3,500,000 thousand.
+  - url: https://emops.twse.com.tw/server-java/t05st01_e?step=1&co_id=2454&spoke_date=20260831&spoke_time=202552&seq_no=3
+    title: Announcement of the completion of pricing for the Company's First Issuance of Unsecured Overseas Convertible Bonds (material information) - conversion price
+    publisher: TWSE MOPS (MediaTek Inc.)
+    date: '2026-08-31'
+    tier: 1
+    quote: The Conversion Price of the Bond is NT$4,513.75 per share, which has been determined at 115% of the closing price of NT$3,925 per share of the Company's Common Shares on the TWSE on August 31, 2026, being the pricing date.
+  - url: https://emops.twse.com.tw/server-java/t05st01_e?step=1&co_id=2454&spoke_date=20260831&spoke_time=202552&seq_no=3
+    title: Announcement of the completion of pricing for the Company's First Issuance of Unsecured Overseas Convertible Bonds (material information) - issue size
+    publisher: TWSE MOPS (MediaTek Inc.)
+    date: '2026-08-31'
+    tier: 1
+    quote: 'A. Issue Amount: US$3,900,000 thousand'
+  - url: https://emops.twse.com.tw/server-java/t05st01_e?step=1&co_id=2454&spoke_date=20260831&spoke_time=202552&seq_no=3
+    title: Announcement of the completion of pricing for the Company's First Issuance of Unsecured Overseas Convertible Bonds (material information) - use of proceeds
+    publisher: TWSE MOPS (MediaTek Inc.)
+    date: '2026-08-31'
+    tier: 1
+    quote: The proceeds will be used to fund the procurement of raw materials in foreign currencies.
+  - url: https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms
+    title: NVIDIA and MediaTek Deepen Long-Standing Partnership to Build AI Edge to Cloud Computing Platforms
+    publisher: NVIDIA Newsroom
+    date: '2026-08-31'
+    tier: 2
+    quote: NVIDIA has also invested $3.5 billion in convertible bonds issued by MediaTek.
+  - url: https://www.mediatek.com/press-room/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms
+    title: NVIDIA and MediaTek Deepen Long-Standing Partnership to Build AI Edge to Cloud Computing Platforms
+    publisher: MediaTek (press room)
+    date: '2026-08-31'
+    tier: 2
+    quote: NVIDIA has also invested $3.5 billion in convertible bonds issued by MediaTek.
+  - url: https://focustaiwan.tw/business/202609010010
+    title: Nvidia invests US$3.5 billion in MediaTek convertible bonds
+    publisher: Focus Taiwan (CNA)
+    date: '2026-09-01'
+    tier: 3
+    quote: MediaTek said the offering, the largest ever by a Taiwanese company, attracted participation from Nvidia, Google's parent company Alphabet, and international institutional investors.
+  verify_note: 'Confirmed at tier 1: MediaTek''s TWSE material-information filing of 2026-08-31 (read in both the English MOPS text and the Chinese original) gives the total (US$3,900,000 thousand), 0% coupon, five-year tenor, conversion price and names NVIDIA Corporation as the specific-person subscriber for US$3.5 billion. Confirmed at tier 2 by the joint press release on both the NVIDIA and MediaTek sites. So this is a real debt instrument (convertible bonds) bought by NVIDIA, and both companies confirmed it; the lead said coupon, maturity and conversion terms were unconfirmed - they are in the filing. Direction differs from the lead (which had from nvidia to mediatek): under this ledger''s convention the issuer MediaTek is ''from'' and the buyer NVIDIA is ''to''. Status is ''signed'' because the filing gives 2026-09-08 only as the tentative issue date and I found no closing notice on MOPS for September-November 2026 (the press release''s ''has invested'' and the S&C client note of 2
+    September suggest it closed; NVIDIA''s next 10-Q should settle it). Alphabet''s participation is from MediaTek''s statement as reported by CNA; the filing names only NVIDIA and gives no amount for Alphabet. Use of proceeds per the filing is foreign-currency raw-material procurement, not AI capex; the 2026-07-31 board resolution had authorised up to US$4 billion for the same purpose. The emops URL is a query-string link to the TWSE English disclosure page and may not be permanent; the Chinese original is on mops.twse.com.tw (company 2454, 115/08/31, serial 3).'
+  distinct: true
+- kind: debt
+  from: AVGO
+  to: BONDHOLDERS
+  amount_usd: 5000000000
+  amount_text: '$5.0 billion senior notes in three tranches: $1.25B 5.050% due July 12, 2027; $2.25B 5.050% due July 12, 2029; $1.5B 5.150% due November 15, 2031. Estimated net proceeds approximately $4,975 million'
+  instrument: senior_notes
+  term: SEC-registered senior unsecured notes (not guaranteed by subsidiaries); maturities 2027–2031, fixed coupons 5.050%–5.150%; priced 2024-07-08, settled 2024-07-12; representatives BofA Securities, BNP Paribas, HSBC
+  capacity: null
+  announced: '2024-07-08'
+  status: completed
+  title_zh: 博通发行 50 亿美元优先票据（2027/2029/2031 三档），用于提前偿还 VMware 收购定期贷款 A-2
+  title_en: Broadcom prices $5.0B senior notes (2027/2029/2031) to prepay VMware-acquisition term A-2 loans
+  summary_zh: 2024 年 7 月 8 日博通定价发行 50 亿美元优先无担保票据，分三档：12.5 亿美元 5.050% 2027 年到期、22.5 亿美元 5.050% 2029 年到期、15 亿美元 5.150% 2031 年到期，7 月 12 日交割。招股说明书补充文件写明净募集资金约 49.75 亿美元，用于提前偿还定期贷款协议下的部分 A-2 定期贷款（2025 年 11 月到期）及一般公司用途；该定期贷款当初用于为收购 VMware 融资。本笔属于并购贷款的再融资，文件未提及 AI 资本开支。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000114036124032854/ny20032136x5_424b2.htm
+    title: Broadcom Inc. – Prospectus Supplement (Rule 424(b)(2)) dated July 8, 2024, $5,000,000,000 senior notes
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2024-07-10'
+    tier: 1
+    quote: $1,250,000,000 aggregate principal amount of its 5.050% senior notes due 2027 (the “2027 Notes”), $2,250,000,000 aggregate principal amount of its 5.050% senior notes due 2029 (the “2029 Notes”) and $1,500,000,000 aggregate principal amount of its 5.150% senior notes due 2031
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000114036124032854/ny20032136x5_424b2.htm
+    title: Broadcom Inc. – Prospectus Supplement dated July 8, 2024 (Use of Proceeds)
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2024-07-10'
+    tier: 1
+    quote: We intend to use the net proceeds from the sale of the Notes to prepay a portion of the term A-2 loans under our term loan credit agreement and for general corporate purposes.
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000114036124033072/ny20032136x6_8k.htm
+    title: Broadcom Inc. – Form 8-K (Item 8.01, closing of $5.0B senior notes; Supplemental Indenture No. 1)
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2024-07-12'
+    tier: 1
+    quote: pursuant to which the Company agreed to issue and sell to the Underwriters $5,000,000,000 aggregate principal amount of its senior notes
+  verify_note: 'Confirmed in the final prospectus supplement (dated July 8, 2024; filed on EDGAR 2024-07-10) and the closing 8-K (filed 2024-07-12; underwriting agreement dated July 8, 2024; Supplemental Indenture No. 1 dated July 12, 2024; ''The Notes were issued pursuant to the Prospectus Supplement''). Amount, three tranches and pricing date match the lead. Use of proceeds per the filing: prepay part of the term A-2 loans (maturing November 24, 2025), whose proceeds had financed the VMware acquisition, plus general corporate purposes – no AI-capex language. The lead cited only a law-firm note and Bloomberg; neither was needed or opened.'
+- kind: debt
+  from: AVGO
+  to: BONDHOLDERS
+  amount_usd: 5000000000
+  amount_text: '$5.0 billion senior notes in four tranches: $875M 4.150% due February 15, 2028; $1.5B 4.350% due February 15, 2030; $875M 4.550% due February 15, 2032; $1.75B 4.800% due October 15, 2034. Estimated net proceeds approximately $4,969 million'
+  instrument: senior_notes
+  term: SEC-registered senior unsecured notes; maturities 2028–2034, fixed coupons 4.150%–4.800%; priced 2024-09-26, settled 2024-10-02; representatives J.P. Morgan, TD Securities, Truist Securities
+  capacity: null
+  announced: '2024-09-26'
+  status: completed
+  title_zh: 博通发行 50 亿美元优先票据（2028/2030/2032/2034 四档），用于提前偿还 VMware 收购定期贷款 A-3
+  title_en: Broadcom prices $5.0B senior notes (2028/2030/2032/2034) to prepay VMware-acquisition term A-3 loans
+  summary_zh: 2024 年 9 月 26 日博通定价发行 50 亿美元优先无担保票据，分四档：8.75 亿美元 4.150% 2028 年到期、15 亿美元 4.350% 2030 年到期、8.75 亿美元 4.550% 2032 年到期、17.5 亿美元 4.800% 2034 年到期，10 月 2 日交割。净募集资金约 49.69 亿美元，按招股说明书补充文件用于提前偿还部分 A-3 定期贷款（2026 年 11 月到期）及一般公司用途；该定期贷款当初用于为收购 VMware 融资。属于并购贷款再融资，而非 AI 资本开支融资。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000119312524229025/d860719d424b2.htm
+    title: Broadcom Inc. – Prospectus Supplement (Rule 424(b)(2)) dated September 26, 2024, $5,000,000,000 senior notes
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2024-09-30'
+    tier: 1
+    quote: $875,000,000 aggregate principal amount of its 4.150% senior notes due 2028 (the “2028 Notes”), $1,500,000,000 aggregate principal amount of its 4.350% senior notes due 2030 (the “2030 Notes”), $875,000,000 aggregate principal amount of its 4.550% senior notes due 2032 (the “2032 Notes”) and $1,750,000,000 aggregate principal amount of its 4.800% senior notes due 2034
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000119312524229025/d860719d424b2.htm
+    title: Broadcom Inc. – Prospectus Supplement dated September 26, 2024 (Use of Proceeds)
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2024-09-30'
+    tier: 1
+    quote: We intend to use the net proceeds from the sale of the Notes to prepay a portion of the term A-3 loans under our term loan credit agreement and for general corporate purposes.
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000119312524231159/d860121d8k.htm
+    title: Broadcom Inc. – Form 8-K (Item 8.01, closing of $5.0B senior notes; Supplemental Indenture No. 2)
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2024-10-02'
+    tier: 1
+    quote: On September 26, 2024, Broadcom Inc. (the “Company”) entered into an underwriting agreement
+  verify_note: 'Confirmed in the final prospectus supplement (dated September 26, 2024; filed 2024-09-30) and the closing 8-K (filed 2024-10-02; Supplemental Indenture No. 2 dated October 2, 2024). Amount and dates match the lead; the lead gave no tranche detail – the four tranches above are from the 424B2. Use of proceeds per the filing: prepay part of the term A-3 loans (maturing November 20, 2026) that financed the VMware acquisition, plus general corporate purposes. The lead''s ''after the Fed''s rate cut'' colour comes from GlobalCapital and was not checked.'
+- kind: debt
+  from: AVGO
+  to: BONDHOLDERS
+  amount_usd: 3000000000
+  amount_text: '$3.0 billion senior notes in three tranches: $1.1B 4.800% due April 15, 2028; $800M 5.050% due April 15, 2030; $1.1B 5.200% due April 15, 2032. Estimated net proceeds approximately $2,986 million'
+  instrument: senior_notes
+  term: SEC-registered senior unsecured notes; maturities 2028–2032, fixed coupons 4.800%–5.200%; priced 2025-01-06, settled 2025-01-10; representatives Wells Fargo Securities, Citigroup, PNC Capital Markets, Scotiabank
+  capacity: null
+  announced: '2025-01-06'
+  status: completed
+  title_zh: 博通发行 30 亿美元优先票据（2028/2030/2032 三档），用于提前偿还 VMware 收购定期贷款 A-3
+  title_en: Broadcom prices $3.0B senior notes (2028/2030/2032) to prepay VMware-acquisition term A-3 loans
+  summary_zh: 2025 年 1 月 6 日博通定价发行 30 亿美元优先无担保票据，分三档：11 亿美元 4.800% 2028 年到期、8 亿美元 5.050% 2030 年到期、11 亿美元 5.200% 2032 年到期，1 月 10 日交割。净募集资金约 29.86 亿美元，按招股说明书补充文件用于提前偿还部分 A-3 定期贷款及一般公司用途；该定期贷款当初用于为收购 VMware 融资。属于并购贷款再融资，文件未提及 AI 资本开支。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000119312525003543/d883806d424b2.htm
+    title: Broadcom Inc. – Prospectus Supplement (Rule 424(b)(2)) dated January 6, 2025, $3,000,000,000 senior notes
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2025-01-08'
+    tier: 1
+    quote: $1,100,000,000 aggregate principal amount of its 4.800% senior notes due 2028 (the “2028 Notes”), $800,000,000 aggregate principal amount of its 5.050% senior notes due 2030 (the “2030 Notes”) and $1,100,000,000 aggregate principal amount of its 5.200% senior notes due 2032
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000119312525003543/d883806d424b2.htm
+    title: Broadcom Inc. – Prospectus Supplement dated January 6, 2025 (Use of Proceeds)
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2025-01-08'
+    tier: 1
+    quote: We intend to use the net proceeds from the sale of the Notes to prepay a portion of the term A-3 loans under our term loan credit agreement and for general corporate purposes.
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000119312525004476/d880789d8k.htm
+    title: Broadcom Inc. – Form 8-K (Item 8.01, closing of $3.0B senior notes; Supplemental Indenture No. 3)
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2025-01-10'
+    tier: 1
+    quote: pursuant to which the Company agreed to issue and sell to the Underwriters $3,000,000,000 aggregate principal amount of its senior notes
+  verify_note: Confirmed in the final prospectus supplement (dated January 6, 2025; filed 2025-01-08) and the closing 8-K (filed 2025-01-10; underwriting agreement dated January 6, 2025; Supplemental Indenture No. 3 dated January 10, 2025). Amount, tranches and pricing date match the lead. Maturity dates are from the closing 8-K (April 15 of 2028, 2030 and 2032); the 424B2 cover has a typo that labels the 5.200% / 2032 tranche as 'The 2030 Notes'. The lead's FWP term sheet was not opened (the 424B2 and 8-K cover the same terms). Broadcom also filed an 8-K on 2025-01-13 with Item 1.02 (termination of a material agreement), which may relate to the term loans – not opened.
+- kind: debt
+  from: AVGO
+  to: BONDHOLDERS
+  amount_usd: 4500000000
+  amount_text: '$4.5 billion senior notes in four tranches: $750M 4.300% due January 15, 2031; $1.25B 4.600% due January 15, 2033; $1.25B 4.950% due January 15, 2036; $1.25B 5.700% due January 15, 2056. Estimated net proceeds approximately $4,472 million'
+  instrument: senior_notes
+  term: SEC-registered senior unsecured notes; maturities 2031–2056, fixed coupons 4.300%–5.700%; priced 2026-01-06, settled 2026-01-13 (T+5); representatives BofA Securities and J.P. Morgan
+  capacity: null
+  announced: '2026-01-06'
+  status: completed
+  title_zh: 博通发行 45 亿美元优先票据（2031/2033/2036/2056 四档），用于赎回 2027–2028 年到期旧票据及一般公司用途
+  title_en: Broadcom prices $4.5B senior notes (2031/2033/2036/2056) to redeem 2027–2028 notes and for general corporate purposes
+  summary_zh: 2026 年 1 月 6 日博通定价发行 45 亿美元优先无担保票据，分四档：7.5 亿美元 4.300% 2031 年到期、12.5 亿美元 4.600% 2033 年到期、12.5 亿美元 4.950% 2036 年到期、12.5 亿美元 5.700% 2056 年到期，1 月 13 日交割。净募集资金约 44.72 亿美元，招股说明书补充文件写明拟用于赎回或偿还 2027 年 7 月到期的 5.050% 票据、2028 年 2 月到期的 4.150% 票据、2028 年 9 月到期的 4.110% 票据和/或承继自 VMware 的 2027 年 8 月到期 3.900% 票据（部分或全部），以及一般公司用途。主要是存量票据再融资，文件未指明用于 AI 资本开支。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000119312526007683/d917883d424b2.htm
+    title: Broadcom Inc. – Prospectus Supplement (Rule 424(b)(2)) dated January 6, 2026, $4,500,000,000 senior notes
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2026-01-08'
+    tier: 1
+    quote: $750,000,000 aggregate principal amount of its 4.300% senior notes due 2031 (the “2031 Notes”), $1,250,000,000 aggregate principal amount of its 4.600% senior notes due 2033 (the “2033 Notes”), $1,250,000,000 aggregate principal amount of its 4.950% senior notes due 2036 (the “2036 Notes”) and $1,250,000,000 aggregate principal amount of its 5.700% senior notes due 2056
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000119312526007683/d917883d424b2.htm
+    title: Broadcom Inc. – Prospectus Supplement dated January 6, 2026 (Use of Proceeds)
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2026-01-08'
+    tier: 1
+    quote: We intend to use the net proceeds from the sale of the Notes to redeem, repurchase, repay, satisfy and discharge or otherwise repay, in part or in full, our 5.050% notes due July 2027 (the “5.050% notes”), our 4.150% notes due February 2028 (the “4.150% notes”), our 4.110% notes due September 2028 (the “4.110% notes”) and/or the assumed VMware 3.900% notes due August 2027 (the “3.900% notes”) and for general corporate purposes.
+  - url: https://www.sec.gov/Archives/edgar/data/1730168/000119312526011731/d104560d8k.htm
+    title: Broadcom Inc. – Form 8-K (Item 8.01, closing of $4.5B senior notes; Supplemental Indenture No. 6)
+    publisher: SEC EDGAR (Broadcom Inc.)
+    date: '2026-01-13'
+    tier: 1
+    quote: pursuant to which the Company agreed to issue and sell to the Underwriters $4,500,000,000 aggregate principal amount of its senior notes
+  verify_note: Confirmed in the final prospectus supplement (dated January 6, 2026) and the closing 8-K (filed 2026-01-13; underwriting agreement dated January 6, 2026; Supplemental Indenture No. 6 dated January 13, 2026). Amount, tranches and pricing date match the lead. EDGAR filing date of the 424B2 is 2026-01-08 (the lead's source date said 2026-01-07). Use of proceeds is 'in part or in full' redemption of four named 2027–2028 note series 'and/or' general corporate purposes – the split is not disclosed. The Wachtell Lipton page in the lead was not opened.
+- kind: debt
+  from: AMD
+  to: BONDHOLDERS
+  amount_usd: 4750000000
+  amount_text: '$4.75 billion senior notes in four tranches: $1.25B 4.600% due August 17, 2029; $1.5B 5.000% due August 17, 2031; $1.0B 5.250% due August 17, 2033; $1.0B 5.500% due August 17, 2036. Estimated net proceeds approximately $4.7 billion'
+  instrument: senior_notes
+  term: SEC-registered general unsecured senior notes; maturities 2029–2036, fixed coupons 4.600%–5.500%; underwriting agreement and prospectus supplement dated 2026-08-13, closed 2026-08-17; representatives Barclays, BofA Securities, Citigroup, J.P. Morgan, Morgan Stanley, Wells Fargo Securities
+  capacity: null
+  announced: '2026-08-13'
+  status: completed
+  title_zh: AMD 发行 47.5 亿美元优先票据（2029/2031/2033/2036 四档），用于一般公司用途（可能包括偿还债务）
+  title_en: AMD prices $4.75B senior notes (2029/2031/2033/2036) for general corporate purposes, which may include debt repayment
+  summary_zh: 2026 年 8 月 13 日 AMD 定价发行 47.5 亿美元优先无担保票据，分四档：12.5 亿美元 4.600% 2029 年到期、15 亿美元 5.000% 2031 年到期、10 亿美元 5.250% 2033 年到期、10 亿美元 5.500% 2036 年到期，8 月 17 日完成交割。净募集资金约 47 亿美元，公司表示用于一般公司用途，可能包括偿还债务，未指定具体项目。发行前（2026 年 6 月 27 日）AMD 债务本金合计仅 32.5 亿美元，本次发行使其有息债务规模翻倍以上。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/2488/000119312526354029/d142696d8k.htm
+    title: Advanced Micro Devices, Inc. – Form 8-K (Items 1.01, 2.03; closing of $4.75B senior notes, Third Supplemental Indenture)
+    publisher: SEC EDGAR (Advanced Micro Devices, Inc.)
+    date: '2026-08-17'
+    tier: 1
+    quote: closed its public offering (the “Offering”) of $4.75 billion aggregate principal amount of senior notes, consisting of $1.25 billion aggregate principal amount of its 4.600% Senior Notes due 2029 (the “2029 Notes”), $1.50 billion aggregate principal amount of its 5.000% Senior Notes due 2031 (the “2031 Notes”), $1.00 billion aggregate principal amount of its 5.250% Senior Notes due 2033 (the “2033 Notes”) and $1.00 billion aggregate principal amount of its 5.500% Senior Notes due 2036
+  - url: https://www.sec.gov/Archives/edgar/data/2488/000119312526354029/d142696d8k.htm
+    title: Advanced Micro Devices, Inc. – Form 8-K (underwriting agreement date and use of proceeds)
+    publisher: SEC EDGAR (Advanced Micro Devices, Inc.)
+    date: '2026-08-17'
+    tier: 1
+    quote: The Company intends to use the net proceeds from the Offering for general corporate purposes, which may include the repayment of debt. The purchase and sale of the Notes was made pursuant to an Underwriting Agreement (the “Underwriting Agreement”), dated August 13, 2026
+  - url: https://www.sec.gov/Archives/edgar/data/2488/000119312526352628/d173126d424b5.htm
+    title: Advanced Micro Devices, Inc. – Prospectus Supplement (Rule 424(b)(5)) dated August 13, 2026, $4,750,000,000 senior notes
+    publisher: SEC EDGAR (Advanced Micro Devices, Inc.)
+    date: '2026-08-14'
+    tier: 1
+    quote: We estimate that the net proceeds to us from the sale of the notes will be approximately $4.7 billion after deducting the underwriting discounts and estimated offering expenses payable by us.
+  verify_note: 'Confirmed in the closing 8-K (filed 2026-08-17) and the final prospectus supplement (''Prospectus Supplement dated August 13, 2026''; filed 2026-08-14). Pricing date is 2026-08-13 (underwriting agreement date), closing 2026-08-17 – the ledger''s unconfirmed candidate dated 2026-08-01 should be re-dated to 2026-08-13. All four tranches and the amount match the lead. Public offering prices: 99.889% / 99.921% / 99.919% / 99.757%. Pre-deal debt figure ($3,250M principal at June 27, 2026, including $875M 4.212% notes due 2026) is from AMD''s Q2 2026 10-Q (https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm), also opened. No specific debt to be repaid is named in the filings.'
+- kind: debt
+  from: AMD
+  to: LENDER_SYNDICATE
+  amount_usd: 5000000000
+  amount_text: $5.0 billion five-year unsecured revolving credit facility (commitment, undrawn at signing and at June 27, 2026); up to $250 million usable for letters of credit; replaces the prior $3.0 billion revolver dated April 29, 2022
+  instrument: revolving_credit_facility
+  term: Credit Agreement dated 2026-05-14 with JPMorgan Chase Bank, N.A. as administrative agent; revolving loans available until the fifth anniversary of closing (May 2031); interest at Term SOFR + 0.50%–0.80% or Base Rate + 0.00% depending on credit ratings; commitment fee 0.03%–0.05% on unused commitments; no financial covenants
+  capacity: null
+  announced: '2026-05-14'
+  status: signed
+  title_zh: AMD 签署 50 亿美元五年期无担保循环信贷额度（摩根大通任行政代理行），取代原 30 亿美元额度
+  title_en: AMD signs $5.0B five-year unsecured revolving credit facility (JPMorgan as administrative agent), replacing its $3.0B revolver
+  summary_zh: 2026 年 5 月 14 日 AMD 与一组贷款行签署新的信贷协议，摩根大通银行任行政代理行，提供 50 亿美元、五年期的无担保循环信贷额度，取代 2022 年 4 月签署、由富国银行任行政代理行的原 30 亿美元循环额度；其中最多 2.5 亿美元可用于开立信用证。这是承诺额度而非已提取的借款：签约日及 2026 年 6 月 27 日均无任何提款，资金用途为一般公司用途，协议不设财务约束条款。同日 AMD 还把商业票据计划上限从 30 亿美元提高到 55 亿美元。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/2488/000119312526226746/d118163d8k.htm
+    title: Advanced Micro Devices, Inc. – Form 8-K (Items 1.01, 1.02, 2.03; new Credit Agreement and termination of Existing Credit Agreement)
+    publisher: SEC EDGAR (Advanced Micro Devices, Inc.)
+    date: '2026-05-15'
+    tier: 1
+    quote: The Credit Agreement provides for a five-year, $5.0 billion unsecured revolving credit facility (the “Revolving Facility”) and replaces the Company’s existing Credit Agreement dated as of April 29, 2022, among the Company, the lenders party thereto and Wells Fargo Bank, National Association, as administrative agent
+  - url: https://www.sec.gov/Archives/edgar/data/2488/000119312526226746/d118163d8k.htm
+    title: Advanced Micro Devices, Inc. – Form 8-K (signing date, agent and drawn balance)
+    publisher: SEC EDGAR (Advanced Micro Devices, Inc.)
+    date: '2026-05-15'
+    tier: 1
+    quote: As of the Closing Date, there are no borrowings outstanding under the Revolving Facility.
+  - url: https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm
+    title: Advanced Micro Devices, Inc. – Form 10-Q for the quarter ended June 27, 2026 (Note 9 – Debt, Revolving Credit Facility and Commercial Paper Program)
+    publisher: SEC EDGAR (Advanced Micro Devices, Inc.)
+    date: '2026-08-05'
+    tier: 1
+    quote: In May 2026, the Company entered into a five-year, $5.0 billion unsecured revolving credit facility (the Revolving Facility), replacing its prior $3.0 billion revolving credit facility entered into in April 2022.
+  verify_note: Confirmed in the 8-K (filed 2026-05-15; date of report May 13, 2026, but the Credit Agreement itself was entered into 'On May 14, 2026 (the “Closing Date”)') and the Q2 2026 10-Q. The 8-K does not state the size of the replaced facility; the $3.0B figure comes from the 10-Q. JPMorgan Chase Bank, N.A. is administrative agent only – individual lenders and their commitments are in Exhibit 10.1, which was not opened, so 'to' is LENDER_SYNDICATE rather than JPM (the lead recorded the lender as jpmorgan). Undrawn at signing and at June 27, 2026 ('no outstanding balance under its Revolving Facility'); the 10-Q MD&A says it 'expires in 2031'. The Q3 2026 10-Q (filed 2026-11-04) was not opened, so the current drawn balance is unverified.
+- kind: debt
+  from: MU
+  to: BONDHOLDERS
+  amount_usd: 1750000000
+  amount_text: '$1.75 billion senior notes in two tranches: $500M 5.65% due November 1, 2032 and $1.25B 6.05% due November 1, 2035. Estimated net proceeds approximately $1,737 million. Largely prepaid on April 3, 2026 ($429M of the 2032 notes and $1,030M of the 2035 notes), leaving $71M and $220M of principal outstanding at September 3, 2026'
+  instrument: senior_notes
+  term: SEC-registered senior unsecured notes; maturities November 2032 and November 2035, fixed coupons 5.65% and 6.05%; priced 2025-04-24, settled 2025-04-29; lead bookrunners Morgan Stanley, BofA Securities, HSBC, Wells Fargo Securities
+  capacity: null
+  announced: '2025-04-24'
+  status: completed
+  title_zh: 美光发行 17.5 亿美元优先票据（2032/2035 两档），用于赎回 2027 年到期票据；2026 年 4 月已提前偿还大部分
+  title_en: Micron prices $1.75B senior notes (2032/2035) to redeem its 2027 notes; most of both series prepaid in April 2026
+  summary_zh: 2025 年 4 月 24 日美光定价发行 17.5 亿美元优先无担保票据：5 亿美元 5.65% 2032 年 11 月到期、12.5 亿美元 6.05% 2035 年 11 月到期，4 月 29 日交割。净募集资金约 17.37 亿美元，招股说明书补充文件写明用于支付 2027 年到期 4.185% 票据（本金 9 亿美元）的赎回价款及解除相关固定转浮动利率互换的成本，余额用于一般公司用途，属于再融资而非 AI 资本开支融资。美光 2026 财年 10-K 显示，公司已于 2026 年 4 月 3 日提前偿还两档票据的大部分（本金分别减少 4.29 亿和 10.30 亿美元），截至 2026 年 9 月 3 日两档仅余本金 7,100 万和 2.20 亿美元。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/723125/000110465925039497/tm2511594-4_424b5.htm
+    title: Micron Technology, Inc. – Prospectus Supplement (Rule 424(b)(5)) dated April 24, 2025, 5.65% Senior Notes due 2032 and 6.05% Senior Notes due 2035
+    publisher: SEC EDGAR (Micron Technology, Inc.)
+    date: '2025-04-25'
+    tier: 1
+    quote: Micron Technology, Inc. is offering $500,000,000 aggregate principal amount of 5.65% senior notes due 2032 (the “2032 notes”) and $1,250,000,000 aggregate principal amount of 6.05% senior notes due 2035
+  - url: https://www.sec.gov/Archives/edgar/data/723125/000110465925039497/tm2511594-4_424b5.htm
+    title: Micron Technology, Inc. – Prospectus Supplement dated April 24, 2025 (Use of Proceeds)
+    publisher: SEC EDGAR (Micron Technology, Inc.)
+    date: '2025-04-25'
+    tier: 1
+    quote: We intend to use the net proceeds from the sale of the notes to pay the redemption price of the 2027 notes Redemption and to pay the cost of unwinding the fixed-to-floating interest rate swaps we entered into in connection with the 2027 notes.
+  - url: https://www.sec.gov/Archives/edgar/data/723125/000110465925041201/tm2513434d1_8k.htm
+    title: Micron Technology, Inc. – Form 8-K (Items 1.01, 2.03, 8.01; settlement of the notes offering and redemption notice for the 2027 Notes)
+    publisher: SEC EDGAR (Micron Technology, Inc.)
+    date: '2025-04-29'
+    tier: 1
+    quote: settled its offering of (i) $500,000,000 aggregate principal amount of 5.65% senior notes due 2032
+  - url: https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm
+    title: Micron Technology, Inc. – Form 10-K for fiscal 2026 (Note 9 – Debt, Debt Activity table of 2026 prepayments)
+    publisher: SEC EDGAR (Micron Technology, Inc.)
+    date: '2026-10-09'
+    tier: 1
+    quote: 2032 NotesApril 3, 2026(429)(426)(456)
+  verify_note: Confirmed in the final prospectus supplement (cover dated April 24, 2025; filed 2025-04-25), the settlement 8-K (filed 2025-04-29, which also says a redemption notice for the $900,000,000 4.185% 2027 Notes was issued on April 24, 2025) and the fiscal 2026 10-K (filed 2026-10-09). Amount, tranches, pricing and closing dates and the April 2026 prepayment figures all match the lead. Prepayment quote is from the text layer of the 10-K's 'Debt Activity' table, whose columns are Transaction Date / Decrease in Principal / Decrease in Carrying Value / Decrease in Cash; the same table has '2035 B NotesApril 3, 2026(1,030)(1,022)(1,114)', and the debt table shows principal of 71 (2032 Notes) and 220 (2035 B Notes) at September 3, 2026 versus 500 and 1,250 a year earlier (in $ millions). The lead's FWP term sheet was not opened. The 10-K labels the 6.05% series '2035 B Notes'.
+- kind: debt
+  from: ORCL
+  to: LENDER_SYNDICATE
+  amount_usd: 10000000000
+  amount_text: $10.0 billion five-year unsecured revolving credit facility (commitment; no borrowings outstanding at May 31, 2026); replaces the prior $6.0 billion five-year revolver that was scheduled to terminate on March 8, 2027
+  instrument: revolving_credit_facility
+  term: 'Revolving Credit Agreement dated 2026-03-06 with Bank of America, N.A. as administrative agent; amounts borrowed become due March 6, 2031; interest at Term SOFR + 87.5–150.0 bp or Base Rate + 0.0–50.0 bp depending on credit rating; covenant: Consolidated EBITDA / Consolidated Net Interest Expense not less than 3.0 to 1.0'
+  capacity: null
+  announced: '2026-03-06'
+  status: signed
+  title_zh: 甲骨文签署 100 亿美元五年期无担保循环信贷协议（美国银行任行政代理行），取代原 60 亿美元额度
+  title_en: Oracle signs $10.0B five-year unsecured revolving credit agreement (Bank of America as administrative agent), replacing its $6.0B revolver
+  summary_zh: 2026 年 3 月 6 日甲骨文终止原 60 亿美元五年期循环信贷协议（原定 2027 年 3 月 8 日到期），同日与以美国银行为行政代理行的银行团签署新的 100 亿美元五年期无担保循环信贷协议，资金可用于营运资金及其他一般公司用途，借款于 2031 年 3 月 6 日到期。这是承诺额度而非已提取的借款：10-Q 披露签约时未提款，10-K 披露截至 2026 年 5 月 31 日仍无任何借款余额。同日公司商业票据计划上限也提高到 100 亿美元（5 月 31 日余额 15 亿美元）。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/orcl-20260228.htm
+    title: Oracle Corporation – Form 10-Q for the quarter ended February 28, 2026 (Note 12 – Subsequent Events, Revolving Credit Agreement)
+    publisher: SEC EDGAR (Oracle Corporation)
+    date: '2026-03-11'
+    tier: 1
+    quote: On March 6, 2026, Oracle entered into a new $10.0 billion, five-year revolving credit agreement (the Revolving Credit Agreement) among Oracle, as borrower, Bank of America, N.A., as administrative agent, and the lenders and other agents named therein, which provides for an unsecured $10.0 billion, five-year revolving credit facility
+  - url: https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/orcl-20260228.htm
+    title: Oracle Corporation – Form 10-Q for the quarter ended February 28, 2026 (replaced facility)
+    publisher: SEC EDGAR (Oracle Corporation)
+    date: '2026-03-11'
+    tier: 1
+    quote: On March 6, 2026, Oracle terminated its existing $6.0 billion, five-year revolving credit agreement among Oracle, as borrower, Bank of America, N.A., as administrative agent, and the lenders and other agents named therein, which was originally scheduled to terminate on March 8, 2027.
+  - url: https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm
+    title: Oracle Corporation – Form 10-K for fiscal 2026 (Notes payable and other borrowings – Revolving Credit Agreement)
+    publisher: SEC EDGAR (Oracle Corporation)
+    date: '2026-06-22'
+    tier: 1
+    quote: All amounts borrowed under the Revolving Credit Agreement will become due on March 6, 2031, unless the commitments are terminated earlier either at our request or, if an event of default occurs, by the lenders
+  - url: https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm
+    title: Oracle Corporation – Form 10-K for fiscal 2026 (drawn balance)
+    publisher: SEC EDGAR (Oracle Corporation)
+    date: '2026-06-22'
+    tier: 1
+    quote: As of May 31, 2026, we did not have any outstanding borrowings under the Revolving Credit Agreement.
+  verify_note: Confirmed in the Q3 FY2026 10-Q (filed 2026-03-11, first SEC disclosure, as a subsequent event; the agreement is filed there as Exhibit 10.17 – exhibit not opened) and the FY2026 10-K (filed 2026-06-22). No 8-K was filed for the facility (Oracle's March 2026 8-Ks are the earnings release only). Amount, date, five-year term and the replaced $6.0B facility all match the lead. The 10-Q MD&A says 'No amounts have been drawn pursuant to this agreement as of the date of this Quarterly Report'. Individual lenders are not named in the filings' text; Bank of America, N.A. is administrative agent. The Q1 FY2027 10-Q (filed 2026-09-11) was fetched but a text search for the revolver found nothing, so the drawn balance after May 31, 2026 is unverified.
+- kind: debt
+  from: CEREBRAS
+  to: OPENAI
+  amount_usd: 1004571259
+  amount_text: $1,004,571,259 principal under a Secured Promissory Note dated January 5, 2026 (the 'Working Capital Loan', described in the S-1 as approximately $1.0 billion); 6% interest, due no later than December 31, 2032; repayable in cash or through delivery of compute capacity, hardware or other services under the OpenAI Master Relationship Agreement. Principal outstanding $982.9M at March 31, 2026 and $918.2M at June 30, 2026 after non-cash service credits
+  instrument: secured_promissory_note
+  term: Secured Promissory Note between Cerebras Systems Inc. (borrower) and OpenAI OpCo, LLC (holder) dated 2026-01-05, issued under the Master Relationship Agreement dated 2025-12-24; interest 6% per annum (deemed paid/waived on amounts repaid through services or asset transfers); maturity December 31, 2032 or earlier acceleration; amortised in equal installments over a three-year term starting after delivery of the final tranche of the initial 250 MW; prepayable without penalty; secured by a first-priority security interest in the lockbox account holding the proceeds; immediately due if the MRA is terminated other than for OpenAI's material uncured breach
+  capacity: null
+  announced: '2026-01-05'
+  status: completed
+  title_zh: OpenAI 向 Cerebras 提供约 10.05 亿美元有担保营运资金贷款（年息 6%，2032 年底前到期，可用算力抵还）
+  title_en: OpenAI advances Cerebras a $1.0046B secured working-capital loan (6%, due by end-2032, repayable in compute) alongside its 750 MW compute agreement
+  summary_zh: 作为 2025 年 12 月 24 日主关系协议（MRA，OpenAI 承诺采购 750MW 推理算力，Cerebras 称该合作价值超过 200 亿美元）的一部分，OpenAI 于 2026 年 1 月向 Cerebras 发放营运资金贷款，2026 年 1 月 5 日签署的有担保本票载明本金为 1,004,571,259 美元。贷款年息 6%，最迟 2032 年 12 月 31 日到期，可随时无罚金提前偿还；Cerebras 可用现金偿还，也可通过交付算力、硬件或其他服务抵还，以服务抵还的部分对应利息视同已付。款项须存入专用锁箱账户（lockbox），只能用于加快相关服务的研发、制造与数据中心建设，OpenAI 对该账户及其中资金享有第一顺位担保权益；若 MRA 因 OpenAI 重大未补救违约以外的原因终止，贷款立即到期。贷款到账同时触发 OpenAI 认股权证（最多 33,445,026 股 N 类普通股，行权价 0.00001 美元）首批 4,459,337 股归属。截至 2026 年 6 月 30 日，Cerebras 未做任何现金还款，已通过 8,630 万美元非现金服务抵扣将本金余额降至 9.18 亿美元。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/2021728/000162828026025762/exhibit1012-sx1.htm
+    title: Cerebras Systems Inc. – Secured Promissory Note dated January 5, 2026 with OpenAI OpCo, LLC (Exhibit 10.12 to Form S-1)
+    publisher: SEC EDGAR (Cerebras Systems Inc.)
+    date: '2026-04-17'
+    tier: 1
+    quote: the Borrower hereby unconditionally promises to pay to the Holder the principal amount of $1,004,571,259, together with any accrued but unpaid interest, on December 31, 2032 or such earlier date as otherwise set forth in Section 3 or Section 8
+  - url: https://www.sec.gov/Archives/edgar/data/2021728/000162828026025762/exhibit1012-sx1.htm
+    title: Cerebras Systems Inc. – Secured Promissory Note (Section 4, Grant of Security Interest)
+    publisher: SEC EDGAR (Cerebras Systems Inc.)
+    date: '2026-04-17'
+    tier: 1
+    quote: the Borrower hereby grants to the Holder a continuing first priority security interest in and Lien (as defined below) upon the Lockbox Account and all cash and other amounts credited thereto and any proceeds thereof
+  - url: https://www.sec.gov/Archives/edgar/data/2021728/000162828026025762/cerebras-sx1april2026.htm
+    title: Cerebras Systems Inc. – Form S-1 (MD&A, OpenAI Collaboration – Working Capital Loan and OpenAI Warrant)
+    publisher: SEC EDGAR (Cerebras Systems Inc.)
+    date: '2026-04-17'
+    tier: 1
+    quote: OpenAI advanced to us a working capital loan of approximately $1.0 billion (the “Working Capital Loan”), which we will repay in cash or through the delivery of compute capacity or hardware or other services under the MRA. The Working Capital Loan is subject to a secured promissory note with a maturity date of no later than December 31, 2032, which may be prepaid in whole or in part at any time without penalty, and which bears interest at 6% per annum
+  - url: https://www.sec.gov/Archives/edgar/data/2021728/000162828026025762/cerebras-sx1april2026.htm
+    title: Cerebras Systems Inc. – Form S-1 (OpenAI Warrant vesting)
+    publisher: SEC EDGAR (Cerebras Systems Inc.)
+    date: '2026-04-17'
+    tier: 1
+    quote: 4,459,337 shares vested in January 2026 upon our receipt of the Working Capital Loan
+  - url: https://www.sec.gov/Archives/edgar/data/2021728/000162828026056357/cbrs-20260630.htm
+    title: Cerebras Systems Inc. – Form 10-Q for the quarter ended June 30, 2026 (Note 10 – Debt, Working Capital Loan)
+    publisher: SEC EDGAR (Cerebras Systems Inc.)
+    date: '2026-08-12'
+    tier: 1
+    quote: As of June 30, 2026, no cash payments had been made and $86.3 million of non-cash billings were credited as an offset to the outstanding loan balance.
+  verify_note: 'Exact principal ($1,004,571,259), note date (January 5, 2026), 6% interest, December 31, 2032 maturity, lockbox use-of-proceeds restriction and first-priority security interest all confirmed in the Secured Promissory Note itself (Exhibit 10.12 to the S-1; portions redacted with [***], including the amortisation schedule and the cap on repayment through services). The S-1 body only says ''approximately $1.0 billion'' / ''$1.0 billion Working Capital Loan''. The S-1 was filed on EDGAR 2026-04-17, not 2026-04-20 as in the lead. Collateral is the lockbox account and cash in it only – the note states the collateral does not include assets acquired with permitted disbursements from the account (though on mandatory repayment OpenAI may elect to take assignment of assets paid for from the lockbox). Three-year amortisation ''commencing after the delivery of the final tranche of the initial 250 MW'' is from the S-1 risk factors. Outstanding principal: $982,923K at March 31, 2026 (Q1
+    10-Q filed 2026-06-24, https://www.sec.gov/Archives/edgar/data/2021728/000162828026044981/cbrs-20260331.htm – this is the lead''s ''about $983M'') and $918,244K at June 30, 2026 (Q2 10-Q); the Q2 10-Q cash-flow statement shows ''Proceeds from Working Capital Loan 1,004,571'' ($ thousands). The lead''s ''Loan from customer'' balance-sheet caption was not found under that name in the filings searched. The S-1 says the OpenAI deal was ''valued at more than $20 billion dollars'' (750 MW committed capacity, option for a further 1.25 GW); the 10-Q notes the warrant was partially exercised for 10,033,508 Class N shares in July 2026. The S-1/A filings (2026-05-04, 2026-05-11), the 424B4 (2026-05-14) and the TechCrunch article in the lead were not opened. Status ''completed'' = loan funded in January 2026; it remains outstanding.'
+- kind: debt
+  from: SOFTBANK
+  to: BONDHOLDERS
+  amount_usd: 3561500000
+  amount_text: 'USD 1.5 billion + EUR 1.75 billion senior notes in six tranches: USD 400M 7.625% due Oct 22, 2029; USD 600M 8.250% due Oct 22, 2031; USD 500M 8.500% due Apr 22, 2036; EUR 700M 6.375% due Apr 22, 2030; EUR 600M 7.000% due Apr 22, 2032; EUR 450M 7.375% due Apr 22, 2034. EUR 1.75B = USD 2.0615B at the ECB reference rate of 1.1780 USD per EUR for 2026-04-15 (1.1782 on 2026-04-16), total about USD 3.56B. SoftBank''s own reports call it ''$3.5 billion equivalent'''
+  instrument: senior_notes
+  term: senior unsecured, no guarantee, issue price 100%, S&P BB+, listed on SGX; offered outside Japan and the United States to institutional investors; 3.5- to 10-year maturities; terms announced 2026-04-16, expected issue date 2026-04-22
+  capacity: null
+  announced: '2026-04-16'
+  status: completed
+  title_zh: 软银发行约 35.6 亿美元外币优先票据（15 亿美元 + 17.5 亿欧元，六档），部分用于偿还为追加投资 OpenAI 借入的过桥贷款
+  title_en: SoftBank issues about $3.56B of foreign-currency senior notes (USD 1.5B + EUR 1.75B, six tranches), partly to repay the OpenAI bridge loan
+  summary_zh: 2026 年 4 月 16 日软银集团公布外币优先票据发行条件：美元票据 15 亿美元（2029/2031/2036 年到期，票息 7.625%/8.250%/8.500%）和欧元票据 17.5 亿欧元（2030/2032/2034 年到期，票息 6.375%/7.000%/7.375%），按欧洲央行 4 月 15 日参考汇率 1.1780 折算合计约 35.6 亿美元，4 月 22 日发行。公告写明资金用于赎回既有外币优先票据，并部分偿还主要为追加投资 OpenAI 而借入的过桥贷款；年度决算短信进一步说明，被偿还的是 2026 年 4 月提取的过桥贷款（即 2026 年 3 月签署的 400 亿美元过桥额度），其余用于赎回 2026 财年到期的约 12 亿美元外币票据。10 年期美元档票息 8.5%，标普评级 BB+。
+  sources:
+  - url: https://group.softbank/en/news/press/20260416
+    title: Issuance of Foreign Currency-Denominated Senior Notes
+    publisher: SoftBank Group Corp. (press release)
+    date: '2026-04-16'
+    tier: 2
+    quote: For the redemption of foreign currency-denominated senior notes and for the partial repayment of the amount outstanding under the bridge loan primarily for the follow-on investments in OpenAI
+  - url: https://group.softbank/en/news/press/20260416
+    title: Issuance of Foreign Currency-Denominated Senior Notes (tranche tables)
+    publisher: SoftBank Group Corp. (press release)
+    date: '2026-04-16'
+    tier: 2
+    quote: USD 400 million (JPY 63.6 billion) USD 600 million (JPY 95.4 billion) USD 500 million (JPY 79.5 billion)
+  - url: https://group.softbank/en/news/press/20260416
+    title: Issuance of Foreign Currency-Denominated Senior Notes (EUR tranche table)
+    publisher: SoftBank Group Corp. (press release)
+    date: '2026-04-16'
+    tier: 2
+    quote: EUR 700 million (JPY 131.3 billion) EUR 600 million (JPY 112.6 billion) EUR 450 million (JPY 84.4 billion)
+  - url: https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q4fy2025_01_en.pdf
+    title: SoftBank Group Corp. Consolidated Financial Report for the Fiscal Year Ended March 31, 2026 (p. 4, financing activities)
+    publisher: SoftBank Group Corp. (TSE financial report)
+    date: '2026-05-13'
+    tier: 1
+    quote: Proceeds were used in part to repay bridge loans borrowed in April 2026 and are expected to be used for the redemption of $1.2 billion equivalent in foreign currency-denominated senior notes maturing in the fiscal year ending March 31, 2027.
+  - url: https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q1fy2026_01_en.pdf
+    title: SoftBank Group Corp. Consolidated Financial Report for the Three-Month Period Ended June 30, 2026 (financing notes)
+    publisher: SoftBank Group Corp. (TSE financial report)
+    date: '2026-08-06'
+    tier: 1
+    quote: The total issuance amount comprised $1.5 billion and 1.75 billion euros of foreign currency-denominated senior notes.
+  verify_note: Tranches, coupons, maturities, rating and use of proceeds read directly from SoftBank's release; the tranche quotes are the table cells as they appear in the page's text layer. The release is dated 2026-04-16 (Tokyo) and gives no separate pricing date – the other tracker dates pricing 2026-04-15 from Bloomberg, which was not opened; the FX conversion uses the ECB rate for 2026-04-15 (1.1780), and the 2026-04-16 rate (1.1782) gives the same total to the nearest $1M. Lead said $3.6B at ~1.17; the ECB-rate total is $3.56B and SoftBank reports '$3.5 billion equivalent'. The 'record' description of the 8.5% coupon is Bloomberg's and was not verified. Completion is confirmed by the FY2025 report ('In April 2026, after the fiscal year-end, SBG issued $3.5 billion equivalent'). The bridge loan repaid is the March 2026 $40B facility, per the FY2025 report ('bridge loans borrowed in April 2026'), not the 2025 $15B bridge.
+- kind: debt
+  from: SOFTBANK
+  to: MIZUHO
+  amount_usd: 15000000000
+  amount_text: '$15.0 billion of bridge loans arranged in April 2025: $8.5 billion borrowed in April 2025 from Mizuho Bank and other financial institutions to fund SoftBank''s share of the first OpenAI closing (on-lent to SVF2), plus a $6.5 billion bridge facility signed 2025-04-10 for the Ampere acquisition (mandated lead arrangers and bookrunners Mizuho Bank, SMBC and JPMorgan Chase Bank Tokyo Branch; drawn November 2025). $3.0 billion was repaid during FY2025 and the remaining $12.0 billion at maturity in April 2026'
+  instrument: bridge_loan
+  term: 'one-year bridge loans; Ampere facility: agreement 2025-04-10, repayment date 2026-04-10, no collateral, no guarantor'
+  capacity: null
+  announced: '2025-04-10'
+  status: completed
+  title_zh: 软银 2025 年 4 月安排 150 亿美元过桥贷款（瑞穗牵头）：85 亿美元投 OpenAI、65 亿美元收购 Ampere，已于 2026 年 4 月到期还清
+  title_en: SoftBank arranges $15.0B of Mizuho-led bridge loans in April 2025 ($8.5B for OpenAI, $6.5B for Ampere); fully repaid by maturity in April 2026
+  summary_zh: 软银集团 2025 年 4 月安排了合计 150 亿美元的过桥贷款：其中 85 亿美元于当月向瑞穗银行等金融机构借入，用于支付 OpenAI 追加投资首次交割中软银自担的部分（转贷给 SVF2）；另 65 亿美元为 4 月 10 日签署的 Ampere 收购过桥额度，牵头行为瑞穗、三井住友和摩根大通东京分行，无抵押无担保，2025 年 11 月提款。两笔均为一年期：2025 财年内先偿还 30 亿美元，余下 120 亿美元于 2026 年 4 月到期时全部还清；软银未单独说明还款资金来源，同期它出售了 T-Mobile、英伟达股票并增加了以 Arm 股票质押的保证金贷款。这是已被偿还的过桥融资，按发行总额记录。
+  sources:
+  - url: https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q4fy2025_01_en.pdf
+    title: SoftBank Group Corp. Consolidated Financial Report for the Fiscal Year Ended March 31, 2026 (p. 4, Bridge loans)
+    publisher: SoftBank Group Corp. (TSE financial report)
+    date: '2026-05-13'
+    tier: 1
+    quote: In April 2025, SBG arranged bridge loans totaling $15.0 billion. Borrowings of $8.5 billion were executed for the investment in OpenAI and $6.5 billion for the acquisition of Ampere. The borrowings were fully repaid by their maturity in April 2026.
+  - url: https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q4fy2024_01_en.pdf
+    title: SoftBank Group Corp. Consolidated Financial Report for the Fiscal Year Ended March 31, 2025 (significant subsequent events – OpenAI financing)
+    publisher: SoftBank Group Corp. (TSE financial report)
+    date: '2025-05-13'
+    tier: 1
+    quote: To fund the investment in the first closing, in April 2025, the Company borrowed $8.5 billion from Mizuho Bank, Ltd. and other financial institutions, and lent the same amount to SVF2.
+  - url: https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q4fy2024_01_en.pdf
+    title: SoftBank Group Corp. Consolidated Financial Report for the Fiscal Year Ended March 31, 2025 (Ampere acquisition – financing table)
+    publisher: SoftBank Group Corp. (TSE financial report)
+    date: '2025-05-13'
+    tier: 1
+    quote: Mandated lead arrangers and bookrunners Mizuho Bank, Ltd. Sumitomo Mitsui Banking Corporation JP Morgan Chase Bank, Tokyo Branch Date of agreement April 10, 2025 Total commitment amount $6.5 billion
+  - url: https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q1fy2026_01_en.pdf
+    title: SoftBank Group Corp. Consolidated Financial Report for the Three-Month Period Ended June 30, 2026 (p. 3, Bridge loans)
+    publisher: SoftBank Group Corp. (TSE financial report)
+    date: '2026-08-06'
+    tier: 1
+    quote: The remaining balance of $12.0 billion under bridge loans, which were originally borrowed in the previous fiscal year to fund the investment in OpenAI and the acquisition of Ampere, was fully repaid at maturity in April 2026.
+  - url: https://group.softbank/en/news/press/20250401
+    title: Announcement Regarding Follow-on Investments in OpenAI
+    publisher: SoftBank Group Corp. (press release)
+    date: '2025-04-01'
+    tier: 2
+    quote: the payment of USD 10.0 billion to OpenAI Global scheduled for April 2025 is expected to be financed through borrowings from Mizuho Bank, Ltd., among other financial institutions (excluding the syndicated amount)
+  verify_note: 'Confirmed in three SoftBank financial reports: total $15.0B, split $8.5B OpenAI / $6.5B Ampere, arranged April 2025, fully repaid by maturity in April 2026 ($3.0B repaid during FY2025 per the FY2025 report, remaining $12.0B in April 2026). The only exact date SoftBank gives is the Ampere facility agreement of 2025-04-10, used as ''announced''; the OpenAI borrowing is dated only ''April 2025''. The Ampere quote is a table read from the PDF text layer (label/value cells run together). Not verified: the lead''s ''21 banks'' and ''reported May 2025'' detail (Nikkei via Seeking Alpha, not opened) – SoftBank names only Mizuho Bank ''and other financial institutions'' for the OpenAI piece and three MLABs for Ampere. SoftBank does not say what funded the repayment. Note the Ampere $6.5B was committed in April 2025 but drawn in November 2025 (FY2025 report, interest-bearing debt note).'
+- kind: debt
+  from: SOFTBANK
+  to: LENDER_SYNDICATE
+  amount_usd: 10000000000
+  amount_text: $10.0 billion loan agreement using OpenAI shares held by SVF2; borrower SVF II TSUBAKI (DE) LLC (wholly-owned subsidiary of SVF2), guaranteed by SoftBank Group Corp.; mandated lead arrangers Goldman Sachs Bank USA, JPMorgan Chase Bank N.A., Mizuho Securities USA LLC, Apollo Global Funding LLC and Sumitomo Mitsui Banking Corporation; fully drawn in August 2026
+  instrument: margin_loan
+  term: 'agreement dated 2026-08-05; principal repayment August 2028 (two years); collateral is the borrower''s cash collateral account, with cash-collateral and mandatory-prepayment clauses triggered by, among other things, a significant fall in the fair value of the OpenAI preferred shares referenced under the agreement; use of proceeds: general corporate purposes of SoftBank Group Corp. and SVF2'
+  capacity: null
+  announced: '2026-08-05'
+  status: completed
+  title_zh: 软银以所持 OpenAI 股份为基础签署 100 亿美元两年期贷款（高盛、摩根大通、瑞穗、阿波罗、三井住友牵头），8 月已全额提款
+  title_en: SoftBank's SVF2 signs $10.0B two-year loan backed by its OpenAI shares (Goldman, JPMorgan, Mizuho, Apollo, SMBC); fully drawn in August 2026
+  summary_zh: 软银集团 2026 年 8 月 6 日发布的一季度决算短信在期后事项中披露：8 月 5 日，SVF2 的全资子公司 SVF II TSUBAKI (DE) LLC 与金融机构签署 100 亿美元贷款协议，牵头安排行为高盛、摩根大通、瑞穗证券、阿波罗和三井住友银行，软银集团提供担保，本金 2028 年 8 月偿还，资金用于软银集团和 SVF2 的一般公司用途。协议设有现金抵押和强制提前还款条款，触发条件包括协议所参照的 OpenAI 优先股公允价值大幅下跌。11 月 10 日的中期决算短信确认该笔 100 亿美元已在 8 月全额提取。此前「洽谈中」的候选记录（2026-07-01）应以本条替换：已签约、已提款，金额 100 亿美元不变。
+  sources:
+  - url: https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q1fy2026_01_en.pdf
+    title: SoftBank Group Corp. Consolidated Financial Report for the Three-Month Period Ended June 30, 2026 (Note 16, Significant subsequent events (3) Financing at SVF2)
+    publisher: SoftBank Group Corp. (TSE financial report)
+    date: '2026-08-06'
+    tier: 1
+    quote: On August 5, 2026, SVF2 entered into a $10.0 billion loan agreement with financial institutions.
+  - url: https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q1fy2026_01_en.pdf
+    title: SoftBank Group Corp. Consolidated Financial Report for the Three-Month Period Ended June 30, 2026 (loan overview table)
+    publisher: SoftBank Group Corp. (TSE financial report)
+    date: '2026-08-06'
+    tier: 1
+    quote: Mandated lead arrangers Goldman Sachs Bank USA JPMorgan Chase Bank, N.A. Mizuho Securities USA LLC Apollo Global Funding, LLC Sumitomo Mitsui Banking Corporation Date of agreement August 5, 2026 Borrowing amount $10.0 billion
+  - url: https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf
+    title: SoftBank Group Corp. Consolidated Financial Report for the Six-Month Period Ended September 30, 2026 (SVF2 borrowings)
+    publisher: SoftBank Group Corp. (TSE financial report)
+    date: '2026-11-10'
+    tier: 1
+    quote: SVF2 borrowed $10.0 billion under the loan agreement using OpenAI shares and $4.2 billion through asset-backed financing.
+  - url: https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf
+    title: SoftBank Group Corp. Consolidated Financial Report for the Six-Month Period Ended September 30, 2026 (interest-bearing debt note)
+    publisher: SoftBank Group Corp. (TSE financial report)
+    date: '2026-11-10'
+    tier: 1
+    quote: borrowings in the SoftBank Vision Funds segment under the loan agreement using OpenAI shares held by SVF2, with an outstanding balance of ¥1,543.7 billion as of September 30, 2026, are guaranteed by SBG
+  verify_note: 'Signed: yes – agreement dated 2026-08-05, disclosed by SoftBank itself in the Q1 FY2026 financial report of 2026-08-06 (subsequent events), with borrower, arrangers, amount, maturity, collateral and guarantor in a table (quote 2 is that table from the PDF text layer). Drawn: yes – the Q2 FY2026 report dated 2026-11-10 says ''A total of $10.0 billion was drawn that month'' (August 2026) and shows ¥1,543.7 billion outstanding at 2026-09-30. Final size $10.0B, date 2026-08-05; the existing candidate''s 2026-07-01 ''in talks'' date should be replaced. SoftBank never uses the words ''margin loan'' for this facility – it calls it ''the loan agreement using OpenAI shares held by SVF2'' and lists the collateral as the borrower''s cash collateral account, with prepayment triggers tied to the OpenAI preferred shares'' fair value; ''margin_loan'' is kept as the closest instrument label. Apollo is a non-bank among the five arrangers. The Bloomberg articles in the lead (2026-08-06 and
+    2026-08-28) were not opened; the ''second $10B loan'' they mention is not in SoftBank''s filings.'
+- kind: debt
+  from: SPACEX
+  to: GS
+  amount_usd: 20000000000
+  amount_text: $20,000 million unsecured bridge term loan facility with a syndicate of lenders (Goldman Sachs lead; Morgan Stanley, JPMorgan, Bank of America and Citigroup per IFR); Term SOFR + 0.75%–1.75% depending on rating, plus duration fees; guaranteed by X Corp., X.AI LLC and CTC Property, LLC. Proceeds repaid the X B-1 and B-3 term loans and xAI's $1B fixed-rate loan, $1B floating-rate loan and $3B 12.5% senior secured notes (US$18.9bn of obligations per IFR). Repaid in full in June 2026 from the $25B SpaceX Notes
+  instrument: bridge_loan
+  term: signed 2026-03-02 (IFR; the 10-Q says March 2026); scheduled maturity 2027-09-02 with two three-month extension options (0.25% fee each); prepayable without premium or penalty; repaid in full June 2026
+  capacity: null
+  announced: '2026-03-02'
+  status: completed
+  title_zh: SpaceX 签署 200 亿美元过桥贷款（高盛牵头），用于偿还 X 和 xAI 的高息债务；2026 年 6 月已用 250 亿美元首发债券全额还清
+  title_en: SpaceX signs $20B Goldman-led bridge loan to refinance X and xAI debt; repaid in full in June 2026 from its $25B notes
+  summary_zh: 2026 年 3 月 SpaceX 与银团签署 200 亿美元无担保过桥定期贷款（IFR 称 3 月 2 日签署，高盛牵头，摩根士丹利、摩根大通、美国银行、花旗参与），利率为 Term SOFR 加 0.75%–1.75%，原定 2027 年 9 月 2 日到期。资金用于偿还 X 的 B-1、B-3 定期贷款以及 xAI 的 10 亿美元固息贷款、10 亿美元浮息贷款和 30 亿美元 12.5% 优先担保票据，提前还款产生的债务清偿损失为 15.26 亿美元。SpaceX 二季度 10-Q 明确写明：这笔过桥贷款已在 2026 年 6 月用 250 亿美元 SpaceX 优先票据（本站已记录的首发债券）的募集资金全额偿还。按发行总额记录，但它与 xAI 的 50 亿美元旧债、SpaceX 的 250 亿美元债券是同一条再融资链，不可相加。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm
+    title: Space Exploration Technologies Corp. – Form 10-Q for the quarter ended June 30, 2026 (Note 9, Debt – SpaceX Bridge Loan)
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-08-04'
+    tier: 1
+    quote: In March 2026, SpaceX entered into a bridge loan credit agreement (the “SpaceX Bridge Loan”) with a syndicate of lenders, providing for an unsecured bridge term loan facility in an aggregate principal amount of $20,000 million.
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm
+    title: Space Exploration Technologies Corp. – Form 10-Q for the quarter ended June 30, 2026 (Note 9, Debt – repayment)
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-08-04'
+    tier: 1
+    quote: The SpaceX Bridge Loan was repaid in full in June 2026 using proceeds from the SpaceX Notes.
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm
+    title: Space Exploration Technologies Corp. – Form 10-Q for the quarter ended June 30, 2026 (Note 9, Debt – use of proceeds)
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-08-04'
+    tier: 1
+    quote: The proceeds of the SpaceX Bridge Loan were used to repay the X B-1 Term Loan, the X B-3 Term Loan, the xAI Fixed Rate Loan, the xAI Floating Rate Loan, and the xAI 12.5% Senior Secured Notes
+  - url: https://www.ifre.com/region/2431030/spacex-locks-in-us20bn-bridge-as-ipo-countdown-begins
+    title: SpaceX locks in US$20bn bridge as IPO countdown begins
+    publisher: IFR
+    date: '2026-05-21'
+    tier: 3
+    quote: The facility, signed on March 2, retired US$18.9bn of obligations in a single stroke
+  - url: https://www.ifre.com/region/2431030/spacex-locks-in-us20bn-bridge-as-ipo-countdown-begins
+    title: SpaceX locks in US$20bn bridge as IPO countdown begins (arrangers)
+    publisher: IFR
+    date: '2026-05-21'
+    tier: 3
+    quote: Goldman Sachs is leading the underwriting syndicate on the SpaceX loan
+  verify_note: 'Repaid from the bonds: yes, stated plainly in the 10-Q – ''The proceeds of the SpaceX Notes were used to repay the SpaceX Bridge Loan ... in full'', and the notes are the $25,000 million senior unsecured notes issued June 2026 that the ledger already records (2026-06-23). Size, maturity, pricing grid, guarantors and use of proceeds are from the 10-Q (filed 2026-08-04). The 10-Q gives only ''March 2026'' and ''a syndicate of lenders''; the 2026-03-02 signing date and the bank names come from IFR (published 2026-05-21, IFR issue 2634) – consistent with the 10-Q''s statement that the xAI term loans were repaid on 2026-03-02. The 10-Q describes a $20,000 million facility and its full repayment but the passages read do not state the drawn amount separately; IFR says it retired US$18.9bn of obligations and SpaceX absorbed US$1.163bn of prepayment penalties (the 10-Q records a $1,526 million loss on extinguishment of the X and xAI debt and a further $18 million on the bridge). The
+    Next Web article in the lead was not opened.'
+- kind: debt
+  from: XAI
+  to: MS
+  amount_usd: 5000000000
+  amount_text: '$5.0 billion placed by Morgan Stanley in June 2025: $3,000 million 12.5% senior secured notes due June 30, 2030 (issued at 100%) + $1,000 million fixed-rate term loan (12.50%) + $1,000 million floating-rate term loan (Term SOFR + 7.25% or ABR + 6.25%), both term loans maturing June 30, 2030. Split: $3.0B notes / $2.0B term loans. All repaid in March 2026 with SpaceX''s $20B bridge loan'
+  instrument: senior_secured_notes_and_term_loans
+  term: five-year (due 2030-06-30); term loans repaid 2026-03-02 with a $221 million prepayment penalty, notes repaid 2026-03-05 with a $518 million prepayment penalty
+  capacity: null
+  announced: '2025-06-30'
+  status: completed
+  title_zh: xAI 经摩根士丹利发行 50 亿美元债务（30 亿美元 12.5% 优先担保票据 + 20 亿美元定期贷款），2026 年 3 月已由 SpaceX 过桥贷款还清
+  title_en: xAI raises $5B of debt via Morgan Stanley ($3B 12.5% senior secured notes + $2B term loans); repaid in March 2026 with SpaceX's bridge loan
+  summary_zh: 2025 年 6 月 30 日摩根士丹利宣布 xAI 完成 50 亿美元债务融资（同时另有 50 亿美元战略股权投资）。SpaceX 的 10-Q 给出了拆分：30 亿美元 12.5% 优先担保票据（2030 年 6 月 30 日到期），以及第一留置权信贷协议下的 10 亿美元固息定期贷款（12.50%）和 10 亿美元浮息定期贷款（Term SOFR 加 7.25%）。SpaceX 合并 xAI 后，于 2026 年 3 月 2 日还清两笔定期贷款（提前还款罚金 2.21 亿美元）、3 月 5 日还清票据（罚金 5.18 亿美元），资金来自 SpaceX 的 200 亿美元过桥贷款。本条为已偿还债务，按发行总额记录。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm
+    title: Space Exploration Technologies Corp. – Form 10-Q for the quarter ended June 30, 2026 (Note 9, Debt – xAI 12.5% Secured Senior Notes)
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-08-04'
+    tier: 1
+    quote: In June 2025, X.AI LLC and, X.AI Co Issuer Corp, indirect subsidiaries of the Company, issued $3,000 million aggregate principal amount of 12.5% interest Senior Secured Notes due in 2030
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm
+    title: Space Exploration Technologies Corp. – Form 10-Q for the quarter ended June 30, 2026 (Note 9, Debt – xAI First Lien Credit Agreement)
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-08-04'
+    tier: 1
+    quote: The Company executed a $1,000 million Fixed Rate Term Loan maturing on June 30, 2030 (“xAI Fixed Rate Term Loan”); and a $1,000 million Floating Rate Term Loan maturing on June 30, 2030 (“xAI Floating Rate Term Loan”).
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm
+    title: Space Exploration Technologies Corp. – Form 10-Q for the quarter ended June 30, 2026 (Note 9, Debt – repayment of the xAI notes)
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-08-04'
+    tier: 1
+    quote: On March 5, 2026, the Company repaid the full outstanding principal balance and accrued interest, including a prepayment penalty of $518 million, resulting in the extinguishment of the xAI 12.5% Senior Secured Notes.
+  - url: https://www.nst.com.my/amp/business/corporate/2025/07/1238353/musks-xai-raises-us5bil-each-fresh-debt-and-equity-morgan-stanley
+    title: Musk's xAI raises US$5bil each in fresh debt and equity, Morgan Stanley says
+    publisher: Reuters (via New Straits Times)
+    date: '2025-07-01'
+    tier: 3
+    quote: The US$5 billion raised in debt consists of financing of secured notes and term loans, Morgan Stanley in a statement posted on social media platform X.
+  verify_note: 'Split confirmed in SpaceX''s 10-Q: $3,000M notes + $1,000M fixed-rate term loan + $1,000M floating-rate term loan = $5,000M, all dated June 2025 and due 2030-06-30. What repaid it: the SpaceX Bridge Loan (10-Q: bridge proceeds ''were used to repay ... the xAI Fixed Rate Loan, the xAI Floating Rate Loan, and the xAI 12.5% Senior Secured Notes''), on 2026-03-02 and 2026-03-05. Discrepancy against the lead: the floating margin is Term SOFR + 7.25% in the 10-Q, not SOFR + 700bp; the fixed rate is 12.50% (lead said ~12%). Announcement date: Reuters says Morgan Stanley made the statement ''on Monday'', i.e. 2025-06-30 (the NST copy is stamped 2025-07-01 Malaysia time); the lead''s 2025-07-01 is the reprint date. Morgan Stanley''s own X post was not opened. Morgan Stanley was the placement agent; the holders were institutional debt investors.'
+- kind: debt
+  from: LAMBDA
+  to: JPM
+  amount_usd: 1008000000
+  amount_text: $1.008 billion senior secured, investment-grade, fixed-rate delayed draw term loan marketed to insurance companies and fixed income investors; 6.78% fixed, semi-annual coupon; rated A (low) by Morningstar DBRS and Baa1 by Moody's; J.P. Morgan sole coordinating lead arranger, structuring agent and bookrunner; secured by the GPU servers and related infrastructure it funds and by contracted cash flows from two hyperscale customers
+  instrument: term_loan
+  term: delayed draw (proceeds released as clusters are commissioned); final maturity 2033-05-30, fully amortizing; closing announced 2026-10-01
+  capacity: null
+  announced: '2026-10-01'
+  status: completed
+  title_zh: Lambda 完成 10.08 亿美元优先担保固息 GPU 贷款（摩根大通独家牵头，6.78%，2033 年到期），由两家超大规模客户的合同现金流支持
+  title_en: Lambda closes $1.008B senior secured fixed-rate delayed-draw GPU loan arranged by J.P. Morgan (6.78%, due 2033), backed by two hyperscale customer contracts
+  summary_zh: 2026 年 10 月 1 日 Lambda 发布新闻稿，宣布完成一笔 10.08 亿美元的投资级延迟提款定期贷款，面向保险公司和固定收益投资者发行：固定利率 6.78%、半年付息，2033 年 5 月 30 日最终到期并全额摊还，获 Morningstar DBRS A (low) 和穆迪 Baa1 评级，摩根大通任独家牵头安排行、结构代理和簿记行。资金用于购置 GPU 基础设施，对应三项已签约的客户部署、两家投资级承购方，并以这些 GPU 服务器和合同现金流作担保；提款随集群投产分批进行。Lambda 称这是继 8 月 27 日完成的 9.26 亿美元银团定期贷款之后的第二笔机构信贷融资。彭博 8 月 28 日报道的「摩根大通安排的约 10 亿美元私募短期债、用于购买租给微软的英伟达 GPU」很可能就是这笔融资的前期阶段，但新闻稿没有点名微软，期限描述也不一致，两者是否同一笔未获公司确认。
+  sources:
+  - url: https://lambda.com/blog/lambda-closes-1-billion-senior-secured-fixed-rate-financing
+    title: Lambda closes $1 billion senior secured fixed rate financing
+    publisher: Lambda (press release)
+    date: '2026-10-01'
+    tier: 2
+    quote: today announced the closing of a $1 billion investment-grade, delayed draw term loan (the “Facility”) marketed to insurance companies and fixed income investors
+  - url: https://lambda.com/blog/lambda-closes-1-billion-senior-secured-fixed-rate-financing
+    title: Lambda closes $1 billion senior secured fixed rate financing (facility highlights)
+    publisher: Lambda (press release)
+    date: '2026-10-01'
+    tier: 2
+    quote: $1.008 billion delayed draw term loan A (low) rating from Morningstar DBRS and Baa1 rating from Moody’s 6.78% fixed interest rate on a semi-annual coupon basis
+  - url: https://lambda.com/blog/lambda-closes-1-billion-senior-secured-fixed-rate-financing
+    title: Lambda closes $1 billion senior secured fixed rate financing (arranger)
+    publisher: Lambda (press release)
+    date: '2026-10-01'
+    tier: 2
+    quote: J.P. Morgan acted as sole coordinating lead arranger, structuring agent, and bookrunner.
+  - url: https://lambda.com/blog/lambda-closes-1-billion-senior-secured-fixed-rate-financing
+    title: Lambda closes $1 billion senior secured fixed rate financing (relation to earlier financings)
+    publisher: Lambda (press release)
+    date: '2026-10-01'
+    tier: 2
+    quote: Across its major 2026 financings, Lambda has raised approximately $1 billion in each transaction, establishing a track record of raising debt capital at scale.
+  - url: https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/
+    title: Neocloud Lambda secures $1B in debt to buy more chips
+    publisher: TechCrunch (citing Bloomberg)
+    date: '2026-08-28'
+    tier: 3
+    quote: has raised $1 billion in private, short-dated debt to buy Nvidia’s AI chips that it will lease to Microsoft, Bloomberg reports
+  verify_note: 'Lambda itself announced it: the page is Lambda''s press release (dateline ''SAN FRANCISCO, CA, October 1, 2026'', forward-looking-statements boilerplate), so tier 2. Amount ($1.008B in the facility highlights, ''$1 billion'' in the headline), rate, ratings, maturity, collateral and arranger all read directly; quote 2 is the bullet list as it appears in the text layer. Same financing as the August report? Probably, but only by inference: Lambda''s releases count three major 2026 debt deals of about $1B each (a $1B secured bank facility in May per TechCrunch, the $926M term loan B closed 2026-08-27, and this one), calling this the ''second institutional credit facility'' after the term loan B – a separately closed ~$1B JPMorgan private placement in late August would not fit that count. Arranger, size and investor type match the Bloomberg report as relayed by TechCrunch. Not reconciled: ''short-dated'' vs a 2033 final maturity, and ''lease to Microsoft'' vs two unnamed hyperscale
+    customers. The Bloomberg original and the DatacenterDynamics relay in the lead could not be opened. ''completed'' = facility closed; it is delayed-draw, so the full $1.008B was not necessarily funded at closing.'
+- kind: debt
+  from: POWERHOUSE
+  to: BONDHOLDERS
+  amount_usd: 1120000000
+  amount_text: $1.12 billion aggregate principal amount of 8.875% senior secured notes due 2031 (Rule 144A / Regulation S), issued 2026-09-30 by DDC 01 Propco LLC, an indirect subsidiary of a joint venture between affiliates of Blue Owl Capital, Cedarwood Investment Group and PowerHouse Data Centers; initial purchasers Goldman Sachs, Citigroup and Deutsche Bank. Fitch's pre-sale release had the proposed size at $1,085 million; Bloomberg-derived reports round the raise to about $1.1 billion
+  instrument: senior_secured_notes
+  term: five-year senior secured fixed-rate notes due 2031, 8.875% coupon; marketed from 2026-09-21 with yield talk in the low- to mid-9% range, priced around 2026-09-23, issued 2026-09-30; Fitch expected rating BB-(EXP), Outlook Positive
+  capacity: null
+  announced: '2026-09-23'
+  status: completed
+  title_zh: Blue Owl / PowerHouse 合资项目公司发行 11.2 亿美元 8.875% 优先担保高收益票据，为整体租给 CoreWeave 的里士满 Digital Drive 数据中心融资
+  title_en: Blue Owl / PowerHouse JV project company issues $1.12B of 8.875% senior secured junk bonds for the Richmond-area Digital Drive data center leased to CoreWeave
+  summary_zh: 2026 年 9 月，Blue Owl、Cedarwood 与 PowerHouse Data Centers 合资公司旗下的项目公司 DDC 01 Propco LLC 以 144A/Reg S 方式发行 11.2 亿美元 8.875% 优先担保票据，2031 年到期，9 月 30 日交割，初始购买人为高盛、花旗和德意志银行。募集资金用于建设弗吉尼亚州切斯特菲尔德县（里士满附近）76MW 关键 IT 容量的数据中心，该设施已按长期三净租约整体出租，惠誉确认承租方为 CoreWeave、租期 15 年。惠誉 9 月 23 日的预评级为 BB-(EXP)，当时拟发行规模为 10.85 亿美元；彭博系报道称发行约 11 亿美元、询价收益率在 9% 出头至中段。未找到发行方或 CoreWeave 的官方新闻稿，金额以承销商律师 Milbank 的交易公告为准。
+  sources:
+  - url: https://www.milbank.com/en/news/milbank-advises-initial-purchasers-on-dollar112b-senior-secured-notes-offering-by-subsidiary-of-blue-owl-cedar-and-powerhouse-jv.html
+    title: Milbank Advises Initial Purchasers on $1.12B Senior Secured Notes Offering by Subsidiary of Blue Owl, Cedar and PowerHouse JV
+    publisher: Milbank LLP (counsel to the initial purchasers)
+    date: '2026-10-06'
+    tier: 3
+    quote: offering by DDC 01 Propco LLC of $1.12 billion aggregate principal amount of 8.875% senior secured notes due 2031, issued on September 30, 2026
+  - url: https://www.milbank.com/en/news/milbank-advises-initial-purchasers-on-dollar112b-senior-secured-notes-offering-by-subsidiary-of-blue-owl-cedar-and-powerhouse-jv.html
+    title: Milbank Advises Initial Purchasers on $1.12B Senior Secured Notes Offering by Subsidiary of Blue Owl, Cedar and PowerHouse JV (issuer and project)
+    publisher: Milbank LLP (counsel to the initial purchasers)
+    date: '2026-10-06'
+    tier: 3
+    quote: DDC 01 Propco LLC is an indirect subsidiary of a joint venture between affiliates of Blue Owl Capital Inc., Cedarwood Investment Group LP and PowerHouse Data Centers LLC.
+  - url: https://www.marketscreener.com/news/fitch-expects-to-rate-ddc-01-propco-llc-bb-exp-outlook-positive-ce785ad9de8ef724
+    title: Fitch Expects to Rate DDC 01 Propco LLC 'BB-(EXP)'; Outlook Positive
+    publisher: Fitch Ratings (press release, via MarketScreener / ENP Newswire)
+    date: '2026-09-23'
+    tier: 3
+    quote: DDC 01 Propco LLC is proposing to issue $1,085 million of senior secured notes due 2031 in a private offering.
+  - url: https://www.itiger.com/news/2669199962
+    title: 'Market Chatter: CoreWeave Tied Data Center Project Starts $1.1 Billion Junk-Bond Sale'
+    publisher: MT Newswires (citing Bloomberg), via Tiger Brokers
+    date: '2026-09-22'
+    tier: 3
+    quote: Banks led by Goldman Sachs (GS) have started marketing about $1.1 billion of junk bonds to finance a data center sponsored by Blue Owl Capital affiliates and leased to CoreWeave (CRWV), Bloomberg reported Monday
+  verify_note: 'No tier 1/2 source exists (no issuer, sponsor or CoreWeave release; the notes are unregistered). Verified through two independent original publishers plus the Bloomberg relay: Milbank''s deal announcement (final size, coupon, maturity, issue date, issuer ownership, initial purchasers – read directly) and Fitch''s pre-sale release (proposed size, 2031 maturity, CoreWeave lease – read through MarketScreener''s copy via a text-extraction tool, so the Fitch quote was not character-checked against raw HTML). Discrepancy against the lead: principal is $1.12B, not ~$1.1B; coupon is 8.875%. The lead''s ''priced at 98.5 to yield 9.25%'' and ''S&P BB- on the notes'' come from Bloomberg / S&P pages that could not be opened – not asserted here (98.5 on an 8.875% five-year coupon is arithmetically about a 9.25% yield, so it is at least consistent). Pricing date 2026-09-23 rests on the Bloomberg-derived relays (marketing began Monday 2026-09-21, pricing expected Wednesday; Dealroom''s
+    2026-09-23 summary says the developer ''raised $1.1 billion''). Issuer attribution to POWERHOUSE is approximate – see notes.'
+- kind: lease
+  from: CRWV
+  to: POWERHOUSE
+  amount_usd: 2940000000
+  amount_text: $2.94 billion contract value over 15 years for the whole building, as reported by Bloomberg on 2026-09-21 from the bond marketing (read via MT Newswires and Briefs relays; single original source). Fitch describes the rent as a percentage of construction costs with annual escalation and gives no dollar total
+  instrument: datacenter_lease
+  term: 15-year triple-net lease with two five-year extension options (Fitch); operations expected to begin between 2027 and 2028 (Bloomberg via MT Newswires); lessor is DDC 01 Propco LLC (Blue Owl / Cedarwood / PowerHouse joint venture)
+  capacity: 76 MW critical IT capacity, fully leased (Milbank; Bloomberg via MT Newswires). Fitch's release refers to a 100 MW data center
+  announced: '2026-09-21'
+  status: signed
+  title_zh: CoreWeave 整租里士满 Digital Drive 数据中心 76MW：15 年三净租约，彭博称合同总额 29.4 亿美元（金额仅单一来源）
+  title_en: CoreWeave leases all 76 MW of the Richmond-area Digital Drive data center under a 15-year triple-net lease, reported at $2.94B (amount single-sourced to Bloomberg)
+  summary_zh: CoreWeave 以 15 年期三净租约整体承租弗吉尼亚州切斯特菲尔德县（里士满附近）Digital Drive 园区首栋数据中心的全部 76MW 关键 IT 容量，出租方是 Blue Owl、Cedarwood 与 PowerHouse 合资公司旗下的 DDC 01 Propco LLC；租约另含两个五年续租选择权，预计 2027–2028 年投入运营。29.4 亿美元这一合同总额只出现在彭博 2026 年 9 月 21 日关于该项目高收益债推介的报道中，CoreWeave 的 SEC 文件、惠誉新闻稿和律所公告都没有给出金额。租金用于偿付项目公司发行的 11.2 亿美元票据。租约签署日期未披露，这里的日期是金额首次见报日。
+  sources:
+  - url: https://www.itiger.com/news/2669199962
+    title: 'Market Chatter: CoreWeave Tied Data Center Project Starts $1.1 Billion Junk-Bond Sale'
+    publisher: MT Newswires (citing Bloomberg), via Tiger Brokers
+    date: '2026-09-22'
+    tier: 3
+    quote: The Digital Drive data center near Richmond, Virginia, will have 76 megawatts of IT capacity and is fully leased to CoreWeave under a 15-year, $2.94 billion contract, Bloomberg reported.
+  - url: https://www.marketscreener.com/news/fitch-expects-to-rate-ddc-01-propco-llc-bb-exp-outlook-positive-ce785ad9de8ef724
+    title: Fitch Expects to Rate DDC 01 Propco LLC 'BB-(EXP)'; Outlook Positive
+    publisher: Fitch Ratings (press release, via MarketScreener / ENP Newswire)
+    date: '2026-09-23'
+    tier: 3
+    quote: under a 15-year triple-net lease with CoreWeave, Inc. (BB-/Positive), supporting strong cash flow visibility.
+  - url: https://www.milbank.com/en/news/milbank-advises-initial-purchasers-on-dollar112b-senior-secured-notes-offering-by-subsidiary-of-blue-owl-cedar-and-powerhouse-jv.html
+    title: Milbank Advises Initial Purchasers on $1.12B Senior Secured Notes Offering by Subsidiary of Blue Owl, Cedar and PowerHouse JV
+    publisher: Milbank LLP (counsel to the initial purchasers)
+    date: '2026-10-06'
+    tier: 3
+    quote: a 76-MW critical IT data center in Chesterfield County, Virginia, which is fully leased under a long-term triple-net lease
+  - url: https://www.briefs.co/news/goldman-leads-sale-of-1-1-billion-junk-bond-for-coreweave-le/
+    title: Goldman Leads Sale of $1.1 Billion Junk Bond for CoreWeave-Leased Data Center
+    publisher: Briefs (relay of the Bloomberg report; not an independent source)
+    date: '2026-09-21'
+    tier: 3
+    quote: The Digital Drive campus is slated for 76 megawatts of IT capacity, with the entirety contracted to CoreWeave in a 15-year deal worth $2.94 billion.
+  verify_note: 'Where the $2.94B comes from: Bloomberg''s 2026-09-21 story on the bond marketing, attributed to people familiar / the offering – both readable pages (MT Newswires, Briefs) relay that one story, so the dollar figure has a single original source and the Bloomberg original was not opened. It does not come from a CoreWeave filing: EDGAR full-text search (2026) finds no CoreWeave document mentioning ''Digital Drive'' or ''PowerHouse Data Centers''. The lease itself is independently confirmed: Fitch (15-year triple-net lease with CoreWeave, two five-year extension options) and Milbank (76 MW, fully leased, long-term triple-net) – hence status ''signed'' with the amount flagged; see notes for the option of nulling amount_usd. Fitch says rent is set as a percentage of construction costs with annual escalation (not quoted). Both Fitch excerpts were read from MarketScreener''s copy through a text-extraction tool (raw HTML returned 403), so the Fitch quote here was not character-checked
+    the way the other quotes were. Capacity conflict: Fitch''s text says ''The 100 MW data center'' while Milbank and Bloomberg say 76 MW of (critical) IT capacity – possibly gross vs IT power, not explained in the sources. The lease signing date is not disclosed anywhere; ''announced'' is the first report of the figure. Lessor attribution to POWERHOUSE follows the lead; the landlord entity is the JV''s DDC 01 Propco LLC.'
+  distinct: true
+- kind: debt
+  from: CRUX_AI
+  to: LENDER_SYNDICATE
+  amount_usd: 22000000000
+  amount_text: 'about $22 billion loan being lined up from a group of 10 banks (named: Goldman Sachs, Sumitomo Mitsui Banking Corporation, Barclays, BNP Paribas, Bank of Nova Scotia) to buy Google TPUs, secured by the chips and Crux AI''s customer contracts, with the banks working to syndicate it; a separate $1 billion revolving credit facility is not counted. Reported by Bloomberg only; not confirmed by any party'
+  instrument: term_loan
+  term: chip-backed bank loan; tenor and pricing not reported in the pages read; described as being lined up / syndicated, closing not confirmed
+  capacity: null
+  announced: '2026-09-16'
+  status: rumored
+  title_zh: 彭博：黑石–谷歌合资的 Crux AI 向 10 家银行筹措约 220 亿美元芯片抵押贷款用于采购谷歌 TPU（单一信源，未获确认）
+  title_en: 'Bloomberg: Blackstone–Google venture Crux AI lining up about $22B chip-backed loan from 10 banks to buy Google TPUs (single source, unconfirmed)'
+  summary_zh: 彭博 2026 年 9 月 16 日报道，黑石与 Alphabet 合资的云计算公司 Crux AI 正向由 10 家银行组成的银团筹措约 220 亿美元贷款，用于采购谷歌自研 TPU 芯片；已点名的银行有高盛、三井住友、巴克莱、法巴和丰业银行，贷款以芯片价值和 Crux AI 的客户合同作担保，银行正通过银团分销引入更多贷款人，另有一笔 10 亿美元循环信贷未计入。截至 2026 年 11 月 10 日，未找到 Crux AI、黑石、谷歌或任何银行的官方公告，也没有第二家媒体的独立报道（路透等均为转述彭博），贷款是否已签约或提款不明，故仍按传闻记录。Alphabet 三季度 10-Q 证实了合资公司本身（黑石承诺至多 50 亿美元出资、Alphabet 提供至多 100 亿美元基础设施兜底），但未提及这笔贷款。
+  sources:
+  - url: https://pulse2.com/crux-ai-lines-up-22-billion-chip-loan-from-10-banks-to-buy-google-tpus/
+    title: Crux AI Lines Up $22 Billion Chip Loan From 10 Banks To Buy Google TPUs
+    publisher: Pulse 2.0 (relay of the Bloomberg report)
+    date: '2026-09-16'
+    tier: 3
+    quote: is lining up a $22 billion loan from a group of 10 banks to finance purchases of Google’s custom artificial intelligence chips, according to Bloomberg
+  - url: https://pulse2.com/crux-ai-lines-up-22-billion-chip-loan-from-10-banks-to-buy-google-tpus/
+    title: Crux AI Lines Up $22 Billion Chip Loan From 10 Banks To Buy Google TPUs (lenders and syndication)
+    publisher: Pulse 2.0 (relay of the Bloomberg report)
+    date: '2026-09-16'
+    tier: 3
+    quote: The lending group includes Goldman Sachs, Sumitomo Mitsui Banking Corporation, Barclays, BNP Paribas and Bank of Nova Scotia, with the banks working to bring additional lenders into the transaction through syndication.
+  verify_note: 'Still one original media source. Bloomberg''s 2026-09-16 report is the only origin; the Reuters item in the lead is headlined ''... Bloomberg News reports'' (a relay, and its reprint page returned 403), and Pulse 2.0, GuruFocus/Yahoo Finance and the other pages found all attribute to Bloomberg. No press release from Crux AI, Blackstone, Google/Alphabet or any of the banks was found, and searches for October–November 2026 follow-ups (closing, syndication result) found nothing. Signed or only marketed: the relays use ''lining up'' and describe ongoing syndication; one relay (GuruFocus) says ''has secured'' – nothing readable confirms signing or funding. Status therefore ''rumored'' per the single-source rule. Alphabet''s 10-Q filed 2026-10-29 confirms the venture and Alphabet''s backstop commitments but not the loan (URL in notes). The Bloomberg original was not opened.'
+- kind: debt
+  from: ZANKORE
+  to: LENDER_SYNDICATE
+  amount_usd: 3100000000
+  amount_text: senior term loan facility of up to US$3.1 billion; Citi, ING, Natixis CIB, Qatar National Bank (QNB) Group and United Overseas Bank (UOB) as senior mandated lead arrangers, underwriters and bookrunners; Citi exclusive debt adviser. 'Up to' – a ceiling, not a drawn amount
+  instrument: term_loan
+  term: senior term loan facility, signed 2026-09-09 and underwritten by the five banks; proceeds for acquisition and deployment of NVIDIA GPU infrastructure (initial 100 MW); tenor and margin not disclosed by the company
+  capacity: null
+  announced: '2026-09-09'
+  status: signed
+  title_zh: 印尼 AI 云 ZanKore 签署至多 31 亿美元优先定期贷款（花旗、ING、Natixis、QNB、大华牵头包销），用于采购部署英伟达 GPU
+  title_en: Indonesia's ZanKore signs senior term loan facility of up to US$3.1B underwritten by Citi, ING, Natixis CIB, QNB and UOB to buy and deploy NVIDIA GPUs
+  summary_zh: 2026 年 9 月 9 日，由 Indosat Ooredoo Hutchison、Ooredoo、英伟达和诺基亚支持的印尼 AI 云平台 ZanKore 在自家新闻稿中宣布签署至多 31 亿美元的优先定期贷款，花旗、ING、Natixis CIB、卡塔尔国民银行和大华银行担任高级委任牵头安排行、包销行和簿记行，花旗兼任独家债务顾问。资金用于采购和部署英伟达 GPU 基础设施，首期建设 100MW，目标是 1GW 的 AI 工厂。公司称这是亚太地区首笔此等规模的银团交易；新闻稿提到「收入分成与信用支持模式」，但没有说英伟达为贷款提供担保。贷款方律师 Mayer Brown 次日发布了交易公告。金额为额度上限，实际提款情况未披露。
+  sources:
+  - url: https://zankore.com/zankore-expands-southeast-asias-ai-compute-infrastructure-with-nvidia
+    title: ZanKore Expands Southeast Asia’s AI Compute Infrastructure With NVIDIA
+    publisher: ZanKore (press release)
+    date: '2026-09-09'
+    tier: 2
+    quote: the company today announced the signing of a senior term loan facility of up to US$3.1 billion, bringing together a consortium of leading regional and international financial institutions
+  - url: https://zankore.com/zankore-expands-southeast-asias-ai-compute-infrastructure-with-nvidia
+    title: ZanKore Expands Southeast Asia’s AI Compute Infrastructure With NVIDIA (arrangers)
+    publisher: ZanKore (press release)
+    date: '2026-09-09'
+    tier: 2
+    quote: Citi, ING, Natixis CIB, Qatar National Bank (QNB) Group, and United Overseas Bank (UOB) acted as senior mandated lead arrangers, underwriters and bookrunners (SMLAUBs) for the senior term loan facility, the first syndicated deal of this scale in APAC.
+  - url: https://www.mayerbrown.com/en/news/2026/09/mayer-brown-advises-lenders-in-landmark-us-3-1-billion-ai-infrastructure-financing-for-zankore
+    title: Mayer Brown advises lenders in landmark US$3.1 billion AI infrastructure financing for Zankore
+    publisher: Mayer Brown (counsel to the lenders)
+    date: '2026-09-10'
+    tier: 3
+    quote: Mayer Brown has advised the lenders on a senior term loan facility of up to US$3.1 billion for Zankore
+  - url: https://developingtelecoms.com/telecom-technology/data-centres-networks/20802-zankore-lands-us-3-1b-loan-facility-to-finance-nvidia-powered-ai-platform.html
+    title: Zankore lands US$3.1b loan facility to finance Nvidia-powered AI platform
+    publisher: Developing Telecoms
+    date: '2026-09-10'
+    tier: 3
+    quote: Indonesia-based AI platform Zankore announced on Wednesday it has secured a senior term loan facility of up to US$3.1 billion to finance its planned deployment of Nvidia-powered AI infrastructure across Southeast Asia.
+  verify_note: 'Upgraded to tier 2: the company''s own press release (dateline ''Jakarta, September 9, 2026'') announces the signing, the amount (''up to US$3.1 billion''), the five arranging/underwriting banks and Citi''s adviser role, with quotes from Citi, ING, Natixis CIB and QNB executives. Independently corroborated by the lenders'' counsel (Mayer Brown, 2026-09-10) and trade press. Signed vs marketed: signed and underwritten on 2026-09-09; the lead''s ''launched to syndication in late October 2026'' (a Bloomberg report of 2026-10-28, with a five-year tenor and SOFR+330bp) was seen only through an aggregator and is not asserted. The lead''s statement that Nvidia supports the deal through revenue sharing and credit support overstates the release, which says only that ''A revenue-sharing and credit-support model will align infrastructure deployment with customer demand'' without naming a guarantor. No stock-exchange filing by Indosat or Ooredoo was looked up. The W.Media and The Next
+    Web pages in the lead add nothing beyond the release (The Next Web returned 403).'
+- kind: debt
+  from: VANTAGE
+  to: LENDER_SYNDICATE
+  amount_usd: 38000000000
+  amount_text: 'roughly $38 billion project-finance debt package led by JPMorgan and MUFG for two Vantage Data Centers campuses to be used by Oracle for OpenAI: two senior secured credit facilities, $23.25 billion for Shackelford County, Texas and $14.75 billion for Port Washington, Wisconsin. Underwritten and launched to syndication in late October 2025; lender commitments for the full amount reported in mid-January 2026; formal closing not confirmed in any source opened'
+  instrument: construction_loan
+  term: two senior secured project-finance credit facilities; pricing and tenor not verified (the other tracker cites ~SOFR+250bp and 4 years plus two 1-year extensions from Bloomberg, which could not be read)
+  capacity: null
+  announced: '2025-10-24'
+  status: announced
+  title_zh: 摩根大通、三菱日联牵头为 Vantage 两座甲骨文/OpenAI 数据中心园区筹组约 380 亿美元项目贷款（得州 232.5 亿 + 威斯康星 147.5 亿），已获全额承诺、未见交割确认
+  title_en: JPMorgan and MUFG lead roughly $38B project-finance loans for two Oracle/OpenAI-linked Vantage campuses ($23.25B Texas + $14.75B Wisconsin); fully committed, closing not confirmed
+  summary_zh: 彭博 2025 年 9 月 4 日首次报道，摩根大通和三菱日联牵头为与甲骨文相关的得克萨斯州和威斯康星州数据中心筹组约 380 亿美元债务融资；10 月 24 日进一步报道，融资分为两笔优先担保信贷额度——得州 Shackelford 县园区 232.5 亿美元、威斯康星州 Port Washington 园区 147.5 亿美元，项目由 Vantage Data Centers 开发、供甲骨文为 OpenAI 提供算力，银团分销最快于 10 月 27 日启动。行业媒体 TMT Finance 自 2025 年 6 月起独立跟踪同一笔 380 亿美元融资；IFR 在 2026 年 1 月先后报道该交易「尚未交割」、随后「已获得全额贷款人承诺」，并称银行分销吃力。未找到 Vantage、甲骨文或任何银行的官方公告，也没有读到确认贷款协议签署或放款的报道，因此状态记为已公布而非已签约；利率和期限未能核实。
+  sources:
+  - url: https://news.bloomberglaw.com/banking-law/banks-ready-38-billion-of-debt-for-oracle-tied-data-centers-1
+    title: Banks Ready $38 Billion of Debt for Oracle-Tied Data Centers (1)
+    publisher: Bloomberg News (via Bloomberg Law)
+    date: '2025-09-04'
+    tier: 3
+    quote: JPMorgan Chase & Co. and Mitsubishi UFJ Financial Group Inc. are leading a roughly $38 billion debt package to fund data centers connected to Oracle Corp. in Wisconsin and Texas, according to people familiar with the matter.
+  - url: https://www.itiger.com/news/2577515571
+    title: 'Market Chatter: JPMorgan, Mitsubishi UFJ to Launch $38 Billion Debt Offering for Data Centers'
+    publisher: MT Newswires (citing Bloomberg), via Tiger Brokers
+    date: '2025-10-24'
+    tier: 3
+    quote: Financing will come in two separate senior secured credit facilities, a $23.25 billion facility for the data center in Texas and $14.75 billion for the project in Wisconsin, the report said.
+  - url: https://www.tmtfinance.com/intel/vantage-data-centers-develop-25gw-datacentre-capacity-two-new-us-campuses/
+    title: Vantage Data Centers to develop up to 2.5GW of datacentre capacity in two new US campuses
+    publisher: TMT Finance
+    date: '2025-11-26'
+    tier: 3
+    quote: TMT Finance has been reporting on the US$38bn financing behind the infrastructure since June 2025
+  - url: https://www.ifre.com/people-and-markets/2373243/openai-faces-financial-crunch-point-as-huge-supplier-bills-start-to-come-due
+    title: OpenAI faces financial crunch point as huge supplier bills start to come due
+    publisher: IFR
+    date: '2026-01-23'
+    tier: 3
+    quote: last week it received lender commitments for the full US$38bn project finance package backing two data centres in what is the largest project finance loan in history
+  - url: https://www.ifre.com/bonds/2369805/oracle-sued-by-investors-over-false-and-misleading-us18bn-bond-deal
+    title: Oracle sued over 'false and misleading' US$18bn bond deal
+    publisher: IFR
+    date: '2026-01-15'
+    tier: 3
+    quote: The deal, which is being arranged by JP Morgan and MUFG, is yet to close.
+  - url: https://www.pfie.com/global/2375933/a-surprising-result
+    title: A surprising result
+    publisher: PFI (Project Finance International)
+    date: '2026-01-27'
+    tier: 3
+    quote: The latest test will be the US$38bn project finance loan package backing two Vantage Data Center schemes where Oracle is the offtaker, the largest potential project finance loan in history. PFI has reported bank commitments are in but the deal timeline has slowed.
+  verify_note: 'No tier 1/2 source: no Vantage, Oracle, DigitalBridge or bank release on the debt was found (DigitalBridge''s Q3 2025 earnings deck on EDGAR describes the Frontier and Lighthouse campuses, $25B and $15B of investment, but not the financing). The standard is met by three independent original publishers: Bloomberg (first report 2025-09-04, read as the Bloomberg Law copy''s opening paragraphs; the 2025-10-24 follow-up read only through the MT Newswires relay), TMT Finance (own reporting since June 2025) and IFR/PFI (one publisher group). Signed or only marketed: underwritten by the lead banks and launched to syndication (expected ''as soon as Monday'', i.e. 2025-10-27); IFR 2026-01-15 says ''yet to close'', IFR 2026-01-23 says full lender commitments were received the previous week, IFR 2026-02-06 says banks ''have struggled to offload US$38bn of loans''. Nothing opened states that it signed or funded, so status is ''announced'' (the lead''s ''in_progress''); a later aggregator
+    summary of a Bloomberg item saying less than $1B remained to be sold suggests it did close, but that page is not a source. Date discrepancy: the lead dates the Bloomberg Law article 2025-10-24, but the page is stamped Sept. 4, 2025; 2025-10-24 is the date of the follow-up with the $23.25B/$14.75B split. Vantage is named as developer in the MT Newswires relay and by PFI; the borrower entities (project companies) are not named in any source read. DatacenterDynamics pages in the lead returned 403.'
+- kind: lease
+  from: UNDISCLOSED
+  to: HUT
+  amount_usd: 9800000000
+  amount_text: approximately $9.8 billion base contract value over the 15-year initial term for 352 MW of critical IT capacity (Beacon Point Phase 1), inclusive of 3% annual rent escalators; excludes the three 5-year renewal options (which would take the potential total to approximately $25.1 billion)
+  instrument: datacenter_lease
+  term: 15-year initial term, triple-net (NNN), take-or-pay, no termination for convenience (per CEO to Reuters); 3% annual rent escalator; three 5-year renewal options; expected average annual NOI approximately $655.0 million; initial delivery expected Q3 2027
+  capacity: 352 MW critical IT load (approximately 500 MW utility capacity), Phase 1 of the Beacon Point campus, Nueces County, Texas
+  announced: '2026-05-06'
+  status: signed
+  title_zh: Hut 8 得州 Beacon Point 一期 352MW 租给未具名高评级科技公司：15 年基础合同额约 98 亿美元（媒体称租户为英伟达）
+  title_en: Hut 8 leases 352 MW (Beacon Point Phase 1) to an unnamed high-investment-grade technology company – ~$9.8B over 15 years
+  summary_zh: 2026 年 5 月 6 日 Hut 8 宣布把得州 Nueces 县 Beacon Point 园区一期 352MW 关键 IT 容量（约 500MW 电网容量）以三净、照付不议的 15 年租约整体租给一家“市值数万亿美元、高投资级的科技公司”，含每年 3% 租金递增的基础合同额约 98 亿美元，预计年均 NOI 约 6.55 亿美元；另有三个 5 年续租权，全部行使后约 251 亿美元。首批交付预计 2027 年三季度。租约由租户直接承担，没有第三方信用支持；6 月为一期发行的 42.5 亿美元项目票据对 Hut 8 无追索，也不由租户担保。Hut 8 从未披露租户名称，英国《金融时报》和《华尔街日报》先后报道租户是英伟达（双方均未证实），故承租方暂记为未披露。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1964789/000110465926055891/hut-20260331x10q.htm
+    title: Hut 8 Corp. – Form 10-Q for the quarter ended March 31, 2026 (MD&A, Q1 2026 Highlights – Beacon Point Lease)
+    publisher: SEC EDGAR (Hut 8 Corp.)
+    date: '2026-05-06'
+    tier: 1
+    quote: representing a significant infrastructure partnership with a base contract value of approximately $9.8 billion over a 15-year term, inclusive of 3% annual rent escalations
+  - url: https://www.sec.gov/Archives/edgar/data/1964789/000110465926055891/hut-20260331x10q.htm
+    title: Hut 8 Corp. – Form 10-Q for the quarter ended March 31, 2026 (renewals and delivery)
+    publisher: SEC EDGAR (Hut 8 Corp.)
+    date: '2026-05-06'
+    tier: 1
+    quote: The agreement includes three 5-year renewal options, extending potential total contract value to approximately $25.1 billion. Initial delivery is expected in Q3 2027.
+  - url: https://www.sec.gov/Archives/edgar/data/1964789/000110465926055894/hut-20260506xex99d1.htm
+    title: Hut 8 Reports First Quarter 2026 Results (Exhibit 99.1 to Form 8-K)
+    publisher: SEC EDGAR (Hut 8 Corp.)
+    date: '2026-05-06'
+    tier: 1
+    quote: signing a 15-year, 352 MW IT AI data center lease at Beacon Point with a high-investment-grade tenant, representing $9.8 billion in base-term contract value on a triple-net, take-or-pay basis
+  - url: https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm
+    title: Hut 8 Corp. – Form 10-Q for the quarter ended June 30, 2026 (Note 9, Beacon Point Notes)
+    publisher: SEC EDGAR (Hut 8 Corp.)
+    date: '2026-08-04'
+    tier: 1
+    quote: The Beacon Point Notes are obligations solely of Beacon Point DC and are not guaranteed by the parent company, the tenant, or any of their respective subsidiaries or affiliates.
+  - url: https://www.bnnbloomberg.ca/business/2026/05/06/hut-8-signs-about-us10-billion-ai-data-centre-lease-in-texas-shares-jump/
+    title: Hut 8 signs about US$10 billion AI data centre lease in Texas, shares jump
+    publisher: Reuters (via BNN Bloomberg)
+    date: '2026-05-06'
+    tier: 3
+    quote: Hut 8 said on Wednesday it had signed a 15-year lease worth US$9.8 billion for its Beacon Point data center campus in Texas
+  verify_note: 'Amount, term, capacity, escalator, renewals and delivery date confirmed verbatim in Hut 8''s Q1 2026 10-Q and Q1 earnings release, both filed 2026-05-06; Reuters confirms the lease was announced that day (Wednesday 6 May 2026). No separate lease 8-K or lease exhibit was filed (the 6 May 8-K is Item 2.02 only), so the signing date itself is not stated – the 10-Q lists the lease under ''Q1 2026 Highlights'' and the release calls it ''recently announced''; ''announced'' therefore uses the announcement date. Backstop: none found – unlike River Bend (Fluidstack with a Google backstop), Beacon Point is leased directly to the high-investment-grade tenant; the ''no termination for convenience'' wording is the CEO''s statement to Reuters, not filing text. The $9.8B is a company estimate of base rent including escalators over the initial term only. Tenant: Hut 8 has never named it; the FT (2026-07-28) and WSJ (2026-08-31) reported NVIDIA, unconfirmed by either company – see notes.
+    Written as UNDISCLOSED to match the existing phase 2 record; rename both phases together if the ledger accepts the evidence in the notes. Distinct from the $4.25B Beacon Point Notes (separate debt edge) and from the phase 2 lease of 2026-07-20.'
+  distinct: true
+- kind: lease
+  from: ORCL
+  to: APLD
+  amount_usd: 5000000000
+  amount_text: approximately $5 billion in total contracted revenue over an estimated 15-year lease term for 200 MW of critical IT load at Polaris Forge 2; excludes the tenant's right of first refusal on a further 800 MW
+  instrument: datacenter_lease
+  term: estimated 15-year lease term; initial 200 MW phased across two buildings, expected to begin coming online in 2026 and reach 200 MW in 2027; tenant holds a right of first refusal on an additional 800 MW (full 1 GW campus)
+  capacity: 200 MW critical IT load, Polaris Forge 2 campus, Harwood, North Dakota (ROFR on a further 800 MW)
+  announced: '2025-10-22'
+  status: signed
+  title_zh: 甲骨文租用 Applied Digital 北达科他州 Polaris Forge 2 园区 200MW：约 15 年、合同收入约 50 亿美元
+  title_en: Oracle leases 200 MW at Applied Digital's Polaris Forge 2 – ~$5B contracted revenue over ~15 years
+  summary_zh: 2025 年 10 月 22 日 Applied Digital 宣布与一家“美国投资级超大规模云厂商”签署北达科他州 Harwood 的 Polaris Forge 2 园区 200MW 关键 IT 负载租约，预计租期约 15 年、合同收入合计约 50 亿美元，租户另有其余 800MW 的优先承租权。公司当时未点名租户；2026 年 3 月 10 日为该园区发行 21.5 亿美元高级担保票据的 8-K 中写明园区“目前租给 Oracle”，租户身份由出租方在 SEC 文件中确认。金额为初始租期口径，不含优先承租权对应的扩容。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1144879/000114487925000076/ad-harwood_prxfinal102225.htm
+    title: Applied Digital Announces $5 Billion AI Factory Lease with U.S. Based Investment Grade Hyperscaler at Polaris Forge 2 ND Campus (Exhibit 99.1 to Form 8-K)
+    publisher: SEC EDGAR (Applied Digital Corporation)
+    date: '2025-10-22'
+    tier: 1
+    quote: This lease represents approximately $5 billion in total contracted revenue over an estimated 15-year lease term and covers 200 megawatts (MW) of critical IT load
+  - url: https://www.sec.gov/Archives/edgar/data/1144879/000114487925000076/ad-harwood_prxfinal102225.htm
+    title: Applied Digital Announces $5 Billion AI Factory Lease (Exhibit 99.1 to Form 8-K) – ROFR
+    publisher: SEC EDGAR (Applied Digital Corporation)
+    date: '2025-10-22'
+    tier: 1
+    quote: The Hyperscaler also holds a first right of refusal for an additional 800 MW of critical IT, representing the full expansion potential of the 1-gigawatt (GW) Polaris Forge 2 Campus.
+  - url: https://www.sec.gov/Archives/edgar/data/1144879/000149315226009538/form8-k.htm
+    title: 'Applied Digital Corporation – Form 8-K (Items 1.01, 2.03): $2.15 billion senior secured notes for Polaris Forge 2'
+    publisher: SEC EDGAR (Applied Digital Corporation)
+    date: '2026-03-10'
+    tier: 1
+    quote: to fund the development and construction of 200 megawatts of critical IT load at Polaris Forge 2, its AI Factory campus in Harwood, North Dakota currently leased to Oracle
+  verify_note: 'Lease terms confirmed in Applied Digital''s own press release (8-K exhibit, filed 2025-10-22), which names the tenant only as ''a U.S. Based Investment Grade Hyperscaler''. Tenant confirmed by the landlord itself: the 8-K filed 2026-03-10 for the $2.15B Polaris Forge 2 notes says the campus is ''currently leased to Oracle'' (single mention in that 8-K). Oracle has not, to my knowledge, announced the lease itself; I did not search Oracle''s filings. ''Approximately $5 billion'' and ''estimated 15-year'' are the company''s wording – no rent schedule or exact term is disclosed, and no later filing opened restates the figure with Oracle''s name. The press release date is 2025-10-22 (the lead agrees); the lease execution date is not given.'
+- kind: lease
+  from: ANTHROPIC
+  to: NEXUS
+  amount_usd: null
+  amount_text: rent not disclosed; reported as four data-centre leases plus related power-purchase agreements at Nexus's Hubbard, Texas campus, with Google guaranteeing 'billions of dollars' of Anthropic's lease and power payments
+  instrument: datacenter_lease
+  term: lease term, rent and signing date undisclosed; four leases plus power-purchase agreements for an on-site gas plant (WSJ via Reuters); Google guarantee of lease and power payments in exchange for about 20% of the project; construction of the first building January 2026 to October 2027 and of a second building June 2026 to January 2028 per Texas TDLR filings cited by Octus
+  capacity: 2,900-acre campus in Hubbard, Texas with an on-site natural-gas plant of 1.6 GW (WSJ via Reuters); leased IT capacity not disclosed (a third-party report cited by Octus put the first phase at about 500 MW)
+  announced: '2026-07-30'
+  status: signed
+  title_zh: Anthropic 承租 Nexus 得州 Hubbard 园区（自建 1.6GW 燃气电厂）四份数据中心租约，租金未披露，谷歌为租金与电费提供担保
+  title_en: Anthropic leases Nexus Data Centers' Hubbard, Texas campus (four leases, 1.6 GW on-site gas plant); rent undisclosed, Google guarantees payments
+  summary_zh: 据《华尔街日报》2026 年 7 月 30 日报道（路透转述），Anthropic 已就 Nexus Data Centers 位于得州 Hubbard 的园区签署四份数据中心租约及配套购电协议，园区自建 1.6GW 燃气电厂，将部署谷歌与博通联合设计的 TPU；谷歌为 Anthropic 的租金和电费支付提供数十亿美元担保，并预计获得项目约 20% 股权。Octus 7 月 22 日已独立报道该 2,900 英亩园区“租给 Anthropic”，彭博 8 月也称 Anthropic 为主要租户。租金、租期和容量均未披露，Anthropic 与 Nexus 均未证实。园区建设由摩根士丹利牵头的约 156 亿美元融资支持（另见债务记录）。
+  sources:
+  - url: https://octus.com/resources/articles/anthropic-linked-nexus-data-centers-lining-up-roughly-15b-in-bridge-financing-from-banks/
+    title: Anthropic-Linked Nexus Data Centers Lining Up Roughly $15B in Bridge Financing From Banks
+    publisher: Octus
+    date: '2026-07-22'
+    tier: 3
+    quote: Nexus Data Centers, the developer behind a 2,900-acre data center campus leased to AI giant Anthropic, is eyeing a roughly $15 billion bridge loan to finance its buildout, according to sources.
+  - url: https://www.thestar.com.my/tech/tech-news/2026/07/31/banks-in-talks-to-lend-15-billion-for-anthropic-data-center-backed-by-google-wsj-reports
+    title: Banks in talks to lend $15 billion for Anthropic data center backed by Google, WSJ reports
+    publisher: Reuters (via The Star), citing The Wall Street Journal
+    date: '2026-07-30'
+    tier: 3
+    quote: The guarantees cover four data-center leases signed by Anthropic and related power-purchase agreements for electricity from an on-site plant, the Journal said.
+  - url: https://www.privateequitywire.co.uk/eagle-point-leads-1-3bn-private-credit-loan-for-anthropic-linked-texas-data-centre/
+    title: Eagle Point leads $1.3bn private credit loan for Anthropic-linked Texas data centre
+    publisher: Private Equity Wire, citing Bloomberg
+    date: '2026-08-20'
+    tier: 3
+    quote: The campus is expected to include its own gas-fired power generation facility, with Anthropic serving as its primary tenant.
+  verify_note: 'Media-only. Three original publishers report Anthropic as the tenant: Octus (2026-07-22, own sources, read in full), The Wall Street Journal (2026-07-30, paywalled – read only via the Reuters relay, which is not independent of the WSJ) and Bloomberg (2026-08-19, paywalled – read only via Private Equity Wire). Octus + WSJ satisfy the two-independent-originals rule for the existence of the lease and the tenant; the specifics (four leases, power-purchase agreements, Google guarantee, ~20% equity for Google, 1.6 GW plant) rest on the WSJ alone. No rent, term or leased MW has been reported; Anthropic declined to comment to Reuters and Nexus did not respond to Octus. Anthropic''s S-1 (2026-10-26) does not mention Nexus or Hubbard, and Alphabet''s Q3 2026 10-Q discloses data-centre lease backstops only in aggregate ($48.0B executed) without naming Anthropic or Nexus. ''announced'' is the date of the WSJ report of signed leases; the actual signing date is unknown (Octus already described
+    the campus as leased on 22 July, and cites a March 2026 third-party report that it would be leased to Anthropic). Status ''signed'' follows the WSJ wording ''signed by Anthropic''; downgrade to ''rumored'' if the ledger requires party confirmation for signed leases.'
+- kind: lease
+  from: META
+  to: SOPAIPILLA
+  amount_usd: null
+  amount_text: no separate rent total disclosed for the El Paso leases. Meta's combined 'lease commitments' to its two data-centre ventures were $18,476 million at 2026-09-30 versus $12,311 million (Louisiana venture alone) at 2025-12-31 and 2026-06-30, implying roughly $6.2 billion for the El Paso initial four-year terms – a derived figure, not a disclosed one
+  instrument: datacenter_lease
+  term: four-year initial term with four options to extend (potential 20-year term); leases commence in 2028; Meta provides residual value guarantees with an aggregate threshold of approximately $13 billion that decreases over time, payable if conditions are met within the first 16 years after a non-renewal or termination; Meta is developer, property manager and initial sole occupant
+  capacity: entire El Paso, Texas data center campus – 1 GW of compute capacity, coming online from 2028
+  announced: '2026-07-28'
+  status: signed
+  title_zh: Meta 向贝莱德合资公司回租埃尔帕索 1GW 园区：4 年初始租期加四次续租（最长 20 年），残值担保约 130 亿美元，租金总额未单独披露
+  title_en: Meta leases the 1 GW El Paso campus from its BlackRock venture – 4-year initial term, four extensions, ~$13B residual value guarantee; rent total undisclosed
+  summary_zh: 2026 年 7 月 28 日 Meta 与贝莱德（GIP、HPS 基金）宣布成立持股 20/80 的合资公司，开发并持有得州埃尔帕索 1GW 数据中心园区；Meta 与合资公司签订覆盖整个园区的租约，初始租期 4 年、可续租四次（最长 20 年），2028 年起租，并提供门槛约 130 亿美元、逐年递减的残值担保。Meta 未单独披露埃尔帕索租约的租金总额：三季度 10-Q 仅给出对两家合资公司合计 184.76 亿美元的租赁承诺，较此前路易斯安那一家的 123.11 亿美元多出约 62 亿美元（推算值）。合资公司的债务由 Sopaipilla Investor LLC 发行的约 125 亿美元票据承担（另见债务记录），租金与残值担保是其偿债来源。
+  sources:
+  - url: https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-New-Strategic-Venture-with-BlackRock-to-Develop-Data-Center-in-El-Paso/default.aspx
+    title: Meta Announces New Strategic Venture with BlackRock to Develop Data Center in El Paso
+    publisher: Meta Platforms (Investor Relations press release)
+    date: '2026-07-28'
+    tier: 2
+    quote: The leases have a four-year initial term with four options to extend, providing Meta with long-term flexibility over a potential 20-year term.
+  - url: https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-New-Strategic-Venture-with-BlackRock-to-Develop-Data-Center-in-El-Paso/default.aspx
+    title: Meta Announces New Strategic Venture with BlackRock to Develop Data Center in El Paso – residual value guarantee
+    publisher: Meta Platforms (Investor Relations press release)
+    date: '2026-07-28'
+    tier: 2
+    quote: Meta also will provide residual value guarantees (RVG) which have an aggregate threshold of approximately $13 billion that decreases over time.
+  - url: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm
+    title: Meta Platforms, Inc. – Form 10-Q for the quarter ended September 30, 2026 (Note 5, Data Center Ventures)
+    publisher: SEC EDGAR (Meta Platforms, Inc.)
+    date: '2026-10-22'
+    tier: 1
+    quote: The lease agreement with the Louisiana Venture will commence in 2029 and the lease agreement with the Texas Venture will commence in 2028. Each lease has an initial four-year term and renewal options that provide for a total lease period of up to 20 years, including the initial term.
+  - url: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm
+    title: Meta Platforms, Inc. – Form 10-Q for the quarter ended September 30, 2026 (maximum exposure table, September 30, 2026 vs December 31, 2025)
+    publisher: SEC EDGAR (Meta Platforms, Inc.)
+    date: '2026-10-22'
+    tier: 1
+    quote: Lease commitments18,476 12,311 Future funding commitments3,703 3,724 Maximum residual value guarantees41,493 28,091
+  verify_note: 'Lease structure confirmed in Meta''s press release (2026-07-28) and Q3 2026 10-Q (filed 2026-10-22: ''We have entered into lease agreements with each of the Ventures''). The lead''s date 2026-07-23 is the bond launch date, not the lease/venture announcement; Meta''s Q2 10-Q (filed 2026-07-30) still described an exclusivity agreement with closing expected in Q3, and the Q3 10-Q says the venture was entered into in July 2026. No El Paso-only rent figure exists: amount_usd is left null per the rule; the ~$6.2B ($18,476M – $12,311M = $6,165M) is my subtraction and assumes the Louisiana commitment was unchanged in Q3 (it was still $12.31B at 2026-06-30). If the ledger accepts a derived tier-1 figure, use 6165000000 and label it derived. Likewise the combined maximum RVG rose from $28,091M to $41,493M, i.e. ~$13.4B for Texas, consistent with the press release''s ~$13B. Entity caveat: the lessor is the venture itself (owned 80% by BlackRock funds, 20% by Meta); Sopaipilla Investor
+    LLC, the ledger''s SOPAIPILLA entity, is the bond-issuing holding vehicle for the 80% stake – it is used here as the proxy the caller specified. Lease is off Meta''s balance sheet until commencement (venture not consolidated).'
+- kind: lease
+  from: META
+  to: BEIGNET
+  amount_usd: 12310000000
+  amount_text: approximately $12.31 billion 'aggregate initial lease commitment' – Meta's rent commitment over the initial four-year lease terms of the Hyperion campus properties (leases commence in 2029); excludes renewal options (total lease period up to 20 years) and the residual value guarantee (aggregate threshold approximately $28 billion, declining)
+  instrument: datacenter_lease
+  term: operating leases for all facilities of the campus; each property has an initial four-year lease term with options to renew for a total lease period of up to 20 years; leases commence in 2029; residual value guarantee for the first 16 years of operations with an aggregate threshold of approximately $28 billion that decreases over time
+  capacity: entire Hyperion data center campus, Richland Parish, Louisiana (capacity not stated in the documents opened; the ledger's JV record carries about 2 GW)
+  announced: '2025-10-21'
+  status: signed
+  title_zh: Meta 向 Blue Owl 合资公司回租路易斯安那 Hyperion 园区（约 2GW）：初始 4 年租期租赁承诺约 123.1 亿美元，另有约 280 亿美元残值担保
+  title_en: Meta leases the Hyperion campus from its Blue Owl venture – ~$12.31B initial four-year lease commitment plus ~$28B residual value guarantee
+  summary_zh: 2025 年 10 月 21 日 Meta 与 Blue Owl 管理的基金成立持股 20/80 的合资公司开发路易斯安那州 Hyperion 园区，Meta 同时与合资公司签订覆盖园区全部设施的经营租约：每处物业初始租期 4 年、可续租至合计最长 20 年，2029 年起租。Meta 2025 年 10-K 披露初始租期的租赁承诺合计约 123.1 亿美元，并提供门槛约 280 亿美元、随时间递减的残值担保（适用于运营的前 16 年）。金额仅为初始 4 年租期口径，不含续租与残值担保；合资方的出资主要来自 Beignet Investor LLC 发行的 273 亿美元债券（另见债务记录），租金与残值担保是其偿债来源。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm
+    title: Meta Platforms, Inc. – Form 10-K for fiscal year 2025 (Note 5, non-marketable equity investments – the Venture)
+    publisher: SEC EDGAR (Meta Platforms, Inc.)
+    date: '2026-01-29'
+    tier: 1
+    quote: The aggregate initial lease commitment is approximately $12.31 billion, with each property having an initial four-year lease term and options to renew for a total lease period of up to 20 years.
+  - url: https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm
+    title: Meta Platforms, Inc. – Form 10-K for fiscal year 2025 (residual value guarantee)
+    publisher: SEC EDGAR (Meta Platforms, Inc.)
+    date: '2026-01-29'
+    tier: 1
+    quote: we have provided residual value guarantees (RVG) with an aggregate threshold of approximately $28 billion that decreases over time
+  - url: https://about.fb.com/news/2025/10/meta-blue-owl-capital-develop-hyperion-data-center/
+    title: Meta Announces Joint Venture With Funds Managed by Blue Owl Capital to Develop Hyperion Data Center
+    publisher: Meta (newsroom press release)
+    date: '2025-10-21'
+    tier: 2
+    quote: These lease agreements will have a four-year initial term with options to extend, providing Meta with long-term strategic flexibility.
+  - url: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm
+    title: Meta Platforms, Inc. – Form 10-Q for the quarter ended September 30, 2026 (Note 5, Data Center Ventures)
+    publisher: SEC EDGAR (Meta Platforms, Inc.)
+    date: '2026-10-22'
+    tier: 1
+    quote: The lease agreement with the Louisiana Venture will commence in 2029 and the lease agreement with the Texas Venture will commence in 2028.
+  verify_note: 'A total rent figure IS disclosed, contrary to the lead (''rent undisclosed''): Meta''s FY2025 10-K (filed 2026-01-29) and Q2 2026 10-Q both state an ''aggregate initial lease commitment'' of approximately $12.31 billion for the initial four-year terms; this is exactly the base-term measure the ledger uses. It is not labelled as rent per year and no schedule is given; with commencement in 2029 it is roughly $3.1B a year if spread evenly (my arithmetic). The lead''s ''Meta can exit at 4-year intervals'' is consistent with the four-year initial term plus renewal options. RVG: press release says ''for the first 16 years of operations''; 10-K gives the ~$28B aggregate threshold (maximum RVG $28,091M in the Q3 2026 10-Q table). Campus capacity is not in the press release or filings opened. Entity caveat: the lessor is the joint venture (Blue Owl funds 80%, Meta 20%); Beignet Investor LLC, the ledger''s BEIGNET entity, is the bond-issuing vehicle for Blue Owl''s stake and is used
+    as the proxy the caller specified. The 10-K URL is the filing''s main document; I read its text layer only.'
+- kind: lease
+  from: CRWV
+  to: GLXY
+  amount_usd: 15000000000
+  amount_text: more than $15 billion over the 15-year base term for all 526 MW (Phases I–III) – DERIVED as Galaxy's 'anticipated average annual revenue of over $1B for the combined three phases ... across the 15-year base contract term' × 15 years; Galaxy itself prints only (a) an estimated $4.5 billion of total revenue over 15 years for Phase I alone (133 MW), (b) annual base revenue of $315M (Phase I) and $675M (Phase II), and (c) a 'total potential contract value' of $30B+ over 25 years including the two five-year extension options. Excludes extensions
+  instrument: datacenter_lease
+  term: 15-year base term (each data hall is leased through the end of the 15-year base term, which commences upon turnover of the final data hall) with two five-year extension options; Phase I lease announced 2025-03-28 (133 MW, delivered Q2 2026); Phase II option exercised 2025-04-23 and lease executed August 2025 (260 MW, initial rent commencement Q2 2027); Phase III option exercised August 2025 (133 MW, 2028); annual escalators
+  capacity: 526 MW critical IT load (133 MW Phase I + 260 MW Phase II + 133 MW Phase III) using the full 800 MW of approved gross power at the Helios campus, Dickens County, West Texas
+  announced: '2025-03-28'
+  status: signed
+  title_zh: CoreWeave 租下 Galaxy 得州 Helios 园区全部 526MW：15 年基础租期年均收入逾 10 亿美元，合计约 150 亿美元以上（一期 133MW 单独约 45 亿美元）
+  title_en: CoreWeave leases all 526 MW at Galaxy's Helios campus – >$1B average annual revenue over the 15-year base term (~$15B+; Phase I alone ~$4.5B)
+  summary_zh: 2025 年 3 月 28 日 Galaxy 宣布与 CoreWeave 签署 Helios 园区一期 133MW 关键 IT 负载的 15 年租约，公司称按合同可获得约 45 亿美元总收入；CoreWeave 随后于 4 月和 8 月行使两项扩容选择权，三期合计 526MW，占满园区已获批的 800MW 电力。Galaxy 披露三期在 15 年基础租期内预计年均收入超过 10 亿美元（一期年基础收入 3.15 亿、二期 6.75 亿美元），据此推算基础租期合计约 150 亿美元以上；含两个 5 年续租权的“潜在合同总额”为 300 亿美元以上。一期已于 2026 年二季度交付并起租，二期预计 2027 年二季度起租。150 亿美元为按公司口径相乘得出的下限，并非公司直接披露的合计数。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1859392/000185939226000108/exhibit992-glxyq32026ove.htm
+    title: Galaxy Digital Inc. – Q3 2026 overview presentation (Exhibit 99.2 to Form 8-K), 'CoreWeave Lease Overview'
+    publisher: SEC EDGAR (Galaxy Digital Inc.)
+    date: '2026-10-27'
+    tier: 1
+    quote: CoreWeave has leased 526 MW of critical IT capacity, generating anticipated average annual revenue of over $1B for the combined three phases at 90%+ average lease- level adjusted EBITDA margins across the 15-year base contract term.
+  - url: https://www.sec.gov/Archives/edgar/data/1859392/000185939226000108/exhibit992-glxyq32026ove.htm
+    title: Galaxy Digital Inc. – Q3 2026 overview presentation (Exhibit 99.2 to Form 8-K), footnote 2
+    publisher: SEC EDGAR (Galaxy Digital Inc.)
+    date: '2026-10-27'
+    tier: 1
+    quote: Assumes exercise of two five-year extension options beyond the initial 15-year contract term. Total potential contract value includes the impact of annual escalators.
+  - url: https://www.sec.gov/Archives/edgar/data/1859392/000110465925033095/tm253442-1_424b3.htm
+    title: Galaxy Digital Inc. – Prospectus (Form 424B3)
+    publisher: SEC EDGAR (Galaxy Digital Inc.)
+    date: '2025-04-08'
+    tier: 1
+    quote: Over the 15-year term, Galaxy is contractually entitled to generate an estimated $4.5 billion of total revenue.
+  - url: https://www.galaxy.com/newsroom/galaxy-closes-helios-project-financing
+    title: Galaxy Closes $1.4 Billion Project Financing Facility to Accelerate Helios AI Datacenter Development
+    publisher: Galaxy (newsroom press release)
+    date: '2025-08-15'
+    tier: 2
+    quote: Galaxy anticipates generating average annual revenue of more than $1 billion over the 15-year term of the agreements with CoreWeave based on committed contractual terms, internal estimates for capital expenditures, and assumes full capacity utilization
+  - url: https://www.galaxy.com/newsroom/galaxy-announces-commitment-with-coreweave
+    title: Galaxy Announces Commitment with CoreWeave to Host Additional AI and HPC Infrastructure
+    publisher: Galaxy (newsroom press release)
+    date: '2025-04-23'
+    tier: 2
+    quote: pursuant to terms substantially similar to those outlined in the 15-year, 133 megawatt (“MW”) lease agreement previously announced on March 28, 2025
+  - url: https://www.galaxy.com/newsroom/galaxy-completes-phase-i-of-its-helios-data-center-campus
+    title: Galaxy Completes Phase I of Its Helios Data Center Campus, Delivering 133 Megawatts of Critical IT Load to CoreWeave
+    publisher: Galaxy (newsroom press release)
+    date: '2026-07-06'
+    tier: 2
+    quote: under 15-year leases that include two five-year extension options and are expected to generate more than $1 billion in average annual revenue
+  verify_note: 'All inputs are company-disclosed (tier 1/2) but the $15B total is NOT a number Galaxy prints: it is ''over $1B'' average annual revenue × the 15-year base term, so it is a floor and an estimate (''based on committed contractual terms, internal estimates for capital expenditures, and assumes full capacity utilization''). If the ledger wants only a figure the company states as a total, the alternatives are $4.5B (Phase I only, 133 MW, ''contractually entitled ... estimated'', April 2025 prospectus) or null; $30B+ is not usable because it includes both extension options (25 years). Phase II ($675M) + Phase I ($315M) annual base revenue = $990M before Phase III, whose annual figure is not shown in the deck text layer. For reference, the Q3 2026 10-Q reports future minimum lease income of $4,684M at 2026-09-30, which appears to cover only the commenced Phase I lease. The original 2025-03-28 press release could not be located on galaxy.com or investor.galaxy.com; the date rests
+    on Galaxy''s own 2025-04-23 release and the $4.5B on the prospectus. Revenue totals appear in no Galaxy 10-K/10-Q opened – only in the prospectus, press releases and earnings decks. One deal is written for all three phases as instructed; the phases are legally separate leases under one lease agreement plus two option exercises.'
+- kind: lease
+  from: AMZN
+  to: CEREBRAS
+  amount_usd: null
+  amount_text: lease value not disclosed ('Both companies declined to disclose the size of the deal'); initial multi-year lease of Cerebras systems deployed in AWS data centres, with options for future procurement; Cerebras issued AWS a warrant for up to 2,696,678 Class N shares at $100.00 per share
+  instrument: equipment_lease
+  term: 'term sheet signed March 2026, binding as to pricing, exclusivity, minimum capacity and a binding initial multi-year lease; definitive global hardware leasing agreement signed June 2026 with options for future procurement, pricing commitments, exclusivity and minimum manufacturing capacity guarantees in favour of AWS; lease commencement conditions not yet satisfied at 2026-06-30 (no revenue recognised); warrant: 269,668 shares vested on issuance, 2,427,010 vest on AWS payment thresholds within five years, expires 2033-06-19'
+  capacity: Cerebras CS-3 systems deployed in AWS data centres alongside AWS Trainium3 (system count and MW not disclosed)
+  announced: '2026-03-13'
+  status: signed
+  title_zh: AWS 租用 Cerebras 推理系统部署于自家数据中心（多年期硬件租约，金额未披露），Cerebras 向亚马逊发行最多约 270 万股、行权价 100 美元的认股权证
+  title_en: AWS leases Cerebras systems for its own data centres (multi-year hardware lease, value undisclosed); Cerebras issues AWS a warrant for up to ~2.7M shares at $100
+  summary_zh: 2026 年 3 月 13 日亚马逊与 Cerebras 宣布合作，在 AWS 数据中心内部署 Cerebras CS-3 系统并与 Trainium3 组合提供推理服务；Cerebras 招股书披露 3 月签署的条款书在定价、排他、最低产能及“首期多年期租约”上具约束力，6 月双方签署正式的全球硬件租赁协议。租约金额未披露，截至 2026 年 6 月 30 日起租条件尚未满足、未确认收入。作为交易的一部分，Cerebras 于 6 月向亚马逊发行最多 2,696,678 股 N 类普通股的认股权证（行权价 100 美元，10% 即时归属，其余按 AWS 累计付款门槛归属，2033 年 6 月到期）。协议含对 AWS 的排他与最低制造产能保证。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/2021728/000162828026035214/cerebras-424b4.htm
+    title: Cerebras Systems Inc. – IPO prospectus (Form 424B4), risk factors
+    publisher: SEC EDGAR (Cerebras Systems Inc.)
+    date: '2026-05-14'
+    tier: 1
+    quote: In March 2026, we signed a term sheet with AWS, under which AWS will become the first hyperscaler to deploy Cerebras in its own data centers.
+  - url: https://www.sec.gov/Archives/edgar/data/2021728/000162828026035214/cerebras-424b4.htm
+    title: Cerebras Systems Inc. – IPO prospectus (Form 424B4), warrant commitment
+    publisher: SEC EDGAR (Cerebras Systems Inc.)
+    date: '2026-05-14'
+    tier: 1
+    quote: The term sheet also includes a binding commitment for us to issue a warrant to purchase up to 2,696,678 shares of our Class N common stock to AWS, at an exercise price of $100.00 per share
+  - url: https://www.sec.gov/Archives/edgar/data/2021728/000162828026056357/cbrs-20260630.htm
+    title: Cerebras Systems Inc. – Form 10-Q for the quarter ended June 30, 2026 (MD&A, Recent Developments – AWS)
+    publisher: SEC EDGAR (Cerebras Systems Inc.)
+    date: '2026-08-12'
+    tier: 1
+    quote: In June 2026, we entered into a global hardware leasing agreement with Amazon Web Services (“AWS”) to collaborate on the development and deployment of a joint compute solution in AWS data centers, together with related software and support services.
+  - url: https://www.sec.gov/Archives/edgar/data/2021728/000162828026056357/cbrs-20260630.htm
+    title: Cerebras Systems Inc. – Form 10-Q for the quarter ended June 30, 2026 (lease not commenced)
+    publisher: SEC EDGAR (Cerebras Systems Inc.)
+    date: '2026-08-12'
+    tier: 1
+    quote: As of June 30, 2026, the applicable lease commencement conditions had not been satisfied.
+  - url: https://www.thestar.com.my/tech/tech-news/2026/03/14/cerebras-systems-amazon-strike-deal-to-offer-cerebras-ai-chips-on-amazon039s-cloud-
+    title: Cerebras Systems, Amazon strike deal to offer Cerebras AI chips on Amazon's cloud
+    publisher: Reuters (via The Star)
+    date: '2026-03-13'
+    tier: 3
+    quote: Both companies declined to disclose the size of the deal.
+  verify_note: 'Terms confirmed in Cerebras''s IPO prospectus (424B4, filed 2026-05-14) and Q2 2026 10-Q (filed 2026-08-12); the announcement date (Friday 2026-03-13) is from Reuters. No dollar value, lease length, system count or minimum payment is disclosed anywhere I looked; the only numbers are the warrant terms (2,696,678 shares at $100.00; grant-date fair value $185.38 per share; $50.0M customer warrant asset recorded in Q2 2026). Definitive agreement: ''June 2026'' (day not given; the warrant expires 2033-06-19, suggesting issuance on or about 2026-06-19). The prospectus warns the lease volumes tied to warrant vesting are ''substantially beyond the initial lease''. No Q3 2026 10-Q was on EDGAR as of 2026-11-10, so whether the lease has since commenced is unverified. The lead''s summary is accurate; its 10-Q URL was opened and matches.'
+- kind: lease
+  from: NVDA
+  to: LAMBDA
+  amount_usd: 1500000000
+  amount_text: 'about $1.5 billion as reported by The Information: $1.3 billion over four years for 10,000 GPU servers plus a separate $200 million contract for 8,000 further servers; not confirmed by NVIDIA or Lambda'
+  instrument: gpu_lease
+  term: 'reported: four-year lease for the $1.3 billion / 10,000-server portion, agreed in summer 2025; term of the $200 million / 8,000-server contract not reported'
+  capacity: about 18,000 NVIDIA GPU servers (10,000 + 8,000), reported
+  announced: '2025-09-04'
+  status: rumored
+  title_zh: 英伟达据报向 Lambda 回租自家 GPU：约 1.8 万台服务器、合计约 15 亿美元（其中 13 亿美元为 4 年期），未获双方证实
+  title_en: NVIDIA reportedly rents back ~18,000 of its own GPU servers from Lambda for ~$1.5B ($1.3B over four years), unconfirmed
+  summary_zh: The Information 2025 年 9 月 4 日独家报道，英伟达于 2025 年夏天同意向其投资的云服务商 Lambda 租用 1 万台自家 GPU 服务器，4 年共 13 亿美元，另有一份 2 亿美元、8,000 台的合同，合计约 15 亿美元，英伟达由此成为 Lambda 最大客户。其他媒体均为转述该报道；英伟达与 Lambda 均未证实金额，Lambda 也没有公开的招股书。2026 年 8 月 Lambda 完成 9.26 亿美元 GPU 抵押贷款，称用于“投资级承购方”的已承诺部署，TechCrunch 称该部署的合同对象是英伟达，可作为存在英伟达租约的旁证，但不能印证 15 亿美元这一数字。仅一家原始信源，记为传闻。
+  sources:
+  - url: https://www.theinformation.com/articles/nvidia-quietly-boosts-cloud-ally-1-5-billion-deal-rent-ai-chips
+    title: Nvidia to Pay $1.5 Billion to Rent Back Its Own Chips From Cloud Startup
+    publisher: The Information
+    date: '2025-09-04'
+    tier: 3
+    quote: The chip giant agreed this summer to rent 10,000 of its own AI chips from the cloud firm, Lambda, for $1.3 billion over four years
+  - url: https://rcrwireless.com/20250908/ai-infrastructure/nvidia-lambda
+    title: Nvidia strikes $1.5B deal to lease back GPUs from Lambda
+    publisher: RCR Wireless News (citing The Information)
+    date: '2025-09-08'
+    tier: 3
+    quote: The agreement covers a $1.3 billion, four-year lease for 10,000 servers, plus a $200 million contract for 8,000 additional servers.
+  - url: https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/
+    title: Neocloud Lambda secures $1B in debt to buy more chips
+    publisher: TechCrunch
+    date: '2026-08-28'
+    tier: 3
+    quote: this week it announced the closing of a $926 million loan to fund Nvidia GB300 GPUs, one of Nvidia’s newest chip models, for a deployment it’s under contract to provide Nvidia
+  verify_note: 'RUMORED – one original source only. The Information''s article is paywalled: I could read only its headline and public teaser (quoted above; published 2025-09-04, not 09-08 as in the lead), which gives the $1.3B / 10,000 / four-year leg; the $200M / 8,000-server leg and the ''largest customer'' point come from RCR Wireless and Tom''s Hardware, both of which merely repeat The Information. No Reuters or Bloomberg story independently confirming the $1.5B was found. No Lambda S-1 is on EDGAR (only Form D filings from 2022 and 2024), and NVIDIA''s 10-Q does not name Lambda (its ''cloud service agreements'' commitments are disclosed only in aggregate, $29B at 2026-07-26). Later corroboration that a Lambda-to-NVIDIA contract exists, but not of this amount or even necessarily this deal: Bloomberg''s 2026-08-10 story (headline only seen: ''Lambda Sells $917 Million Loan to Fund Nvidia Chip Deal'') and TechCrunch''s line that the $926M loan funds GB300s ''for a deployment it''s under
+    contract to provide Nvidia''; Lambda''s own release says only ''an investment-grade offtaker''. GB300 systems did not exist in summer 2025, so the 2026 financing may relate to a newer or amended arrangement. The Information says ''AI chips'', RCR says ''servers'' – units are loosely reported.'
+- kind: lease
+  from: NAVER
+  to: BAM
+  amount_usd: null
+  amount_text: 'Not counted yet: ceiling only, with no fixed payment obligation and the GPUaaS supply agreement still to be signed. Up to KRW 18.74 trillion (about US$14.11 billion at the ECB reference rates of 2026-10-27: EUR/USD 1.1150 and EUR/KRW 1,480.44, i.e. USD/KRW 1,327.75) – NAVER''s own figure for the nominal total of GPU-as-a-service fees NAVER Cloud would pay through end-2034 IF Brookfield''s full US$9 billion investment limit is deployed; it is the amount NAVER guarantees, a ceiling, with no fixed payment obligation yet. The headline ''up to $9 billion'' is Brookfield''s investment cap in the infrastructure, not NAVER''s payments'
+  instrument: gpu_lease
+  term: binding investment and operating agreement signed 2026-10-27 between NAVER, NAVER Cloud and Green Holding L.P. (SPV of the Brookfield AI Infrastructure Fund); the GPUaaS supply agreement and GPU operation agreement with the yet-to-be-formed 'Asset Co.' are still to be signed; fees are payable for six years from the start of each supply tranche, longest supply period to 2034-12-31; NAVER guarantees NAVER Cloud's payments (guarantee period 2026-10-27 to 2034-12-31); Brookfield's Asset Co. invests up to US$9 billion by 2028. July 2026 announcement was an exclusivity stage, not a signed contract
+  capacity: 'GAK Sejong AI factory: 55 MW in H1 2027, 100 MW cumulative by end-2027, 200 MW cumulative in 2028 (tentative targets)'
+  announced: '2026-10-27'
+  status: signed
+  title_zh: NAVER 与 Brookfield 签约 AI 工厂算力供应：Brookfield 载体最多投 90 亿美元，NAVER 担保使用费上限 18.74 万亿韩元（约 141 亿美元；供给合同未签、付款义务未定，暂不计金额）
+  title_en: NAVER signs AI-factory compute deal with Brookfield – up to $9B investment by the Brookfield vehicle; NAVER guarantees up to KRW 18.74T (~$14.1B) of usage fees through 2034 (ceiling, not counted yet)
+  summary_zh: 2026 年 10 月 27 日 NAVER 在韩国交易所公告，公司及子公司 NAVER Cloud 已与 Brookfield AI Infrastructure Fund 的特殊目的公司 Green Holding L.P. 签署投资及运营协议：Brookfield 全资设立的 Asset Co.（暂名）到 2028 年最多投资 90 亿美元购置 GPU 与数据中心设备，以 GPU 即服务方式供给 NAVER Cloud，各批次自供给开始起付费 6 年。NAVER 为 NAVER Cloud 的付款提供担保，担保金额 18.74 万亿韩元（按当日欧洲央行汇率约 141 亿美元），这是假设 90 亿美元额度全部动用时到 2034 年底的名义付款总额，公告明确目前尚无已确定的付款义务。7 月 24 日三方在旧金山发布的“最多 90 亿美元”只是独家谈判阶段（NAVER 7 月 27 日公告称正式合同仍在协商、给予 Brookfield 12 周独家优先谈判权）。Asset Co. 虽由 Brookfield 100% 出资，但按 K-IFRS 将并入 NAVER 报表，经济实质更接近 NAVER 的表内融资。
+  sources:
+  - url: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800510
+    title: NAVER – 타인에대한채무보증결정 (Decision on debt guarantee for another party), KRX/DART disclosure
+    publisher: DART (Financial Supervisory Service) / Korea Exchange – NAVER Corp.
+    date: '2026-10-27'
+    tier: 1
+    quote: 투자 한도(USD 90억) 전액이 집행된다고 가정할 경우 최장 계약기간(2034년 말)까지 지급할 것으로 예상되는 공급대금의 명목 총액이며, 공시일 현재 확정된 공급대금 지급의무 및 기타 지급의무는 없습니다
+  - url: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800510
+    title: NAVER – 타인에대한채무보증결정, guarantee amount and period
+    publisher: DART (Financial Supervisory Service) / Korea Exchange – NAVER Corp.
+    date: '2026-10-27'
+    tier: 1
+    quote: 채무보증금액(원) 18,740,000,000,000 자기자본(원) 28,953,013,365,595 자기자본대비(%) 64.73 대규모법인여부 해당 채무보증기간 시작일 2026-10-27 종료일 2034-12-31
+  - url: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800446
+    title: NAVER – [기재정정] 장래사업ㆍ경영 계획(공정공시) (amended fair disclosure of business plan)
+    publisher: DART (Financial Supervisory Service) / Korea Exchange – NAVER Corp.
+    date: '2026-10-27'
+    tier: 1
+    quote: 정정사유 컴퓨팅 인프라 계약 체결 완료에 따른 내용 반영
+  - url: https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727800006
+    title: NAVER – [기재정정] 장래사업ㆍ경영 계획(공정공시) (amended fair disclosure, July 2026)
+    publisher: DART (Financial Supervisory Service) / Korea Exchange – NAVER Corp.
+    date: '2026-07-27'
+    tier: 1
+    quote: 당사는 이를 사용하는 형태의 계약에 관하여 정식 계약 체결을 위한 협의 진행 중 - 상기 협의와 관련하여, 당사는 Brookfield를 12주간 독점적 우선협상대상자로 선정하여 진행할 계획
+  - url: https://navercorp.com/en/media/pressReleasesDetail?seq=10034518
+    title: NAVER Partners with Brookfield and NVIDIA to Expand Korea’s National AI Factory Infrastructure Buildout (joint press release)
+    publisher: NAVER Corp. (newsroom)
+    date: '2026-07-25'
+    tier: 2
+    quote: Under the terms of the agreements, Brookfield will fund up to $9 billion as the exclusive capital partner, NVIDIA will invest $1 billion and NAVER will fund the remaining amount to finance the $10 billion project.
+  - url: https://en.sedaily.com/technology/2026/10/27/naver-signs-9-billion-ai-infrastructure-deal-with-brookfield
+    title: NAVER Signs $9 Billion AI Infrastructure Deal With Brookfield
+    publisher: Seoul Economic Daily
+    date: '2026-10-27'
+    tier: 3
+    quote: NAVER agreed to guarantee the usage fee obligations of its subsidiary NAVER Cloud for up to eight years.
+  verify_note: 'What was signed and when: BINDING, on 2026-10-27 – NAVER''s exchange filing says it and NAVER Cloud have signed (체결한) the investment and operating agreement with Green Holding L.P., and its amended business-plan filing gives the reason ''computing infrastructure contract signing completed''; the GPUaaS supply and GPU operation agreements with Asset Co. are ''to be signed'' (체결할 예정) once that company exists. The July stage was not a signing: the joint press release (dated 24 July in San Francisco, 2026.07.25 on NAVER''s site) speaks of ''agreements'', but NAVER''s 2026-07-27 filing says the $9B structure was a proposal with formal contract talks under way and Brookfield given 12 weeks of exclusivity. Hence announced = 2026-10-27 (the ledger candidate''s date is right; the lead''s 2026-07-27 is the non-binding stage). AMOUNT IS A JUDGMENT CALL: because the deal is binding I recorded the lessee-side maximum that NAVER itself filed (KRW 18.74T ≈ $14.11B), following the ledger''s
+    lease rule (rent, not lessor capex). It is a ceiling: the filing says no payment obligation is fixed at the disclosure date and the figure moves with GPU investment timing, interest and exchange rates. Alternatives: 9000000000 (Brookfield''s investment cap, the headline) or null if the ledger treats uncommitted ceilings like MOUs. The candidate''s KRW 13.3T / $9.95B could not be found in any filing or article opened. Other caveats: (1) Asset Co. will be consolidated by NAVER under K-IFRS despite being 100% Brookfield-funded, so this is closer to on-balance-sheet financing than a third-party lease; (2) the filing describes Brookfield''s fund as run by ''Brookfield Corporation Ltd.'' while NAVER''s July filing says ''Brookfield Asset Management'' – BAM is kept as the counterparty; (3) Seoul Economic Daily''s ''up to eight years'' is the guarantee window (Oct 2026 to Dec 2034), while fees per tranche run six years; (4) a KRW 10.7T loan for the Brookfield vehicle arranged by KB Kookmin Bank
+    was reported on 2026-11-01 (fnnews) and is not included here. USD conversion uses ECB euro reference rates for 2026-10-27 (cross rate 1,327.75 KRW per USD).'
+- kind: lease
+  from: XAI
+  to: VALOR_COMPUTE
+  amount_usd: 6633000000
+  amount_text: $6,633 million aggregate cash payments by the xAI subsidiary over the life of the lease (second Valor equipment lease, January 2026), per the SpaceX IPO prospectus; the leased compute cost $5.4 billion (Apollo) and SpaceX recorded $5,365 million of related debt because the deal is a failed sale-leaseback
+  instrument: gpu_lease
+  term: equipment lease entered into January 2026 (amended 2026-02-18) between CTC, a subsidiary of xAI, and Valor; triple net lease structure (Apollo); lease term not stated for this lease (the third Valor lease, April 2026, is five-year); lessee payments guaranteed by Space Exploration Technologies Corp. or one of its subsidiaries; accounted for as a failed sale-leaseback (debt)
+  capacity: $5.4 billion of data center compute infrastructure including NVIDIA GB200 GPUs, for xAI's second data center (GPU count not disclosed)
+  announced: '2026-01-07'
+  status: signed
+  title_zh: xAI 子公司向 Valor Compute Infrastructure 租用 54 亿美元英伟达 GB200 算力设备：租期内现金支付合计 66.33 亿美元，SpaceX 提供担保
+  title_en: xAI subsidiary leases $5.4B of NVIDIA GB200 compute from Valor Compute Infrastructure – $6.633B aggregate lease payments, guaranteed by SpaceX
+  summary_zh: 2026 年 1 月 7 日 Apollo 宣布牵头 35 亿美元融资，支持 Valor Equity Partners 管理的 Valor Compute Infrastructure 以 54 亿美元购入含英伟达 GB200 在内的算力设备，并以三净租约租给 xAI 子公司，用于 xAI 第二座数据中心。SpaceX 招股书（2026 年 6 月）披露：xAI 子公司 CTC 于 2026 年 1 月与 Valor 签订该设备租约（2 月 18 日修订），租期内现金支付合计 66.33 亿美元，由 SpaceX 或其子公司担保；因属“失败的售后回租”，SpaceX 按债务入账 53.65 亿美元。这是 xAI 与 Valor 三份设备租约中的第二份（另两份分别为 2025 年 10 月 69.86 亿美元、2026 年 4 月 65.87 亿美元），Valor 创始人为 SpaceX 董事，属关联交易。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm
+    title: Space Exploration Technologies Corp. – IPO prospectus (Form 424B4), Certain Relationships and Related Party Transactions – Valor
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-06-12'
+    tier: 1
+    quote: (ii) a second equipment lease agreement under which such subsidiary leases certain computing and related equipment from Valor, which provides for aggregate cash payments of $6,633 million to be made by such subsidiary over the life of the lease
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm
+    title: Space Exploration Technologies Corp. – IPO prospectus (Form 424B4), subsequent events – Sale-Leaseback Transaction
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-06-12'
+    tier: 1
+    quote: The Valor transaction II is deemed to be a failed sale-leaseback transaction and the Company recorded the related debt of $5,365 million in the Company’s consolidated balance sheets.
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm
+    title: Space Exploration Technologies Corp. – IPO prospectus (Form 424B4), guarantee
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-06-12'
+    tier: 1
+    quote: The lessees’ payments and performance obligations under these agreements are guaranteed by Space Exploration Technologies Corp. or one of its subsidiaries.
+  - url: https://ir.apollo.com/news-events/press-releases/detail/599/apollo-backs-5-4-billion-valor-and-xai-data-center-compute-infrastructure-transaction-with-3-5-billion-capital-solution
+    title: Apollo Backs $5.4 Billion Valor and xAI Data Center Compute Infrastructure Transaction with $3.5 Billion Capital Solution
+    publisher: Apollo Global Management (press release)
+    date: '2026-01-07'
+    tier: 2
+    quote: to support its $5.4 billion acquisition and lease of data center compute infrastructure, including NVIDIA GB200 GPUs, to a subsidiary of xAI Corp (“xAI”)
+  verify_note: 'Lease announced by the financier (Apollo press release, 2026-01-07: VCI, a fund managed by Valor Equity Partners, acquires and leases $5.4B of compute to an xAI subsidiary under a triple net lease; NVIDIA is an anchor LP in VCI) and confirmed by the lessee''s parent in the SpaceX 424B4 (filed 2026-06-12). The rent figure the lead calls ''undisclosed'' IS disclosed: $6,633M. Mapping caveat: the prospectus lists three Valor leases by ordinal – (i) $6,986M, (ii) ''a second'' $6,633M, (iii) ''a third'' $6,587M – and separately dates them (Valor transaction: 2025-10-12; Valor transaction II: January 2026; Valor transaction III: 2026-04-24, whose $6,587M matches item iii). I therefore match the January 2026 lease to item (ii); the filing never puts ''January 2026'' and ''$6,633 million'' in the same sentence. The recorded debt of $5,365M for transaction II lines up with Apollo''s $5.4B, which supports the match. The prospectus names the lessor only as ''Valor Equity Partners (together
+    with its affiliates)'', not VCI by name. Lease length for this lease and GPU count are not stated. ''Aggregate cash payments over the life of the lease'' includes the financing cost, so it exceeds the equipment value. The older ledger candidate (''xAI → Apollo SPV lease, debt up to $12.5B'', 2025-10) corresponds to Valor transaction I (2025-10-12, $6,986M) – see notes – and is not superseded by this deal.'
+  distinct: true
+- kind: lease
+  from: XAI
+  to: VALOR_COMPUTE
+  amount_usd: 6986000000
+  amount_text: $6,986 million aggregate cash payments by the xAI subsidiary over the life of the lease (first Valor equipment lease, signed 2025-10-12, amended 2025-11-10), per the SpaceX IPO prospectus; includes financing cost, so it exceeds the equipment value
+  instrument: gpu_lease
+  term: equipment lease signed 2025-10-12 (amended 2025-11-10) between CTC, a subsidiary of xAI, and Valor Equity Partners and affiliates; lease length not stated; lessee payments guaranteed by Space Exploration Technologies Corp. or one of its subsidiaries; accounted for as a failed sale-leaseback (debt)
+  capacity: null
+  announced: '2025-10-12'
+  status: signed
+  distinct: true
+  title_zh: xAI 子公司向 Valor 租用 AI 算力设备（第一份租约）：租期内现金支付合计 69.86 亿美元，SpaceX 提供担保
+  title_en: xAI subsidiary signs first equipment lease with Valor – $6.986B aggregate lease payments, guaranteed by SpaceX
+  summary_zh: SpaceX 招股书（2026 年 6 月 12 日）披露：xAI 子公司 CTC 于 2025 年 10 月 12 日与 Valor Equity Partners 签订 AI 基础设施硬件设备租约（11 月 10 日修订），租期内现金支付合计 69.86 亿美元，由 SpaceX 或其子公司担保；因属“失败的售后回租”，按债务入账。这是 xAI 与 Valor 三份设备租约中的第一份（另两份为 2026 年 1 月 66.33 亿美元、2026 年 4 月 65.87 亿美元），对应 2025 年 10 月媒体报道的 Colossus 2 GPU 租赁 SPV。Valor 创始人 Antonio Gracias 为 SpaceX 董事，属关联交易。金额含融资成本，高于设备价值；招股书未写租期和 GPU 数量。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm
+    title: Space Exploration Technologies Corp. – IPO prospectus (Form 424B4), Related Party Transactions – Valor
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-06-12'
+    tier: 1
+    quote: (i) an equipment lease agreement under which a subsidiary of xAI leases computing and related equipment from Valor, which provides for aggregate cash payments of $6,986 million to be made by such subsidiary over the life of the lease
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm
+    title: Space Exploration Technologies Corp. – IPO prospectus (Form 424B4), notes to financial statements – related party transactions
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-06-12'
+    tier: 1
+    quote: On October 12, 2025, and as subsequently amended on November 10, 2025, CTC, a subsidiary of xAI and an indirect subsidiary of the Company, entered into an equipment lease agreement with Valor Equity Partners (“Valor”) for certain AI infrastructure hardware (the “Valor transaction”).
+  - &id001
+    url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm
+    title: Space Exploration Technologies Corp. – IPO prospectus (Form 424B4), Related Party Transactions – Valor (guarantee)
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-06-12'
+    tier: 1
+    quote: The lessees’ payments and performance obligations under these agreements are guaranteed by Space Exploration Technologies Corp. or one of its subsidiaries.
+  verify_note: Read directly in the 424B4 (2026-11-10). The prospectus lists three Valor leases by ordinal with amounts and dates them in the notes; matching item (i) $6,986M to the 2025-10-12 lease follows the ordering (item iii $6,587M is explicitly the 2026-04-24 lease). Lessor is named only as Valor Equity Partners and affiliates; booked to VALOR_COMPUTE as the Valor-side vehicle. Lease length and GPU count not stated. Corresponds to the October 2025 media reports of a Colossus 2 GPU-leasing SPV (existing candidate, to be merged).
+- kind: lease
+  from: XAI
+  to: VALOR_COMPUTE
+  amount_usd: 6587000000
+  amount_text: $6,587 million total undiscounted lease payments over a five-year equipment lease (third Valor equipment lease, signed 2026-04-24), per the SpaceX IPO prospectus
+  instrument: gpu_lease
+  term: five-year equipment lease signed 2026-04-24 between CTC, a subsidiary of xAI, and Valor; lessee payments guaranteed by Space Exploration Technologies Corp. or one of its subsidiaries; sale-leaseback
+  capacity: null
+  announced: '2026-04-24'
+  status: signed
+  distinct: true
+  title_zh: xAI 子公司向 Valor 租用 AI 算力设备（第三份租约，五年期）：未折现租金合计 65.87 亿美元，SpaceX 提供担保
+  title_en: xAI subsidiary signs third (five-year) equipment lease with Valor – $6.587B total lease payments, guaranteed by SpaceX
+  summary_zh: SpaceX 招股书（2026 年 6 月 12 日）在期后事项中披露：xAI 子公司 CTC 于 2026 年 4 月 24 日与关联方 Valor 签订五年期 AI 基础设施硬件设备租约（Valor transaction III），未折现租金合计 65.87 亿美元，由 SpaceX 或其子公司担保。这是 xAI 与 Valor 三份设备租约中的第三份（前两份为 2025 年 10 月 69.86 亿美元、2026 年 1 月 66.33 亿美元），三份合计约 202 亿美元。Valor 创始人 Antonio Gracias 为 SpaceX 董事，属关联交易。招股书未披露设备型号与数量，也未说明为该笔租约提供融资的贷款方。
+  sources:
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm
+    title: Space Exploration Technologies Corp. – IPO prospectus (Form 424B4), subsequent events – Sale-Leaseback Transaction
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-06-12'
+    tier: 1
+    quote: On April 24, 2026, CTC entered into a five-year equipment lease agreement with Valor, a related party, for certain AI infrastructure hardware (“Valor transaction III”) for total undiscounted lease payments of $6,587 million.
+  - url: https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm
+    title: Space Exploration Technologies Corp. – IPO prospectus (Form 424B4), Related Party Transactions – Valor
+    publisher: SEC EDGAR (Space Exploration Technologies Corp.)
+    date: '2026-06-12'
+    tier: 1
+    quote: (iii) a third equipment lease under which such subsidiary leases certain computing and related equipment from Valor, which provides for aggregate cash payments of $6,587 million to be made by such subsidiary over the life of the lease
+  - *id001
+  verify_note: Read directly in the 424B4 (2026-11-10). Date, five-year term and $6,587M are stated in one sentence. Equipment type, count and the financing behind the lessor are not disclosed in the passages read.

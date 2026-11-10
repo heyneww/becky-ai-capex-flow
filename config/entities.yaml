@@ -190,3 +190,5 @@ entities:
   - {id: HUMAIN, name: HUMAIN, name_zh: HUMAIN, group: neocloud, country: SA, aliases: [HUMAIN, Humain]}
   - {id: MINIMAX, name: MiniMax, name_zh: MiniMax（稀宇科技）, group: model_lab, country: CN, aliases: [MiniMax, 稀宇科技, "MiniMax AI"]}
   - {id: CHIRISA, name: Chirisa Technology Parks, name_zh: Chirisa Technology Parks, group: datacenter, country: US, aliases: ["Chirisa Technology Parks", Chirisa, "Chirisa Piscataway"]}
+  - {id: MEDIATEK, name: MediaTek, name_zh: 联发科, group: chip, country: TW, aliases: [MediaTek, "MediaTek Inc.", 联发科, 聯發科]}
+  - {id: ZANKORE, name: ZanKore, name_zh: ZanKore（Indosat 系印尼 AI 云）, group: neocloud, country: ID, aliases: [Zankore, ZanKore, "ZanKore by Indosat"]}

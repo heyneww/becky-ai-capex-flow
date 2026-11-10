@@ -199,3 +199,22 @@ overrides:
   - {match: {id: 137}, action: merge, into: 635, note: "Fluidstack–TeraWulf Lake Mariner：8-14 的 $3.7B 与 8-18 CB-5 扩容合计 $6.7B，按合计记一条（#635）"}
   - {match: {id: 139}, action: merge, into: 639, note: "Fluidstack–Cipher Barber Lake：2025-11 追加 39MW（毛 56MW）约 $830M，合计约 $3.8B（#639）"}
   - {match: {id: 474}, action: merge, into: 642, note: "Barber Lake 2026-09 修订：新增的是未具名 AI 实验室的 10 年续租约 $5.2B（#642），$9.1B 是含 Fluidstack $3.8B 的园区合计"}
+
+  # ===== 第十七批 2026-11-10：GL 独有债务 / 租赁回填（种子 seeds/backfill_debt_lease_gl_2026-11-10.yaml）及顺带清理 =====
+  - {match: {id: 511}, action: merge, into: 210, note: "Riot Rockdale $573M 延迟提款贷款：三季度 10-Q 的再次披露与 8-10 的 8-K 是同一笔，日期差超出债务合并窗口未自动合并，重复计了 $0.573B"}
+  - {match: {id: 78}, action: merge, into: 210, note: "同一笔 Riot $573M 贷款的媒体记法（过桥 / 摩根士丹利）"}
+  - {match: {id: 472}, action: merge, into: 210, note: "同一笔 Riot $573M 贷款的媒体记法"}
+  # -- 候选并入核实后的正式记录
+  - {match: {id: 237}, action: merge, into: 669, note: "软银 OpenAI 股权支持贷款：7 月「洽谈中」的报道，8-05 签署并全额提取 $10B（软银季报，#669）"}
+  - {match: {id: 190}, action: merge, into: 675, note: "ZanKore $3.1B 定期贷款：公司新闻稿 2026-09-09 签署（#675）；原候选记在自动生成的 NEW_ZANKORE 下"}
+  - {match: {id: 74}, action: merge, into: 681, note: "CoreWeave–Galaxy Helios 526MW：按 Galaxy 文件补金额与签约日（#681）"}
+  - {match: {id: 119}, action: merge, into: 685, note: "xAI Colossus 2 GPU 租赁 SPV 的媒体报道，即 SpaceX 招股书披露的第一份 Valor 设备租约（2025-10-12，$6.986B，#685）"}
+  - {match: {id: 524}, action: merge, into: 503, note: "Riot Corsicana 租约的媒体记法（点名 Anthropic），并入主记录"}
+  # -- NAVER–Brookfield：导入时沿用了旧候选的 13.3 万亿韩元（任何来源里都没有这个数）；按公告改为不计金额
+  - {match: {id: 461}, action: set, fields: {amount_usd: null, amount_text: "Not counted yet: ceiling only, with no fixed payment obligation and the GPUaaS supply agreement still to be signed. Up to KRW 18.74 trillion (about US$14.11 billion at the ECB reference rates of 2026-10-27, USD/KRW 1,327.75): NAVER's own figure for the nominal total of GPU-as-a-service fees NAVER Cloud would pay through end-2034 if Brookfield's full US$9 billion investment limit is deployed; it is the amount NAVER guarantees"}, note: "NAVER 10-27 交易所公告：担保上限 18.74 万亿韩元，目前无已确定付款义务，GPUaaS 供给合同待签；供给合同签署后再记金额"}
+  # -- 租户具名：Riot 三季度 10-Q（2026-11-04）写明 Corsicana 租约的对手方是 Anthropic PBC（定义为 Frontier AI Lab），Rockdale 租约同为该 Frontier AI Lab
+  - {match: {id: 503}, action: set, fields: {from_entity: ANTHROPIC, title_zh: "Anthropic 向 Riot 租用 Corsicana 园区全部 910MW：15 年约 280 亿美元（10-Q 点名 Anthropic）", title_en: "Anthropic signs 15-year, 910 MW, ~$28B Corsicana lease with Riot (tenant named in Riot's 10-Q)"}, note: "Riot 10-Q：entered into a long-term powered land lease agreement (the “Corsicana Lease”) with Anthropic PBC (the “Frontier AI Lab”)"}
+  - {match: {id: 80}, action: set, fields: {from_entity: ANTHROPIC, title_zh: "Anthropic 向 Riot 租用 Rockdale 191MW 数据中心：20 年约 91 亿美元（10-Q 以 Frontier AI Lab 指代 Anthropic）", title_en: "Anthropic signs 20-year, 191 MW, ~$9.1B Rockdale lease with Riot (tenant identified in Riot's 10-Q)", summary_zh: "Riot 在得州 Rockdale 园区向一家前沿 AI 实验室出租 191MW 关键 IT 负载，初始租期 20 年（自预计 2028 年 6 月全部交付起算），另有两个五年续租选择权，合同价值约 91 亿美元。Riot 2026 年三季度 10-Q（11 月 4 日）把 Anthropic PBC 定义为“Frontier AI Lab”，并写明 Rockdale 租约的对手方即该 Frontier AI Lab，租户由此确认为 Anthropic。"}, note: "Riot 10-Q：Anthropic PBC (the “Frontier AI Lab”)…with the Frontier AI Lab for the deployment of 191 MW of critical IT load capacity (the “Rockdale Lease”)。此前用户裁定「承租方写未披露」的前提是文件未具名，现文件已具名；原摘要被一条 Corsicana 的抽取结果覆盖，一并改回"}
+  - {match: {id: 80}, action: confirm, note: "[A] 用户裁定：认 $9.1B；2026-11-10 起承租方按 Riot 10-Q 记为 Anthropic"}
+  - {match: {id: 494}, action: set, fields: {announced: "2026-07-20"}, note: "Hut 8 Beacon Point 二期租约于 2026-07-20 公告（8-K 新闻稿）；原日期是三季报日。一期（2026-05-06，#676）另记"}
+  - {match: {id: 205}, action: confirm, note: "CoreWeave ATM 额度（$2.9B）被误聚为 CoreWeave 里士满租约（#674，$2.94B，同月）的重复；两笔无关。instrument 仍为 atm_program，页面标「额度」"}
