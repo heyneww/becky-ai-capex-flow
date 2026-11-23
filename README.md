@@ -66,6 +66,23 @@ python3 src/notify.py --digest                  # 立即发日报
 python3 src/notify.py --baseline                # 大批回填后重记基线，避免下次日报刷屏
 ```
 
+## AI 供应链周期实时报告
+
+`docs/cycle.html`（公开地址 https://heyneww.github.io/becky-ai-capex-flow/cycle.html ）。七环压力传导链：股价 → 信用与融资 → 现金流 → capex 指引 → 订单与撤单 → 交期与价格 → 月营收，每环由若干信号按固定阈值算出状态。
+
+| 部分 | 来源 | 更新 |
+|---|---|---|
+| 股价篮子回撤、均线宽度 | yfinance | 文件超过 6 小时重取 |
+| 债务与租赁、撤单、供应商给客户的钱、订单集中度 | 本仓库账本 `docs/data/graph.json` | 每次运行 |
+| 台湾供应链月营收 | FinMind（不需要 token） | 每天查一次 |
+| 巨头 capex 与经营现金流 | SEC XBRL companyfacts | 每天查一次 |
+| 调研读数、阶段定位、结论段落 | `cycle/readings_*.json`、`cycle/narrative.yaml` | 人工快照，页面上标日期 |
+
+- `run.py` 在导出账本后自动重算并写进 `docs/`，随同一次 `Publish` 提交推送；`--skip-cycle` 跳过。周期报告出错只记日志，不影响账本发布。
+- 手动：`python3 src/cycle_data.py [prices] [sec] [tw]` 强制重取，`python3 src/cycle_build.py` 重算。
+- 篮子成分、阈值、撤单排除项在 `cycle/baskets.yaml`；改结论或阶段定位改 `cycle/narrative.yaml` 并更新其中的 `date`。
+- 额外依赖：`pip3 install yfinance pandas`。原始数据缓存在 `data/cycle/`，Artifact 版输出在 `cycle/out/`，都不进 git。
+
 ## 目录
 
 | 路径 | 作用 |
@@ -84,6 +101,8 @@ python3 src/notify.py --baseline                # 大批回填后重记基线，
 | `src/confirm.py` | 合并规则、可信度分级、取代、overrides |
 | `src/export.py` | 导出 graph.json + 存档 + 监控状态 |
 | `src/run.py` | 编排 + git 推送 |
+| `src/cycle_data.py` / `src/cycle_build.py` | 周期报告：取行情 / 月营收 / 财报现金流，按阈值算信号，写 `docs/cycle.html` 和 `docs/data/cycle.json` |
+| `cycle/` | 周期报告的篮子与阈值、人工叙事、调研读数、页面模板 |
 | `docs/` | 静态站：index.html / app.js / style.css / data/ |
 
 ## 边的方向

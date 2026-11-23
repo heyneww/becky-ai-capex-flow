@@ -1,5 +1,5 @@
-"""流程编排：collect → extract → export → publish。launchd 每 3 小时调用 run.sh。"""
-import argparse, subprocess, time
+"""流程编排：collect → extract → export → cycle → publish。launchd 每 3 小时调用 run.sh。"""
+import argparse, contextlib, io, subprocess, time
 from datetime import datetime, timezone
 
 from common import ROOT, SETTINGS, connect, sync_entities, log
@@ -28,12 +28,21 @@ def publish():
     return True
 
 
+def cycle():
+    """AI 供应链周期报告：过期的外部数据重取，再用最新账本重算，写进 docs/。"""
+    import cycle_data, cycle_build
+    done = cycle_data.refresh_stale()
+    doc = cycle_build.build()
+    log.info("周期报告已重算（重取：%s；信号 %s）", "、".join(done) or "无", doc["counts"])
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--skip-collect", action="store_true")
     ap.add_argument("--skip-extract", action="store_true")
     ap.add_argument("--skip-publish", action="store_true")
     ap.add_argument("--skip-notify", action="store_true")
+    ap.add_argument("--skip-cycle", action="store_true", help="不重算 AI 供应链周期报告")
     ap.add_argument("--max", type=int, help="本次最多抽取几篇")
     ap.add_argument("--edgar-days", type=int)
     a = ap.parse_args()
@@ -52,6 +61,12 @@ def main():
     if not a.skip_extract:
         extract.extract(con, a.max)
     export.export(con)
+    if not a.skip_cycle:
+        try:
+            with contextlib.redirect_stdout(io.StringIO()):
+                cycle()
+        except Exception as ex:
+            log.error("周期报告失败（不影响账本发布）：%s", ex)
     if not a.skip_publish:
         publish()
     if not a.skip_notify:

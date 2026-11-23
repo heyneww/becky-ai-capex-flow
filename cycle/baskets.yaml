@@ -1,0 +1,78 @@
+# AI 供应链周期报告：行情篮子与台湾月营收样本。layer: down | mid | up | credit | ref
+baskets:
+  - {id: hyperscaler, layer: down, zh: 巨头云,        tickers: [MSFT, GOOGL, AMZN, META, ORCL]}
+  - {id: neocloud,    layer: down, zh: Neocloud / 算力租赁, tickers: [CRWV, NBIS, IREN, APLD, CIFR, WULF, CORZ]}
+  - {id: gpu,         layer: mid,  zh: GPU / ASIC,     tickers: [NVDA, AMD, AVGO, MRVL]}
+  - {id: memory,      layer: mid,  zh: 存储 HBM/DRAM/NAND, tickers: [MU, 000660.KS, 005930.KS, SNDK, WDC]}
+  - {id: optical,     layer: mid,  zh: 光模块 / 互连,   tickers: [300308.SZ, 300502.SZ, COHR, LITE, CRDO, ALAB, ANET]}
+  - {id: server,      layer: mid,  zh: 服务器 / PCB,    tickers: [DELL, SMCI, 2382.TW, 6669.TW, 2317.TW, 2383.TW, 2368.TW]}
+  - {id: foundry,     layer: up,   zh: 代工 / 先进封装 / 载板, tickers: [TSM, 3711.TW, AMKR, 3037.TW, 4062.T]}
+  - {id: wfe,         layer: up,   zh: 半导体设备,      tickers: [ASML, AMAT, LRCX, KLAC, 8035.T]}
+  - {id: power,       layer: up,   zh: 电力设备 / 液冷,  tickers: [GEV, ETN, VRT, PWR, POWL, 3017.TW, 6501.T]}
+  - {id: energy,      layer: up,   zh: 电力 / 现场供电,  tickers: [CEG, VST, BE, TLN]}
+  - {id: credit,      layer: credit, zh: 信用代理,      tickers: [HYG, LQD, BIZD]}
+  - {id: ref,         layer: ref,  zh: 基准,           tickers: [SPY, QQQ, SMH]}
+names:
+  000660.KS: SK hynix
+  005930.KS: Samsung
+  300308.SZ: 中际旭创
+  300502.SZ: 新易盛
+  2382.TW: 广达
+  6669.TW: 纬颖
+  2317.TW: 鸿海
+  2383.TW: 台光电
+  2368.TW: 金像电
+  3711.TW: 日月光
+  3037.TW: 欣兴
+  4062.T: Ibiden
+  8035.T: Tokyo Electron
+  3017.TW: 奇鋐
+  6501.T: Hitachi
+# 台湾上市公司月营收（每月 10 日前公布上月），按层分组
+tw_revenue:
+  - {id: "2330", zh: 台积电,  layer: up,  seg: 代工 / CoWoS}
+  - {id: "3711", zh: 日月光,  layer: up,  seg: 封测}
+  - {id: "3037", zh: 欣兴,    layer: up,  seg: ABF 载板}
+  - {id: "2308", zh: 台达电,  layer: up,  seg: 电源 / 液冷}
+  - {id: "3017", zh: 奇鋐,    layer: up,  seg: 散热}
+  - {id: "2382", zh: 广达,    layer: mid, seg: AI 服务器}
+  - {id: "6669", zh: 纬颖,    layer: mid, seg: AI 服务器}
+  - {id: "2317", zh: 鸿海,    layer: mid, seg: AI 服务器}
+  - {id: "3231", zh: 纬创,    layer: mid, seg: AI 服务器}
+  - {id: "2383", zh: 台光电,  layer: mid, seg: 覆铜板 CCL}
+  - {id: "2368", zh: 金像电,  layer: mid, seg: PCB}
+  - {id: "2345", zh: 智邦,    layer: mid, seg: 交换机}
+  - {id: "3661", zh: 世芯,    layer: mid, seg: ASIC 设计服务}
+# SEC XBRL：capex / 经营现金流 / 收入
+sec:
+  - {id: MSFT,  cik: 789019,  zh: 微软}
+  - {id: GOOGL, cik: 1652044, zh: 谷歌}
+  - {id: AMZN,  cik: 1018724, zh: 亚马逊}
+  - {id: META,  cik: 1326801, zh: Meta}
+  - {id: ORCL,  cik: 1341439, zh: 甲骨文}
+# 信号阈值（本报告自定，可调）。回撤为负数百分比；金额为美元
+thresholds:
+  dd_watch: -20
+  dd_on: -35
+  breadth_watch: 50
+  breadth_on: 30
+  neo_dd_on: -50
+  hyg_watch: -2.5
+  hyg_on: -5
+  window_watch: 0.6
+  window_on: 0.35
+  risky_watch: 50
+  risky_on: 65
+  capex_watch: 75
+  capex_on: 100
+  cancel_window_days: 90
+  cancel_watch_n: 2
+  cancel_on_n: 6
+  cancel_on_usd: 50000000000
+  orders_watch: 0.6
+  orders_on: 0.3
+  circ_watch: 20000000000
+  circ_on: 60000000000
+# 账本里标为取消、但实际只是传闻或记录有误的边，不计入撤单信号（原因写在 note）
+cancel_exclude:
+  - {id: 21, note: "Anthropic–SpaceXAI 1,205 亿美元：11-12 一条「据报拟退出」的传闻把状态改成了取消，之后 11-19、11-22 的报道仍称合同有效"}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="AI 供应链压力走到了哪一环：股价、信用、现金流、capex 指引、订单、价格、月营收七环传导链，接 AI 订单与债务账本，自动更新。">
+<title>AI 供应链周期实时报告</title>
+<style>
+/* 版式：顶部一条「压力传导链」定调，其下按 信号表 → 三层 → 资金 → 市场 → 跟踪节奏 逐层展开；冷灰纸面 + 靛蓝墨色，状态色只用于状态 */
+:root{
+  --bg:#f3f5f8;--card:#fcfcfb;--ink:#101623;--sub:#4a5468;--mute:#7c8596;--line:#dfe3ea;--line2:#c6ccd6;--wash:#eaeef4;
+  --accent:#1f4fa8;--accent-wash:#e3ebf9;
+  --good:#0ca30c;--warn:#fab219;--serious:#ec835a;--crit:#d03b3b;
+  --good-ink:#0a6b0a;--warn-ink:#7a5200;--crit-ink:#a32222;--good-wash:#e4f4e4;--warn-wash:#fdf1d3;--crit-wash:#fbe4e4;
+  --s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;
+  --up:#0a6b0a;--down:#b52a2a;
+  --font:"Inter","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e1117;--card:#171b23;--ink:#eceff4;--sub:#b3bccb;--mute:#8791a3;--line:#272d39;--line2:#394150;--wash:#1e2430;
+  --accent:#7fa8f0;--accent-wash:#1b2740;
+  --good-ink:#5fd15f;--warn-ink:#fac555;--crit-ink:#f08a8a;--good-wash:#12301a;--warn-wash:#3a2e0c;--crit-wash:#3b1717;
+  --s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;
+  --up:#5fd15f;--down:#f08a8a;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1117;--card:#171b23;--ink:#eceff4;--sub:#b3bccb;--mute:#8791a3;--line:#272d39;--line2:#394150;--wash:#1e2430;
+  --accent:#7fa8f0;--accent-wash:#1b2740;
+  --good-ink:#5fd15f;--warn-ink:#fac555;--crit-ink:#f08a8a;--good-wash:#12301a;--warn-wash:#3a2e0c;--crit-wash:#3b1717;
+  --s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;
+  --up:#5fd15f;--down:#f08a8a;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.65;font-variant-numeric:tabular-nums;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+h1{font-size:28px;line-height:1.25;margin:0;font-weight:700;letter-spacing:-.2px;text-wrap:balance}
+h2{font-size:20px;margin:0;font-weight:700;text-wrap:balance}
+h3{font-size:16px;margin:0;font-weight:650}
+p{margin:0}
+.back{font-size:13px;color:var(--mute);text-decoration:none;align-self:flex-start}.back:hover{text-decoration:underline}
+.eyebrow{font-size:12px;letter-spacing:.08em;color:var(--mute);font-weight:600}
+.sub{color:var(--sub)}.mute{color:var(--mute)}.sm{font-size:13px}.xs{font-size:12px}
+.head{display:flex;flex-direction:column;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:16px}
+.stamps{display:flex;flex-wrap:wrap;gap:6px 8px}
+.stamp{font-size:12px;color:var(--sub);background:var(--wash);border-radius:999px;padding:2px 10px;white-space:nowrap}
+.stamp b{color:var(--ink);font-weight:600}
+section{display:flex;flex-direction:column;gap:14px;min-width:0}
+.wrap>*{min-width:0}
+.sec-head{display:flex;flex-direction:column;gap:4px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;min-width:0}
+.snap{font-size:11px;font-weight:600;color:var(--accent);background:var(--accent-wash);border-radius:4px;padding:1px 7px;white-space:nowrap;vertical-align:middle}
+/* 结论 */
+.verdict{display:flex;flex-direction:column;gap:10px}
+.verdict .big{font-size:19px;font-weight:650;line-height:1.5;text-wrap:balance}
+.verdict p{max-width:68em}
+/* 状态 */
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:650;border-radius:999px;padding:2px 9px;white-space:nowrap}
+.pill i{font-style:normal;font-size:10px;line-height:1}
+.st-on{background:var(--crit-wash);color:var(--crit-ink)}.st-watch{background:var(--warn-wash);color:var(--warn-ink)}
+.st-off{background:var(--good-wash);color:var(--good-ink)}.st-na{background:var(--wash);color:var(--mute)}
+/* 传导链 */
+.chain{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.node{position:relative;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 10px 10px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.node::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;border-radius:8px 8px 0 0;background:var(--line2)}
+.node.on::before{background:var(--crit)}.node.watch::before{background:var(--warn)}.node.off::before{background:var(--good)}
+.node .nm{font-weight:650;font-size:14px;line-height:1.3}
+.node .val{font-size:12px;color:var(--sub);line-height:1.4;overflow-wrap:anywhere}
+.node .cad{font-size:11px;color:var(--mute)}
+.node .step{font-size:11px;color:var(--mute);font-weight:600}
+.chain-note{font-size:13px;color:var(--sub)}
+@media(max-width:860px){.chain{grid-template-columns:minmax(0,1fr)}.node{flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px 10px;padding:10px 12px 10px 16px}
+  .node::before{left:0;top:0;bottom:0;right:auto;width:4px;height:auto;border-radius:8px 0 0 8px}.node .nm{flex:1 1 auto}.node .val{flex:1 1 100%}}
+/* 表格 */
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;font-weight:600;color:var(--mute);white-space:nowrap;background:transparent}
+tr:last-child td{border-bottom:none}
+td.n,th.n{text-align:right;white-space:nowrap}
+.pos{color:var(--up)}.neg{color:var(--down)}
+.sig{min-width:860px}.sig td:first-child{min-width:190px}.sig .v{font-weight:650;white-space:nowrap}
+.grp td{background:var(--wash);font-weight:650;font-size:12.5px;padding:5px 10px;color:var(--sub)}
+/* 三层 */
+.layer{display:flex;flex-direction:column;gap:14px}
+.lhead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.track{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.track span{font-size:12px;text-align:center;padding:4px 2px;border-radius:5px;background:var(--wash);color:var(--mute);font-weight:600}
+.track span.on{background:var(--accent);color:#fff}
+.cols{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:20px}
+@media(max-width:820px){.cols{grid-template-columns:minmax(0,1fr)}}
+.col{display:flex;flex-direction:column;gap:12px;min-width:0}
+.lbl{font-size:12px;font-weight:650;color:var(--mute);letter-spacing:.04em;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.bk{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;padding:9px 0;border-bottom:1px solid var(--line);align-items:center}
+.bk:last-child{border-bottom:none}
+.bk .t{font-weight:650;font-size:14px}.bk .m{font-size:12px;color:var(--sub)}
+.bk svg{display:block}
+.rd{display:flex;flex-direction:column;gap:2px;padding:9px 0;border-bottom:1px solid var(--line)}
+.rd:last-child{border-bottom:none}
+.rd .top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.rd .nm{font-weight:650;font-size:14px}
+.dir{font-size:11px;font-weight:650;border-radius:4px;padding:0 6px;white-space:nowrap}
+.dir.hot{background:var(--accent-wash);color:var(--accent)}.dir.cool{background:var(--warn-wash);color:var(--warn-ink)}.dir.flat{background:var(--wash);color:var(--sub)}
+.rd .val{font-size:13px;color:var(--ink);overflow-wrap:anywhere}
+.rd .note{font-size:12.5px;color:var(--sub)}
+.rd .src{font-size:11.5px;color:var(--mute);overflow-wrap:anywhere}
+details>summary{cursor:pointer;font-size:13px;color:var(--accent);font-weight:600;padding:6px 0;list-style-position:inside}
+.call{background:var(--wash);border-radius:8px;padding:11px 14px;font-size:14px}
+/* 数字块 */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.tile .k{font-size:12px;color:var(--mute);font-weight:600}.tile .v{font-size:20px;font-weight:700;line-height:1.3}.tile .d{font-size:12px;color:var(--sub)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media(max-width:820px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media(max-width:900px){.grid3{grid-template-columns:minmax(0,1fr)}}
+.chart-card{display:flex;flex-direction:column;gap:8px}
+.chart-card h3{font-size:15px}
+.cx{overflow-x:auto}.cx svg{display:block;width:100%;height:auto;min-width:420px}.cx.lc{overflow:visible}.cx.lc svg{min-width:0}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--sub)}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.legend i{width:10px;height:10px;border-radius:2px;display:inline-block}
+.list{display:flex;flex-direction:column}
+.li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:2px 10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:13.5px;align-items:baseline}
+.li:last-child{border-bottom:none}
+.li .dt{color:var(--mute);font-size:12px;white-space:nowrap}.li .am{font-weight:650;white-space:nowrap}
+.tag{font-size:11px;font-weight:600;color:var(--sub);background:var(--wash);border-radius:4px;padding:0 5px;margin-right:4px;white-space:nowrap}
+.hbar{display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:8px;align-items:center;font-size:13px;padding:4px 0}
+.hbar .b{height:10px;border-radius:0 4px 4px 0;background:var(--s1);min-width:2px}
+.hbar .b.lab{background:var(--s2)}
+#tip{position:fixed;z-index:20;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;line-height:1.5;padding:6px 9px;border-radius:6px;max-width:260px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+#tip b{font-weight:650}
+.foot{font-size:12.5px;color:var(--sub);display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:16px}
+ul.plain{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+.err{background:var(--crit-wash);color:var(--crit-ink);padding:12px 14px;border-radius:8px}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"><div class="card">正在读取数据…</div></div>
+<div id="tip" hidden></div>
+<script>
+const EMBED = /*__DATA__*/null;
+const $ = (h) => { const t = document.createElement('template'); t.innerHTML = h.trim(); return t.content; };
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ST = { on: ['已触发', '▲'], watch: ['观察', '◆'], off: ['未触发', '●'], na: ['待补', '○'] };
+const pill = (s) => `<span class="pill st-${s}"><i>${ST[s][1]}</i>${ST[s][0]}</span>`;
+const yi = (v) => { if (v == null || v === 0) return '未披露'; const a = Math.abs(v); if (a >= 1e12) return (v / 1e12).toFixed(2) + ' 万亿'; if (a >= 1e9) return Math.round(v / 1e8).toLocaleString('en-US') + ' 亿'; if (a >= 1e8) return (v / 1e8).toFixed(1) + ' 亿'; return Math.round(v / 1e4).toLocaleString('en-US') + ' 万'; };
+const pct = (v, d = 1) => v == null ? '–' : `<span class="${v > 0 ? 'pos' : v < 0 ? 'neg' : ''}">${v > 0 ? '+' : ''}${v.toFixed(d)}%</span>`;
+const ago = (iso) => { const m = Math.round((Date.now() - new Date(iso)) / 6e4); return m < 60 ? `${m} 分钟前` : m < 2880 ? `${Math.round(m / 60)} 小时前` : `${Math.round(m / 1440)} 天前`; };
+const local = (iso) => new Date(iso).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false });
+const cssv = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+/* ---------- 提示框 ---------- */
+const tip = document.getElementById('tip');
+function bindTips(root) {
+  root.querySelectorAll('[data-tip]').forEach(el => {
+    el.addEventListener('pointermove', e => { tip.innerHTML = el.dataset.tip; tip.hidden = false;
+      const w = tip.offsetWidth, x = Math.min(e.clientX + 12, innerWidth - w - 8); tip.style.left = Math.max(8, x) + 'px'; tip.style.top = (e.clientY + 14) + 'px'; });
+    el.addEventListener('pointerleave', () => tip.hidden = true);
+  });
+}
+
+/* ---------- 图表（SVG，单一刻度） ---------- */
+function niceScale(lo, hi, target = 4) { const raw = (hi - lo) / target || 1, p = Math.pow(10, Math.floor(Math.log10(raw))), n = raw / p;
+  const step = (n <= 1 ? 1 : n <= 2 ? 2 : n <= 2.5 ? 2.5 : n <= 5 ? 5 : 10) * p; const a = Math.floor(lo / step) * step, b = Math.ceil(hi / step) * step; return { lo: a, hi: b, step, ticks: Math.round((b - a) / step) }; }
+function niceMax(v) { return niceScale(0, v).hi; }
+function axis(W, H, m, max, min, fmt, ticks) { ticks = ticks || niceScale(min, max).ticks;
+  let g = ''; const ih = H - m.t - m.b;
+  for (let i = 0; i <= ticks; i++) { const v = min + (max - min) * i / ticks, y = m.t + ih - ih * i / ticks;
+    g += `<line x1="${m.l}" x2="${W - m.r}" y1="${y}" y2="${y}" stroke="var(--line)" stroke-width="1"/><text x="${m.l - 6}" y="${y + 4}" text-anchor="end" font-size="11" fill="var(--mute)">${fmt(v)}</text>`; }
+  return g;
+}
+function stackedBars(rows, keys, labels, colors, { xKey, fmtX, unit, W = 720, H = 260 }) {
+  const m = { t: 12, r: 8, b: 26, l: 46 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const max = niceMax(Math.max(...rows.map(r => keys.reduce((s, k) => s + (r[k] || 0), 0))));
+  const bw = iw / rows.length, w = Math.min(34, bw * .62);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img">` + axis(W, H, m, max, 0, v => Math.round(v).toLocaleString('en-US'));
+  rows.forEach((r, i) => {
+    const x = m.l + bw * i + (bw - w) / 2; let y = m.t + ih; const tot = keys.reduce((a, k) => a + (r[k] || 0), 0);
+    const tipH = `<b>${fmtX(r[xKey])}</b><br>` + keys.map((k, j) => `${labels[j]} ${Math.round(r[k]).toLocaleString('en-US')} ${unit}`).join('<br>') + `<br><b>合计 ${Math.round(tot).toLocaleString('en-US')} ${unit}</b>`;
+    let segs = ''; const nz = keys.filter(k => r[k] > 0);
+    keys.forEach((k, j) => { const h = (r[k] || 0) / max * ih; if (h <= 0) return; const top = k === nz[nz.length - 1];
+      const hh = Math.max(h - 2, 1); y -= h;
+      segs += top ? `<path d="M${x},${y + hh} v${-(hh - Math.min(4, hh))} q0,${-Math.min(4, hh)} ${Math.min(4, hh)},${-Math.min(4, hh)} h${w - 2 * Math.min(4, hh)} q${Math.min(4, hh)},0 ${Math.min(4, hh)},${Math.min(4, hh)} v${hh - Math.min(4, hh)} z" fill="${colors[j]}"/>` : `<rect x="${x}" y="${y}" width="${w}" height="${hh}" fill="${colors[j]}"/>`; });
+    s += `<g data-tip="${esc(tipH)}">${segs}<rect x="${m.l + bw * i}" y="${m.t}" width="${bw}" height="${ih}" fill="transparent"/></g>`;
+    if (rows.length <= 8 || i % 2 === (rows.length - 1) % 2) s += `<text x="${m.l + bw * i + bw / 2}" y="${H - 8}" text-anchor="middle" font-size="11" fill="var(--mute)">${fmtX(r[xKey])}</text>`;
+  });
+  return s + `<line x1="${m.l}" x2="${W - m.r}" y1="${m.t + ih}" y2="${m.t + ih}" stroke="var(--line2)"/></svg>`;
+}
+function groupedBars(rows, keys, labels, colors, { xKey, unit, note, W = 720, H = 260 }) {
+  const m = { t: 22, r: 8, b: 26, l: 46 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const max = niceMax(Math.max(...rows.flatMap(r => keys.map(k => r[k]))));
+  const bw = iw / rows.length, w = Math.min(22, bw * .32);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img">` + axis(W, H, m, max, 0, v => Math.round(v).toLocaleString('en-US'));
+  rows.forEach((r, i) => {
+    const cx = m.l + bw * i + bw / 2;
+    const tipH = `<b>${r[xKey]}</b><br>` + keys.map((k, j) => `${labels[j]} ${Math.round(r[k]).toLocaleString('en-US')} ${unit}`).join('<br>') + (note ? `<br><b>${note(r)}</b>` : '');
+    let bars = '';
+    keys.forEach((k, j) => { const h = r[k] / max * ih, x = cx - w - 1 + j * (w + 2), y = m.t + ih - h, c = Math.min(4, h);
+      bars += `<path d="M${x},${y + h} v${-(h - c)} q0,${-c} ${c},${-c} h${w - 2 * c} q${c},0 ${c},${c} v${h - c} z" fill="${colors[j]}"/>`; });
+    const topY = m.t + ih - Math.max(...keys.map(k => r[k])) / max * ih;
+    s += `<g data-tip="${esc(tipH)}">${bars}<rect x="${m.l + bw * i}" y="${m.t}" width="${bw}" height="${ih}" fill="transparent"/></g>`;
+    if (note) s += `<text x="${cx}" y="${topY - 6}" text-anchor="middle" font-size="11" font-weight="650" fill="var(--ink)">${note(r)}</text>`;
+    s += `<text x="${cx}" y="${H - 8}" text-anchor="middle" font-size="11" fill="var(--mute)">${r[xKey]}</text>`;
+  });
+  return s + `<line x1="${m.l}" x2="${W - m.r}" y1="${m.t + ih}" y2="${m.t + ih}" stroke="var(--line2)"/></svg>`;
+}
+function lines(series, colors, { W = 380, H = 250 }) {
+  const m = { t: 10, r: 104, b: 22, l: 34 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const all = series.flatMap(s => s.series.map(p => p[1]));
+  const sc = niceScale(Math.min(...all, 100), Math.max(...all, 100)), lo = sc.lo, hi = sc.hi;
+  const n = Math.max(...series.map(s => s.series.length));
+  const X = i => m.l + iw * i / (n - 1), Y = v => m.t + ih - (v - lo) / (hi - lo) * ih;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" data-lines>` + axis(W, H, m, hi, lo, v => Math.round(v), sc.ticks);
+  s += `<line x1="${m.l}" x2="${W - m.r}" y1="${Y(100)}" y2="${Y(100)}" stroke="var(--line2)" stroke-dasharray="3 3"/>`;
+  const ends = series.map((sr, j) => ({ j, y: Y(sr.series[sr.series.length - 1][1]), sr })).sort((a, b) => a.y - b.y);
+  for (let k = 1; k < ends.length; k++) if (ends[k].y - ends[k - 1].y < 13) ends[k].y = ends[k - 1].y + 13;
+  series.forEach((sr, j) => { const off = n - sr.series.length;
+    s += `<path d="${sr.series.map((p, i) => (i ? 'L' : 'M') + X(i + off).toFixed(1) + ',' + Y(p[1]).toFixed(1)).join('')}" fill="none" stroke="${colors[j]}" stroke-width="2" stroke-linejoin="round"/>`;
+    const lp = sr.series[sr.series.length - 1]; s += `<circle cx="${X(n - 1)}" cy="${Y(lp[1])}" r="4" fill="${colors[j]}" stroke="var(--card)" stroke-width="2"/>`; });
+  ends.forEach(e => { s += `<text x="${W - m.r + 8}" y="${e.y + 4}" font-size="11" fill="var(--sub)"><tspan fill="${colors[e.j]}">■</tspan> ${esc(e.sr.zh.split(' ')[0].slice(0, 8))} ${Math.round(e.sr.last)}</text>`; });
+  const first = series[0].series; [0, Math.floor((first.length - 1) / 2), first.length - 1].forEach(i => { s += `<text x="${X(i + n - first.length)}" y="${H - 6}" text-anchor="${i === 0 ? 'start' : i === first.length - 1 ? 'end' : 'middle'}" font-size="11" fill="var(--mute)">${first[i][0].slice(2, 7)}</text>`; });
+  s += `<line class="xh" x1="0" x2="0" y1="${m.t}" y2="${m.t + ih}" stroke="var(--line2)" visibility="hidden"/><rect class="hit" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/></svg>`;
+  return { svg: s, meta: { m, iw, n, W } };
+}
+function bindLines(card, series, meta) {
+  const svg = card.querySelector('svg[data-lines]'), hit = svg.querySelector('.hit'), xh = svg.querySelector('.xh');
+  hit.addEventListener('pointermove', e => { const r = svg.getBoundingClientRect(), sx = (e.clientX - r.left) / r.width * meta.W;
+    const i = Math.max(0, Math.min(meta.n - 1, Math.round((sx - meta.m.l) / meta.iw * (meta.n - 1)))); const x = meta.m.l + meta.iw * i / (meta.n - 1);
+    xh.setAttribute('x1', x); xh.setAttribute('x2', x); xh.setAttribute('visibility', 'visible');
+    const rows = series.map(sr => { const p = sr.series[i - (meta.n - sr.series.length)]; return p ? [sr.zh, p] : null; }).filter(Boolean);
+    tip.innerHTML = `<b>${rows[0][1][0]}</b><br>` + rows.map(([z, p]) => `${esc(z)} ${p[1]}`).join('<br>'); tip.hidden = false;
+    tip.style.left = Math.max(8, Math.min(e.clientX + 12, innerWidth - tip.offsetWidth - 8)) + 'px'; tip.style.top = (e.clientY + 14) + 'px'; });
+  hit.addEventListener('pointerleave', () => { tip.hidden = true; xh.setAttribute('visibility', 'hidden'); });
+}
+function spark(series, color) {
+  const W = 110, H = 30, vs = series.map(p => p[1]), lo = Math.min(...vs), hi = Math.max(...vs);
+  const pts = vs.map((v, i) => [(W - 6) * i / (vs.length - 1) + 1, 3 + (H - 6) * (1 - (v - lo) / ((hi - lo) || 1))]);
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" aria-hidden="true"><path d="${pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join('')}" fill="none" stroke="${color}" stroke-width="1.6"/><circle cx="${pts[pts.length - 1][0]}" cy="${pts[pts.length - 1][1]}" r="2.6" fill="${color}"/></svg>`;
+}
+
+/* ---------- 页面 ---------- */
+const DIR = { heating: ['仍在加码', 'hot'], tightening: ['仍然偏紧', 'hot'], cooling: ['降温', 'cool'], easing: ['转松', 'cool'], flat: ['持平', 'flat'], unclear: ['不明', 'flat'] };
+function reading(r) {
+  const d = DIR[r.direction] || DIR.unclear;
+  const src = r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc((r.source || '来源').slice(0, 70))}</a>` : esc(r.source || '未找到可核实来源');
+  return `<div class="rd"><div class="top"><span class="nm">${esc(r.name_zh)}</span><span class="dir ${d[1]}">${d[0]}</span>${r.confidence === 'low' ? '<span class="dir flat">低可信</span>' : ''}</div>
+    <div class="val">${esc(r.value_zh || r.value)}</div><div class="note">${esc(r.note_zh || '')}</div><div class="src">${esc(r.asof || '')} · ${src}</div></div>`;
+}
+function render(D) {
+  const app = document.getElementById('app'); app.innerHTML = '';
+  const S = Object.fromEntries(D.signals.map(s => [s.id, s]));
+  const C = [cssv('--s1'), cssv('--s2'), cssv('--s3'), cssv('--s4'), cssv('--s5')];
+  let h = '';
+  /* 头部 */
+  h += `<header class="head">${EMBED ? '' : '<a class="back" href="./">← AI 订单与债务图谱</a>'}<div class="eyebrow">实时报告 · 接 AI 订单与债务账本</div><h1>AI 供应链周期实时报告</h1>
+    <p class="sub">压力先出现在哪一环、传到了哪一环。价格每天更新，订单与债务每 3 小时更新，月营收每月更新，现金流每季更新。仅供研究，非投资建议。</p>
+    <div class="stamps"><span class="stamp">账本 <b>${ago(D.ledger_at)}</b>（${local(D.ledger_at)}）</span><span class="stamp">行情截至 <b>${D.prices_asof}</b></span>
+    <span class="stamp">台湾月营收 <b>${D.tw_latest}</b></span><span class="stamp">财报现金流 <b>${D.sec_q}</b></span><span class="stamp">调研读数与叙事 <b>${D.narrative_date}</b></span></div></header>`;
+  /* 结论 */
+  h += `<section><div class="card verdict"><div><span class="snap">叙事快照 ${D.narrative_date}</span></div><div class="big">${D.verdict.headline}</div>${D.verdict.paras.map(p => `<p>${p}</p>`).join('')}
+    <p class="sm mute">本段是人写的判断，只在叙事快照日期更新；下面的传导链、信号表、图表随数据自动刷新。信号 ${D.counts.on} 项已触发、${D.counts.watch} 项观察、${D.counts.off} 项未触发。</p></div></section>`;
+  /* 传导链 */
+  h += `<section><div class="sec-head"><h2>压力传导链</h2><p class="sub sm">泡沫破裂不是一个时点，而是压力沿这条链从左往右传。左边三环看钱，右边四环看货。每一环的状态由下方信号表按固定阈值算出。</p></div>
+    <div class="chain">${D.chain.map((n, i) => `<div class="node ${n.status}"><div class="step">${i + 1} · ${n.cadence}</div><div class="nm">${n.name}</div><div>${pill(n.status)}</div><div class="val">${esc(n.headline)}</div></div>`).join('')}</div>
+    <p class="chain-note">${D.front >= 0 ? `目前已触发的最远一环是第 ${D.front + 1} 环「<b>${D.chain[D.front].name}</b>」。` : '目前没有任何一环触发。'}${D.verdict.chain_note || ''}</p></section>`;
+  /* 信号表 */
+  h += `<section><div class="sec-head"><h2>信号表</h2><p class="sub sm">阈值是本报告自己定的，写在「规则」一列，可调。数据列自动刷新；标「快照」的两行来自人工调研。</p></div>
+    <div class="card tw"><table class="sig"><thead><tr><th>信号</th><th>读数</th><th>状态</th><th>依据</th><th>规则</th><th>更新</th></tr></thead><tbody>
+    ${D.chain.map((n, i) => `<tr class="grp"><td colspan="6">${i + 1} · ${n.name}</td></tr>` + n.signals.map(id => { const s = S[id]; return `<tr><td>${esc(s.name)}</td><td class="v">${esc(s.value)}</td><td>${pill(s.status)}</td><td class="sm">${esc(s.evidence)}</td><td class="xs mute">${esc(s.rule)}</td><td class="xs mute">${esc(s.fresh)}<br>${esc(s.asof || '')}</td></tr>`; }).join('')).join('')}
+    </tbody></table></div></section>`;
+  /* 三层 */
+  h += `<section><div class="sec-head"><h2>三层周期定位</h2><p class="sub sm">沿用原报告的四阶段框架：①需求爆发 → ②扩产高峰 → ③供需拉平 → ④产能过剩。左栏自动刷新，右栏是 ${D.narrative_date} 的调研读数，每条带来源。</p></div>`;
+  const STG = ['①需求爆发', '②扩产高峰', '③供需拉平', '④产能过剩'];
+  D.layers.forEach((L, li) => {
+    const rd = L.readings.slice().sort((a, b) => ({ high: 0, medium: 1, low: 2 }[a.confidence] - { high: 0, medium: 1, low: 2 }[b.confidence]));
+    const cnt = Object.entries(L.dir).map(([k, v]) => `${(DIR[k] || DIR.unclear)[0]} ${v}`).join(' · ');
+    h += `<div class="card layer"><div class="lhead"><div><h3>${L.name}</h3><div class="sm sub">${L.who}</div></div><span class="pill st-na" style="background:var(--accent-wash);color:var(--accent)">${L.badge}</span></div>
+      <div class="track">${STG.map((s, i) => `<span class="${L.stage.includes(i + 1) ? 'on' : ''}">${s}</span>`).join('')}</div>
+      <div class="cols"><div class="col"><div class="lbl">股价篮子 · 每日<span class="mute" style="font-weight:400">等权，近 1 年</span></div><div>
+      ${L.baskets.map((b, bi) => `<div class="bk"><div><div class="t">${esc(b.zh)}</div><div class="m">距高点 ${pct(b.dd)} · 近 1 月 ${pct(b.m1)} · 站上 200 日线 ${b.b200}%</div></div>${spark(b.series, C[bi % 4])}</div>`).join('')}</div>
+      ${L.tw.length ? `<div class="lbl">台湾月营收 · 每月<span class="mute" style="font-weight:400">${D.tw_latest}</span></div><div class="tw"><table><thead><tr><th>公司</th><th>环节</th><th class="n">当月同比</th><th class="n">近 3 月同比</th><th class="n">前 3 月</th></tr></thead><tbody>
+      ${L.tw.map(c => `<tr><td>${esc(c.zh)}</td><td class="mute">${esc(c.seg)}</td><td class="n">${pct(c.months[c.months.length - 1].yoy)}</td><td class="n">${pct(c.yoy3)}</td><td class="n mute">${c.yoy3_prev == null ? '–' : (c.yoy3_prev > 0 ? '+' : '') + c.yoy3_prev + '%'} ${c.yoy3 >= c.yoy3_prev ? '↑' : '↓'}</td></tr>`).join('')}</tbody></table></div>` : ''}
+      </div><div class="col"><div class="lbl">调研读数<span class="snap">快照 ${D.narrative_date}</span><span class="mute" style="font-weight:400">${cnt}</span></div>
+      <div>${rd.slice(0, 5).map(reading).join('')}</div>${rd.length > 5 ? `<details><summary>其余 ${rd.length - 5} 条读数</summary><div>${rd.slice(5).map(reading).join('')}</div></details>` : ''}</div></div>
+      <div class="call"><b>判断：</b>${L.call}</div></div>`;
+  });
+  h += `</section>`;
+  /* 资金 */
+  const F = D.funding, KZ = { order: '订单', investment: '投资', debt: '债务', lease: '租赁', guarantee: '担保' };
+  h += `<section><div class="sec-head"><h2>资金：谁在出钱，钱从哪来</h2><p class="sub sm">来自 AI 订单与债务账本，只计一手来源或媒体正文核实的交易。每 3 小时随账本刷新。<a href="${esc(D.site_url || '#')}" target="_blank" rel="noopener">看图谱</a></p></div>
+    <div class="tiles">${Object.entries(F.totals).map(([k, v]) => `<div class="tile"><div class="k">${KZ[k] || k}（累计）</div><div class="v">${yi(v.usd)}</div><div class="d">${v.count} 笔 · 美元</div></div>`).join('')}</div>
+    <div class="grid2"><div class="card chart-card"><h3>每月新增承诺，按类型</h3><div class="legend">${Object.keys(KZ).map((k, i) => `<span><i style="background:${C[i]}"></i>${KZ[k]}</span>`).join('')}<span class="mute">单位：亿美元，按公告月</span></div>
+      <div class="cx">${stackedBars(F.monthly.map(r => Object.fromEntries(Object.entries(r).map(([k, v]) => [k, k === 'ym' ? v : v * 10]))), Object.keys(KZ), Object.values(KZ), C, { xKey: 'ym', fmtX: v => v.slice(2), unit: '亿美元' })}</div></div>
+    <div class="card chart-card"><h3>五家巨头：capex 对经营现金流</h3><div class="legend"><span><i style="background:${C[0]}"></i>capex</span><span><i style="background:${C[2]}"></i>经营现金流</span><span class="mute">单位：亿美元；柱上数字 = capex ÷ 经营现金流</span></div>
+      <div class="cx">${groupedBars(F.agg.map(r => ({ q: r.q.slice(2), capex: r.capex * 10, ocf: r.ocf * 10, ratio: r.ratio })), ['capex', 'ocf'], ['capex', '经营现金流'], [C[0], C[2]], { xKey: 'q', unit: '亿美元', note: r => r.ratio + '%' })}</div>
+      <p class="xs mute">SEC XBRL 现金流量表口径（购置固定资产），不含融资租赁；微软、甲骨文财年不同，按最接近的日历季对齐。</p></div></div>
+    <div class="grid2"><div class="card chart-card"><h3>最新一季各家现金流</h3><div class="tw"><table><thead><tr><th>公司</th><th>季度截至</th><th class="n">capex</th><th class="n">经营现金流</th><th class="n">自由现金流</th><th class="n">capex 占比</th></tr></thead><tbody>
+      ${F.capex.map(c => { const q = c.quarters[c.quarters.length - 1]; return `<tr><td>${c.zh}</td><td class="mute">${q.end}</td><td class="n">${Math.round(q.capex * 10)}</td><td class="n">${Math.round(q.ocf * 10)}</td><td class="n ${q.fcf < 0 ? 'neg' : ''}">${q.fcf > 0 ? '+' : ''}${Math.round(q.fcf * 10)}</td><td class="n">${q.ratio}%</td></tr>`; }).join('')}</tbody></table></div><p class="xs mute">单位：亿美元。</p></div>
+    <div class="card chart-card"><h3>谁在借钱：每季债务 + 租赁，按借款人</h3><div class="legend"><span><i style="background:${C[0]}"></i>巨头云</span><span><i style="background:${C[1]}"></i>AI 实验室 / Neocloud / 开发商 / SPV</span><span><i style="background:${C[2]}"></i>其他</span></div>
+      <div class="cx">${stackedBars(F.debt_q.map(r => ({ q: r.q, ig: r.ig * 10, risky: r.risky * 10, other: r.other * 10 })), ['ig', 'risky', 'other'], ['巨头云', '实验室 / Neocloud / 开发商 / SPV', '其他'], C, { xKey: 'q', fmtX: v => v.slice(2), unit: '亿美元', H: 220 })}</div>
+      <p class="xs mute">单位：亿美元。最后一季未结束。</p></div></div>
+    <div class="grid2"><div class="card chart-card"><h3>近 ${S.cancel.name.match(/\d+/)[0]} 天被取消的交易</h3><div class="list">${F.cancels.length ? F.cancels.map(e => `<div class="li"><span class="dt">${e.date.slice(5)}</span><span><span class="tag">${e.kind_zh}</span>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>` : esc(e.title)}</span><span class="am">${yi(e.usd)}</span></div>`).join('') : '<p class="mute sm">无。</p>'}</div>
+      ${F.stress_cands.length ? `<details><summary>缩减 / 推迟类候选 ${F.stress_cands.length} 条（未核实）</summary><div class="list">${F.stress_cands.map(e => `<div class="li"><span class="dt">${(e.date || '').slice(5)}</span><span>${esc(e.title)}</span><span class="am">${yi(e.usd)}</span></div>`).join('')}</div></details>` : ''}</div>
+    <div class="card chart-card"><h3>供应商给客户的钱</h3><p class="sm sub">芯片和设备商对自己客户的入股、担保、租赁，累计 ${yi(F.circ.total)}美元（${F.circ.n} 笔），近 90 天 ${yi(F.circ.d90)}，此前 90 天 ${yi(F.circ.prev90)}。</p>
+      <div class="list">${F.circ.items.map(e => `<div class="li"><span class="dt">${e.date.slice(2, 7)}</span><span><span class="tag">${e.kind_zh}</span>${esc(e.from)} → ${esc(e.to)}</span><span class="am">${yi(e.usd)}</span></div>`).join('')}</div></div></div>
+    <div class="grid2"><div class="card chart-card"><h3>订单集中在谁身上</h3><p class="sm sub">已披露金额的订单 + 租赁共 ${yi(F.order_book)}美元，其中 AI 实验室占 ${F.lab_share}%。</p>
+      <div>${F.buyers.map(b => `<div class="hbar"><span>${esc(b.name)}</span><div><div class="b ${b.group === 'model_lab' ? 'lab' : ''}" style="width:${b.share / F.buyers[0].share * 100}%"></div></div><span>${yi(b.usd)} · ${b.share}%</span></div>`).join('')}</div>
+      <div class="legend"><span><i style="background:${C[1]}"></i>AI 实验室</span><span><i style="background:${C[0]}"></i>其他买方</span></div></div>
+    <div class="card chart-card"><h3>近 14 天金额最大的新交易</h3><div class="list">${F.recent.map(e => `<div class="li"><span class="dt">${e.date.slice(5)}</span><span><span class="tag">${e.kind_zh}</span>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>` : esc(e.title)}</span><span class="am">${yi(e.usd)}</span></div>`).join('')}</div></div></div></section>`;
+  /* 市场 */
+  const M = D.market, LZ = { down: '下游', mid: '中游', up: '上游' };
+  h += `<section><div class="sec-head"><h2>市场：股价在定价什么</h2><p class="sub sm">各篮子等权指数，近 1 年，起点 = 100。行情截至 ${D.prices_asof}。上游近 3 个月相对中游 ${M.rotation_m3 > 0 ? '强' : '弱'} ${Math.abs(M.rotation_m3)} 个百分点。</p></div>
+    <div class="grid3">${['down', 'mid', 'up'].map(L => `<div class="card chart-card" data-lc="${L}"><h3>${LZ[L]}</h3><div class="cx lc"></div></div>`).join('')}</div>
+    <div class="card"><details><summary>全部 ${Object.keys(M.tickers).length} 只样本的明细</summary><div class="tw"><table><thead><tr><th>篮子 / 标的</th><th class="n">现价</th><th class="n">1 日</th><th class="n">5 日</th><th class="n">1 月</th><th class="n">3 月</th><th class="n">年初至今</th><th class="n">距 52 周高点</th><th>均线</th></tr></thead><tbody>
+    ${M.baskets.map(b => `<tr class="grp"><td colspan="9">${esc(b.zh)}</td></tr>` + b.tickers.map(t => { const x = M.tickers[t]; return `<tr><td>${esc(M.names[t] ? M.names[t] + ' ' : '')}<span class="mute">${t}</span></td><td class="n">${x.last.toLocaleString('en-US')}</td><td class="n">${pct(x.d1)}</td><td class="n">${pct(x.d5)}</td><td class="n">${pct(x.m1)}</td><td class="n">${pct(x.m3)}</td><td class="n">${pct(x.ytd)}</td><td class="n">${pct(x.dd)}</td><td class="xs mute">${x.a50 ? '50↑' : '50↓'} ${x.a200 ? '200↑' : '200↓'}</td></tr>`; }).join('')).join('')}
+    </tbody></table></div></details></div></section>`;
+  /* 跟踪节奏 */
+  h += `<section><div class="sec-head"><h2>怎么跟踪</h2><p class="sub sm">按数据自己的更新频率看，不必每天看全部。</p></div>
+    <div class="card tw"><table><thead><tr><th>频率</th><th>看什么</th><th>回答的问题</th><th>来源</th><th>方式</th></tr></thead><tbody>
+    ${D.tracking.map(t => `<tr><td style="white-space:nowrap"><b>${esc(t.when)}</b></td><td>${esc(t.what)}</td><td class="sub">${esc(t.why)}</td><td class="sm mute">${esc(t.src)}</td><td class="sm">${esc(t.how)}</td></tr>`).join('')}</tbody></table></div>
+    ${D.changes && D.changes.length ? `<div class="card"><h3>和 8 月那版相比，变了什么</h3><ul class="plain sm" style="margin-top:8px">${D.changes.map(c => `<li>${c}</li>`).join('')}</ul></div>` : ''}
+    ${D.checklist.length ? `<div class="card"><h3>待核对清单</h3><ul class="plain sm" style="margin-top:8px">${D.checklist.map(c => `<li>${c}</li>`).join('')}</ul></div>` : ''}</section>`;
+  h += `<footer class="foot"><p><b>方法：</b>四阶段框架判断供需位置，传导链判断压力走到哪一环。信号状态完全由阈值规则算出；阶段定位和结论段落是人工判断，标了日期。股价篮子为等权，跨市场用各自最近收盘价。账本金额是合同或发行总额，不是当期现金流。</p>
+    <p><b>免责：</b>数据来自公开文件、报道和机构估算，可能有误或滞后。本页不构成投资建议。页面生成于 ${local(D.generated_at)}。</p></footer>`;
+  app.append($(h));
+  ['down', 'mid', 'up'].forEach(L => { const card = app.querySelector(`[data-lc="${L}"]`), ser = M.baskets.filter(b => b.layer === L); const r = lines(ser, C, {}); card.querySelector('.cx').innerHTML = r.svg; bindLines(card, ser, r.meta); });
+  bindTips(app);
+}
+(async () => {
+  try { const D = EMBED || await (await fetch('data/cycle.json?t=' + Date.now())).json(); window.__D = D; render(D);
+    matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => render(D));
+    new MutationObserver(() => render(D)).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  } catch (e) { document.getElementById('app').innerHTML = `<div class="err">数据读取失败：${esc(e.message)}</div>`; }
+})();
+</script>
+
+</body>
+</html>
