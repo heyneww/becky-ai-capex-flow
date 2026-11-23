@@ -218,3 +218,8 @@ overrides:
   - {match: {id: 80}, action: confirm, note: "[A] 用户裁定：认 $9.1B；2026-11-10 起承租方按 Riot 10-Q 记为 Anthropic"}
   - {match: {id: 494}, action: set, fields: {announced: "2026-07-20"}, note: "Hut 8 Beacon Point 二期租约于 2026-07-20 公告（8-K 新闻稿）；原日期是三季报日。一期（2026-05-06，#676）另记"}
   - {match: {id: 205}, action: confirm, note: "CoreWeave ATM 额度（$2.9B）被误聚为 CoreWeave 里士满租约（#674，$2.94B，同月）的重复；两笔无关。instrument 仍为 atm_program，页面标「额度」"}
+
+  # ===== 2026-11-23：传闻误标的取消 =====
+  # 状态只升不降，11-12 一条置信 0.3 的「据报拟退出」传闻把 #21 顶成了 cancelled。之后 11-13 至 11-23 的多篇报道仍按有效合同引用，
+  # 改回传闻之前的 amended。注意：本条每次导出都会套用，若日后真的取消（公司公告 / SEC 文件），要先删掉本条。
+  - {match: {id: 21}, action: set, fields: {status: amended}, note: "11-12 传闻（置信 0.3）误标为取消，后续报道仍称合同有效；S-1 口径不可撤销期到 2027 年 1 月 / 3 月。真取消时删除本条"}

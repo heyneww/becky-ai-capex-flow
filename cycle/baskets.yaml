@@ -74,5 +74,4 @@ thresholds:
   circ_watch: 20000000000
   circ_on: 60000000000
 # 账本里标为取消、但实际只是传闻或记录有误的边，不计入撤单信号（原因写在 note）
-cancel_exclude:
-  - {id: 21, note: "Anthropic–SpaceXAI 1,205 亿美元：11-12 一条「据报拟退出」的传闻把状态改成了取消，之后 11-19、11-22 的报道仍称合同有效"}
+cancel_exclude: []   # 例：- {id: 21, note: "原因"}。#21 已于 2026-11-23 在 config/overrides.yaml 里改回有效，不再需要排除
