@@ -67,7 +67,7 @@ thresholds:
   capex_on: 100
   cancel_window_days: 90
   cancel_watch_n: 2
-  cancel_on_n: 6
+  cancel_on_n: 5
   cancel_on_usd: 50000000000
   orders_watch: 0.6
   orders_on: 0.3

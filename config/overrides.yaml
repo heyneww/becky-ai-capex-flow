@@ -223,3 +223,10 @@ overrides:
   # #21 Anthropic–SpaceXAI 1,205 亿美元：11-12 一条置信 0.3 的「据报拟退出」传闻把状态顶成了 cancelled，当天人工改回 amended
   # （那次 set 已写进账本库，见 git 历史 4b82c0c）。之后合并规则加了取消门槛（confirm.cancel_allowed），
   # 所以这里不再保留常驻的 set：日后有一手来源或两家独立媒体确认取消，会正常生效，不会被人工校对盖住。
+
+  # ===== 2026-11-23：微软–Nscale 英国 Loughton 取消，两种记法并成一条 =====
+  # #546（彭博口径「约 30 亿美元英国数据中心租约」，11-05 起报道）与 #755（Nscale 招股书口径「32.2 亿美元工作说明书终止」，11-12 起报道）
+  # 是同一件事：微软 10 月退出 Nscale 在 Essex 郡 Loughton 的项目，原因都是并网推到 2030 年代。Nscale 在英国只有这一个微软项目。
+  # 保留 #755（金额有招股书的精确数；GPU 算力合同按订单记），#546 并入。
+  - {match: {id: 755}, action: set, fields: {amount_usd: 3220000000, amount_text: "$3.22 billion statement of work (Nscale IPO filing); Bloomberg had put it at roughly $3 billion", capacity: "Loughton, Essex (UK); about 23,000 NVIDIA GB300 GPUs", title_zh: "微软终止 Nscale 英国 Loughton 项目 32.2 亿美元工作说明书（10 月，因并网推迟到 2030 年代）"}, note: "金额取 Nscale 招股书口径；10 月终止，11 月披露"}
+  - {match: {id: 546}, action: merge, into: 755, note: "同一件事的彭博口径（约 $3B、记成了租赁）"}

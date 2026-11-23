@@ -203,9 +203,9 @@ def build():
     sig("capex_guide", "guide", "capex 指引：有没有人下修或说增速见顶", m["status"], m["value"], "任一巨头下修需求口径的指引即触发；因交付延迟的小幅下调记观察", m["evidence"], "财报季更新（调研快照）", nar["date"], short="指引")
     # 5 订单与撤单
     camt = usd(cancels)
-    st = "on" if len(cancels) >= th("cancel_on_n", 6) or camt >= th("cancel_on_usd", 50e9) else "watch" if len(cancels) >= th("cancel_watch_n", 2) else "off"
+    st = "on" if len(cancels) >= th("cancel_on_n", 5) or camt >= th("cancel_on_usd", 50e9) else "watch" if len(cancels) >= th("cancel_watch_n", 2) else "off"
     sig("cancel", "orders", f"撤单：近 {th('cancel_window_days', 90)} 天被取消的交易", st, f"{len(cancels)} 笔 / {zb(camt)}",
-        f"≥{th('cancel_watch_n', 2)} 笔观察；≥{th('cancel_on_n', 6)} 笔或 ≥{zb(th('cancel_on_usd', 50e9))} 触发",
+        f"≥{th('cancel_watch_n', 2)} 笔观察；≥{th('cancel_on_n', 5)} 笔或 ≥{zb(th('cancel_on_usd', 50e9))} 触发",
         "；".join(f"{e['announced'][5:]} {e['title_zh'][:26]}" for e in cancels[:4]) + (f"；另有 {len(stress_cands)} 条缩减 / 推迟类候选" if stress_cands else ""),
         "每 3 小时（账本）", g["generated_at"][:10])
     oratio = round(o90 / o_prev90, 2) if o_prev90 else None
