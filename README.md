@@ -116,7 +116,7 @@ python3 src/notify.py --baseline                # 大批回填后重记基线，
 | guarantee 担保兜底 | 担保方 | 受益方 |
 | vendor_financing 供应商融资 | 提供融资的供应商 | 客户 |
 
-状态：rumored → announced → signed → completed，amended 改金额，cancelled 不计入。合并：同类型、同双方、400 天内、金额差 ≤ 20% 视为同一笔，来源累加、置信取高。
+状态：rumored → announced → signed → completed，amended 改金额，cancelled 不计入。已计入的交易要被标成 cancelled，需要一手来源（SEC 文件 / 公司公告），或两家独立原发媒体的正文且置信都 ≥ `cancel_min_confidence`；单条传闻只挂为来源、不改状态（日志里有「取消未达门槛」）。合并：同类型、同双方、400 天内、金额差 ≤ 20% 视为同一笔，来源累加、置信取高。
 
 ## 人工校对
 

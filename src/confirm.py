@@ -117,6 +117,32 @@ def recompute_tier(con, edge_id):
     return tier
 
 
+def cancel_allowed(con, ex, conf, source, seed=0):
+    """已计入（confirmed / reported）的边不能被一条传闻顶成 cancelled。放行条件，满足其一：
+       种子 / 人工；一手来源（tier ≤ 2：SEC 文件、公司公告）；两家独立原发媒体的正文、置信都 ≥ cancel_min_confidence
+       （转载聚合站不算，累计本条与此前挂在这条边上的取消事件）。候选边不设门槛。
+       没放行的取消事件照常记进 events、文章照常挂为来源，等后续报道凑够再生效。"""
+    if seed or ex["tier"] not in ("confirmed", "reported"):
+        return True
+    source = source or {}
+    if (source.get("tier") or 3) <= 2:
+        return True
+    thr = SETTINGS.get("cancel_min_confidence", 0.7)
+
+    def pub(name, url):
+        return canon_publisher(name or ((url or "").split("/")[2] if (url or "").count("/") >= 2 else None))
+
+    pubs = set()
+    if conf >= thr:
+        pubs.add(pub(source.get("publisher"), source.get("url")))
+    for r in con.execute("""SELECT a.publisher, a.url, a.orig_url, a.tier FROM events ev JOIN articles a ON a.id=ev.article_id
+                            WHERE ev.edge_id=? AND ev.status='cancelled' AND ev.confidence>=? AND a.has_body=1""", (ex["id"], thr)):
+        if r["tier"] <= 2:
+            return True
+        pubs.add(pub(r["publisher"], r["orig_url"] or r["url"]))
+    return len(pubs - {None, "_aggregator"}) >= 2
+
+
 def upsert_edge(con, ev, f, t, source, seed=0, distinct=False):
     """ev: dict（模型事件或种子）；source: dict(url,title,publisher,date,tier,quote,article_id)。返回 edge_id。"""
     kind = ev["kind"]
@@ -136,9 +162,13 @@ def upsert_edge(con, ev, f, t, source, seed=0, distinct=False):
         for col in ("instrument", "term", "capacity", "announced", "maturity_date", "title_zh", "title_en", "summary_zh"):
             if ev.get(col) and (not ex[col] or seed):
                 sets.append(f"{col}=?"); vals.append(ev[col])
-        if STATUS_RANK.get(st, 0) > STATUS_RANK.get(ex["status"], 0):
+        blocked = st == "cancelled" and ex["status"] != "cancelled" and not cancel_allowed(con, ex, conf, source, seed)
+        if blocked:
+            log.warning("取消未达门槛，#%d 状态保持 %s：%s（置信 %.2f，%s）", ex["id"], ex["status"], ev.get("title_zh"), conf,
+                        (source or {}).get("publisher"))
+        elif STATUS_RANK.get(st, 0) > STATUS_RANK.get(ex["status"], 0):
             sets.append("status=?"); vals.append(st)
-        if conf > (ex["confidence"] or 0):
+        if conf > (ex["confidence"] or 0) and not blocked:
             sets.append("confidence=?"); vals.append(conf)
             if ev.get("summary_zh"):
                 sets.append("summary_zh=?"); vals.append(ev["summary_zh"])
