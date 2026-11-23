@@ -1,0 +1,38 @@
+# 一手来源补录（2026-11-23）：Nscale plc S-1（2026-09-18）与 S-1/A（2026-11-12）里关于微软合同的原文。
+# 原文（S-1/A，Risk Factors 与 Business 两处相同）：
+#   "Between September 2025 and April 2026, we entered into statements of work with Microsoft that provide for payments to us of up to
+#    approximately $43.8 billion through December 2033, not including the optional extensions ... Subsequently, a single statement of work
+#    valued at $3.22 billion was terminated without any impact to any other statements of work."
+# 9-18 的首版 S-1 已经写了 $43.8B、还没有终止那句，所以 $43.8B 是终止之前的签约总额，现存 = 43.8 − 3.22 ≈ $40.58B。
+# 2025-10-15 公告的约 20 万颗 GB300 合同（原 #133，FT 估 $14B）落在这批工作说明书的签署期内，是其中一部分，见 overrides。
+deals:
+  - kind: order
+    from: MSFT
+    to: NSCALE
+    amount_usd: 40580000000
+    amount_text: "up to approximately $43.8 billion as signed (statements of work, Sep 2025 – Apr 2026, through Dec 2033), less one $3.22 billion statement of work terminated in Oct 2026 = about $40.58 billion"
+    instrument: compute_contract
+    term: "through December 2033; GPU services terms of five to six years from acceptance of each tranche, plus an optional six-month extension at Microsoft's election"
+    capacity: "GPU infrastructure, colocation space and cloud services across Texas, Portugal (Sines), Norway and the UK; about 200,000 NVIDIA GB300 plus 66,000+ Vera Rubin at Sines from late 2027"
+    announced: "2026-04-01"
+    status: signed
+    title_zh: 微软与 Nscale 的算力工作说明书合计约 406 亿美元（签约上限 438 亿，扣除已终止的 32.2 亿）
+    title_en: Microsoft–Nscale statements of work, about $40.6B remaining of up to $43.8B signed (Nscale S-1/A)
+    summary_zh: Nscale 招股书：2025 年 9 月至 2026 年 4 月与微软签署多份工作说明书，至 2033 年 12 月合计最高约 438 亿美元（不含可选延期）；其后英国 Loughton 一份 32.2 亿美元的工作说明书因并网被撤回而终止，其余不受影响。2025-10 公告的约 20 万颗 GB300 合同是其中一部分。日期按最后一批签署的月份记。
+    sources:
+      - {url: "https://www.sec.gov/Archives/edgar/data/2110365/000119312526458722/ck0002110365-20261112.htm", title: "Nscale plc Form S-1/A — statements of work with Microsoft", publisher: "SEC / Nscale S-1/A", date: "2026-11-12", tier: 1}
+      - {url: "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-20260918.htm", title: "Nscale plc Form S-1 — statements of work with Microsoft", publisher: "SEC / Nscale S-1", date: "2026-09-18", tier: 1}
+  - kind: order
+    from: MSFT
+    to: NSCALE
+    amount_usd: 3220000000
+    amount_text: "$3.22 billion statement of work (Nscale S-1/A); Bloomberg had put it at roughly $3 billion"
+    instrument: compute_contract
+    capacity: "Loughton, Essex (UK); about 23,000 NVIDIA GB300 GPUs"
+    announced: "2026-11-12"
+    status: cancelled
+    title_zh: 微软终止 Nscale 英国 Loughton 项目 32.2 亿美元工作说明书（10 月，因并网推迟到 2030 年代）
+    title_en: Microsoft terminates $3.22B Loughton statement of work with Nscale (S-1/A)
+    summary_zh: Nscale 招股书：一份 32.2 亿美元的工作说明书终止，原因是 Loughton 当地电力供应商撤回了并网日期和供电容量；其余工作说明书不受影响。
+    sources:
+      - {url: "https://www.sec.gov/Archives/edgar/data/2110365/000119312526458722/ck0002110365-20261112.htm", title: "Nscale plc Form S-1/A — statements of work with Microsoft", publisher: "SEC / Nscale S-1/A", date: "2026-11-12", tier: 1}

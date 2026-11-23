@@ -230,3 +230,10 @@ overrides:
   # 保留 #755（金额有招股书的精确数；GPU 算力合同按订单记），#546 并入。
   - {match: {id: 755}, action: set, fields: {amount_usd: 3220000000, amount_text: "$3.22 billion statement of work (Nscale IPO filing); Bloomberg had put it at roughly $3 billion", capacity: "Loughton, Essex (UK); about 23,000 NVIDIA GB300 GPUs", title_zh: "微软终止 Nscale 英国 Loughton 项目 32.2 亿美元工作说明书（10 月，因并网推迟到 2030 年代）"}, note: "金额取 Nscale 招股书口径；10 月终止，11 月披露"}
   - {match: {id: 546}, action: merge, into: 755, note: "同一件事的彭博口径（约 $3B、记成了租赁）"}
+
+  # ===== 2026-11-23：微软–Nscale 订单去重（读 Nscale S-1 / S-1/A 原文后）=====
+  # 招股书：2025-09 至 2026-04 与微软签的全部工作说明书合计最高 $43.8B。#133（2025-10-15 公告，约 20 万颗 GB300，FT 估 $14B）
+  # 落在这个签署期内，是其中一部分，此前与 #527 各算了一次。#527 的金额、日期和一手来源由 seeds/nscale_s1_2026-11-23.yaml 写入
+  # （现存约 $40.58B = 43.8 − 已终止的 3.22，终止那笔是 #755）。
+  - {match: {id: 133}, action: merge, into: 527, note: "2025-10 公告的 GB300 合同是招股书 $43.8B 工作说明书的一部分，重复计入"}
+
